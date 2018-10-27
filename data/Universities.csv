@@ -4,16 +4,16 @@
 2,Utrecht University,uu.nl,A.Bakker4@uu.nl,2,import2016full/61,Netherlands
 3,Utrecht University,uu.nl,M.F.vanderSchaaf@uu.nl,3,import2016full/61,Netherlands
 4,"University of California, Los Angeles",ucla.edu,deliema@g.ucla.edu,0,import2016full/59,United States
-5,,gmail.com,christine.lee.ucla@gmail.com,1,import2016full/59,
+5,gmail,gmail.com,christine.lee.ucla@gmail.com,1,import2016full/59,
 6,"University of California, Los Angeles",ucla.edu,enyedy@gseis.ucla.edu,2,import2016full/59,United States
 7,"University of California, Los Angeles",ucla.edu,randy@remap.ucla.edu,3,import2016full/59,United States
-8,,gmail.com,maggiedahn@gmail.com,4,import2016full/59,
+8,gmail,gmail.com,maggiedahn@gmail.com,4,import2016full/59,
 9,Indiana University at Bloomington,indiana.edu,asmsaleh@indiana.edu,5,import2016full/59,United States
 10,Indiana University at Bloomington,indiana.edu,jdanish@indiana.edu,6,import2016full/59,United States
 11,Indiana University,iu.edu,mahumbur@umail.iu.edu,7,import2016full/59,United States
 12,Indiana University,iu.edu,charmaho@umail.iu.edu,8,import2016full/59,United States
-13,,gmail.com,hariniraval@gmail.com,0,import2016full/66,
-14,,gmail.com,chittaranjan.kaul@gmail.com,1,import2016full/66,
+13,gmail,gmail.com,hariniraval@gmail.com,0,import2016full/66,
+14,gmail,gmail.com,chittaranjan.kaul@gmail.com,1,import2016full/66,
 15,University of Twente,utwente.nl,susan.mckenney@utwente.nl,2,import2016full/66,Netherlands
 16,University of Edinburgh,ed.ac.uk,a.manches@ed.ac.uk,0,import2016full/50,United Kingdom
 17,University of Edinburgh,ed.ac.uk,m.dragomir@sms.ed.ac.uk,1,import2016full/50,United Kingdom
@@ -25,38 +25,38 @@
 23,Stanford University,stanford.edu,roypea@stanford.edu,5,import2016full/68,United States
 24,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,0,import2016full/57,United States
 25,Indiana University at Bloomington,indiana.edu,rsanto@indiana.edu,1,import2016full/57,United States
-26,,lancaster.ac.uk,m.oztok@lancaster.ac.uk,0,import2016full/32,United Kingdom
+26,lancaster,lancaster.ac.uk,m.oztok@lancaster.ac.uk,0,import2016full/32,United Kingdom
 27,University of Jyväskylä,jyu.fi,maarit.arvaja@jyu.fi,1,import2016full/32,Finland
-28,,gmail.com,hotaywanying@gmail.com,0,import2016full/35,
-29,,moe.edu.sg,Yen@moe.edu.sg,1,import2016full/35,Singapore
-30,,moe.gov.sg,KHAMIS@moe.gov.sg,2,import2016full/35,Singapore
-31,,moe.gov.sg,TAN@moe.gov.sg,3,import2016full/35,Singapore
-32,,moe.gov.sg,Lee@moe.gov.sg,4,import2016full/35,Singapore
+28,gmail,gmail.com,hotaywanying@gmail.com,0,import2016full/35,
+29,moe,moe.edu.sg,Yen@moe.edu.sg,1,import2016full/35,Singapore
+30,moe,moe.gov.sg,KHAMIS@moe.gov.sg,2,import2016full/35,Singapore
+31,moe,moe.gov.sg,TAN@moe.gov.sg,3,import2016full/35,Singapore
+32,moe,moe.gov.sg,Lee@moe.gov.sg,4,import2016full/35,Singapore
 33,Ruhr-University Bochum,rub.de,christian.hartmann@rub.de,0,import2016full/69,Germany
 34,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,1,import2016full/69,Germany
 35,Ruhr-University Bochum,rub.de,katharina.loibl@rub.de,2,import2016full/69,Germany
-36,,gmail.com,collier.wesley@gmail.com,0,import2016full/56,
-37,,gmail.com,andrewruis@gmail.com,1,import2016full/56,
+36,gmail,gmail.com,collier.wesley@gmail.com,0,import2016full/56,
+37,gmail,gmail.com,andrewruis@gmail.com,1,import2016full/56,
 38,University of Wisconsin - Madison,wisc.edu,dws@education.wisc.edu,2,import2016full/56,United States
 39,University of Miami,miami.edu,l.barthcohen@miami.edu,0,import2016full/51,United States
 40,University of Maine System,maine.edu,mwittmann@maine.edu,1,import2016full/51,United States
 41,University of Colorado at Boulder,colorado.edu,carrie.allen@colorado.edu,0,import2016full/58,United States
 42,University of Colorado at Boulder,colorado.edu,margaret.eisenhart@colorado.edu,1,import2016full/58,United States
-43,,gmail.com,rpeleg@gmail.com,0,import2016full/67,
+43,gmail,gmail.com,rpeleg@gmail.com,0,import2016full/67,
 44,University of Haifa,haifa.ac.il,stlevy@edu.haifa.ac.il,1,import2016full/67,Israel
 45,Tel Aviv University,tau.ac.il,lahavo@post.tau.ac.il,2,import2016full/67,Israel
-46,,walla.com,noha@walla.com,3,import2016full/67,
-47,,yahoo.com,talisv@yahoo.com,4,import2016full/67,
+46,walla,walla.com,noha@walla.com,3,import2016full/67,
+47,yahoo,yahoo.com,talisv@yahoo.com,4,import2016full/67,
 48,Universität Duisburg-Essen,uni-due.de,melanie.erkens@uni-due.de,0,import2016full/60,Germany
 49,Universität Duisburg-Essen,uni-due.de,patrick.schlottbom@stud.uni-due.de,1,import2016full/60,Germany
 50,Universität Duisburg-Essen,uni-due.de,daniel.bodemer@uni-due.de,2,import2016full/60,Germany
 51,University of Rochester,rochester.edu,joyce.duckles@warner.rochester.edu,0,import2016full/34,United States
 52,University of Rochester,rochester.edu,bstroud@u.rochester.edu,1,import2016full/34,United States
-53,,neadrochester.org,gmoses@neadrochester.org,2,import2016full/34,
-54,,neadrochester.org,rvanalstyne@neadrochester.org,3,import2016full/34,
+53,neadrochester,neadrochester.org,gmoses@neadrochester.org,2,import2016full/34,
+54,neadrochester,neadrochester.org,rvanalstyne@neadrochester.org,3,import2016full/34,
 55,"Indian Institute of Technology, Bombay",iitb.ac.in,aditi.kothiyal@iitb.ac.in,0,import2016full/33,India
 56,"Indian Institute of Technology, Bombay",iitb.ac.in,sahanamurthy@iitb.ac.in,1,import2016full/33,India
-57,,hbcse.tifr.res.in,sanjay@hbcse.tifr.res.in,2,import2016full/33,India
+57,hbcse,hbcse.tifr.res.in,sanjay@hbcse.tifr.res.in,2,import2016full/33,India
 58,University of Oslo,uio.no,a.g.jornet@iped.uio.no,0,import2016full/20,Norway
 59,"University of California, Berkeley",berkeley.edu,flood@berkeley.edu,0,import2016full/18,United States
 60,San Jose State University,sjsu.edu,benedikt.harrer@sjsu.edu,1,import2016full/18,United States
@@ -65,7 +65,7 @@
 63,Arizona State University,asu.edu,laurakallen@asu.edu,1,import2016full/27,United States
 64,Open University,open.ac.uk,k.s.littleton@open.ac.uk,2,import2016full/27,United Kingdom
 65,Open University,open.ac.uk,bart.rienties@open.ac.uk,3,import2016full/27,United Kingdom
-66,,maastrichtuniversity.nl,d.tempelaar@maastrichtuniversity.nl,4,import2016full/27,Netherlands
+66,maastrichtuniversity,maastrichtuniversity.nl,d.tempelaar@maastrichtuniversity.nl,4,import2016full/27,Netherlands
 67,Ludwig-Maximilians-Universität München,lmu.de,andras.csanadi@psy.lmu.de,0,import2016full/9,Germany
 68,Universität Augsburg,uni-augsburg.de,ingo.kollar@phil.uni-augsburg.de,1,import2016full/9,Germany
 69,Ludwig-Maximilians-Universität München,lmu.de,frank.fischer@psy.lmu.de,2,import2016full/9,Germany
@@ -75,16 +75,16 @@
 73,Northwestern University,northwestern.edu,nsmirnov@u.northwestern.edu,0,import2016full/7,United States
 74,Northwestern University,northwestern.edu,easterday@northwestern.edu,1,import2016full/7,United States
 75,Northwestern University,northwestern.edu,egerber@northwestern.edu,2,import2016full/7,United States
-76,,bluknowledge.com,erika@bluknowledge.com,0,import2016full/29,
-77,,sri.com,mingyu.feng@sri.com,1,import2016full/29,
-78,,sri.com,kevin.mcelhaney@sri.com,2,import2016full/29,
+76,bluknowledge,bluknowledge.com,erika@bluknowledge.com,0,import2016full/29,
+77,sri,sri.com,mingyu.feng@sri.com,1,import2016full/29,
+78,sri,sri.com,kevin.mcelhaney@sri.com,2,import2016full/29,
 79,University of Pennsylvania,upenn.edu,yoonsa@upenn.edu,0,import2016full/16,United States
 80,University of Pennsylvania,upenn.edu,jkoehl@gse.upenn.edu,1,import2016full/16,United States
 81,University of Pennsylvania,upenn.edu,emmaa@gse.upenn.edu,2,import2016full/16,United States
 82,University of Pennsylvania,upenn.edu,echad@sas.upenn.edu,3,import2016full/16,United States
 83,"University of California, Berkeley",berkeley.edu,dor@berkeley.edu,0,import2016full/42,United States
-84,,gmail.com,raulsangar@gmail.com,1,import2016full/42,
-85,,gmail.com,smythcliff@gmail.com,2,import2016full/42,
+84,gmail,gmail.com,raulsangar@gmail.com,1,import2016full/42,
+85,gmail,gmail.com,smythcliff@gmail.com,2,import2016full/42,
 86,University of Wisconsin - Madison,wisc.edu,jgutierrez7@wisc.edu,0,import2016full/89,United States
 87,Carnegie Mellon University,cmu.edu,jkolsen@cs.cmu.edu,0,import2016full/45,United States
 88,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,1,import2016full/45,Germany
@@ -120,7 +120,7 @@
 118,Indiana University at Bloomington,indiana.edu,jdanish@indiana.edu,3,import2016full/19,United States
 119,Columbia University,columbia.edu,ljm2172@tc.columbia.edu,0,import2016full/26,United States
 120,Columbia University,columbia.edu,alison.lee@tc.columbia.edu,1,import2016full/26,United States
-121,,gmail.com,slater.research@gmail.com,2,import2016full/26,
+121,gmail,gmail.com,slater.research@gmail.com,2,import2016full/26,
 122,Columbia University,columbia.edu,xing@exchange.tc.columbia.edu,3,import2016full/26,United States
 123,Columbia University,columbia.edu,cc3663@tc.columbia.edu,4,import2016full/26,United States
 124,Ben-Gurion University of the Negev,bgu.ac.il,vedderwe@post.bgu.ac.il,0,import2016full/8,Israel
@@ -130,8 +130,8 @@
 128,University of New Mexico,unm.edu,vsvihla@unm.edu,0,import2016full/81,United States
 129,Queen's University,queensu.ca,reever@queensu.ca,1,import2016full/81,Canada
 130,Massachusetts Institute of Technology,mit.edu,ria@media.mit.edu,0,import2016full/86,United States
-131,,gmail.com,karinalin@gmail.com,1,import2016full/86,
-132,,gmail.com,richard.liuzzi@gmail.com,2,import2016full/86,
+131,gmail,gmail.com,karinalin@gmail.com,1,import2016full/86,
+132,gmail,gmail.com,richard.liuzzi@gmail.com,2,import2016full/86,
 133,Vanderbilt University,vanderbilt.edu,satabdi.basu@vanderbilt.edu,0,import2016full/72,United States
 134,Vanderbilt University,vanderbilt.edu,gautam.biswas@vanderbilt.edu,1,import2016full/72,United States
 135,Harvard University,harvard.edu,mmy949@mail.harvard.edu,0,import2016full/44,United States
@@ -144,29 +144,29 @@
 142,University of Hong Kong,hku.hk,jarrad@ilap-sdls.cite.hku.hk,2,import2016full/88,Hong Kong
 143,University of Hong Kong,hku.hk,yeunglee@hku.hk,3,import2016full/88,Hong Kong
 144,University of Hong Kong,hku.hk,amykwok@hku.hk,4,import2016full/88,Hong Kong
-145,,vanderibilt.edu,amy.farris@vanderibilt.edu,0,import2016full/38,
+145,vanderibilt,vanderibilt.edu,amy.farris@vanderibilt.edu,0,import2016full/38,
 146,Vanderbilt University,vanderbilt.edu,amanda.c.dickes@vanderbilt.edu,1,import2016full/38,United States
 147,University of Calgary,ucalgary.ca,pratim.sengupta@ucalgary.ca,2,import2016full/38,Canada
 148,Pennsylvania State University,psu.edu,yannshiou@psu.edu,0,import2016full/36,United States
 149,Pennsylvania State University,psu.edu,mborge@psu.edu,1,import2016full/36,United States
-150,,gmail.com,eshorton@gmail.com,0,import2016full/31,
-151,,gmail.com,jah.cunningham5@gmail.com,1,import2016full/31,
-152,,gmail.com,louismgomez@gmail.com,2,import2016full/31,
-153,,gmail.com,kpg1321@gmail.com,3,import2016full/31,
-154,,gmail.com,katherine.c.rodela@gmail.com,4,import2016full/31,
+150,gmail,gmail.com,eshorton@gmail.com,0,import2016full/31,
+151,gmail,gmail.com,jah.cunningham5@gmail.com,1,import2016full/31,
+152,gmail,gmail.com,louismgomez@gmail.com,2,import2016full/31,
+153,gmail,gmail.com,kpg1321@gmail.com,3,import2016full/31,
+154,gmail,gmail.com,katherine.c.rodela@gmail.com,4,import2016full/31,
 155,Utah State University,usu.edu,breanne.litts@usu.edu,0,import2016full/65,United States
 156,University of Pennsylvania,upenn.edu,kafai@upenn.edu,1,import2016full/65,United States
 157,Utah State University,usu.edu,kristin.searle@usu.edu,2,import2016full/65,United States
-158,,gmail.com,e.dieckmeyer@gmail.com,3,import2016full/65,
+158,gmail,gmail.com,e.dieckmeyer@gmail.com,3,import2016full/65,
 159,"National Institute of Education (NIE), Singapore",nie.edu.sg,longkai.wu@nie.edu.sg,0,import2016full/62,Singapore
 160,"National Institute of Education (NIE), Singapore",nie.edu.sg,david.hung@nie.edu.sg,1,import2016full/62,Singapore
 161,University of Sydney,sydney.edu.au,Alisha.Portolese@sydney.edu.au,0,import2016full/54,Australia
 162,University of Sydney,sydney.edu.au,Lina.Markauskaite@sydney.edu.au,1,import2016full/54,Australia
 163,University of Sydney,sydney.edu.au,Kuan.Lai@sydney.edu.au,2,import2016full/54,Australia
 164,University of Sydney,sydney.edu.au,Michael.Jacobson@sydney.edu.au,3,import2016full/54,Australia
-165,,163.com,sdnu@163.com,0,import2016full/53,
-166,,gmail.com,cherryshucs@gmail.com,1,import2016full/53,
-167,,126.com,jinyinglian@126.com,2,import2016full/53,
+165,163,163.com,sdnu@163.com,0,import2016full/53,
+166,gmail,gmail.com,cherryshucs@gmail.com,1,import2016full/53,
+167,126,126.com,jinyinglian@126.com,2,import2016full/53,
 168,East China Normal University,ecnu.edu.cn,xnpei@kcx.ecnu.edu.cn,3,import2016full/53,China
 169,East China Normal University,ecnu.edu.cn,tnzheng@iice.ecnu.edu.cn,4,import2016full/53,China
 170,East China Normal University,ecnu.edu.cn,shxiao@kcx.ecnu.edu.cn,5,import2016full/53,China
@@ -176,19 +176,19 @@
 174,Michigan State University,msu.edu,acb@msu.edu,0,import2016full/39,United States
 175,University of North Carolina at Greensboro,uncg.edu,tan@uncg.edu,1,import2016full/39,United States
 176,Michigan State University,msu.edu,shinmyu4@msu.edu,2,import2016full/39,United States
-177,,gmail.com,libby.gerard@gmail.com,0,import2016full/52,
+177,gmail,gmail.com,libby.gerard@gmail.com,0,import2016full/52,
 178,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,1,import2016full/52,United States
-179,,gmail.com,jjmadhok@gmail.com,2,import2016full/52,
+179,gmail,gmail.com,jjmadhok@gmail.com,2,import2016full/52,
 180,University of North Carolina at Greensboro,uncg.edu,tan@uncg.edu,0,import2016full/55,United States
 181,Michigan State University,msu.edu,acb@msu.edu,1,import2016full/55,United States
 182,University of Colorado at Boulder,colorado.edu,katie.vanhorne@colorado.edu,0,import2016full/63,United States
 183,University of Colorado at Boulder,colorado.edu,erica.vansteenis@colorado.edu,1,import2016full/63,United States
 184,University of Colorado at Boulder,colorado.edu,william.penuel@colorado.edu,2,import2016full/63,United States
 185,University of Colorado at Boulder,colorado.edu,daniela.digiacomo@colorado.edu,3,import2016full/63,United States
-186,,gmail.com,liux0631@gmail.com,0,import2016full/64,
-187,,sri.com,shuchi.grover@sri.com,0,import2016full/90,
+186,gmail,gmail.com,liux0631@gmail.com,0,import2016full/64,
+187,sri,sri.com,shuchi.grover@sri.com,0,import2016full/90,
 188,Stanford University,stanford.edu,roypea@stanford.edu,1,import2016full/90,United States
-189,,umiami.edu,s.jiang@umiami.edu,0,import2016full/46,
+189,umiami,umiami.edu,s.jiang@umiami.edu,0,import2016full/46,
 190,University of Miami,miami.edu,j.shen@miami.edu,1,import2016full/46,United States
 191,University of Miami,miami.edu,blaine.smith@miami.edu,2,import2016full/46,United States
 192,Carnegie Mellon University,cmu.edu,gtomar@cs.cmu.edu,0,import2016full/79,United States
@@ -206,7 +206,7 @@
 204,University of Washington,uw.edu,cmgonzal@uw.edu,1,import2016full/48,United States
 205,"Rutgers University, Newark",rutgers.edu,vkatz@rutgers.edu,2,import2016full/48,United States
 206,Indiana University at Bloomington,indiana.edu,dthickey@indiana.edu,0,import2016full/70,United States
-207,,gmail.com,chgping@gmail.com,0,import2016full/84,
+207,gmail,gmail.com,chgping@gmail.com,0,import2016full/84,
 208,State University of New York at Albany,albany.edu,jzhang1@albany.edu,1,import2016full/84,United States
 209,Utah State University,usu.edu,victor.lee@usu.edu,0,import2016full/24,United States
 210,Northwestern University,northwestern.edu,hillary.swanson@northwestern.edu,0,import2016full/23,United States
@@ -215,7 +215,7 @@
 213,Georgia Institute of Technology,gatech.edu,guzdial@cc.gatech.edu,2,import2016full/15,United States
 214,Georgia Institute of Technology,gatech.edu,richard.catrambone@psych.gatech.edu,3,import2016full/15,United States
 215,Open University of the Netherlands,ou.nl,fleur.prinsen@ou.nl,0,import2016full/12,Netherlands
-216,,gmail.com,tammievis@gmail.com,0,import2016full/85,
+216,gmail,gmail.com,tammievis@gmail.com,0,import2016full/85,
 217,Indiana University at Bloomington,indiana.edu,dthickey@indiana.edu,0,import2016full/71,United States
 218,Indiana University at Bloomington,indiana.edu,suttamch@indiana.edu,1,import2016full/71,United States
 219,Indiana University at Bloomington,indiana.edu,jdquick@indiana.edu,2,import2016full/71,United States
@@ -244,21 +244,21 @@
 242,Columbia University,columbia.edu,dk100@columbia.edu,1,import2016full/13,United States
 243,Nanyang Technological University,ntu.edu.sg,alwynlee@ntu.edu.sg,0,import2016full/14,Singapore
 244,Nanyang Technological University,ntu.edu.sg,sengchee.tan@ntu.edu.sg,1,import2016full/14,Singapore
-245,,moe.edu.sg,kelvin@moe.edu.sg,2,import2016full/14,Singapore
+245,moe,moe.edu.sg,kelvin@moe.edu.sg,2,import2016full/14,Singapore
 246,University of Hong Kong,hku.hk,tchiu@hku.hk,0,import2016full/22,Hong Kong
 247,Nanyang Technological University,ntu.edu.sg,sengchee.tan@ntu.edu.sg,0,import2016full/25,Singapore
 248,Nanyang Technological University,ntu.edu.sg,shien.chue@ntu.edu.sg,1,import2016full/25,Singapore
-249,,moe.gov.sg,lee@moe.gov.sg,2,import2016full/25,Singapore
+249,moe,moe.gov.sg,lee@moe.gov.sg,2,import2016full/25,Singapore
 250,Hallym University,hallym.ac.kr,heis@hallym.ac.kr,0,import2015full/307,"Korea, Republic of"
 251,Indiana University at Bloomington,indiana.edu,chmelosi@indiana.edu,1,import2015full/307,United States
-252,,uni.no,jo.wake@uni.no,0,import2015full/309,Norway
+252,uni,uni.no,jo.wake@uni.no,0,import2015full/309,Norway
 253,University of Bergen,uib.no,frode.guribye@uib.no,1,import2015full/309,Norway
-254,,uni.no,barbara.wasson@uni.no,2,import2015full/309,Norway
+254,uni,uni.no,barbara.wasson@uni.no,2,import2015full/309,Norway
 255,Pennsylvania State University,psu.edu,mborge@psu.edu,0,import2015full/391,United States
 256,Pennsylvania State University,psu.edu,yuo103@psu.edu,1,import2015full/391,United States
 257,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,2,import2015full/391,United States
-258,,hum.aau.dk,jackd@hum.aau.dk,0,import2015full/150,Denmark
-259,,hum.aau.dk,ryberg@hum.aau.dk,1,import2015full/150,Denmark
+258,hum,hum.aau.dk,jackd@hum.aau.dk,0,import2015full/150,Denmark
+259,hum,hum.aau.dk,ryberg@hum.aau.dk,1,import2015full/150,Denmark
 260,University of Hong Kong,hku.hk,yqyang@hku.hk,0,import2015full/192,Hong Kong
 261,University of Hong Kong,hku.hk,vanaalst@hku.hk,1,import2015full/192,Hong Kong
 262,"National Institute of Education (NIE), Singapore",nie.edu.sg,matthew.gaydos@nie.edu.sg,0,import2015full/353,Singapore
@@ -273,12 +273,12 @@
 271,Stockholm University,su.se,chiara@dsv.su.se,0,import2015full/169,Sweden
 272,Stockholm University,su.se,hernwall@dsv.su.se,1,import2015full/169,Sweden
 273,Stockholm University,su.se,jcoll@dsv.su.se,2,import2015full/169,Sweden
-274,Universität Duisburg-Essen,collide.info,ziebarth@collide.info,0,import2015full/364,Germany
+274,Universität Duisburg-Essen,collide.info,ziebarth@collide.info,0,import2015full/364,
 275,Universität Duisburg-Essen,uni-due.de,german.neubaum@uni-due.de,1,import2015full/364,Germany
 276,Universität Duisburg-Essen,uni-due.de,elias.kyewski@uni-due.de,2,import2015full/364,Germany
 277,Universität Duisburg-Essen,uni-due.de,nicole.kraemer@uni-due.de,3,import2015full/364,Germany
-278,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015full/364,Germany
-279,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2015full/364,Germany
+278,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015full/364,
+279,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2015full/364,
 280,Universität Duisburg-Essen,uni-due.de,sabrina.eimler@uni-due.de,6,import2015full/364,Germany
 281,Dawson College,dawsoncollege.qc.ca,echarles@dawsoncollege.qc.ca,0,import2015full/280,Canada
 282,John Abbott College,johnabbott.qc.ca,lasry@johnabbott.qc.ca,1,import2015full/280,Canada
@@ -287,7 +287,7 @@
 285,Vanier Colleege,vaniercollege.qc.ca,lentonk@vaniercollege.qc.ca,4,import2015full/280,Canada
 286,Dawson College,dawsoncollege.qc.ca,sbhatnagar@dawsoncollege.qc.ca,5,import2015full/280,Canada
 287,John Abbott College,johnabbott.qc.ca,jonathan.guillemette@johnabbott.qc.ca,6,import2015full/280,Canada
-288,,gmail.com,irisfeng83@gmail.com,0,import2015full/414,
+288,gmail,gmail.com,irisfeng83@gmail.com,0,import2015full/414,
 289,University of Hong Kong,hku.hk,ckkchan@hku.hk,1,import2015full/414,Hong Kong
 290,Simon Fraser University,sfu.ca,afw3@sfu.ca,0,import2015full/221,Canada
 291,Simon Fraser University,sfu.ca,aantle@sfu.ca,1,import2015full/221,Canada
@@ -305,7 +305,7 @@
 303,University of Missouri - Columbia,missouri.edu,kimsomi@missouri.edu,1,import2015full/268,United States
 304,University of Missouri - Columbia,missouri.edu,Gogginss@missouri.edu,2,import2015full/268,United States
 305,EPFL - EPF Lausanne,epfl.ch,kshitij.sharma@epfl.ch,0,import2015full/250,Switzerland
-306,,uc.cl,dccaball@uc.cl,1,import2015full/250,Chile
+306,uc,uc.cl,dccaball@uc.cl,1,import2015full/250,Chile
 307,EPFL - EPF Lausanne,epfl.ch,himanshu.verma@epfl.ch,2,import2015full/250,Switzerland
 308,EPFL - EPF Lausanne,epfl.ch,patrick.jermann@epfl.ch,3,import2015full/250,Switzerland
 309,EPFL - EPF Lausanne,epfl.ch,pierre.dillenbourg@epfl.ch,4,import2015full/250,Switzerland
@@ -318,7 +318,7 @@
 316,Stockholm University,su.se,petter@dsv.su.se,2,import2015full/293,Sweden
 317,Ankara University,ankara.edu.tr,gafacan@ankara.edu.tr,0,import2015full/407,Turkey
 318,Middle East Technical University,metu.edu.tr,perit@metu.edu.tr,1,import2015full/407,Turkey
-319,,acm.org,rmartinezmaldonado@acm.org,0,import2015full/189,
+319,acm,acm.org,rmartinezmaldonado@acm.org,0,import2015full/189,
 320,University of Sydney,sydney.edu.au,peter.goodyear@sydney.edu.au,1,import2015full/189,Australia
 321,Universidad de Valladolid,uva.es,yannis@tel.uva.es,2,import2015full/189,Spain
 322,University of Sydney,sydney.edu.au,kate.thompson@sydney.edu.au,3,import2015full/189,Australia
@@ -327,7 +327,7 @@
 325,University of Sydney,sydney.edu.au,martin.parisio@sydney.edu.au,6,import2015full/189,Australia
 326,State University of New York at Albany,albany.edu,dtao@albany.edu,0,import2015full/382,United States
 327,State University of New York at Albany,albany.edu,jzhang1@albany.edu,1,import2015full/382,United States
-328,,gmail.com,huangy.08@gmail.com,2,import2015full/382,
+328,gmail,gmail.com,huangy.08@gmail.com,2,import2015full/382,
 329,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,0,import2015full/340,United States
 330,Stanford University,stanford.edu,schneibe@stanford.edu,0,import2015full/172,United States
 331,Stanford University,stanford.edu,paulob@stanford.edu,1,import2015full/172,United States
@@ -336,11 +336,11 @@
 334,Indiana University at Bloomington,indiana.edu,jdanish@indiana.edu,0,import2015full/313,United States
 335,"University of California, Los Angeles",ucla.edu,enyedy@gseis.ucla.edu,1,import2015full/313,United States
 336,Indiana University at Bloomington,indiana.edu,asmsaleh@indiana.edu,2,import2015full/313,United States
-337,,gmail.com,christine.lee.ucla@gmail.com,3,import2015full/313,
+337,gmail,gmail.com,christine.lee.ucla@gmail.com,3,import2015full/313,
 338,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,4,import2015full/313,United States
 339,National Chengchi University,nccu.edu.tw,hyhong@nccu.edu.tw,0,import2015full/126,Taiwan
 340,"National Institute of Education (NIE), Singapore",nie.edu.sg,chingsing.chai@nie.edu.sg,1,import2015full/126,Singapore
-341,,gmail.com,barryhuck@gmail.com,2,import2015full/126,
+341,gmail,gmail.com,barryhuck@gmail.com,2,import2015full/126,
 342,"University of California, Davis",ucdavis.edu,lahardy@ucdavis.edu,0,import2015full/395,United States
 343,"University of California, Davis",ucdavis.edu,twhite@ucdavis.edu,1,import2015full/395,United States
 344,Hebrew University of Jerusalem,huji.ac.il,rotem.abdu@huji.ac.il,0,import2015full/154,Israel
@@ -354,14 +354,14 @@
 352,Massachusetts Institute of Technology,mit.edu,jsheldon@mit.edu,4,import2015full/165,United States
 353,Massachusetts Institute of Technology,mit.edu,djwendel@mit.edu,5,import2015full/165,United States
 354,Massachusetts Institute of Technology,mit.edu,ilanasch@mit.edu,6,import2015full/165,United States
-355,,govsacademy.org,hscheintaub@govsacademy.org,7,import2015full/165,
-356,,gmail.com,oztokm@gmail.com,8,import2015full/165,
+355,govsacademy,govsacademy.org,hscheintaub@govsacademy.org,7,import2015full/165,
+356,gmail,gmail.com,oztokm@gmail.com,8,import2015full/165,
 357,University of Pennsylvania,upenn.edu,echad@sas.upenn.edu,9,import2015full/165,United States
-358,Universität Duisburg-Essen,collide.info,manske@collide.info,0,import2015full/191,Germany
-359,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2015full/191,Germany
-360,Universität Duisburg-Essen,collide.info,chounta@collide.info,2,import2015full/191,Germany
-361,,gmail.com,soeren.werneburg@gmail.com,3,import2015full/191,
-362,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015full/191,Germany
+358,Universität Duisburg-Essen,collide.info,manske@collide.info,0,import2015full/191,
+359,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2015full/191,
+360,Universität Duisburg-Essen,collide.info,chounta@collide.info,2,import2015full/191,
+361,gmail,gmail.com,soeren.werneburg@gmail.com,3,import2015full/191,
+362,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015full/191,
 363,Dawson College,dawsoncollege.qc.ca,sdapollonia@place.dawsoncollege.qc.ca,0,import2015full/136,Canada
 364,Dawson College,dawsoncollege.qc.ca,skunicki@place.dawsoncollege.qc.ca,1,import2015full/136,Canada
 365,John Abbott College,johnabbott.qc.ca,murray.bronet@johnabbott.qc.ca,2,import2015full/136,Canada
@@ -376,8 +376,8 @@
 374,University of Oulu,oulu.fi,hanna.jarvenoja@oulu.fi,2,import2015full/367,Finland
 375,University of Oulu,oulu.fi,vesa-matti.sarenius@oulu.fi,3,import2015full/367,Finland
 376,University of Oulu,oulu.fi,sanna.jarvela@oulu.fi,4,import2015full/367,Finland
-377,,baddesigner.us,jeffRick@badDesigner.us,0,import2015full/334,United States
-378,,kopp-sb.de,daniel.kopp@kopp-sb.de,1,import2015full/334,Germany
+377,baddesigner,baddesigner.us,jeffRick@badDesigner.us,0,import2015full/334,United States
+378,kopp-sb,kopp-sb.de,daniel.kopp@kopp-sb.de,1,import2015full/334,Germany
 379,Universität des Saarlandes,uni-saarland.de,s9ljschm@stud.uni-saarland.de,2,import2015full/334,Germany
 380,Universität des Saarlandes,uni-saarland.de,a.weinberger@edutech.uni-saarland.de,3,import2015full/334,Germany
 381,Christian-Albrechts-Universität Kiel,uni-kiel.de,ruhl@paedagogik.uni-kiel.de,0,import2015full/276,Germany
@@ -406,7 +406,7 @@
 404,Carnegie Mellon University,cmu.edu,diyiy@cs.cmu.edu,3,import2015full/404,United States
 405,Carnegie Mellon University,cmu.edu,yul1@cs.cmu.edu,4,import2015full/404,United States
 406,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,5,import2015full/404,United States
-407,,domain.com,USER@DOMAIN.COM,6,import2015full/404,
+407,domain,domain.com,USER@DOMAIN.COM,6,import2015full/404,
 408,University of Wisconsin - Madison,wisc.edu,ndmartin@wisc.edu,0,import2015full/320,United States
 409,University of Wisconsin - Madison,wisc.edu,gnesdilow@wisc.edu,1,import2015full/320,United States
 410,University of Wisconsin - Madison,wisc.edu,puntambekar@education.wisc.edu,2,import2015full/320,United States
@@ -437,20 +437,20 @@
 435,University of Pennsylvania,upenn.edu,yoonsa@gse.upenn.edu,0,import2015full/176,United States
 436,University of Pennsylvania,upenn.edu,jkoehl@gse.upenn.edu,1,import2015full/176,United States
 437,University of Pennsylvania,upenn.edu,emmaa@gse.upenn.edu,2,import2015full/176,United States
-438,,gmail.com,oztokm@gmail.com,3,import2015full/176,
+438,gmail,gmail.com,oztokm@gmail.com,3,import2015full/176,
 439,Massachusetts Institute of Technology,mit.edu,klopfer@mit.edu,4,import2015full/176,United States
 440,Massachusetts Institute of Technology,mit.edu,ilanasch@mit.edu,5,import2015full/176,United States
 441,Massachusetts Institute of Technology,mit.edu,djwendel@mit.edu,6,import2015full/176,United States
 442,Massachusetts Institute of Technology,mit.edu,jsheldon@mit.edu,7,import2015full/176,United States
-443,,govsacademy.org,hscheintaub@govsacademy.org,8,import2015full/176,
+443,govsacademy,govsacademy.org,hscheintaub@govsacademy.org,8,import2015full/176,
 444,Drexel University,drexel.edu,khoo@drexel.edu,0,import2015full/171,United States
-445,,gerrystahl.net,Gerry@GerryStahl.net,1,import2015full/171,
+445,gerrystahl,gerrystahl.net,Gerry@GerryStahl.net,1,import2015full/171,
 446,State University of New York at Albany,albany.edu,jzhang1@albany.edu,0,import2015full/185,United States
 447,State University of New York at Albany,albany.edu,mchen@albany.edu,1,import2015full/185,United States
 448,State University of New York at Albany,albany.edu,dtao@albany.edu,2,import2015full/185,United States
 449,State University of New York at Albany,albany.edu,ysun@albany.edu,3,import2015full/185,United States
-450,,gmail.com,edujyl@gmail.com,4,import2015full/185,
-451,,gmail.com,djudson1@gmail.com,5,import2015full/185,
+450,gmail,gmail.com,edujyl@gmail.com,4,import2015full/185,
+451,gmail,gmail.com,djudson1@gmail.com,5,import2015full/185,
 452,Ludwig-Maximilians-Universität München,lmu.de,nic.nistor@lmu.de,0,import2016short/135,Germany
 453,University Politehnica of Bucharest,pub.ro,mihai.dascalu@cs.pub.ro,1,import2016short/135,Romania
 454,University Politehnica of Bucharest,pub.ro,stefan.trausan@cs.pub.ro,2,import2016short/135,Romania
@@ -460,36 +460,36 @@
 458,"Rutgers University, Newark",rutgers.edu,jeanette.joyce@gse.rutgers.edu,1,import2016short/104,United States
 459,"Rutgers University, Newark",rutgers.edu,veronica.cavera@gse.rutgers.edu,2,import2016short/104,United States
 460,National Chengchi University,nccu.edu.tw,hyhong@nccu.edu.tw,0,import2016short/103,Taiwan
-461,,gmail.com,bodong.chen@gmail.com,1,import2016short/103,
+461,gmail,gmail.com,bodong.chen@gmail.com,1,import2016short/103,
 462,National Taiwan University of Science and Technology,ntust.edu.tw,cctsai@mail.ntust.edu.tw,2,import2016short/103,Taiwan
-463,,gmail.com,chiupin.lin@gmail.com,3,import2016short/103,
+463,gmail,gmail.com,chiupin.lin@gmail.com,3,import2016short/103,
 464,National Central University,ncu.edu.tw,ytwu@cl.ncu.edu.tw,4,import2016short/103,Taiwan
 465,University of Sydney,sydney.edu.au,michael.jacobson@sydney.edu.au,0,import2016short/168,Australia
 466,Université Lumiére (Lyon II),univ-lyon2.fr,kristine.lund@univ-lyon2.fr,1,import2016short/168,France
-467,,tophe.net,cscl5@tophe.net,2,import2016short/168,
+467,tophe,tophe.net,cscl5@tophe.net,2,import2016short/168,
 468,Copenhagen Business School,cbs.dk,vatrpu@cbs.dk,3,import2016short/168,Denmark
-469,,concord.org,jkolodner@concord.org,4,import2016short/168,
+469,concord,concord.org,jkolodner@concord.org,4,import2016short/168,
 470,University of Sydney,sydney.edu.au,peter.reimann@sydney.edu.au,5,import2016short/168,Australia
 471,Worcester Polytechnic Institute,wpi.edu,raha@wpi.edu,0,import2016short/157,United States
 472,"Rutgers University, Newark",rutgers.edu,janice.gobert@gse.rutgers.edu,1,import2016short/157,United States
-473,,apprendis.com,mikesp@apprendis.com,2,import2016short/157,
+473,apprendis,apprendis.com,mikesp@apprendis.com,2,import2016short/157,
 474,University of Wisconsin - Madison,wisc.edu,cganderson4@wisc.edu,0,import2016short/150,United States
 475,University of Wisconsin - Madison,wisc.edu,binzak@wisc.edu,1,import2016short/150,United States
 476,University of Wisconsin - Madison,wisc.edu,jdalsen@wisc.edu,2,import2016short/150,United States
-477,,gmail.com,jenny.saucerman@gmail.com,3,import2016short/150,
-478,,gmail.com,annamjordan@gmail.com,4,import2016short/150,
+477,gmail,gmail.com,jenny.saucerman@gmail.com,3,import2016short/150,
+478,gmail,gmail.com,annamjordan@gmail.com,4,import2016short/150,
 479,University of Wisconsin - Madison,wisc.edu,vishesh.kumar@wisc.edu,5,import2016short/150,United States
-480,,gmail.com,aybketrker@gmail.com,6,import2016short/150,
+480,gmail,gmail.com,aybketrker@gmail.com,6,import2016short/150,
 481,University of Wisconsin - Madison,wisc.edu,mberland@wisc.edu,7,import2016short/150,United States
-482,,gmail.com,kurt.squire@gmail.com,8,import2016short/150,
-483,,gmail.com,constances@gmail.com,9,import2016short/150,
+482,gmail,gmail.com,kurt.squire@gmail.com,8,import2016short/150,
+483,gmail,gmail.com,constances@gmail.com,9,import2016short/150,
 484,Arizona State University,asu.edu,michelle.e.jordan@asu.edu,0,import2016short/159,United States
-485,,gmail.com,jamiemae.collins@gmail.com,1,import2016short/159,
-486,,kent.ac.uk,s.a.fincher@kent.ac.uk,0,import2016short/166,United Kingdom
-487,,kent.ac.uk,sd485@kent.ac.uk,1,import2016short/166,United Kingdom
+485,gmail,gmail.com,jamiemae.collins@gmail.com,1,import2016short/159,
+486,kent,kent.ac.uk,s.a.fincher@kent.ac.uk,0,import2016short/166,United Kingdom
+487,kent,kent.ac.uk,sd485@kent.ac.uk,1,import2016short/166,United Kingdom
 488,Hebrew University of Jerusalem,huji.ac.il,ofra.brandes@mail.huji.ac.il,2,import2016short/166,Israel
 489,Hebrew University of Jerusalem,huji.ac.il,yifat.kolikant@mail.huji.ac.il,3,import2016short/166,Israel
-490,,getdown.org,web@getdown.org,4,import2016short/166,
+490,getdown,getdown.org,web@getdown.org,4,import2016short/166,
 491,Ludwig-Maximilians-Universität München,lmu.de,Sandra.Becker@psy.lmu.de,0,import2016short/161,Germany
 492,Ludwig-Maximilians-Universität München,lmu.de,pekrun@lmu.de,1,import2016short/161,Germany
 493,Ludwig-Maximilians-Universität München,lmu.de,ufer@math.lmu.de,2,import2016short/161,Germany
@@ -502,56 +502,56 @@
 500,University of Minnesota - Twin Cities,umn.edu,chenbd@umn.edu,2,import2016short/105,United States
 501,Universität Duisburg-Essen,uni-due.de,sven.heimbuch@uni-due.de,0,import2016short/133,Germany
 502,Universität Duisburg-Essen,uni-due.de,bodemer@uni-due.de,1,import2016short/133,Germany
-503,,gmail.com,liux0631@gmail.com,0,import2016short/134,
+503,gmail,gmail.com,liux0631@gmail.com,0,import2016short/134,
 504,University of Illinois at Urbana-Champaign,illinois.edu,robblind@illinois.edu,0,import2016short/160,United States
 505,University of Illinois at Urbana-Champaign,illinois.edu,rwallon2@illinois.edu,1,import2016short/160,United States
 506,University of Illinois at Urbana-Champaign,illinois.edu,debrown@illinois.edu,2,import2016short/160,United States
 507,University of Illinois at Urbana-Champaign,illinois.edu,mathaya2@illinois.edu,3,import2016short/160,United States
-508,,concord.org,nkimball@concord.org,4,import2016short/160,
+508,concord,concord.org,nkimball@concord.org,4,import2016short/160,
 509,University of Illinois at Urbana-Champaign,illinois.edu,alameh2@illinois.edu,0,import2016short/158,United States
 510,University of Illinois at Urbana-Champaign,illinois.edu,jmorphe2@illinois.edu,1,import2016short/158,United States
 511,University of Illinois at Urbana-Champaign,illinois.edu,mathaya2@illinois.edu,2,import2016short/158,United States
 512,University of Illinois at Urbana-Champaign,illinois.edu,robblind@illinois.edu,3,import2016short/158,United States
-513,,gmail.com,yotamhod24@gmail.com,0,import2016short/167,
+513,gmail,gmail.com,yotamhod24@gmail.com,0,import2016short/167,
 514,Dawson College,dawsoncollege.qc.ca,echarles@dawsoncollege.qc.ca,1,import2016short/167,Canada
 515,University of Toronto,utoronto.ca,alisa.acosta@utoronto.ca,2,import2016short/167,Canada
 516,University of Haifa,haifa.ac.il,dbenzvi@univ.haifa.ac.il,3,import2016short/167,Israel
 517,State University of New York at Albany,albany.edu,mchen@albany.edu,4,import2016short/167,United States
 518,Pennsylvania State University,psu.edu,kuchoi@psu.edu,5,import2016short/167,United States
 519,John Abbott College,johnabbott.qc.ca,michael.dugdale@johnabbott.qc.ca,6,import2016short/167,Canada
-520,,gmail.com,yael.kali@gmail.com,7,import2016short/167,
+520,gmail,gmail.com,yael.kali@gmail.com,7,import2016short/167,
 521,Vanier Colleege,vaniercollege.qc.ca,lentonk@vaniercollege.qc.ca,8,import2016short/167,Canada
 522,Pennsylvania State University,psu.edu,smcdonald@psu.edu,9,import2016short/167,United States
 523,University of Illinois at Chicago,uic.edu,moher@uic.edu,10,import2016short/167,United States
-524,,icloud.com,rebeccamquintana@icloud.com,11,import2016short/167,
-525,,mrook.com,michael@mrook.com,12,import2016short/167,
+524,icloud,icloud.com,rebeccamquintana@icloud.com,11,import2016short/167,
+525,mrook,mrook.com,michael@mrook.com,12,import2016short/167,
 526,University of Toronto,utoronto.ca,jim.slotta@utoronto.ca,13,import2016short/167,Canada
 527,Pennsylvania State University,psu.edu,ptietjen@psu.edu,14,import2016short/167,United States
-528,,gmail.com,plweiss@gmail.com,15,import2016short/167,
+528,gmail,gmail.com,plweiss@gmail.com,15,import2016short/167,
 529,Dawson College,dawsoncollege.qc.ca,cwhittaker@place.dawsoncollege.qc.ca,16,import2016short/167,Canada
 530,State University of New York at Albany,albany.edu,jzhang1@albany.edu,17,import2016short/167,United States
-531,,gmail.com,kateb369@gmail.com,18,import2016short/167,
+531,gmail,gmail.com,kateb369@gmail.com,18,import2016short/167,
 532,Hong Kong Institute of Education,ied.edu.hk,mkapur@ied.edu.hk,19,import2016short/167,Hong Kong
 533,University of North Carolina at Chapel Hill,unc.edu,minshew@live.unc.edu,0,import2016short/151,United States
 534,University of North Carolina at Chapel Hill,unc.edu,derry@emal.unc.edu,1,import2016short/151,United States
 535,University of North Carolina at Chapel Hill,unc.edu,anderjl@email.unc.edu,2,import2016short/151,United States
 536,University of North Carolina at Chapel Hill,unc.edu,kelba@live.unc.edu,3,import2016short/151,United States
-537,,nier.go.jp,shirouzu@nier.go.jp,0,import2016short/169,Japan
+537,nier,nier.go.jp,shirouzu@nier.go.jp,0,import2016short/169,Japan
 538,University of Toronto,utoronto.ca,marlene.scardamalia@utoronto.ca,1,import2016short/169,Canada
 539,Tokyo University,u-tokyo.ac.jp,saitomoegi@coref.u-tokyo.ac.jp,2,import2016short/169,Japan
-540,,urawa-h.spec.ed.jp,ogawa.sonoko.25@urawa-h.spec.ed.jp,3,import2016short/169,Japan
+540,urawa-h,urawa-h.spec.ed.jp,ogawa.sonoko.25@urawa-h.spec.ed.jp,3,import2016short/169,Japan
 541,Tokyo University,u-tokyo.ac.jp,iikubo@coref.u-tokyo.ac.jp,4,import2016short/169,Japan
 542,Tokyo University,u-tokyo.ac.jp,hori@coref.u-tokyo.ac.jp,5,import2016short/169,Japan
 543,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,6,import2016short/169,United States
 544,"National Institute of Education (NIE), Singapore",nie.edu.sg,junsong.huang@nie.edu.sg,0,import2016short/156,Singapore
 545,"National Institute of Education (NIE), Singapore",nie.edu.sg,rachel.lam@nie.edu.sg,1,import2016short/156,Singapore
 546,Hong Kong Institute of Education,ied.edu.hk,mkapur@ied.edu.hk,2,import2016short/156,Hong Kong
-547,,gmail.com,jslotta@gmail.com,0,import2016short/174,
+547,gmail,gmail.com,jslotta@gmail.com,0,import2016short/174,
 548,Indiana University at Bloomington,indiana.edu,dthickey@indiana.edu,1,import2016short/174,United States
 549,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,2,import2016short/174,United States
 550,EPFL - EPF Lausanne,epfl.ch,pierre.dillenbourg@epfl.ch,3,import2016short/174,Switzerland
-551,,gmail.com,hnajafi@gmail.com,4,import2016short/174,
-552,,gmail.com,shaklev@gmail.com,5,import2016short/174,
+551,gmail,gmail.com,hnajafi@gmail.com,4,import2016short/174,
+552,gmail,gmail.com,shaklev@gmail.com,5,import2016short/174,
 553,Indiana University at Bloomington,indiana.edu,suttamch@indiana.edu,6,import2016short/174,United States
 554,Indiana University at Bloomington,indiana.edu,jdquick@indiana.edu,7,import2016short/174,United States
 555,Hebrew University of Jerusalem,huji.ac.il,baruch.schwarz@mail.huji.ac.il,0,import2016short/173,Israel
@@ -565,14 +565,14 @@
 563,Göteborg University,gu.se,kitalo@gu.se,8,import2016short/173,Sweden
 564,University of Haifa,haifa.ac.il,tgoldberg@edu.haifa.ac.il,9,import2016short/173,Israel
 565,University of Helsinki,helsinki.fi,tuure.tammi@helsinki.fi,10,import2016short/173,Finland
-566,,exeter.ac.uk,R.B.Wegerif@exeter.ac.uk,11,import2016short/173,United Kingdom
+566,exeter,exeter.ac.uk,R.B.Wegerif@exeter.ac.uk,11,import2016short/173,United Kingdom
 567,University of Colorado at Boulder,colorado.edu,Stephen.Sommer@Colorado.edu,0,import2016short/145,United States
-568,Saint Louis University,slu.edu,cgravill@slu.edu,1,import2016short/145,Philippines
+568,Saint Louis University,slu.edu,cgravill@slu.edu,1,import2016short/145,United States
 569,University of Colorado at Boulder,colorado.edu,Joseph.Polman@Colorado.edu,2,import2016short/145,United States
 570,University of Colorado at Boulder,colorado.edu,Leighanna.Hinojosa@Colorado.edu,3,import2016short/145,United States
-571,,gmail.com,jakita.owensby@gmail.com,4,import2016short/145,
-572,,gmail.com,rachellecelisse@gmail.com,5,import2016short/145,
-573,,scmail.spelman.edu,oodemwi1@scmail.spelman.edu,6,import2016short/145,
+571,gmail,gmail.com,jakita.owensby@gmail.com,4,import2016short/145,
+572,gmail,gmail.com,rachellecelisse@gmail.com,5,import2016short/145,
+573,spelman,scmail.spelman.edu,oodemwi1@scmail.spelman.edu,6,import2016short/145,
 574,Pennsylvania State University,psu.edu,heather@psu.edu,0,import2016short/142,United States
 575,Pennsylvania State University,psu.edu,sland@psu.edu,1,import2016short/142,United States
 576,Pennsylvania State University,psu.edu,chrystal@psu.edu,2,import2016short/142,United States
@@ -615,7 +615,7 @@
 613,Utah State University,usu.edu,vrlee@usu.edu,5,import2016short/172,United States
 614,Utah State University,usu.edu,ryan.cain@aggiemail.usu.edu,6,import2016short/172,United States
 615,University of Washington,washington.edu,pbell@u.washington.edu,7,import2016short/172,United States
-616,,gmail.com,miketissenbaum@gmail.com,0,import2016short/175,
+616,gmail,gmail.com,miketissenbaum@gmail.com,0,import2016short/175,
 617,New York University,nyu.edu,cmatuk@nyu.edu,1,import2016short/175,United States
 618,University of Wisconsin - Madison,wisc.edu,mberland@wisc.edu,2,import2016short/175,United States
 619,University of Illinois at Chicago,uic.edu,llyons@uic.edu,3,import2016short/175,United States
@@ -626,7 +626,7 @@
 624,New York University,nyu.edu,al.olsen@nyu.edu,8,import2016short/175,United States
 625,EPFL - EPF Lausanne,epfl.ch,beat.schwendimann@epfl.ch,9,import2016short/175,Switzerland
 626,EPFL - EPF Lausanne,epfl.ch,mina.shirvaniboroujeni@epfl.ch,10,import2016short/175,Switzerland
-627,,gmail.com,jslotta@gmail.com,11,import2016short/175,
+627,gmail,gmail.com,jslotta@gmail.com,11,import2016short/175,
 628,"University of California, Berkeley",berkeley.edu,jonvitale@berkeley.edu,12,import2016short/175,United States
 629,"University of California, Berkeley",berkeley.edu,libbygerard@berkeley.edu,13,import2016short/175,United States
 630,EPFL - EPF Lausanne,epfl.ch,pierre.dillenbourg@epfl.ch,14,import2016short/175,Switzerland
@@ -647,15 +647,15 @@
 645,Ruhr-University Bochum,rub.de,sabrina.flake@rub.de,1,import2016short/110,Germany
 646,Ruhr-University Bochum,rub.de,marcel.mierwald@rub.de,2,import2016short/110,Germany
 647,Ruhr-University Bochum,rub.de,marie.vanderbeke@rub.de,3,import2016short/110,Germany
-648,,terc.edu,bernstein@terc.edu,0,import2016short/128,
-649,,terc.edu,drayton@terc.edu,1,import2016short/128,
+648,terc,terc.edu,bernstein@terc.edu,0,import2016short/128,
+649,terc,terc.edu,drayton@terc.edu,1,import2016short/128,
 650,University of Twente,utwente.nl,susan.mckenney@utwente.nl,2,import2016short/128,Netherlands
 651,University of Pittsburgh,pitt.edu,schunn@pitt.edu,3,import2016short/128,United States
 652,Technion - Israel Institute of Technology,technion.ac.il,skapon@technion.ac.il,0,import2016short/117,Israel
 653,University of Helsinki,helsinki.fi,antti.laherto@helsinki.fi,1,import2016short/117,Finland
 654,University of Bologna,unibo.it,olivia.levrini2@unibo.it,2,import2016short/117,Italy
 655,State University of New York at Albany,albany.edu,djudson2@albany.edu,0,import2016short/153,United States
-656,,gmail.com,huiyingcai2012@gmail.com,0,import2016short/154,
+656,gmail,gmail.com,huiyingcai2012@gmail.com,0,import2016short/154,
 657,East China Normal University,ecnu.edu.cn,xqgu@ses.ecnu.edu.cn,1,import2016short/154,China
 658,Northwestern University,northwestern.edu,reed-stevens@northwestern.edu,0,import2016short/162,United States
 659,Northwestern University,northwestern.edu,kjona@northwestern.edu,1,import2016short/162,United States
@@ -669,22 +669,22 @@
 667,University of Helsinki,helsinki.fi,annalisa.sannino@helsinki.fi,1,import2016short/165,Finland
 668,University of Wisconsin - Madison,wisc.edu,abal@wisc.edu,2,import2016short/165,United States
 669,Rhodes University,ru.ac.za,h.lotz-sisitka@ru.ac.za,3,import2016short/165,South Africa
-670,,wessa.co.za,tich@wessa.co.za,4,import2016short/165,South Africa
-671,,award.org.za,charles@award.org.za,5,import2016short/165,South Africa
-672,,gmail.com,flores.lesama@gmail.com,6,import2016short/165,
-673,,gmail.com,antoniocarlospicinatto@gmail.com,7,import2016short/165,
-674,,gmail.com,mapquero@gmail.com,8,import2016short/165,
+670,wessa,wessa.co.za,tich@wessa.co.za,4,import2016short/165,South Africa
+671,award,award.org.za,charles@award.org.za,5,import2016short/165,South Africa
+672,gmail,gmail.com,flores.lesama@gmail.com,6,import2016short/165,
+673,gmail,gmail.com,antoniocarlospicinatto@gmail.com,7,import2016short/165,
+674,gmail,gmail.com,mapquero@gmail.com,8,import2016short/165,
 675,"National Institute of Education (NIE), Singapore",nie.edu.sg,yewjin.lee@nie.edu.sg,9,import2016short/165,Singapore
-676,,hbcse.tifr.res.in,prajaktp@hbcse.tifr.res.in,0,import2016short/131,India
+676,hbcse,hbcse.tifr.res.in,prajaktp@hbcse.tifr.res.in,0,import2016short/131,India
 677,University of Massachusetts Boston,umb.edu,Hannah.Sevian@umb.edu,1,import2016short/131,United States
 678,Universität Duisburg-Essen,uni-due.de,elias.kyewski@uni-due.de,0,import2016short/136,Germany
 679,Universität Duisburg-Essen,uni-due.de,nicole.kraemer@uni-due.de,1,import2016short/136,Germany
 680,Ruhr-Universität Bochum,ruhr-uni-bochum.de,christmann@iaw.ruhr-uni-bochum.de,2,import2016short/136,Germany
 681,Ruhr-University Bochum,rub.de,malte.elson@rub.de,3,import2016short/136,Germany
 682,Ruhr-University Bochum,rub.de,julia.erdmann@rub.de,4,import2016short/136,Germany
-683,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2016short/136,Germany
+683,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2016short/136,
 684,Ruhr-Universität Bochum,ruhr-uni-bochum.de,herrmann@iaw.ruhr-uni-bochum.de,6,import2016short/136,Germany
-685,Universität Duisburg-Essen,collide.info,hoppe@collide.info,7,import2016short/136,Germany
+685,Universität Duisburg-Essen,collide.info,hoppe@collide.info,7,import2016short/136,
 686,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,8,import2016short/136,Germany
 687,Ruhr-University Bochum,rub.de,astrid.wichmann@rub.de,9,import2016short/136,Germany
 688,Ludwig-Maximilians-Universität München,lmu.de,sommerhoff@math.lmu.de,0,import2016short/109,Germany
@@ -704,16 +704,16 @@
 702,University of Wisconsin - Madison,wisc.edu,erhalverson@education.wisc.edu,3,import2016short/164,United States
 703,Indiana University at Bloomington,indiana.edu,kpeppler@indiana.edu,4,import2016short/164,United States
 704,Indiana University at Bloomington,indiana.edu,akeune@indiana.edu,5,import2016short/164,United States
-705,,gmail.com,miketissenbaum@gmail.com,6,import2016short/164,
+705,gmail,gmail.com,miketissenbaum@gmail.com,6,import2016short/164,
 706,University of Toronto,utoronto.ca,sara.grimes@utoronto.ca,7,import2016short/164,Canada
-707,,makered.org,stephanie@makered.org,8,import2016short/164,
-708,,makered.org,lisa@makered.org,9,import2016short/164,
+707,makered,makered.org,stephanie@makered.org,8,import2016short/164,
+708,makered,makered.org,lisa@makered.org,9,import2016short/164,
 709,University of Pennsylvania,upenn.edu,otelhan@upenn.edu,10,import2016short/164,United States
 710,"National Institute of Education (NIE), Singapore",nie.edu.sg,michael.tan@nie.edu.sg,11,import2016short/164,Singapore
 711,Northwestern University,northwestern.edu,kayramey@u.northwestern.edu,0,import2016short/163,United States
 712,Northwestern University,northwestern.edu,dionnechampion2012@u.northwestern.edu,1,import2016short/163,United States
 713,Northwestern University,northwestern.edu,elizabethdyer@u.northwestern.edu,2,import2016short/163,United States
-714,,exploratorium.edu,dkeifert@exploratorium.edu,3,import2016short/163,
+714,exploratorium,exploratorium.edu,dkeifert@exploratorium.edu,3,import2016short/163,
 715,Northwestern University,northwestern.edu,ckrist@u.northwestern.edu,4,import2016short/163,United States
 716,Northwestern University,northwestern.edu,peter.meyerhoff@u.northwestern.edu,5,import2016short/163,United States
 717,Northwestern University,northwestern.edu,kvillanosa@u.northwestern.edu,6,import2016short/163,United States
@@ -728,11 +728,11 @@
 726,"University of California, Berkeley",berkeley.edu,lauren.applebaum@berkeley.edu,2,import2016short/106,United States
 727,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,3,import2016short/106,United States
 728,Columbia University,columbia.edu,dk100@columbia.edu,0,import2016short/99,United States
-729,,gmail.com,adrwendy@gmail.com,1,import2016short/99,
-730,,gmail.com,cabertram92@gmail.com,0,import2016short/139,
+729,gmail,gmail.com,adrwendy@gmail.com,1,import2016short/99,
+730,gmail,gmail.com,cabertram92@gmail.com,0,import2016short/139,
 731,Rochester Institute of Technology,rit.edu,aelsps@rit.edu,1,import2016short/139,United States
-732,,gmail.com,esayre@gmail.com,2,import2016short/139,
-733,,gmail.com,kustuschmb@gmail.com,3,import2016short/139,
+732,gmail,gmail.com,esayre@gmail.com,2,import2016short/139,
+733,gmail,gmail.com,kustuschmb@gmail.com,3,import2016short/139,
 734,Rochester Institute of Technology,rit.edu,svfsps@rit.edu,4,import2016short/139,United States
 735,"University of Maryland, College Park",umd.edu,leylan@umd.edu,0,import2016short/101,United States
 736,"University of Maryland, College Park",umd.edu,tclegg@umd.edu,1,import2016short/101,United States
@@ -741,8 +741,8 @@
 739,"University of Maryland, College Park",umd.edu,vanogu@umd.edu,4,import2016short/101,United States
 740,"University of Maryland, College Park",umd.edu,jonf@umd.edu,5,import2016short/101,United States
 741,"National Institute of Education (NIE), Singapore",nie.edu.sg,michael.tan@nie.edu.sg,0,import2016short/137,Singapore
-742,,gmail.com,yotamhod24@gmail.com,0,import2016short/108,
-743,,gmail.com,ornit.sagy@gmail.com,1,import2016short/108,
+742,gmail,gmail.com,yotamhod24@gmail.com,0,import2016short/108,
+743,gmail,gmail.com,ornit.sagy@gmail.com,1,import2016short/108,
 744,Northwestern University,northwestern.edu,arthur.hjorth@u.northwestern.edu,0,import2016short/130,United States
 745,Northwestern University,northwestern.edu,ckrist@u.northwestern.edu,1,import2016short/130,United States
 746,University of Twente,utwente.nl,s.a.n.vanriesen@utwente.nl,0,import2016short/112,Netherlands
@@ -753,7 +753,7 @@
 751,"University of California, Los Angeles",ucla.edu,sandoval@gseis.ucla.edu,1,import2016short/115,United States
 752,San Jose State University,sjsu.edu,elizabeth.walsh@sjsu.edu,0,import2016short/123,United States
 753,University of Washington,uw.edu,vmcgowan@uw.edu,1,import2016short/123,United States
-754,,griffith.edu.au,kate.thompson@griffith.edu.au,0,import2016short/124,Australia
+754,griffith,griffith.edu.au,kate.thompson@griffith.edu.au,0,import2016short/124,Australia
 755,Tufts University,tufts.edu,Julia.Gouvea@tufts.edu,1,import2016short/124,United States
 756,Warren Wilson College,warren-wilson.edu,ghabron@warren-wilson.edu,2,import2016short/124,United States
 757,University of Nottingham,nottingham.ac.uk,shaaron.ainsworth@nottingham.ac.uk,0,import2016short/170,United Kingdom
@@ -764,12 +764,12 @@
 762,University of Nottingham,nottingham.ac.uk,ttxdp17@nottingham.ac.uk,5,import2016short/170,United Kingdom
 763,University of Nottingham,nottingham.ac.uk,peter.wigmore@nottingham.ac.uk,6,import2016short/170,United Kingdom
 764,Utrecht University,uu.nl,w.r.vanjoolingen@uu.nl,7,import2016short/170,Netherlands
-765,,gmail.com,dewiheijnes@gmail.com,8,import2016short/170,
+765,gmail,gmail.com,dewiheijnes@gmail.com,8,import2016short/170,
 766,Utrecht University,uu.nl,f.a.j.leenaars@uu.nl,9,import2016short/170,Netherlands
 767,University of Wisconsin - Madison,wisc.edu,puntambekar@education.wisc.edu,10,import2016short/170,United States
 768,Michigan State University,msu.edu,greenhow@msu.edu,0,import2016short/177,United States
 769,Tel Aviv University,tau.ac.il,arnonhe@tauex.tau.ac.il,1,import2016short/177,Israel
-770,,levinsky.ac.il,alonabar@levinsky.ac.il,2,import2016short/177,Israel
+770,levinsky,levinsky.ac.il,alonabar@levinsky.ac.il,2,import2016short/177,Israel
 771,University of Michigan - Ann Arbor,umich.edu,easkari@umich.edu,3,import2016short/177,United States
 772,Universität des Saarlandes,uni-saarland.de,dimitra.tsovaltzi@mx.uni-saarland.de,4,import2016short/177,Germany
 773,Universität des Saarlandes,uni-saarland.de,t.puhl@mx.uni-saarland.de,5,import2016short/177,Germany
@@ -781,9 +781,9 @@
 779,University of North Carolina at Chapel Hill,unc.edu,derry@unc.edu,1,import2016short/148,United States
 780,University of North Carolina at Chapel Hill,unc.edu,minshew@live.unc.edu,2,import2016short/148,United States
 781,University of North Carolina at Chapel Hill,unc.edu,anderjl@email.unc.edu,3,import2016short/148,United States
-782,,me.com,patricklerner@me.com,0,import2016short/141,
+782,com,me.com,patricklerner@me.com,0,import2016short/141,
 783,Technische Universität Darmstadt,tu-darmstadt.de,daxenberger@ukp.informatik.tu-darmstadt.de,1,import2016short/141,Germany
-784,,ukp.informatik.tudarmstadt.de,flekova@ukp.informatik.tudarmstadt.de,2,import2016short/141,Germany
+784,tudarmstadt,ukp.informatik.tudarmstadt.de,flekova@ukp.informatik.tudarmstadt.de,2,import2016short/141,Germany
 785,Technische Universität Darmstadt,tu-darmstadt.de,gurevych@ukp.informatik.tu-darmstadt.de,3,import2016short/141,Germany
 786,Ludwig-Maximilians-Universität München,lmu.de,Andras.Csanadi@psy.lmu.de,4,import2016short/141,Germany
 787,Ludwig-Maximilians-Universität München,lmu.de,christian.ghanem@psy.lmu.de,5,import2016short/141,Germany
@@ -798,10 +798,10 @@
 796,Shizuoka University,shizuoka.ac.jp,gs15031@s.inf.shizuoka.ac.jp,0,import2016short/114,Japan
 797,Shizuoka University,shizuoka.ac.jp,joshima@inf.shizuoka.ac.jp,1,import2016short/114,Japan
 798,Shizuoka University,shizuoka.ac.jp,roshima@inf.shizuoka.ac.jp,2,import2016short/114,Japan
-799,,gmail.com,zaza.kabayadondo@gmail.com,0,import2016short/113,
-800,,cefet-rj.br,glauco.silva@cefet-rj.br,0,import2016short/147,Brazil
-801,,cefet-rj.br,marcilia.barcellos@cefet-rj.br,1,import2016short/147,Brazil
-802,,cefet-rj.br,elisabeth.souza@cefet-rj.br,2,import2016short/147,Brazil
+799,gmail,gmail.com,zaza.kabayadondo@gmail.com,0,import2016short/113,
+800,cefet-rj,cefet-rj.br,glauco.silva@cefet-rj.br,0,import2016short/147,Brazil
+801,cefet-rj,cefet-rj.br,marcilia.barcellos@cefet-rj.br,1,import2016short/147,Brazil
+802,cefet-rj,cefet-rj.br,elisabeth.souza@cefet-rj.br,2,import2016short/147,Brazil
 803,Tufts University,tufts.edu,Vasiliki.Laina@tufts.edu,0,import2016short/140,United States
 804,"University of California, Berkeley",berkeley.edu,mwilkers@berkeley.edu,1,import2016short/140,United States
 805,University of Washington,uw.edu,pbell@uw.edu,0,import2016short/176,United States
@@ -833,18 +833,18 @@
 831,"University of California, Los Angeles",ucla.edu,sandoval@gseis.ucla.edu,8,import2016short/171,United States
 832,Hallym University,hallym.ac.kr,heis@hallym.ac.kr,0,import2015short/307,"Korea, Republic of"
 833,Indiana University at Bloomington,indiana.edu,chmelosi@indiana.edu,1,import2015short/307,United States
-834,,uni.no,jo.wake@uni.no,0,import2015short/309,Norway
+834,uni,uni.no,jo.wake@uni.no,0,import2015short/309,Norway
 835,University of Bergen,uib.no,frode.guribye@uib.no,1,import2015short/309,Norway
-836,,uni.no,barbara.wasson@uni.no,2,import2015short/309,Norway
+836,uni,uni.no,barbara.wasson@uni.no,2,import2015short/309,Norway
 837,Pennsylvania State University,psu.edu,mborge@psu.edu,0,import2015short/391,United States
 838,Pennsylvania State University,psu.edu,yuo103@psu.edu,1,import2015short/391,United States
 839,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,2,import2015short/391,United States
-840,,hum.aau.dk,jackd@hum.aau.dk,0,import2015short/150,Denmark
-841,,hum.aau.dk,ryberg@hum.aau.dk,1,import2015short/150,Denmark
+840,hum,hum.aau.dk,jackd@hum.aau.dk,0,import2015short/150,Denmark
+841,hum,hum.aau.dk,ryberg@hum.aau.dk,1,import2015short/150,Denmark
 842,Indiana University at Bloomington,indiana.edu,asmsaleh@indiana.edu,0,import2015short/396,United States
 843,Indiana University at Bloomington,indiana.edu,jdanish@indiana.edu,1,import2015short/396,United States
 844,"University of California, Los Angeles",ucla.edu,enyedy@gseis.ucla.edu,2,import2015short/396,United States
-845,,gmail.com,christine.lee.ucla@gmail.com,3,import2015short/396,
+845,gmail,gmail.com,christine.lee.ucla@gmail.com,3,import2015short/396,
 846,University of Hong Kong,hku.hk,yqyang@hku.hk,0,import2015short/192,Hong Kong
 847,University of Hong Kong,hku.hk,vanaalst@hku.hk,1,import2015short/192,Hong Kong
 848,"National Institute of Education (NIE), Singapore",nie.edu.sg,matthew.gaydos@nie.edu.sg,0,import2015short/353,Singapore
@@ -862,19 +862,19 @@
 860,Stockholm University,su.se,chiara@dsv.su.se,0,import2015short/169,Sweden
 861,Stockholm University,su.se,hernwall@dsv.su.se,1,import2015short/169,Sweden
 862,Stockholm University,su.se,jcoll@dsv.su.se,2,import2015short/169,Sweden
-863,Universität Duisburg-Essen,collide.info,ziebarth@collide.info,0,import2015short/364,Germany
+863,Universität Duisburg-Essen,collide.info,ziebarth@collide.info,0,import2015short/364,
 864,Universität Duisburg-Essen,uni-due.de,german.neubaum@uni-due.de,1,import2015short/364,Germany
 865,Universität Duisburg-Essen,uni-due.de,elias.kyewski@uni-due.de,2,import2015short/364,Germany
 866,Universität Duisburg-Essen,uni-due.de,nicole.kraemer@uni-due.de,3,import2015short/364,Germany
-867,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015short/364,Germany
-868,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2015short/364,Germany
+867,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015short/364,
+868,Universität Duisburg-Essen,collide.info,hecking@collide.info,5,import2015short/364,
 869,Universität Duisburg-Essen,uni-due.de,sabrina.eimler@uni-due.de,6,import2015short/364,Germany
-870,,mochi-lab.net,tmochi@mochi-lab.net,0,import2015short/218,
-871,,senshu-u.jp,ne220151@senshu-u.jp,1,import2015short/218,Japan
+870,mochi-lab,mochi-lab.net,tmochi@mochi-lab.net,0,import2015short/218,
+871,senshu-u,senshu-u.jp,ne220151@senshu-u.jp,1,import2015short/218,Japan
 872,Tokyo University,u-tokyo.ac.jp,wakimoto@kals.c.u-tokyo.ac.jp,2,import2015short/218,Japan
 873,Kobe University,kobe-u.ac.jp,sasaki@kobe-u.ac.jp,3,import2015short/218,Japan
-874,,kubota-lab.net,kubota@kubota-lab.net,4,import2015short/218,
-875,,suzuki-lab.net,hideyuki@suzuki-lab.net,5,import2015short/218,
+874,kubota-lab,kubota-lab.net,kubota@kubota-lab.net,4,import2015short/218,
+875,suzuki-lab,suzuki-lab.net,hideyuki@suzuki-lab.net,5,import2015short/218,
 876,Dawson College,dawsoncollege.qc.ca,echarles@dawsoncollege.qc.ca,0,import2015short/280,Canada
 877,John Abbott College,johnabbott.qc.ca,lasry@johnabbott.qc.ca,1,import2015short/280,Canada
 878,Dawson College,dawsoncollege.ca,cwhittaker@dawsoncollege.ca,2,import2015short/280,Canada
@@ -884,7 +884,7 @@
 882,John Abbott College,johnabbott.qc.ca,jonathan.guillemette@johnabbott.qc.ca,6,import2015short/280,Canada
 883,Florida State University,fsu.edu,fke@fsu.edu,0,import2015short/287,United States
 884,Florida State University,fsu.edu,pcc03@admin.fsu.edu,1,import2015short/287,United States
-885,,gmail.com,irisfeng83@gmail.com,0,import2015short/414,
+885,gmail,gmail.com,irisfeng83@gmail.com,0,import2015short/414,
 886,University of Hong Kong,hku.hk,ckkchan@hku.hk,1,import2015short/414,Hong Kong
 887,Simon Fraser University,sfu.ca,afw3@sfu.ca,0,import2015short/221,Canada
 888,Simon Fraser University,sfu.ca,aantle@sfu.ca,1,import2015short/221,Canada
@@ -902,13 +902,13 @@
 900,University of Missouri - Columbia,missouri.edu,kimsomi@missouri.edu,1,import2015short/268,United States
 901,University of Missouri - Columbia,missouri.edu,Gogginss@missouri.edu,2,import2015short/268,United States
 902,EPFL - EPF Lausanne,epfl.ch,kshitij.sharma@epfl.ch,0,import2015short/250,Switzerland
-903,,uc.cl,dccaball@uc.cl,1,import2015short/250,Chile
+903,uc,uc.cl,dccaball@uc.cl,1,import2015short/250,Chile
 904,EPFL - EPF Lausanne,epfl.ch,himanshu.verma@epfl.ch,2,import2015short/250,Switzerland
 905,EPFL - EPF Lausanne,epfl.ch,patrick.jermann@epfl.ch,3,import2015short/250,Switzerland
 906,EPFL - EPF Lausanne,epfl.ch,pierre.dillenbourg@epfl.ch,4,import2015short/250,Switzerland
 907,University of Turku,utu.fi,kai.hakkarainen@utu.fi,0,import2015short/1101,Finland
-908,,hotmail.com,bealigorio@hotmail.com,1,import2015short/1101,
-909,,gmail.com,gritella@gmail.com,2,import2015short/1101,
+908,hotmail,hotmail.com,bealigorio@hotmail.com,1,import2015short/1101,
+909,gmail,gmail.com,gritella@gmail.com,2,import2015short/1101,
 910,University of Oslo,uio.no,h.c.arnseth@iped.uio.no,3,import2015short/1101,Norway
 911,University of Oslo,uio.no,a.j.gil@intermedia.uio.no,4,import2015short/1101,Norway
 912,University of Oslo,uio.no,i.h.krange@iped.uio.no,5,import2015short/1101,Norway
@@ -942,22 +942,22 @@
 940,Carnegie Mellon University,cmu.edu,mwen@cs.cmu.edu,12,import2015short/1107,United States
 941,Carnegie Mellon University,cmu.edu,diyiy@cs.cmu.edu,13,import2015short/1107,United States
 942,Ludwig-Maximilians-Universität München,lmu.de,frank.fischer@psy.lmu.de,14,import2015short/1107,Germany
-943,,acm.org,rmartinezmaldonado@acm.org,0,import2015short/189,
+943,acm,acm.org,rmartinezmaldonado@acm.org,0,import2015short/189,
 944,University of Sydney,sydney.edu.au,peter.goodyear@sydney.edu.au,1,import2015short/189,Australia
 945,Universidad de Valladolid,uva.es,yannis@tel.uva.es,2,import2015short/189,Spain
 946,University of Sydney,sydney.edu.au,kate.thompson@sydney.edu.au,3,import2015short/189,Australia
 947,University of Sydney,sydney.edu.au,lucila.carvalho@sydney.edu.au,4,import2015short/189,Australia
 948,EPFL - EPF Lausanne,epfl.ch,luis.prieto@epfl.ch,5,import2015short/189,Switzerland
 949,University of Sydney,sydney.edu.au,martin.parisio@sydney.edu.au,6,import2015short/189,Australia
-950,,iwm-kmrc.de,d.thiemann@iwm-kmrc.de,0,import2015short/315,Germany
-951,,hochbegabung-stuttgart.de,kontakt@hochbegabung-stuttgart.de,1,import2015short/315,Germany
-952,,iwm-kmrc.de,f.hesse@iwm-kmrc.de,2,import2015short/315,Germany
+950,iwm-kmrc,iwm-kmrc.de,d.thiemann@iwm-kmrc.de,0,import2015short/315,Germany
+951,hochbegabung-stuttgart,hochbegabung-stuttgart.de,kontakt@hochbegabung-stuttgart.de,1,import2015short/315,Germany
+952,iwm-kmrc,iwm-kmrc.de,f.hesse@iwm-kmrc.de,2,import2015short/315,Germany
 953,Ruhr-University Bochum,rub.de,christian.hartmann@rub.de,0,import2015short/312,Germany
 954,Ruhr-University Bochum,rub.de,jennifer.angersbach@rub.de,1,import2015short/312,Germany
 955,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,2,import2015short/312,Germany
 956,State University of New York at Albany,albany.edu,dtao@albany.edu,0,import2015short/382,United States
 957,State University of New York at Albany,albany.edu,jzhang1@albany.edu,1,import2015short/382,United States
-958,,gmail.com,huangy.08@gmail.com,2,import2015short/382,
+958,gmail,gmail.com,huangy.08@gmail.com,2,import2015short/382,
 959,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,0,import2015short/340,United States
 960,Stanford University,stanford.edu,schneibe@stanford.edu,0,import2015short/172,United States
 961,Stanford University,stanford.edu,paulob@stanford.edu,1,import2015short/172,United States
@@ -966,11 +966,11 @@
 964,Indiana University at Bloomington,indiana.edu,jdanish@indiana.edu,0,import2015short/313,United States
 965,"University of California, Los Angeles",ucla.edu,enyedy@gseis.ucla.edu,1,import2015short/313,United States
 966,Indiana University at Bloomington,indiana.edu,asmsaleh@indiana.edu,2,import2015short/313,United States
-967,,gmail.com,christine.lee.ucla@gmail.com,3,import2015short/313,
+967,gmail,gmail.com,christine.lee.ucla@gmail.com,3,import2015short/313,
 968,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,4,import2015short/313,United States
 969,National Chengchi University,nccu.edu.tw,hyhong@nccu.edu.tw,0,import2015short/126,Taiwan
 970,"National Institute of Education (NIE), Singapore",nie.edu.sg,chingsing.chai@nie.edu.sg,1,import2015short/126,Singapore
-971,,gmail.com,barryhuck@gmail.com,2,import2015short/126,
+971,gmail,gmail.com,barryhuck@gmail.com,2,import2015short/126,
 972,"University of California, Davis",ucdavis.edu,lahardy@ucdavis.edu,0,import2015short/395,United States
 973,"University of California, Davis",ucdavis.edu,twhite@ucdavis.edu,1,import2015short/395,United States
 974,Hebrew University of Jerusalem,huji.ac.il,rotem.abdu@huji.ac.il,0,import2015short/154,Israel
@@ -988,14 +988,14 @@
 986,Massachusetts Institute of Technology,mit.edu,jsheldon@mit.edu,4,import2015short/165,United States
 987,Massachusetts Institute of Technology,mit.edu,djwendel@mit.edu,5,import2015short/165,United States
 988,Massachusetts Institute of Technology,mit.edu,ilanasch@mit.edu,6,import2015short/165,United States
-989,,govsacademy.org,hscheintaub@govsacademy.org,7,import2015short/165,
-990,,gmail.com,oztokm@gmail.com,8,import2015short/165,
+989,govsacademy,govsacademy.org,hscheintaub@govsacademy.org,7,import2015short/165,
+990,gmail,gmail.com,oztokm@gmail.com,8,import2015short/165,
 991,University of Pennsylvania,upenn.edu,echad@sas.upenn.edu,9,import2015short/165,United States
-992,Universität Duisburg-Essen,collide.info,manske@collide.info,0,import2015short/191,Germany
-993,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2015short/191,Germany
-994,Universität Duisburg-Essen,collide.info,chounta@collide.info,2,import2015short/191,Germany
-995,,gmail.com,soeren.werneburg@gmail.com,3,import2015short/191,
-996,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015short/191,Germany
+992,Universität Duisburg-Essen,collide.info,manske@collide.info,0,import2015short/191,
+993,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2015short/191,
+994,Universität Duisburg-Essen,collide.info,chounta@collide.info,2,import2015short/191,
+995,gmail,gmail.com,soeren.werneburg@gmail.com,3,import2015short/191,
+996,Universität Duisburg-Essen,collide.info,hoppe@collide.info,4,import2015short/191,
 997,Dawson College,dawsoncollege.qc.ca,sdapollonia@place.dawsoncollege.qc.ca,0,import2015short/136,Canada
 998,Dawson College,dawsoncollege.qc.ca,skunicki@place.dawsoncollege.qc.ca,1,import2015short/136,Canada
 999,John Abbott College,johnabbott.qc.ca,murray.bronet@johnabbott.qc.ca,2,import2015short/136,Canada
@@ -1003,9 +1003,9 @@
 1001,Stanford University,stanford.edu,buben@stanford.edu,1,import2015short/335,United States
 1002,Stanford University,stanford.edu,paulob@stanford.edu,2,import2015short/335,United States
 1003,Eberhard-Karls-Universität Tübingen,uni-tuebingen.de,michael.schubert@uni-tuebingen.de,0,import2015short/163,Germany
-1004,,iwm-kmrc.de,j.buder@iwm-kmrc.de,1,import2015short/163,Germany
+1004,iwm-kmrc,iwm-kmrc.de,j.buder@iwm-kmrc.de,1,import2015short/163,Germany
 1005,Universität Konstanz,uni-konstanz.de,roman.raedle@uni-konstanz.de,2,import2015short/163,Germany
-1006,,iwm-kmrc.de,f.hesse@iwm-kmrc.de,3,import2015short/163,Germany
+1006,iwm-kmrc,iwm-kmrc.de,f.hesse@iwm-kmrc.de,3,import2015short/163,Germany
 1007,"Ohio State University, Columbus",osu.edu,xie.359@osu.edu,0,import2015short/197,United States
 1008,"Ohio State University, Columbus",osu.edu,sun.272@osu.edu,1,import2015short/197,United States
 1009,"Ohio State University, Columbus",osu.edu,lu.962@osu.edu,2,import2015short/197,United States
@@ -1017,8 +1017,8 @@
 1015,Indiana University at Bloomington,indiana.edu,cgeorgen@indiana.edu,0,import2015short/393,United States
 1016,Indiana University at Bloomington,indiana.edu,secdunc@indiana.edu,1,import2015short/393,United States
 1017,Indiana University at Bloomington,indiana.edu,luccook@indiana.edu,2,import2015short/393,United States
-1018,,baddesigner.us,jeffRick@badDesigner.us,0,import2015short/334,United States
-1019,,kopp-sb.de,daniel.kopp@kopp-sb.de,1,import2015short/334,Germany
+1018,baddesigner,baddesigner.us,jeffRick@badDesigner.us,0,import2015short/334,United States
+1019,kopp-sb,kopp-sb.de,daniel.kopp@kopp-sb.de,1,import2015short/334,Germany
 1020,Universität des Saarlandes,uni-saarland.de,s9ljschm@stud.uni-saarland.de,2,import2015short/334,Germany
 1021,Universität des Saarlandes,uni-saarland.de,a.weinberger@edutech.uni-saarland.de,3,import2015short/334,Germany
 1022,University of Oslo,uio.no,crina.damsa@iped.uio.no,0,import2015short/139,Norway
@@ -1034,16 +1034,16 @@
 1032,Ben-Gurion University of the Negev,bgu.ac.il,itabak@bgu.ac.il,1,import2015short/1110,Israel
 1033,University of Haifa,haifa.ac.il,dbenzvi@univ.haifa.ac.il,2,import2015short/1110,Israel
 1034,University of Haifa,haifa.ac.il,adi.kidron@edtech.haifa.ac.il,3,import2015short/1110,Israel
-1035,,ruppin.ac.il,Meital@ruppin.ac.il,4,import2015short/1110,Israel
+1035,ruppin,ruppin.ac.il,Meital@ruppin.ac.il,4,import2015short/1110,Israel
 1036,Technion - Israel Institute of Technology,technion.ac.il,ayelet@technion.ac.il,5,import2015short/1110,Israel
 1037,University of Haifa,haifa.ac.il,sarit.barzilai@edtech.haifa.ac.il,6,import2015short/1110,Israel
 1038,Ben-Gurion University of the Negev,bgu.ac.il,bramiu@post.bgu.ac.il,7,import2015short/1110,Israel
-1039,,gmail.com,oshradu@gmail.com,8,import2015short/1110,
+1039,gmail,gmail.com,oshradu@gmail.com,8,import2015short/1110,
 1040,Ben-Gurion University of the Negev,bgu.ac.il,enelly@bgu.ac.il,9,import2015short/1110,Israel
-1041,,gmail.com,kent.carmel@gmail.com,10,import2015short/1110,
-1042,,gmail.com,stlaslo@gmail.com,11,import2015short/1110,
+1041,gmail,gmail.com,kent.carmel@gmail.com,10,import2015short/1110,
+1042,gmail,gmail.com,stlaslo@gmail.com,11,import2015short/1110,
 1043,Technion - Israel Institute of Technology,technion.ac.il,kerenl@technion.ac.il,12,import2015short/1110,Israel
-1044,,rafaeli.net,sheizaf@rafaeli.net,13,import2015short/1110,
+1044,rafaeli,rafaeli.net,sheizaf@rafaeli.net,13,import2015short/1110,
 1045,Technion - Israel Institute of Technology,technion.ac.il,rtal@ed.technion.ac.il,14,import2015short/1110,Israel
 1046,University of Haifa,haifa.ac.il,tamar@research.haifa.ac.il,15,import2015short/1110,Israel
 1047,New York University,nyu.edu,tophe@nyu.edu,16,import2015short/1110,United States
@@ -1058,12 +1058,12 @@
 1056,University of Sydney,sydney.edu.au,dwar9402@uni.sydney.edu.au,7,import2015short/1116,Australia
 1057,University of Sydney,sydney.edu.au,peter.goodear@sydney.edu.au,8,import2015short/1116,Australia
 1058,Universidad de Valladolid,uva.es,yannis@tel.uva.es,9,import2015short/1116,Spain
-1059,,it.usyd.edu.au,roberto@it.usyd.edu.au,10,import2015short/1116,Australia
-1060,,gmail.com,gregdyke@gmail.com,11,import2015short/1116,
+1059,usyd,it.usyd.edu.au,roberto@it.usyd.edu.au,10,import2015short/1116,Australia
+1060,gmail,gmail.com,gregdyke@gmail.com,11,import2015short/1116,
 1061,"National Institute of Education (NIE), Singapore",nie.edu.sg,wenli.chen@nie.edu.sg,0,import2015short/278,Singapore
 1062,"National Institute of Education (NIE), Singapore",nie.edu.sg,cheekit.looi@nie.edu.sg,1,import2015short/278,Singapore
 1063,"National Institute of Education (NIE), Singapore",nie.edu.sg,wenting.xie@nie.edu.sg,2,import2015short/278,Singapore
-1064,,hotmail.com,happywenyun@hotmail.com,3,import2015short/278,
+1064,hotmail,hotmail.com,happywenyun@hotmail.com,3,import2015short/278,
 1065,Christian-Albrechts-Universität Kiel,uni-kiel.de,ruhl@paedagogik.uni-kiel.de,0,import2015short/276,Germany
 1066,University of Illinois at Chicago,uic.edu,moher@uic.edu,0,import2015short/1118,United States
 1067,University of Toronto,utoronto.ca,jim.slotta@utoronto.ca,1,import2015short/1118,Canada
@@ -1093,8 +1093,8 @@
 1091,University of Jyväskylä,jyu.fi,johanna.poysa-tarhonen@jyu.fi,1,import2015short/236,Finland
 1092,University of Oulu,oulu.fi,sanna.jarvela@oulu.fi,2,import2015short/236,Finland
 1093,University of Jyväskylä,jyu.fi,paivi.m.hakkinen@jyu.fi,3,import2015short/236,Finland
-1094,,imag.fr,Patrick.Wang@imag.fr,0,import2015short/254,France
-1095,,imag.fr,Pierre.Tchounikine@imag.fr,1,import2015short/254,France
+1094,imag,imag.fr,Patrick.Wang@imag.fr,0,import2015short/254,France
+1095,imag,imag.fr,Pierre.Tchounikine@imag.fr,1,import2015short/254,France
 1096,Ecole Normale Supérieure de Lyon,ens-lyon.fr,Matthieu.Quignard@ens-lyon.fr,2,import2015short/254,France
 1097,Ludwig-Maximilians-Universität München,lmu.de,Esther.Tan@psy.lmu.de,0,import2015short/262,Germany
 1098,Pohang University of Science and Technology,postech.ac.kr,hyojeongso@postech.ac.kr,1,import2015short/262,"Korea, Republic of"
@@ -1104,11 +1104,11 @@
 1102,EPFL - EPF Lausanne,epfl.ch,pierre.dillenbourg@epfl.ch,3,import2015short/206,Switzerland
 1103,"University of Dublin, Trinity College",tcd.ie,boyleb5@tcd.ie,0,import2015short/264,Ireland
 1104,"University of Dublin, Trinity College",tcd.ie,macu.arnedillo@tcd.ie,1,import2015short/264,Ireland
-1105,,mada.org.qa,azahid@mada.org.qa,2,import2015short/264,Qatar
-1106,,ets.org,jhao@ets.org,0,import2015short/297,
-1107,,ets.org,liu001@ets.org,1,import2015short/297,
-1108,,ets.org,avondavier@ets.org,2,import2015short/297,
-1109,,ets.org,pkyllonen@ets.org,3,import2015short/297,
+1105,mada,mada.org.qa,azahid@mada.org.qa,2,import2015short/264,Qatar
+1106,ets,ets.org,jhao@ets.org,0,import2015short/297,
+1107,ets,ets.org,liu001@ets.org,1,import2015short/297,
+1108,ets,ets.org,avondavier@ets.org,2,import2015short/297,
+1109,ets,ets.org,pkyllonen@ets.org,3,import2015short/297,
 1110,University of Pennsylvania,upenn.edu,gric@upenn.edu,0,import2015short/403,United States
 1111,New York University,nyu.edu,tophe@nyu.edu,1,import2015short/403,United States
 1112,Carnegie Mellon University,cmu.edu,ferschke@cs.cmu.edu,0,import2015short/404,United States
@@ -1117,7 +1117,7 @@
 1115,Carnegie Mellon University,cmu.edu,diyiy@cs.cmu.edu,3,import2015short/404,United States
 1116,Carnegie Mellon University,cmu.edu,yul1@cs.cmu.edu,4,import2015short/404,United States
 1117,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,5,import2015short/404,United States
-1118,,domain.com,USER@DOMAIN.COM,6,import2015short/404,
+1118,domain,domain.com,USER@DOMAIN.COM,6,import2015short/404,
 1119,ETHZ - ETH Zurich,ethz.ch,anne.deiglmayr@ifv.gess.ethz.ch,0,import2015short/252,Switzerland
 1120,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,1,import2015short/252,Germany
 1121,Pädagogische Hochschule Freiburg,ph-freiburg.de,katharina.loibl@ph-freiburg.de,2,import2015short/252,Germany
@@ -1126,9 +1126,9 @@
 1124,University of Toronto,utoronto.ca,rebecca.cober@mail.utoronto.ca,2,import2015short/1103,Canada
 1125,University of Toronto,utoronto.ca,jslotta@oise.utoronto.ca,3,import2015short/1103,Canada
 1126,Stanford University,stanford.edu,forssell@stanford.edu,4,import2015short/1103,United States
-1127,,illnois.edu,misrael@illnois.edu,5,import2015short/1103,
-1128,,durham.ac.uk,andrew.joyce-gibbons@durham.ac.uk,6,import2015short/1103,United Kingdom
-1129,,it.usyd.edu.au,roberto@it.usyd.edu.au,7,import2015short/1103,Australia
+1127,illnois,illnois.edu,misrael@illnois.edu,5,import2015short/1103,
+1128,durham,durham.ac.uk,andrew.joyce-gibbons@durham.ac.uk,6,import2015short/1103,United Kingdom
+1129,usyd,it.usyd.edu.au,roberto@it.usyd.edu.au,7,import2015short/1103,Australia
 1130,University of Toronto,utoronto.ca,richard.messina@utoronto.ca,8,import2015short/1103,Canada
 1131,University of Toronto,utoronto.ca,julia.murraye@utoronto.ca,9,import2015short/1103,Canada
 1132,University of Toronto,utoronto.ca,ben.peebles@utoronto.ca,10,import2015short/1103,Canada
@@ -1140,8 +1140,8 @@
 1138,University of Wisconsin - Madison,wisc.edu,puntambekar@education.wisc.edu,2,import2015short/320,United States
 1139,Ludwig-Maximilians-Universität München,lmu.de,nic.nistor@lmu.de,0,import2015short/141,Germany
 1140,University Politehnica of Bucharest,pub.ro,mihai.dascalu@cs.pub.ro,1,import2015short/141,Romania
-1141,,unibw.de,christian.tarnai@unibw.de,2,import2015short/141,Germany
-1142,,gmx.de,nicolas.bresser@gmx.de,3,import2015short/141,Germany
+1141,unibw,unibw.de,christian.tarnai@unibw.de,2,import2015short/141,Germany
+1142,gmx,gmx.de,nicolas.bresser@gmx.de,3,import2015short/141,Germany
 1143,University Politehnica of Bucharest,pub.ro,stefan.trausan@cs.pub.ro,4,import2015short/141,Romania
 1144,Technische Universität München,tum.de,freydis.vogel@tum.de,0,import2015short/373,Germany
 1145,Ludwig-Maximilians-Universität München,lmu.de,ingo.kollar@psy.lmu.de,1,import2015short/373,Germany
@@ -1178,28 +1178,28 @@
 1176,University of Pennsylvania,upenn.edu,yoonsa@gse.upenn.edu,0,import2015short/176,United States
 1177,University of Pennsylvania,upenn.edu,jkoehl@gse.upenn.edu,1,import2015short/176,United States
 1178,University of Pennsylvania,upenn.edu,emmaa@gse.upenn.edu,2,import2015short/176,United States
-1179,,gmail.com,oztokm@gmail.com,3,import2015short/176,
+1179,gmail,gmail.com,oztokm@gmail.com,3,import2015short/176,
 1180,Massachusetts Institute of Technology,mit.edu,klopfer@mit.edu,4,import2015short/176,United States
 1181,Massachusetts Institute of Technology,mit.edu,ilanasch@mit.edu,5,import2015short/176,United States
 1182,Massachusetts Institute of Technology,mit.edu,djwendel@mit.edu,6,import2015short/176,United States
 1183,Massachusetts Institute of Technology,mit.edu,jsheldon@mit.edu,7,import2015short/176,United States
-1184,,govsacademy.org,hscheintaub@govsacademy.org,8,import2015short/176,
+1184,govsacademy,govsacademy.org,hscheintaub@govsacademy.org,8,import2015short/176,
 1185,Drexel University,drexel.edu,khoo@drexel.edu,0,import2015short/171,United States
-1186,,gerrystahl.net,Gerry@GerryStahl.net,1,import2015short/171,
+1186,gerrystahl,gerrystahl.net,Gerry@GerryStahl.net,1,import2015short/171,
 1187,State University of New York at Albany,albany.edu,jzhang1@albany.edu,0,import2015short/185,United States
 1188,State University of New York at Albany,albany.edu,mchen@albany.edu,1,import2015short/185,United States
 1189,State University of New York at Albany,albany.edu,dtao@albany.edu,2,import2015short/185,United States
 1190,State University of New York at Albany,albany.edu,ysun@albany.edu,3,import2015short/185,United States
-1191,,gmail.com,edujyl@gmail.com,4,import2015short/185,
-1192,,gmail.com,djudson1@gmail.com,5,import2015short/185,
+1191,gmail,gmail.com,edujyl@gmail.com,4,import2015short/185,
+1192,gmail,gmail.com,djudson1@gmail.com,5,import2015short/185,
 1193,University of Toronto,utoronto.ca,leanne.ma@mail.utoronto.ca,0,import2017/61,Canada
-1194,,moe.gov.sg,TAN@moe.gov.sg,1,import2017/61,Singapore
-1195,,moe.gov.sg,Lee@moe.gov.sg,2,import2017/61,Singapore
-1196,,moe.edu.sg,kamsan@moe.edu.sg,3,import2017/61,Singapore
+1194,moe,moe.gov.sg,TAN@moe.gov.sg,1,import2017/61,Singapore
+1195,moe,moe.gov.sg,Lee@moe.gov.sg,2,import2017/61,Singapore
+1196,moe,moe.edu.sg,kamsan@moe.edu.sg,3,import2017/61,Singapore
 1197,University of Illinois at Chicago,uic.edu,rharsl2@uic.edu,0,import2017/95,United States
 1198,University of Illinois at Chicago,uic.edu,bdieugen@uic.edu,1,import2017/95,United States
 1199,University of Illinois at Chicago,uic.edu,ngreen21@uic.edu,2,import2017/95,United States
-1200,,fossati.us,davide@fossati.us,3,import2017/95,United States
+1200,fossati,fossati.us,davide@fossati.us,3,import2017/95,United States
 1201,Indiana University at Bloomington,indiana.edu,jeschamb@indiana.edu,0,import2017/59,United States
 1202,Indiana University at Bloomington,indiana.edu,chemelosi@indiana.edu,1,import2017/59,United States
 1203,Hallym University,hallym.ac.kr,heis@hallym.ac.kr,2,import2017/59,"Korea, Republic of"
@@ -1214,7 +1214,7 @@
 1212,University of Illinois at Chicago,uic.edu,mmylui@uic.edu,0,import2017/66,United States
 1213,University of Illinois at Chicago,uic.edu,moher@uic.edu,1,import2017/66,United States
 1214,"University of California, Berkeley",berkeley.edu,lauren.applebaum@berkeley.edu,0,import2017/104,United States
-1215,,gmail.com,kyle.w.fricke@gmail.com,1,import2017/104,
+1215,gmail,gmail.com,kyle.w.fricke@gmail.com,1,import2017/104,
 1216,"University of California, Berkeley",berkeley.edu,jonvitale@berkeley.edu,2,import2017/104,United States
 1217,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,3,import2017/104,United States
 1218,University of Minnesota - Twin Cities,umn.edu,skwalker@umn.edu,0,import2017/50,United States
@@ -1229,7 +1229,7 @@
 1227,University Politehnica of Bucharest,pub.ro,traian.rebedea@cs.pub.ro,2,import2017/32,Romania
 1228,University Politehnica of Bucharest,pub.ro,stefan.trausan@cs.pub.ro,3,import2017/32,Romania
 1229,Universität des Saarlandes,uni-saarland.de,d.tsovaltzi@edutech.uni-saarland.de,0,import2017/35,Germany
-1230,,gmail.com,ndutta.uds@gmail.com,1,import2017/35,
+1230,gmail,gmail.com,ndutta.uds@gmail.com,1,import2017/35,
 1231,Universität des Saarlandes,uni-saarland.de,a.weinberger@edutech.uni-saarland.de,2,import2017/35,Germany
 1232,Tufts University,tufts.edu,aditi.wagh@tufts.edu,0,import2017/102,United States
 1233,University of Haifa,haifa.ac.il,stlevy@edu.haifa.ac.il,1,import2017/102,Israel
@@ -1240,36 +1240,36 @@
 1238,Ruhr-University Bochum,rub.de,julia.eberle@rub.de,0,import2017/69,Germany
 1239,Ludwig-Maximilians-Universität München,lmu.de,karsten.stegmann@psy.lmu.de,1,import2017/69,Germany
 1240,Ludwig-Maximilians-Universität München,lmu.de,frank.fischer@psy.lmu.de,2,import2017/69,Germany
-1241,,cpt.univ-mrs.fr,alain.barrat@cpt.univ-mrs.fr,3,import2017/69,France
+1241,univ-mrs,cpt.univ-mrs.fr,alain.barrat@cpt.univ-mrs.fr,3,import2017/69,France
 1242,Ecole Normale Supérieure de Lyon,ens-lyon.fr,kristine.lund@ens-lyon.fr,4,import2017/69,France
 1243,Pennsylvania State University,psu.edu,grichard@psu.edu,0,import2017/56,United States
 1244,Pennsylvania State University,psu.edu,sqg5512@psu.edu,1,import2017/56,United States
 1245,University of Toronto,utoronto.ca,gaoxia.zhu@mail.utoronto.ca,0,import2017/105,Canada
 1246,University of Toronto,utoronto.ca,marlene.scardamalia@utoronto.ca,1,import2017/105,Canada
 1247,University of Toronto,utoronto.ca,a.khanlari@mail.utoronto.ca,2,import2017/105,Canada
-1248,,gmail.com,haipengwan@gmail.com,3,import2017/105,
+1248,gmail,gmail.com,haipengwan@gmail.com,3,import2017/105,
 1249,New York University,nyu.edu,cmatuk@nyu.edu,0,import2017/51,United States
 1250,New York University,nyu.edu,anna.j.zhang@nyu.edu,1,import2017/51,United States
 1251,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,2,import2017/51,United States
 1252,University of Hong Kong,hku.hk,nlaw@hku.hk,0,import2017/58,Hong Kong
 1253,University of Hong Kong,hku.hk,lmliang@hku.hk,1,import2017/58,Hong Kong
-1254,,seltas.edu.hk,ywcheng@seltas.edu.hk,2,import2017/58,Hong Kong
+1254,seltas,seltas.edu.hk,ywcheng@seltas.edu.hk,2,import2017/58,Hong Kong
 1255,University of Michigan - Ann Arbor,umich.edu,rebeccaq@umich.edu,0,import2017/67,United States
 1256,University of Illinois at Chicago,uic.edu,moher@uic.edu,1,import2017/67,United States
 1257,Boston College,bc.edu,slotta@bc.edu,2,import2017/67,United States
-1258,,griffith.edu.au,kate.thompson@griffith.edu.au,0,import2017/93,Australia
+1258,griffith,griffith.edu.au,kate.thompson@griffith.edu.au,0,import2017/93,Australia
 1259,Queensland University of Technology,qut.edu.au,l.dawes@qut.edu.au,1,import2017/93,Australia
 1260,James Cook University of North Queensland,jcu.edu.au,tanya.doyle@jcu.edu.au,2,import2017/93,Australia
-1261,,griffith.edu.au,h.kanasa@griffith.edu.au,3,import2017/93,Australia
+1261,griffith,griffith.edu.au,h.kanasa@griffith.edu.au,3,import2017/93,Australia
 1262,Queensland University of Technology,qut.edu.au,katherine.nickels@qut.edu.au,4,import2017/93,Australia
 1263,Queensland University of Technology,qut.edu.au,d.nutchey@qut.edu.au,5,import2017/93,Australia
 1264,Ruhr-University Bochum,rub.de,julia.erdmann@rub.de,0,import2017/94,Germany
 1265,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,1,import2017/94,Germany
 1266,Ruhr-Universität Bochum,ruhr-uni-bochum.de,christmann@iaw.ruhr-uni-bochum.de,2,import2017/94,Germany
 1267,Ruhr-University Bochum,rub.de,malte.elson@rub.de,3,import2017/94,Germany
-1268,Universität Duisburg-Essen,collide.info,hecking@collide.info,4,import2017/94,Germany
+1268,Universität Duisburg-Essen,collide.info,hecking@collide.info,4,import2017/94,
 1269,Ruhr-Universität Bochum,ruhr-uni-bochum.de,herrmann@iaw.ruhr-uni-bochum.de,5,import2017/94,Germany
-1270,Universität Duisburg-Essen,collide.info,hoppe@collide.info,6,import2017/94,Germany
+1270,Universität Duisburg-Essen,collide.info,hoppe@collide.info,6,import2017/94,
 1271,Universität Duisburg-Essen,uni-due.de,nicole.kraemer@uni-due.de,7,import2017/94,Germany
 1272,Universität Duisburg-Essen,uni-due.de,elias.kyewski@uni-due.de,8,import2017/94,Germany
 1273,Ruhr-University Bochum,rub.de,astrid.wichmann@rub.de,9,import2017/94,Germany
@@ -1290,22 +1290,22 @@
 1288,Central Michigan University,cmich.edu,j.weible@cmich.edu,1,import2017/18,United States
 1289,Central Michigan University,cmich.edu,desch2m@cmich.edu,2,import2017/18,United States
 1290,Université de Lausanne,unil.ch,kshitij.kshitij@unil.ch,0,import2017/27,Switzerland
-1291,,acm.org,iolef@acm.org,1,import2017/27,
-1292,,gmail.com,jamawadi@gmail.com,2,import2017/27,
+1291,acm,acm.org,iolef@acm.org,1,import2017/27,
+1292,gmail,gmail.com,jamawadi@gmail.com,2,import2017/27,
 1293,Norwegian University of Science and Technology,ntnu.no,michailg@idi.ntnu.no,3,import2017/27,Norway
 1294,"University of California, Berkeley",berkeley.edu,bethmcbride@berkeley.edu,0,import2017/9,United States
 1295,"University of California, Berkeley",berkeley.edu,jonvitale@berkeley.edu,1,import2017/9,United States
 1296,"University of California, Berkeley",berkeley.edu,lauren.applebaum@berkeley.edu,2,import2017/9,United States
 1297,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,3,import2017/9,United States
 1298,Shizuoka University,shizuoka.ac.jp,joshima@inf.shizuoka.ac.jp,0,import2017/11,Japan
-1299,,aiit.ac.jp,ohsaki-ayano@aiit.ac.jp,1,import2017/11,Japan
-1300,,gmail.com,y119y.b2.226@gmail.com,2,import2017/11,
+1299,aiit,aiit.ac.jp,ohsaki-ayano@aiit.ac.jp,1,import2017/11,Japan
+1300,gmail,gmail.com,y119y.b2.226@gmail.com,2,import2017/11,
 1301,Shizuoka University,shizuoka.ac.jp,roshima@inf.shizuoka.ac.jp,3,import2017/11,Japan
 1302,Carnegie Mellon University,cmu.edu,xuwang@cs.cmu.edu,0,import2017/7,United States
 1303,Carnegie Mellon University,cmu.edu,mwen@cs.cmu.edu,1,import2017/7,United States
 1304,Carnegie Mellon University,cmu.edu,cprose@cs.cmu.edu,2,import2017/7,United States
 1305,University of Pennsylvania,upenn.edu,parkmi@gse.upenn.edu,0,import2017/29,United States
-1306,,gmail.com,ejanderso@gmail.com,1,import2017/29,
+1306,gmail,gmail.com,ejanderso@gmail.com,1,import2017/29,
 1307,University of Pennsylvania,upenn.edu,yoonsa@upenn.edu,2,import2017/29,United States
 1308,Carnegie Mellon University,cmu.edu,jkolsen@cs.cmu.edu,0,import2017/16,United States
 1309,Ruhr-University Bochum,rub.de,nikol.rummel@rub.de,1,import2017/16,Germany
@@ -1327,22 +1327,22 @@
 1325,University of Wisconsin - Madison,wisc.edu,ndmartin@wisc.edu,0,import2017/45,United States
 1326,University of Wisconsin - Madison,wisc.edu,gnesdilow@wisc.edu,1,import2017/45,United States
 1327,University of Wisconsin - Madison,wisc.edu,puntambekar@education.wisc.edu,2,import2017/45,United States
-1328,,moe.edu.sg,Ng@moe.edu.sg,0,import2017/111,Singapore
-1329,,moe.gov.sg,lee@moe.gov.sg,1,import2017/111,Singapore
-1330,,schools.gov.sg,sedik@schools.gov.sg,2,import2017/111,Singapore
+1328,moe,moe.edu.sg,Ng@moe.edu.sg,0,import2017/111,Singapore
+1329,moe,moe.gov.sg,lee@moe.gov.sg,1,import2017/111,Singapore
+1330,schools,schools.gov.sg,sedik@schools.gov.sg,2,import2017/111,Singapore
 1331,"National Institute of Education (NIE), Singapore",nie.edu.sg,Yuling.lee@nie.edu.sg,3,import2017/111,Singapore
 1332,University of Minnesota - Twin Cities,umn.edu,vanm0034@umn.edu,0,import2017/73,United States
 1333,University of Minnesota - Twin Cities,umn.edu,keisha@umn.edu,1,import2017/73,United States
-1334,,ets.org,lliu001@ets.org,0,import2017/118,
-1335,,ets.org,jhao@ets.org,1,import2017/118,
-1336,,ets.org,jandrews@ets.org,2,import2017/118,
-1337,,ets.org,mzhu@ets.org,3,import2017/118,
-1338,,ets.org,rmislevy@ets.org,4,import2017/118,
-1339,,ets.org,pkyllonen@ets.org,5,import2017/118,
-1340,,act.org,alina.vondavier@act.org,6,import2017/118,
-1341,,gmail.com,ataride@gmail.com,7,import2017/118,
+1334,ets,ets.org,lliu001@ets.org,0,import2017/118,
+1335,ets,ets.org,jhao@ets.org,1,import2017/118,
+1336,ets,ets.org,jandrews@ets.org,2,import2017/118,
+1337,ets,ets.org,mzhu@ets.org,3,import2017/118,
+1338,ets,ets.org,rmislevy@ets.org,4,import2017/118,
+1339,ets,ets.org,pkyllonen@ets.org,5,import2017/118,
+1340,act,act.org,alina.vondavier@act.org,6,import2017/118,
+1341,gmail,gmail.com,ataride@gmail.com,7,import2017/118,
 1342,Universidade de São Paulo,usp.br,thalesam@icmc.usp.br,8,import2017/118,Brazil
-1343,,gmail.com,art.graesser@gmail.com,9,import2017/118,
+1343,gmail,gmail.com,art.graesser@gmail.com,9,import2017/118,
 1344,University of Pennsylvania,upenn.edu,noora@gse.upenn.edu,0,import2017/87,United States
 1345,University of Pennsylvania,upenn.edu,jshim@gse.upenn.edu,1,import2017/87,United States
 1346,University of Pennsylvania,upenn.edu,yoonsa@upenn.edu,2,import2017/87,United States
@@ -1353,17 +1353,17 @@
 1351,University of Pennsylvania,upenn.edu,kafai@upenn.edu,4,import2017/80,United States
 1352,Indiana University at Bloomington,indiana.edu,akeune@indiana.edu,0,import2017/74,United States
 1353,Indiana University at Bloomington,indiana.edu,kpeppler@indiana.edu,1,import2017/74,United States
-1354,,gmail.com,haipengwan@gmail.com,0,import2017/6,
-1355,,163.com,wangqi.20080906@163.com,1,import2017/6,
+1354,gmail,gmail.com,haipengwan@gmail.com,0,import2017/6,
+1355,163,163.com,wangqi.20080906@163.com,1,import2017/6,
 1356,Beijing Normal University,bnu.edu.cn,yusq@bnu.edu.cn,2,import2017/6,China
 1357,University of Wisconsin - Madison,wisc.edu,cldornfeld@wisc.edu,0,import2017/28,United States
 1358,University of Wisconsin - Madison,wisc.edu,nzhao23@wisc.edu,1,import2017/28,United States
 1359,University of Wisconsin - Madison,wisc.edu,puntambekar@education.wisc.edu,2,import2017/28,United States
 1360,Georgia State University,gsu.edu,scrossley@gsu.edu,0,import2017/17,United States
 1361,University Politehnica of Bucharest,pub.ro,mihai.dascalu@cs.pub.ro,1,import2017/17,Romania
-1362,,gmail.com,dsmcnamara1@gmail.com,2,import2017/17,
-1363,,gmail.com,ryanshaunbaker@gmail.com,3,import2017/17,
-1364,,gmail.com,trausan@gmail.com,4,import2017/17,
+1362,gmail,gmail.com,dsmcnamara1@gmail.com,2,import2017/17,
+1363,gmail,gmail.com,ryanshaunbaker@gmail.com,3,import2017/17,
+1364,gmail,gmail.com,trausan@gmail.com,4,import2017/17,
 1365,Hebrew University of Jerusalem,huji.ac.il,asterhan@huji.ac.il,0,import2017/10,Israel
 1366,Hebrew University of Jerusalem,huji.ac.il,Edith.Bouton@mail.huji.ac.il,1,import2017/10,Israel
 1367,George Mason University,gmu.edu,hfake@gmu.edu,0,import2017/19,United States
@@ -1372,13 +1372,13 @@
 1370,Stanford University,stanford.edu,rldavis@stanford.edu,0,import2017/26,United States
 1371,Harvard University,harvard.edu,schneider@gse.harvard.edu,1,import2017/26,United States
 1372,Stanford University,stanford.edu,paulob@stanford.edu,2,import2017/26,United States
-1373,,gmail.com,benrydal@gmail.com,0,import2017/8,
+1373,gmail,gmail.com,benrydal@gmail.com,0,import2017/8,
 1374,Vanderbilt University,vanderbilt.edu,r.hall@vanderbilt.edu,1,import2017/8,United States
-1375,,concord.org,hlee@concord.org,0,import2017/21,
-1376,,concord.org,apallant@concord.org,1,import2017/21,
-1377,,concord.org,spryputniewicz@concord.org,2,import2017/21,
-1378,,concord.org,tlord@concord.org,3,import2017/21,
-1379,,ets.org,lliu@ets.org,4,import2017/21,
+1375,concord,concord.org,hlee@concord.org,0,import2017/21,
+1376,concord,concord.org,apallant@concord.org,1,import2017/21,
+1377,concord,concord.org,spryputniewicz@concord.org,2,import2017/21,
+1378,concord,concord.org,tlord@concord.org,3,import2017/21,
+1379,ets,ets.org,lliu@ets.org,4,import2017/21,
 1380,University of Wisconsin - Madison,wisc.edu,epier@wisc.edu,0,import2017/75,United States
 1381,University of Wisconsin - Madison,wisc.edu,ceford@wisc.edu,1,import2017/75,United States
 1382,University of Wisconsin - Madison,wisc.edu,akaatz@wisc.edu,2,import2017/75,United States
@@ -1390,20 +1390,20 @@
 1388,Pennsylvania State University,psu.edu,xuo2@psu.edu,2,import2017/81,United States
 1389,Pennsylvania State University,psu.edu,mbs15@psu.edu,3,import2017/81,United States
 1390,University of Toronto,utoronto.ca,carl.bereiter@utoronto.ca,0,import2017/119,Canada
-1391,,iwm-tuebingen.de,u.cress@iwm-tuebingen.de,1,import2017/119,Germany
+1391,iwm-tuebingen,iwm-tuebingen.de,u.cress@iwm-tuebingen.de,1,import2017/119,Germany
 1392,Ludwig-Maximilians-Universität München,lmu.de,frank.fischer@psy.lmu.de,2,import2017/119,Germany
 1393,University of Helsinki,helsinki.fi,kai.hakkarainen@helsinki.fi,3,import2017/119,Finland
 1394,University of Toronto,utoronto.ca,marlene.scardamalia@utoronto.ca,4,import2017/119,Canada
 1395,Technische Universität München,tum.de,freydis.vogel@tum.de,5,import2017/119,Germany
-1396,,mochi-lab.net,tmochi@mochi-lab.net,0,import2017/86,
+1396,mochi-lab,mochi-lab.net,tmochi@mochi-lab.net,0,import2017/86,
 1397,Yokohama National University,ynu.ac.jp,t-wakimoto@ynu.ac.jp,1,import2017/86,Japan
 1398,Kobe University,kobe-u.ac.jp,sasaki@kobe-u.ac.jp,2,import2017/86,Japan
-1399,,senshu-u.jp,ne220151@senshu-u.jp,3,import2017/86,Japan
-1400,,umegumi.net,funaoi@umegumi.net,4,import2017/86,
-1401,,kubota-lab.net,kubota@kubota-lab.net,5,import2017/86,
-1402,,suzuki-lab.net,hideyuki@suzuki-lab.net,6,import2017/86,
-1403,,ouj.ac.jp,hkato@ouj.ac.jp,7,import2017/86,Japan
-1404,,umontana.edu,Jingjing.Sun@umontana.edu,0,import2017/72,
+1399,senshu-u,senshu-u.jp,ne220151@senshu-u.jp,3,import2017/86,Japan
+1400,umegumi,umegumi.net,funaoi@umegumi.net,4,import2017/86,
+1401,kubota-lab,kubota-lab.net,kubota@kubota-lab.net,5,import2017/86,
+1402,suzuki-lab,suzuki-lab.net,hideyuki@suzuki-lab.net,6,import2017/86,
+1403,ouj,ouj.ac.jp,hkato@ouj.ac.jp,7,import2017/86,Japan
+1404,umontana,umontana.edu,Jingjing.Sun@umontana.edu,0,import2017/72,
 1405,University of Montana,umt.edu,Julia.Jackson@mso.umt.edu,1,import2017/72,United States
 1406,University of Montana,umt.edu,Mary.Burns@umconnect.umt.edu,2,import2017/72,United States
 1407,University of Illinois at Urbana-Champaign,illinois.edu,csrrca@illinois.edu,3,import2017/72,United States
@@ -1413,19 +1413,19 @@
 1411,Vanderbilt University,vanderbilt.edu,Gautam.Biswas@vanderbilt.edu,3,import2017/44,United States
 1412,McGill University,mcgill.ca,maedeh.kazemi@mail.mcgill.ca,0,import2017/110,Canada
 1413,McGill University,mcgill.ca,susanne.lajoie@mcgill.ca,1,import2017/110,Canada
-1414,,gmail.com,sbishara44@gmail.com,0,import2017/43,
-1415,,gmail.com,jenniferbaltes1@gmail.com,1,import2017/43,
-1416,,gmail.com,tahahamiid@gmail.com,2,import2017/43,
-1417,,gmail.com,taihua.ray.li@gmail.com,3,import2017/43,
+1414,gmail,gmail.com,sbishara44@gmail.com,0,import2017/43,
+1415,gmail,gmail.com,jenniferbaltes1@gmail.com,1,import2017/43,
+1416,gmail,gmail.com,tahahamiid@gmail.com,2,import2017/43,
+1417,gmail,gmail.com,taihua.ray.li@gmail.com,3,import2017/43,
 1418,DePaul University,depaul.edu,dnacu@depaul.edu,4,import2017/43,United States
-1419,,digitalyouthnetwork.org,cmartin@digitalyouthnetwork.org,5,import2017/43,
+1419,digitalyouthnetwork,digitalyouthnetwork.org,cmartin@digitalyouthnetwork.org,5,import2017/43,
 1420,DePaul University,depaul.edu,jgemmell@depaul.edu,6,import2017/43,United States
-1421,,mac.com,chrismacarthur@mac.com,7,import2017/43,
+1421,mac,mac.com,chrismacarthur@mac.com,7,import2017/43,
 1422,DePaul University,depaul.edu,draicu@depaul.edu,8,import2017/43,United States
 1423,DePaul University,depaul.edu,npinkard@depaul.edu,9,import2017/43,United States
 1424,Pennsylvania State University,psu.edu,tyhollett@psu.edu,0,import2017/88,United States
 1425,Utah State University,usu.edu,victor.lee@usu.edu,0,import2017/117,United States
-1426,,uwb.edu,ctzou@uwb.edu,1,import2017/117,
+1426,uwb,uwb.edu,ctzou@uwb.edu,1,import2017/117,
 1427,University of Washington,uw.edu,mbang3@uw.edu,2,import2017/117,United States
 1428,University of Washington,washington.edu,pbell@u.washington.edu,3,import2017/117,United States
 1429,University of Washington,uw.edu,stromhos@uw.edu,4,import2017/117,United States
@@ -1434,18 +1434,18 @@
 1432,University of Pennsylvania,upenn.edu,kafai@upenn.edu,7,import2017/117,United States
 1433,University of Pennsylvania,upenn.edu,otelhan@upenn.edu,8,import2017/117,United States
 1434,Stanford University,stanford.edu,rldavis@stanford.edu,9,import2017/117,United States
-1435,,nwp.org,ksteele@nwp.org,10,import2017/117,
-1436,,gmail.com,barriemichelle@gmail.com,11,import2017/117,
+1435,nwp,nwp.org,ksteele@nwp.org,10,import2017/117,
+1436,gmail,gmail.com,barriemichelle@gmail.com,11,import2017/117,
 1437,Vanderbilt University,vanderbilt.edu,jennifer.kahn@vanderbilt.edu,12,import2017/117,United States
 1438,Vanderbilt University,vanderbilt.edu,rogers.hall@vanderbilt.edu,13,import2017/117,United States
 1439,Utah State University,usu.edu,abigail.phillips@usu.edu,14,import2017/117,United States
 1440,Utah State University,usu.edu,jenny.hansen@aggiemail.usu.edu,15,import2017/117,United States
 1441,Utah State University,usu.edu,mimi.recker@usu.edu,16,import2017/117,United States
 1442,Stanford University,stanford.edu,barronbj@stanford.edu,17,import2017/117,United States
-1443,,hum.aau.dk,rikkem@hum.aau.dk,0,import2017/38,Denmark
-1444,,sof.kk.dk,BS8I@sof.kk.dk,1,import2017/38,Denmark
+1443,hum,hum.aau.dk,rikkem@hum.aau.dk,0,import2017/38,Denmark
+1444,sof,sof.kk.dk,BS8I@sof.kk.dk,1,import2017/38,Denmark
 1445,Utah State University,usu.edu,brian.belland@usu.edu,0,import2017/36,United States
-1446,,gmail.com,1001@gmail.com,1,import2017/36,
+1446,gmail,gmail.com,1001@gmail.com,1,import2017/36,
 1447,Utah State University,usu.edu,dmark.weiss@usu.edu,2,import2017/36,United States
 1448,Utah State University,usu.edu,jacob.piland@aggiemail.usu.edu,3,import2017/36,United States
 1449,Ludwig-Maximilians-Universität München,lmu.de,andras.csanadi@psy.lmu.de,0,import2017/31,Germany
@@ -1455,7 +1455,7 @@
 1453,Ludwig-Maximilians-Universität München,lmu.de,frank.fischer@psy.lmu.de,4,import2017/31,Germany
 1454,Université Laval,ulaval.ca,therese.laferriere@fse.ulaval.ca,0,import2017/91,Canada
 1455,McGill University,mcgill.ca,alain.breuleux@mcgill.ca,1,import2017/91,Canada
-1456,,gmail.com,jessicaannroberts@gmail.com,0,import2017/65,
+1456,gmail,gmail.com,jessicaannroberts@gmail.com,0,import2017/65,
 1457,University of Illinois at Chicago,uic.edu,llyons@uic.edu,1,import2017/65,United States
 1458,Brandeis University,brandeis.edu,wtarimo@brandeis.edu,0,import2017/62,United States
 1459,Brandeis University,brandeis.edu,tjhickey@brandeis.edu,1,import2017/62,United States
@@ -1474,20 +1474,20 @@
 1472,Indiana University at Bloomington,indiana.edu,chmelosi@indiana.edu,1,import2017/54,United States
 1473,"Rutgers University, Newark",rutgers.edu,rebecca.jordan@rutgers.edu,2,import2017/54,United States
 1474,Virginia Polytechnic Institute and State University,vt.edu,btfren@vt.edu,3,import2017/54,United States
-1475,,gmail.com,stevenallangray@gmail.com,4,import2017/54,
+1475,gmail,gmail.com,stevenallangray@gmail.com,4,import2017/54,
 1476,Colorado State University,colostate.edu,Gregory.Newman@colostate.edu,5,import2017/54,United States
 1477,Pennsylvania State University,psu.edu,sxk541@psu.edu,0,import2017/107,United States
 1478,Pennsylvania State University,psu.edu,heather@psu.edu,1,import2017/107,United States
 1479,National Central University,ncu.edu.tw,ytwu@cl.ncu.edu.tw,0,import2017/98,Taiwan
-1480,,gmail.com,wanglr38@gmail.com,1,import2017/98,
-1481,,gmail.com,ttcheng0932@gmail.com,2,import2017/98,
+1480,gmail,gmail.com,wanglr38@gmail.com,1,import2017/98,
+1481,gmail,gmail.com,ttcheng0932@gmail.com,2,import2017/98,
 1482,University of Washington,uw.edu,kht126@uw.edu,0,import2017/53,United States
 1483,University of Washington,uw.edu,dsilvis@uw.edu,1,import2017/53,United States
 1484,University of Florida,ufl.edu,fjrodriguez@ufl.edu,0,import2017/30,United States
 1485,University of Florida,ufl.edu,kimberlymprice@ufl.edu,1,import2017/30,United States
 1486,University of Florida,ufl.edu,keboyer@ufl.edu,2,import2017/30,United States
 1487,Malmö University College,mah.se,daniel.spikol@mah.se,0,import2017/37,Sweden
-1488,,santannapisa.it,e.ruffaldi@santannapisa.it,1,import2017/37,Italy
+1488,santannapisa,santannapisa.it,e.ruffaldi@santannapisa.it,1,import2017/37,Italy
 1489,"University College London, University of London",ucl.ac.uk,m.cukurova@ucl.ac.uk,2,import2017/37,United Kingdom
 1490,University of Wisconsin - Madison,wisc.edu,pwwu@wisc.edu,0,import2017/39,United States
 1491,University of Wisconsin - Madison,wisc.edu,marau@wisc.edu,1,import2017/39,United States
@@ -1504,30 +1504,30 @@
 1502,Pennsylvania State University,psu.edu,suy144@psu.edu,2,import2017/101,United States
 1503,Pennsylvania State University,psu.edu,mborge@psu.edu,3,import2017/101,United States
 1504,State University of New York at Albany,albany.edu,jzhang1@albany.edu,0,import2017/55,United States
-1505,,gmail.com,maria.bogouslavsky@gmail.com,1,import2017/55,
+1505,gmail,gmail.com,maria.bogouslavsky@gmail.com,1,import2017/55,
 1506,State University of New York at Albany,albany.edu,gyuan@albany.edu,2,import2017/55,United States
 1507,University of Washington,uw.edu,jareks@uw.edu,0,import2017/97,United States
 1508,University of Washington,uw.edu,scott2@uw.edu,1,import2017/97,United States
-1509,,gmail.com,ungsang.lee.10@gmail.com,0,import2017/108,
+1509,gmail,gmail.com,ungsang.lee.10@gmail.com,0,import2017/108,
 1510,"University of California, Los Angeles",ucla.edu,kimgomez@ucla.edu,1,import2017/108,United States
 1511,New York University,nyu.edu,alyssa.wise@nyu.edu,0,import2017/63,United States
 1512,Simon Fraser University,sfu.ca,aantle@sfu.ca,1,import2017/63,Canada
 1513,Simon Fraser University,sfu.ca,jlw29@sfu.ca,2,import2017/63,Canada
 1514,University of Michigan - Ann Arbor,umich.edu,joyojeet@umich.edu,0,import2017/64,United States
-1515,,gmail.com,anandhi.viswanathan@gmail.com,1,import2017/64,
+1515,gmail,gmail.com,anandhi.viswanathan@gmail.com,1,import2017/64,
 1516,George Mason University,gmu.edu,johri@gmu.edu,2,import2017/64,United States
-1517,,gnowledge.org,rafikh@gnowledge.org,0,import2017/90,
-1518,,gmail.com,harshitagrawal.iitr@gmail.com,1,import2017/90,
-1519,,gnowledge.org,nagarjun@gnowledge.org,2,import2017/90,
-1520,,gnowledge.org,mrunal@gnowledge.org,3,import2017/90,
+1517,gnowledge,gnowledge.org,rafikh@gnowledge.org,0,import2017/90,
+1518,gmail,gmail.com,harshitagrawal.iitr@gmail.com,1,import2017/90,
+1519,gnowledge,gnowledge.org,nagarjun@gnowledge.org,2,import2017/90,
+1520,gnowledge,gnowledge.org,mrunal@gnowledge.org,3,import2017/90,
 1521,Arizona State University,asu.edu,sviswa10@asu.edu,0,import2017/46,United States
 1522,Arizona State University,asu.edu,kurt.vanlehn@asu.edu,1,import2017/46,United States
-1523,,staff.ncad.ie,healiond@staff.ncad.ie,0,import2017/79,Ireland
-1524,,staff.ncad.ie,russells@staff.ncad.ie,1,import2017/79,Ireland
+1523,staff,staff.ncad.ie,healiond@staff.ncad.ie,0,import2017/79,Ireland
+1524,staff,staff.ncad.ie,russells@staff.ncad.ie,1,import2017/79,Ireland
 1525,"University College London, University of London",ucl.ac.uk,m.cukurova@ucl.ac.uk,2,import2017/79,United Kingdom
 1526,Malmö University College,mah.se,daniel.spikol@mah.se,3,import2017/79,Sweden
-1527,,moe.edu.sg,Melvin@moe.edu.sg,0,import2017/112,Singapore
-1528,,moe.gov.sg,Lee@moe.gov.sg,1,import2017/112,Singapore
+1527,moe,moe.edu.sg,Melvin@moe.edu.sg,0,import2017/112,Singapore
+1528,moe,moe.gov.sg,Lee@moe.gov.sg,1,import2017/112,Singapore
 1529,University of Florida,ufl.edu,mckolu@ufl.edu,0,import2017/41,United States
 1530,University of Florida,ufl.edu,jbwiggi3@ufl.edu,1,import2017/41,United States
 1531,University of Florida,ufl.edu,keboyer@ufl.edu,2,import2017/41,United States
@@ -1540,24 +1540,24 @@
 1538,University of Nottingham,nottingham.ac.uk,sue.cobb@nottingham.ac.uk,5,import2017/115,United Kingdom
 1539,University of Southampton,soton.ac.uk,s.j.parsons@soton.ac.uk,6,import2017/115,United Kingdom
 1540,"University of the West of England, Bristol",uwe.ac.uk,nigel.newbutt@uwe.ac.uk,7,import2017/115,United Kingdom
-1541,,mheducation.com,christine.gouveia@mheducation.com,8,import2017/115,
-1542,,mheducation.com,claire.cook@mheducation.com,9,import2017/115,
-1543,,mheducation.com,annie.snyder@mheducation.com,10,import2017/115,
-1544,,mheducation.com,scott.payne@mheducation.com,11,import2017/115,
-1545,,google.com,jennifermiller@google.com,12,import2017/115,
-1546,,google.com,sbuessing@google.com,13,import2017/115,
+1541,mheducation,mheducation.com,christine.gouveia@mheducation.com,8,import2017/115,
+1542,mheducation,mheducation.com,claire.cook@mheducation.com,9,import2017/115,
+1543,mheducation,mheducation.com,annie.snyder@mheducation.com,10,import2017/115,
+1544,mheducation,mheducation.com,scott.payne@mheducation.com,11,import2017/115,
+1545,google,google.com,jennifermiller@google.com,12,import2017/115,
+1546,google,google.com,sbuessing@google.com,13,import2017/115,
 1547,Massachusetts Institute of Technology,mit.edu,gabef@mit.edu,14,import2017/115,United States
-1548,,gmail.com,wileycorning@gmail.com,15,import2017/115,
+1548,gmail,gmail.com,wileycorning@gmail.com,15,import2017/115,
 1549,Massachusetts Institute of Technology,mit.edu,vylee@mit.edu,16,import2017/115,United States
 1550,Massachusetts Institute of Technology,mit.edu,leixia@mit.edu,17,import2017/115,United States
 1551,Massachusetts Institute of Technology,mit.edu,pattie@media.mit.edu,18,import2017/115,United States
 1552,University of Illinois at Urbana-Champaign,illinois.edu,sbkelly2@illinois.edu,0,import2017/83,United States
 1553,University of Illinois at Urbana-Champaign,illinois.edu,llawrnc2@illinois.edu,1,import2017/83,United States
 1554,University of Illinois at Urbana-Champaign,illinois.edu,mercier@illinois.edu,2,import2017/83,United States
-1555,,gmail.com,beat.schwendimann@gmail.com,0,import2017/77,
-1556,,ugent.be,Bram.DeWever@UGent.be,1,import2017/77,Belgium
+1555,gmail,gmail.com,beat.schwendimann@gmail.com,0,import2017/77,
+1556,ugent,ugent.be,Bram.DeWever@UGent.be,1,import2017/77,Belgium
 1557,University of Jyväskylä,jyu.fi,raija.h.hamalainen@jyu.fi,2,import2017/77,Finland
-1558,,iuffp.swiss,Alberto.Cattaneo@iuffp.swiss,3,import2017/77,
+1558,iuffp,iuffp.swiss,Alberto.Cattaneo@iuffp.swiss,3,import2017/77,
 1559,"University of California, Berkeley",berkeley.edu,jonvitale@berkeley.edu,0,import2017/48,United States
 1560,"University of California, Berkeley",berkeley.edu,lauren.applebaum@berkeley.edu,1,import2017/48,United States
 1561,"University of California, Berkeley",berkeley.edu,mclinn@berkeley.edu,2,import2017/48,United States
@@ -1568,43 +1568,43 @@
 1566,University of Wisconsin - Madison,wisc.edu,arastoopour@wisc.edu,4,import2017/70,United States
 1567,University of Wisconsin - Madison,wisc.edu,dws@education.wisc.edu,5,import2017/70,United States
 1568,University of Toronto,utoronto.ca,a.khanlari@mail.utoronto.ca,0,import2017/84,Canada
-1569,,gmail.com,monicaresendes@gmail.com,1,import2017/84,
+1569,gmail,gmail.com,monicaresendes@gmail.com,1,import2017/84,
 1570,University of Toronto,utoronto.ca,gaoxia.zhu@mail.utoronto.ca,2,import2017/84,Canada
 1571,University of Toronto,utoronto.ca,marlene.scardamala@utoronto.ca,3,import2017/84,Canada
-1572,,kpu.ca,nishan.perera@kpu.ca,0,import2017/24,Canada
+1572,kpu,kpu.ca,nishan.perera@kpu.ca,0,import2017/24,Canada
 1573,New York University,nyu.edu,alyssa.wise@nyu.edu,1,import2017/24,United States
 1574,Indiana University at Bloomington,indiana.edu,laandrad@indiana.edu,0,import2017/23,United States
 1575,Indiana University at Bloomington,indiana.edu,cgeorgen@indiana.edu,1,import2017/23,United States
 1576,Indiana University at Bloomington,indiana.edu,mstucker@indiana.edu,2,import2017/23,United States
 1577,University of Haifa,haifa.ac.il,yhod@edu.haifa.ac.il,0,import2017/15,Israel
-1578,,gmail.com,ornit.sagy@gmail.com,1,import2017/15,
+1578,gmail,gmail.com,ornit.sagy@gmail.com,1,import2017/15,
 1579,"University of Maryland, College Park",umd.edu,jwalkoe@umd.edu,0,import2017/12,United States
 1580,"University of California, Berkeley",berkeley.edu,mwilkers@berkeley.edu,1,import2017/12,United States
 1581,"University of Maryland, College Park",umd.edu,elby@umd.edu,2,import2017/12,United States
 1582,Carnegie Mellon University,cmu.edu,ichounta@cs.cmu.edu,0,import2017/85,United States
 1583,Carnegie Mellon University,cmu.edu,bmclaren@cs.cmu.edu,1,import2017/85,United States
 1584,Carnegie Mellon University,cmu.edu,mharrell@cmu.edu,2,import2017/85,United States
-1585,,wur.nl,omid.noroozi@wur.nl,0,import2017/71,Netherlands
+1585,wur,wur.nl,omid.noroozi@wur.nl,0,import2017/71,Netherlands
 1586,Tarbiat Modares University,modares.ac.ir,j.hatami@modares.ac.ir,1,import2017/71,Iran
-1587,,wur.nl,martin.mulder@wur.nl,2,import2017/71,Netherlands
-1588,,wur.nl,harm.biemans@wur.nl,3,import2017/71,Netherlands
+1587,wur,wur.nl,martin.mulder@wur.nl,2,import2017/71,Netherlands
+1588,wur,wur.nl,harm.biemans@wur.nl,3,import2017/71,Netherlands
 1589,Ben-Gurion University of the Negev,bgu.ac.il,bramiu@post.bgu.ac.il,0,import2017/76,Israel
 1590,Ben-Gurion University of the Negev,bgu.ac.il,itabak@bgu.ac.il,1,import2017/76,Israel
-1591,,gmail.com,kennethallenwright@gmail.com,0,import2017/82,
-1592,,concord.org,apallant@concord.org,1,import2017/82,
-1593,,concord.org,hlee@concord.org,2,import2017/82,
+1591,gmail,gmail.com,kennethallenwright@gmail.com,0,import2017/82,
+1592,concord,concord.org,apallant@concord.org,1,import2017/82,
+1593,concord,concord.org,hlee@concord.org,2,import2017/82,
 1594,Georgia State University,gsu.edu,mrenken@gsu.edu,0,import2017/49,United States
 1595,Georgia State University,gsu.edu,jcohen@gsu.edu,1,import2017/49,United States
 1596,Georgia State University,gsu.edu,tayer1@student.gsu.edu,2,import2017/49,United States
 1597,Georgia State University,gsu.edu,bcalandra@gsu.edu,3,import2017/49,United States
 1598,Georgia State University,gsu.edu,afuqua2@student.gsu.edu,4,import2017/49,United States
 1599,Universität Duisburg-Essen,uni-due.de,marielle.dado@uni-due.de,0,import2017/40,Germany
-1600,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2017/40,Germany
+1600,Universität Duisburg-Essen,collide.info,hecking@collide.info,1,import2017/40,
 1601,Universität Duisburg-Essen,uni-due.de,bodemer@uni-due.de,2,import2017/40,Germany
-1602,Universität Duisburg-Essen,collide.info,hoppe@collide.info,3,import2017/40,Germany
-1603,,aeres.nl,f.de.jong@aeres.nl,0,import2017/114,Netherlands
-1604,,aeres.nl,j.van.den.ende@aeres.nl,1,import2017/114,Netherlands
-1605,,aeres.nl,h.van.Heijst@aeres.nl,2,import2017/114,Netherlands
+1602,Universität Duisburg-Essen,collide.info,hoppe@collide.info,3,import2017/40,
+1603,aeres,aeres.nl,f.de.jong@aeres.nl,0,import2017/114,Netherlands
+1604,aeres,aeres.nl,j.van.den.ende@aeres.nl,1,import2017/114,Netherlands
+1605,aeres,aeres.nl,h.van.Heijst@aeres.nl,2,import2017/114,Netherlands
 1606,Aoyama Gakuin University,aoyama.ac.jp,matsuzawa@si.aoyama.ac.jp,3,import2017/114,Japan
 1607,Open University of the Netherlands,ou.nl,Paul.Kirschner@ou.nl,4,import2017/114,Netherlands
 1608,State University of New York at Albany,albany.edu,jzhang1@albany.edu,5,import2017/114,United States
@@ -1618,36 +1618,36 @@
 1616,University of Hong Kong,hku.hk,vanaalst@hku.hk,13,import2017/114,Hong Kong
 1617,University of Hong Kong,hku.hk,cyang@hku.hk,14,import2017/114,Hong Kong
 1618,Shizuoka University,shizuoka.ac.jp,joshima@inf.shizuoka.ac.jp,15,import2017/114,Japan
-1619,,gmail.com,chmelosi@gmail.com,16,import2017/114,
+1619,gmail,gmail.com,chmelosi@gmail.com,16,import2017/114,
 1620,New York University,nyu.edu,alyssa.wise@nyu.edu,17,import2017/114,United States
 1621,Boston College,bc.edu,slotta@bc.edu,0,import2017/47,United States
 1622,University of Toronto,utoronto.ca,alisa.acosta@utoronto.ca,1,import2017/47,Canada
 1623,University of Toronto,utoronto.ca,marlene.scardamalia@utoronto.ca,0,import2017/113,Canada
-1624,,gmail.com,carl.bereiter@gmail.com,1,import2017/113,
+1624,gmail,gmail.com,carl.bereiter@gmail.com,1,import2017/113,
 1625,Université Laval,ulaval.ca,Therese.Laferriere@fse.ulaval.ca,2,import2017/113,Canada
-1626,,gmail.com,kateb369@gmail.com,3,import2017/113,
-1627,,163.com,charminghappy@163.com,4,import2017/113,
+1626,gmail,gmail.com,kateb369@gmail.com,3,import2017/113,
+1627,163,163.com,charminghappy@163.com,4,import2017/113,
 1628,University of Hong Kong,hku.hk,ckkchan@hku.hk,5,import2017/113,Hong Kong
 1629,University of Minnesota - Twin Cities,umn.edu,chenbd@umn.edu,6,import2017/113,United States
 1630,State University of New York at Albany,albany.edu,mchen@albany.edu,7,import2017/113,United States
-1631,,stoasvilentum.nl,f.de.jong@stoasvilentum.nl,8,import2017/113,Netherlands
-1632,,glm.edu.co,fernandodiazdelcastillo@glm.edu.co,9,import2017/113,Colombia
+1631,stoasvilentum,stoasvilentum.nl,f.de.jong@stoasvilentum.nl,8,import2017/113,Netherlands
+1632,glm,glm.edu.co,fernandodiazdelcastillo@glm.edu.co,9,import2017/113,Colombia
 1633,University of Helsinki,helsinki.fi,kai.hakkarainen@helsinki.fi,10,import2017/113,Finland
 1634,Aoyama Gakuin University,aoyama.ac.jp,matsuzawa@si.aoyama.ac.jp,11,import2017/113,Japan
 1635,University of Prince Edward Island,upei.ca,amcauley@upei.ca,12,import2017/113,Canada
-1636,,me.com,mireiamontane@me.com,13,import2017/113,
-1637,,gmail.com,cesaraanunes@gmail.com,14,import2017/113,
+1636,com,me.com,mireiamontane@me.com,13,import2017/113,
+1637,gmail,gmail.com,cesaraanunes@gmail.com,14,import2017/113,
 1638,Queen's University,queensu.ca,reever@queensu.ca,15,import2017/113,Canada
 1639,University of Helsinki,helsinki.fi,pirita.seitamaa-hakkarainen@helsinki.fi,16,import2017/113,Finland
 1640,Shizuoka University,shizuoka.ac.jp,joshima@inf.shizuoka.ac.jp,17,import2017/113,Japan
 1641,Tokyo University,u-tokyo.ac.jp,shirouzu@coref.u-tokyo.ac.jp,18,import2017/113,Japan
 1642,"National Institute of Education (NIE), Singapore",nie.edu.sg,sengchee.tan@nie.edu.sg,19,import2017/113,Singapore
-1643,,icloud.com,tchewlee@icloud.com,20,import2017/113,
+1643,icloud,icloud.com,tchewlee@icloud.com,20,import2017/113,
 1644,University of Hong Kong,hku.hk,vanaalst@hku.hk,21,import2017/113,Hong Kong
-1645,,uol.com.br,telmavinha@uol.com.br,22,import2017/113,Brazil
+1645,uol,uol.com.br,telmavinha@uol.com.br,22,import2017/113,Brazil
 1646,State University of New York at Albany,albany.edu,jzhang1@albany.edu,23,import2017/113,United States
 1647,Ludwig-Maximilians-Universität München,uni-muenchen.de,nic.nistor@uni-muenchen.de,0,import2017/78,Germany
-1648,,unibw.de,yvonne.serafin@unibw.de,1,import2017/78,Germany
+1648,unibw,unibw.de,yvonne.serafin@unibw.de,1,import2017/78,Germany
 1649,"University of Nebraska, Omaha",unomaha.edu,mefriend@unomaha.edu,0,import2017/13,United States
 1650,Universität des Saarlandes,uni-saarland.de,l.schmitt@edutech.uni-saarland.de,0,import2017/5,Germany
 1651,Universität des Saarlandes,uni-saarland.de,a.weinberger@edutech.uni-saarland.de,1,import2017/5,Germany
