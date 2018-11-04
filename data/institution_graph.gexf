@@ -1,0 +1,1028 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>02/11/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="University of California, Berkeley" label="University of California, Berkeley" />
+      <node id="Utrecht University" label="Utrecht University" />
+      <node id="University of California, Los Angeles" label="University of California, Los Angeles" />
+      <node id="Indiana University at Bloomington" label="Indiana University at Bloomington" />
+      <node id="Indiana University" label="Indiana University" />
+      <node id="University of Twente" label="University of Twente" />
+      <node id="University of Edinburgh" label="University of Edinburgh" />
+      <node id="Stanford University" label="Stanford University" />
+      <node id="EPFL - EPF Lausanne" label="EPFL - EPF Lausanne" />
+      <node id="lancaster" label="lancaster" />
+      <node id="University of Jyväskylä" label="University of Jyväskylä" />
+      <node id="moe" label="moe" />
+      <node id="Ruhr-University Bochum" label="Ruhr-University Bochum" />
+      <node id="University of Wisconsin - Madison" label="University of Wisconsin - Madison" />
+      <node id="University of Miami" label="University of Miami" />
+      <node id="University of Maine System" label="University of Maine System" />
+      <node id="University of Colorado at Boulder" label="University of Colorado at Boulder" />
+      <node id="University of Haifa" label="University of Haifa" />
+      <node id="Tel Aviv University" label="Tel Aviv University" />
+      <node id="walla" label="walla" />
+      <node id="yahoo" label="yahoo" />
+      <node id="Universität Duisburg-Essen" label="Universität Duisburg-Essen" />
+      <node id="University of Rochester" label="University of Rochester" />
+      <node id="neadrochester" label="neadrochester" />
+      <node id="Indian Institute of Technology, Bombay" label="Indian Institute of Technology, Bombay" />
+      <node id="hbcse" label="hbcse" />
+      <node id="University of Oslo" label="University of Oslo" />
+      <node id="San Jose State University" label="San Jose State University" />
+      <node id="University of Technology Sydney" label="University of Technology Sydney" />
+      <node id="Arizona State University" label="Arizona State University" />
+      <node id="Open University" label="Open University" />
+      <node id="maastrichtuniversity" label="maastrichtuniversity" />
+      <node id="Ludwig-Maximilians-Universität München" label="Ludwig-Maximilians-Universität München" />
+      <node id="Universität Augsburg" label="Universität Augsburg" />
+      <node id="University of Southern Denmark - SDU" label="University of Southern Denmark - SDU" />
+      <node id="Ohio State University, Columbus" label="Ohio State University, Columbus" />
+      <node id="Northwestern University" label="Northwestern University" />
+      <node id="bluknowledge" label="bluknowledge" />
+      <node id="sri" label="sri" />
+      <node id="University of Pennsylvania" label="University of Pennsylvania" />
+      <node id="Carnegie Mellon University" label="Carnegie Mellon University" />
+      <node id="Vanderbilt University" label="Vanderbilt University" />
+      <node id="University of Toronto" label="University of Toronto" />
+      <node id="Aoyama Gakuin University" label="Aoyama Gakuin University" />
+      <node id="University of Minnesota - Twin Cities" label="University of Minnesota - Twin Cities" />
+      <node id="Université de Lausanne" label="Université de Lausanne" />
+      <node id="Institute of Education, University of London" label="Institute of Education, University of London" />
+      <node id="Columbia University" label="Columbia University" />
+      <node id="Ben-Gurion University of the Negev" label="Ben-Gurion University of the Negev" />
+      <node id="University of New Mexico" label="University of New Mexico" />
+      <node id="Queen's University" label="Queen's University" />
+      <node id="Massachusetts Institute of Technology" label="Massachusetts Institute of Technology" />
+      <node id="Harvard University" label="Harvard University" />
+      <node id="University of California, Davis" label="University of California, Davis" />
+      <node id="University of Hong Kong" label="University of Hong Kong" />
+      <node id="vanderibilt" label="vanderibilt" />
+      <node id="University of Calgary" label="University of Calgary" />
+      <node id="Pennsylvania State University" label="Pennsylvania State University" />
+      <node id="Utah State University" label="Utah State University" />
+      <node id="National Institute of Education (NIE), Singapore" label="National Institute of Education (NIE), Singapore" />
+      <node id="University of Sydney" label="University of Sydney" />
+      <node id="163" label="163" />
+      <node id="126" label="126" />
+      <node id="East China Normal University" label="East China Normal University" />
+      <node id="University of North Carolina at Greensboro" label="University of North Carolina at Greensboro" />
+      <node id="Michigan State University" label="Michigan State University" />
+      <node id="umiami" label="umiami" />
+      <node id="Open University of the Netherlands" label="Open University of the Netherlands" />
+      <node id="University of Nebraska, Lincoln" label="University of Nebraska, Lincoln" />
+      <node id="University of Washington" label="University of Washington" />
+      <node id="Rutgers University, Newark" label="Rutgers University, Newark" />
+      <node id="State University of New York at Albany" label="State University of New York at Albany" />
+      <node id="Georgia Institute of Technology" label="Georgia Institute of Technology" />
+      <node id="University of Texas at Austin" label="University of Texas at Austin" />
+      <node id="Tufts University" label="Tufts University" />
+      <node id="University of San Diego" label="University of San Diego" />
+      <node id="Vrije Universiteit Amsterdam" label="Vrije Universiteit Amsterdam" />
+      <node id="Technische Universität München" label="Technische Universität München" />
+      <node id="Nanyang Technological University" label="Nanyang Technological University" />
+      <node id="Hallym University" label="Hallym University" />
+      <node id="uni" label="uni" />
+      <node id="University of Bergen" label="University of Bergen" />
+      <node id="hum" label="hum" />
+      <node id="Saint John's University (NY)" label="Saint John's University (NY)" />
+      <node id="University Politehnica of Bucharest" label="University Politehnica of Bucharest" />
+      <node id="Université Pierre Mendes-France (Grenoble II)" label="Université Pierre Mendes-France (Grenoble II)" />
+      <node id="Universität des Saarlandes" label="Universität des Saarlandes" />
+      <node id="Stockholm University" label="Stockholm University" />
+      <node id="Dawson College" label="Dawson College" />
+      <node id="John Abbott College" label="John Abbott College" />
+      <node id="Vanier Colleege" label="Vanier Colleege" />
+      <node id="Simon Fraser University" label="Simon Fraser University" />
+      <node id="Middle East Technical University" label="Middle East Technical University" />
+      <node id="Drexel University" label="Drexel University" />
+      <node id="Shizuoka University" label="Shizuoka University" />
+      <node id="University of Missouri - Columbia" label="University of Missouri - Columbia" />
+      <node id="uc" label="uc" />
+      <node id="Ankara University" label="Ankara University" />
+      <node id="acm" label="acm" />
+      <node id="Universidad de Valladolid" label="Universidad de Valladolid" />
+      <node id="National Chengchi University" label="National Chengchi University" />
+      <node id="Hebrew University of Jerusalem" label="Hebrew University of Jerusalem" />
+      <node id="govsacademy" label="govsacademy" />
+      <node id="University of Oulu" label="University of Oulu" />
+      <node id="baddesigner" label="baddesigner" />
+      <node id="kopp-sb" label="kopp-sb" />
+      <node id="Christian-Albrechts-Universität Kiel" label="Christian-Albrechts-Universität Kiel" />
+      <node id="University of Maryland, College Park" label="University of Maryland, College Park" />
+      <node id="University of Maryland, Baltimore County" label="University of Maryland, Baltimore County" />
+      <node id="Pohang University of Science and Technology" label="Pohang University of Science and Technology" />
+      <node id="New York University" label="New York University" />
+      <node id="University of Illinois at Chicago" label="University of Illinois at Chicago" />
+      <node id="gerrystahl" label="gerrystahl" />
+      <node id="National Taiwan University of Science and Technology" label="National Taiwan University of Science and Technology" />
+      <node id="National Central University" label="National Central University" />
+      <node id="Université Lumiére (Lyon II)" label="Université Lumiére (Lyon II)" />
+      <node id="tophe" label="tophe" />
+      <node id="Copenhagen Business School" label="Copenhagen Business School" />
+      <node id="concord" label="concord" />
+      <node id="Worcester Polytechnic Institute" label="Worcester Polytechnic Institute" />
+      <node id="apprendis" label="apprendis" />
+      <node id="kent" label="kent" />
+      <node id="getdown" label="getdown" />
+      <node id="Minnesota State University, Mankato" label="Minnesota State University, Mankato" />
+      <node id="University of Illinois at Urbana-Champaign" label="University of Illinois at Urbana-Champaign" />
+      <node id="icloud" label="icloud" />
+      <node id="mrook" label="mrook" />
+      <node id="Hong Kong Institute of Education" label="Hong Kong Institute of Education" />
+      <node id="University of North Carolina at Chapel Hill" label="University of North Carolina at Chapel Hill" />
+      <node id="nier" label="nier" />
+      <node id="Tokyo University" label="Tokyo University" />
+      <node id="urawa-h" label="urawa-h" />
+      <node id="University of Helsinki" label="University of Helsinki" />
+      <node id="University of Pittsburgh" label="University of Pittsburgh" />
+      <node id="University of Queensland" label="University of Queensland" />
+      <node id="Göteborg University" label="Göteborg University" />
+      <node id="exeter" label="exeter" />
+      <node id="Saint Louis University" label="Saint Louis University" />
+      <node id="University of Melbourne" label="University of Melbourne" />
+      <node id="University of Central Lancashire" label="University of Central Lancashire" />
+      <node id="terc" label="terc" />
+      <node id="Technion - Israel Institute of Technology" label="Technion - Israel Institute of Technology" />
+      <node id="University of Bologna" label="University of Bologna" />
+      <node id="Rhodes University" label="Rhodes University" />
+      <node id="wessa" label="wessa" />
+      <node id="award" label="award" />
+      <node id="University of Massachusetts Boston" label="University of Massachusetts Boston" />
+      <node id="Ruhr-Universität Bochum" label="Ruhr-Universität Bochum" />
+      <node id="University of Nottingham" label="University of Nottingham" />
+      <node id="ETHZ - ETH Zurich" label="ETHZ - ETH Zurich" />
+      <node id="makered" label="makered" />
+      <node id="exploratorium" label="exploratorium" />
+      <node id="Rochester Institute of Technology" label="Rochester Institute of Technology" />
+      <node id="griffith" label="griffith" />
+      <node id="Warren Wilson College" label="Warren Wilson College" />
+      <node id="Deakin University" label="Deakin University" />
+      <node id="La Trobe University" label="La Trobe University" />
+      <node id="levinsky" label="levinsky" />
+      <node id="University of Michigan - Ann Arbor" label="University of Michigan - Ann Arbor" />
+      <node id="com" label="com" />
+      <node id="Technische Universität Darmstadt" label="Technische Universität Darmstadt" />
+      <node id="tudarmstadt" label="tudarmstadt" />
+      <node id="cefet-rj" label="cefet-rj" />
+      <node id="Clark University" label="Clark University" />
+      <node id="Pädagogische Hochschule Freiburg" label="Pädagogische Hochschule Freiburg" />
+      <node id="mochi-lab" label="mochi-lab" />
+      <node id="senshu-u" label="senshu-u" />
+      <node id="Kobe University" label="Kobe University" />
+      <node id="kubota-lab" label="kubota-lab" />
+      <node id="suzuki-lab" label="suzuki-lab" />
+      <node id="Florida State University" label="Florida State University" />
+      <node id="University of Turku" label="University of Turku" />
+      <node id="hotmail" label="hotmail" />
+      <node id="North Carolina State University" label="North Carolina State University" />
+      <node id="iwm-kmrc" label="iwm-kmrc" />
+      <node id="hochbegabung-stuttgart" label="hochbegabung-stuttgart" />
+      <node id="Eberhard-Karls-Universität Tübingen" label="Eberhard-Karls-Universität Tübingen" />
+      <node id="Universität Konstanz" label="Universität Konstanz" />
+      <node id="ruppin" label="ruppin" />
+      <node id="rafaeli" label="rafaeli" />
+      <node id="usyd" label="usyd" />
+      <node id="City University of New York" label="City University of New York" />
+      <node id="imag" label="imag" />
+      <node id="Ecole Normale Supérieure de Lyon" label="Ecole Normale Supérieure de Lyon" />
+      <node id="University of Dublin, Trinity College" label="University of Dublin, Trinity College" />
+      <node id="mada" label="mada" />
+      <node id="ets" label="ets" />
+      <node id="illnois" label="illnois" />
+      <node id="durham" label="durham" />
+      <node id="unibw" label="unibw" />
+      <node id="gmx" label="gmx" />
+      <node id="fossati" label="fossati" />
+      <node id="University of Georgia" label="University of Georgia" />
+      <node id="West Virginia University" label="West Virginia University" />
+      <node id="Cyprus University of Technology" label="Cyprus University of Technology" />
+      <node id="univ-mrs" label="univ-mrs" />
+      <node id="seltas" label="seltas" />
+      <node id="Boston College" label="Boston College" />
+      <node id="Queensland University of Technology" label="Queensland University of Technology" />
+      <node id="James Cook University of North Queensland" label="James Cook University of North Queensland" />
+      <node id="Central Michigan University" label="Central Michigan University" />
+      <node id="Norwegian University of Science and Technology" label="Norwegian University of Science and Technology" />
+      <node id="aiit" label="aiit" />
+      <node id="George Mason University" label="George Mason University" />
+      <node id="Tallinn University" label="Tallinn University" />
+      <node id="schools" label="schools" />
+      <node id="act" label="act" />
+      <node id="Universidade de São Paulo" label="Universidade de São Paulo" />
+      <node id="Beijing Normal University" label="Beijing Normal University" />
+      <node id="Georgia State University" label="Georgia State University" />
+      <node id="West Chester University of Pennsylvania" label="West Chester University of Pennsylvania" />
+      <node id="iwm-tuebingen" label="iwm-tuebingen" />
+      <node id="Yokohama National University" label="Yokohama National University" />
+      <node id="umegumi" label="umegumi" />
+      <node id="ouj" label="ouj" />
+      <node id="umontana" label="umontana" />
+      <node id="University of Montana" label="University of Montana" />
+      <node id="University College London, University of London" label="University College London, University of London" />
+      <node id="McGill University" label="McGill University" />
+      <node id="DePaul University" label="DePaul University" />
+      <node id="digitalyouthnetwork" label="digitalyouthnetwork" />
+      <node id="mac" label="mac" />
+      <node id="uwb" label="uwb" />
+      <node id="nwp" label="nwp" />
+      <node id="sof" label="sof" />
+      <node id="Université Laval" label="Université Laval" />
+      <node id="Brandeis University" label="Brandeis University" />
+      <node id="Virginia Polytechnic Institute and State University" label="Virginia Polytechnic Institute and State University" />
+      <node id="Colorado State University" label="Colorado State University" />
+      <node id="University of Florida" label="University of Florida" />
+      <node id="Malmö University College" label="Malmö University College" />
+      <node id="santannapisa" label="santannapisa" />
+      <node id="gnowledge" label="gnowledge" />
+      <node id="staff" label="staff" />
+      <node id="Bauhaus Universität Weimar" label="Bauhaus Universität Weimar" />
+      <node id="University of Southampton" label="University of Southampton" />
+      <node id="University of the West of England, Bristol" label="University of the West of England, Bristol" />
+      <node id="mheducation" label="mheducation" />
+      <node id="google" label="google" />
+      <node id="ugent" label="ugent" />
+      <node id="iuffp" label="iuffp" />
+      <node id="kpu" label="kpu" />
+      <node id="wur" label="wur" />
+      <node id="Tarbiat Modares University" label="Tarbiat Modares University" />
+      <node id="aeres" label="aeres" />
+      <node id="École de technologie supérieure, Université du Québec" label="École de technologie supérieure, Université du Québec" />
+      <node id="stoasvilentum" label="stoasvilentum" />
+      <node id="glm" label="glm" />
+      <node id="University of Prince Edward Island" label="University of Prince Edward Island" />
+      <node id="uol" label="uol" />
+      <node id="University of Nebraska, Omaha" label="University of Nebraska, Omaha" />
+      <node id="University of Massachusetts at Lowell" label="University of Massachusetts at Lowell" />
+    </nodes>
+    <edges>
+      <edge id="0" source="University of California, Berkeley" target="Utrecht University" weight="1" />
+      <edge id="1" source="University of California, Berkeley" target="EPFL - EPF Lausanne" weight="2" />
+      <edge id="2" source="University of California, Berkeley" target="Ruhr-University Bochum" weight="1" />
+      <edge id="3" source="University of California, Berkeley" target="University of Wisconsin - Madison" weight="2" />
+      <edge id="4" source="University of California, Berkeley" target="San Jose State University" weight="1" />
+      <edge id="5" source="University of California, Berkeley" target="Northwestern University" weight="1" />
+      <edge id="6" source="University of California, Berkeley" target="Harvard University" weight="1" />
+      <edge id="7" source="University of California, Berkeley" target="University of California, Davis" weight="2" />
+      <edge id="8" source="University of California, Berkeley" target="Utah State University" weight="1" />
+      <edge id="9" source="University of California, Berkeley" target="University of Washington" weight="1" />
+      <edge id="10" source="University of California, Berkeley" target="University of Texas at Austin" weight="1" />
+      <edge id="11" source="University of California, Berkeley" target="Tufts University" weight="2" />
+      <edge id="12" source="University of California, Berkeley" target="University of Maryland, College Park" weight="2" />
+      <edge id="13" source="University of California, Berkeley" target="New York University" weight="4" />
+      <edge id="14" source="University of California, Berkeley" target="University of Illinois at Chicago" weight="1" />
+      <edge id="15" source="University of California, Berkeley" target="Tallinn University" weight="1" />
+      <edge id="16" source="Utrecht University" target="University of Wisconsin - Madison" weight="1" />
+      <edge id="17" source="Utrecht University" target="University of San Diego" weight="1" />
+      <edge id="18" source="Utrecht University" target="Vrije Universiteit Amsterdam" weight="1" />
+      <edge id="19" source="Utrecht University" target="University of Illinois at Chicago" weight="1" />
+      <edge id="20" source="Utrecht University" target="University of Nottingham" weight="1" />
+      <edge id="21" source="Utrecht University" target="Deakin University" weight="1" />
+      <edge id="22" source="Utrecht University" target="La Trobe University" weight="1" />
+      <edge id="23" source="University of California, Los Angeles" target="Indiana University at Bloomington" weight="4" />
+      <edge id="24" source="University of California, Los Angeles" target="Indiana University" weight="1" />
+      <edge id="25" source="University of California, Los Angeles" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="26" source="University of California, Los Angeles" target="East China Normal University" weight="1" />
+      <edge id="27" source="University of California, Los Angeles" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="28" source="University of California, Los Angeles" target="Clark University" weight="1" />
+      <edge id="29" source="Indiana University at Bloomington" target="Indiana University" weight="1" />
+      <edge id="30" source="Indiana University at Bloomington" target="EPFL - EPF Lausanne" weight="1" />
+      <edge id="31" source="Indiana University at Bloomington" target="University of Wisconsin - Madison" weight="1" />
+      <edge id="32" source="Indiana University at Bloomington" target="University of Pennsylvania" weight="2" />
+      <edge id="33" source="Indiana University at Bloomington" target="Carnegie Mellon University" weight="1" />
+      <edge id="34" source="Indiana University at Bloomington" target="University of Toronto" weight="2" />
+      <edge id="35" source="Indiana University at Bloomington" target="Utah State University" weight="1" />
+      <edge id="36" source="Indiana University at Bloomington" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="37" source="Indiana University at Bloomington" target="Rutgers University, Newark" weight="1" />
+      <edge id="38" source="Indiana University at Bloomington" target="Hallym University" weight="3" />
+      <edge id="39" source="Indiana University at Bloomington" target="University of Illinois at Chicago" weight="1" />
+      <edge id="40" source="Indiana University at Bloomington" target="makered" weight="1" />
+      <edge id="41" source="Indiana University at Bloomington" target="Virginia Polytechnic Institute and State University" weight="1" />
+      <edge id="42" source="Indiana University at Bloomington" target="Colorado State University" weight="1" />
+      <edge id="43" source="University of Twente" target="University of Pittsburgh" weight="1" />
+      <edge id="44" source="University of Twente" target="terc" weight="1" />
+      <edge id="45" source="Stanford University" target="EPFL - EPF Lausanne" weight="3" />
+      <edge id="46" source="Stanford University" target="Ruhr-University Bochum" weight="1" />
+      <edge id="47" source="Stanford University" target="sri" weight="1" />
+      <edge id="48" source="Stanford University" target="University of Pennsylvania" weight="1" />
+      <edge id="49" source="Stanford University" target="Vanderbilt University" weight="1" />
+      <edge id="50" source="Stanford University" target="University of Toronto" weight="1" />
+      <edge id="51" source="Stanford University" target="Harvard University" weight="1" />
+      <edge id="52" source="Stanford University" target="Utah State University" weight="1" />
+      <edge id="53" source="Stanford University" target="University of Washington" weight="1" />
+      <edge id="54" source="Stanford University" target="University of Illinois at Chicago" weight="1" />
+      <edge id="55" source="Stanford University" target="University of Illinois at Urbana-Champaign" weight="1" />
+      <edge id="56" source="Stanford University" target="usyd" weight="1" />
+      <edge id="57" source="Stanford University" target="illnois" weight="1" />
+      <edge id="58" source="Stanford University" target="durham" weight="1" />
+      <edge id="59" source="Stanford University" target="uwb" weight="1" />
+      <edge id="60" source="Stanford University" target="nwp" weight="1" />
+      <edge id="61" source="EPFL - EPF Lausanne" target="Ruhr-University Bochum" weight="1" />
+      <edge id="62" source="EPFL - EPF Lausanne" target="University of Wisconsin - Madison" weight="2" />
+      <edge id="63" source="EPFL - EPF Lausanne" target="Northwestern University" weight="2" />
+      <edge id="64" source="EPFL - EPF Lausanne" target="Carnegie Mellon University" weight="1" />
+      <edge id="65" source="EPFL - EPF Lausanne" target="Université de Lausanne" weight="1" />
+      <edge id="66" source="EPFL - EPF Lausanne" target="Harvard University" weight="1" />
+      <edge id="67" source="EPFL - EPF Lausanne" target="University of Sydney" weight="2" />
+      <edge id="68" source="EPFL - EPF Lausanne" target="uc" weight="2" />
+      <edge id="69" source="EPFL - EPF Lausanne" target="acm" weight="2" />
+      <edge id="70" source="EPFL - EPF Lausanne" target="Universidad de Valladolid" weight="2" />
+      <edge id="71" source="EPFL - EPF Lausanne" target="New York University" weight="1" />
+      <edge id="72" source="EPFL - EPF Lausanne" target="University of Illinois at Chicago" weight="1" />
+      <edge id="73" source="EPFL - EPF Lausanne" target="Tallinn University" weight="1" />
+      <edge id="74" source="lancaster" target="University of Jyväskylä" weight="1" />
+      <edge id="75" source="University of Jyväskylä" target="University of Oulu" weight="1" />
+      <edge id="76" source="University of Jyväskylä" target="University of Melbourne" weight="1" />
+      <edge id="77" source="University of Jyväskylä" target="ugent" weight="1" />
+      <edge id="78" source="University of Jyväskylä" target="iuffp" weight="1" />
+      <edge id="79" source="moe" target="University of Toronto" weight="1" />
+      <edge id="80" source="moe" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="81" source="moe" target="Nanyang Technological University" weight="2" />
+      <edge id="82" source="moe" target="schools" weight="1" />
+      <edge id="83" source="Ruhr-University Bochum" target="University of Wisconsin - Madison" weight="1" />
+      <edge id="84" source="Ruhr-University Bochum" target="Universität Duisburg-Essen" weight="2" />
+      <edge id="85" source="Ruhr-University Bochum" target="Ludwig-Maximilians-Universität München" weight="1" />
+      <edge id="86" source="Ruhr-University Bochum" target="Northwestern University" weight="1" />
+      <edge id="87" source="Ruhr-University Bochum" target="Carnegie Mellon University" weight="3" />
+      <edge id="88" source="Ruhr-University Bochum" target="University of Toronto" weight="1" />
+      <edge id="89" source="Ruhr-University Bochum" target="Institute of Education, University of London" weight="1" />
+      <edge id="90" source="Ruhr-University Bochum" target="Harvard University" weight="1" />
+      <edge id="91" source="Ruhr-University Bochum" target="University of Illinois at Chicago" weight="1" />
+      <edge id="92" source="Ruhr-University Bochum" target="University of Illinois at Urbana-Champaign" weight="1" />
+      <edge id="93" source="Ruhr-University Bochum" target="Ruhr-Universität Bochum" weight="2" />
+      <edge id="94" source="Ruhr-University Bochum" target="ETHZ - ETH Zurich" weight="2" />
+      <edge id="95" source="Ruhr-University Bochum" target="Pädagogische Hochschule Freiburg" weight="2" />
+      <edge id="96" source="Ruhr-University Bochum" target="usyd" weight="1" />
+      <edge id="97" source="Ruhr-University Bochum" target="Ecole Normale Supérieure de Lyon" weight="1" />
+      <edge id="98" source="Ruhr-University Bochum" target="illnois" weight="1" />
+      <edge id="99" source="Ruhr-University Bochum" target="durham" weight="1" />
+      <edge id="100" source="Ruhr-University Bochum" target="univ-mrs" weight="1" />
+      <edge id="101" source="Ruhr-University Bochum" target="Tallinn University" weight="1" />
+      <edge id="102" source="University of Wisconsin - Madison" target="Ludwig-Maximilians-Universität München" weight="1" />
+      <edge id="103" source="University of Wisconsin - Madison" target="Universität Augsburg" weight="1" />
+      <edge id="104" source="University of Wisconsin - Madison" target="Northwestern University" weight="1" />
+      <edge id="105" source="University of Wisconsin - Madison" target="University of Pennsylvania" weight="1" />
+      <edge id="106" source="University of Wisconsin - Madison" target="University of Toronto" weight="1" />
+      <edge id="107" source="University of Wisconsin - Madison" target="Harvard University" weight="1" />
+      <edge id="108" source="University of Wisconsin - Madison" target="Utah State University" weight="1" />
+      <edge id="109" source="University of Wisconsin - Madison" target="National Institute of Education (NIE), Singapore" weight="2" />
+      <edge id="110" source="University of Wisconsin - Madison" target="New York University" weight="1" />
+      <edge id="111" source="University of Wisconsin - Madison" target="University of Illinois at Chicago" weight="2" />
+      <edge id="112" source="University of Wisconsin - Madison" target="University of Helsinki" weight="1" />
+      <edge id="113" source="University of Wisconsin - Madison" target="Rhodes University" weight="1" />
+      <edge id="114" source="University of Wisconsin - Madison" target="wessa" weight="1" />
+      <edge id="115" source="University of Wisconsin - Madison" target="award" weight="1" />
+      <edge id="116" source="University of Wisconsin - Madison" target="University of Nottingham" weight="1" />
+      <edge id="117" source="University of Wisconsin - Madison" target="makered" weight="1" />
+      <edge id="118" source="University of Wisconsin - Madison" target="Deakin University" weight="1" />
+      <edge id="119" source="University of Wisconsin - Madison" target="La Trobe University" weight="1" />
+      <edge id="120" source="University of Wisconsin - Madison" target="Tallinn University" weight="1" />
+      <edge id="121" source="University of Wisconsin - Madison" target="West Chester University of Pennsylvania" weight="1" />
+      <edge id="122" source="University of Miami" target="University of Maine System" weight="1" />
+      <edge id="123" source="University of Miami" target="umiami" weight="1" />
+      <edge id="124" source="University of Colorado at Boulder" target="Tel Aviv University" weight="1" />
+      <edge id="125" source="University of Colorado at Boulder" target="Northwestern University" weight="1" />
+      <edge id="126" source="University of Colorado at Boulder" target="Michigan State University" weight="1" />
+      <edge id="127" source="University of Colorado at Boulder" target="University of Washington" weight="1" />
+      <edge id="128" source="University of Colorado at Boulder" target="Tufts University" weight="1" />
+      <edge id="129" source="University of Colorado at Boulder" target="Universität des Saarlandes" weight="1" />
+      <edge id="130" source="University of Colorado at Boulder" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="131" source="University of Colorado at Boulder" target="Saint Louis University" weight="1" />
+      <edge id="132" source="University of Colorado at Boulder" target="levinsky" weight="1" />
+      <edge id="133" source="University of Colorado at Boulder" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="134" source="University of Haifa" target="Tel Aviv University" weight="1" />
+      <edge id="135" source="University of Haifa" target="walla" weight="1" />
+      <edge id="136" source="University of Haifa" target="yahoo" weight="1" />
+      <edge id="137" source="University of Haifa" target="Northwestern University" weight="1" />
+      <edge id="138" source="University of Haifa" target="Carnegie Mellon University" weight="1" />
+      <edge id="139" source="University of Haifa" target="Vanderbilt University" weight="1" />
+      <edge id="140" source="University of Haifa" target="University of Toronto" weight="1" />
+      <edge id="141" source="University of Haifa" target="Ben-Gurion University of the Negev" weight="1" />
+      <edge id="142" source="University of Haifa" target="Pennsylvania State University" weight="1" />
+      <edge id="143" source="University of Haifa" target="Open University of the Netherlands" weight="1" />
+      <edge id="144" source="University of Haifa" target="State University of New York at Albany" weight="1" />
+      <edge id="145" source="University of Haifa" target="Tufts University" weight="1" />
+      <edge id="146" source="University of Haifa" target="Dawson College" weight="1" />
+      <edge id="147" source="University of Haifa" target="John Abbott College" weight="1" />
+      <edge id="148" source="University of Haifa" target="Vanier Colleege" weight="1" />
+      <edge id="149" source="University of Haifa" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="150" source="University of Haifa" target="New York University" weight="1" />
+      <edge id="151" source="University of Haifa" target="University of Illinois at Chicago" weight="1" />
+      <edge id="152" source="University of Haifa" target="icloud" weight="1" />
+      <edge id="153" source="University of Haifa" target="mrook" weight="1" />
+      <edge id="154" source="University of Haifa" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="155" source="University of Haifa" target="University of Helsinki" weight="1" />
+      <edge id="156" source="University of Haifa" target="University of Pittsburgh" weight="1" />
+      <edge id="157" source="University of Haifa" target="University of Queensland" weight="1" />
+      <edge id="158" source="University of Haifa" target="Göteborg University" weight="1" />
+      <edge id="159" source="University of Haifa" target="exeter" weight="1" />
+      <edge id="160" source="University of Haifa" target="Technion - Israel Institute of Technology" weight="1" />
+      <edge id="161" source="University of Haifa" target="ruppin" weight="1" />
+      <edge id="162" source="University of Haifa" target="rafaeli" weight="1" />
+      <edge id="163" source="Tel Aviv University" target="walla" weight="1" />
+      <edge id="164" source="Tel Aviv University" target="yahoo" weight="1" />
+      <edge id="165" source="Tel Aviv University" target="Michigan State University" weight="1" />
+      <edge id="166" source="Tel Aviv University" target="Universität des Saarlandes" weight="1" />
+      <edge id="167" source="Tel Aviv University" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="168" source="Tel Aviv University" target="levinsky" weight="1" />
+      <edge id="169" source="Tel Aviv University" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="170" source="walla" target="yahoo" weight="1" />
+      <edge id="171" source="Universität Duisburg-Essen" target="Ruhr-Universität Bochum" weight="2" />
+      <edge id="172" source="University of Rochester" target="neadrochester" weight="1" />
+      <edge id="173" source="Indian Institute of Technology, Bombay" target="hbcse" weight="1" />
+      <edge id="174" source="hbcse" target="University of Massachusetts Boston" weight="1" />
+      <edge id="175" source="University of Oslo" target="Göteborg University" weight="1" />
+      <edge id="176" source="University of Oslo" target="University of Turku" weight="1" />
+      <edge id="177" source="University of Oslo" target="hotmail" weight="1" />
+      <edge id="178" source="San Jose State University" target="University of Washington" weight="1" />
+      <edge id="179" source="University of Technology Sydney" target="Arizona State University" weight="1" />
+      <edge id="180" source="University of Technology Sydney" target="Open University" weight="1" />
+      <edge id="181" source="University of Technology Sydney" target="maastrichtuniversity" weight="1" />
+      <edge id="182" source="Arizona State University" target="Open University" weight="1" />
+      <edge id="183" source="Arizona State University" target="maastrichtuniversity" weight="1" />
+      <edge id="184" source="Arizona State University" target="University Politehnica of Bucharest" weight="2" />
+      <edge id="185" source="Arizona State University" target="Université Pierre Mendes-France (Grenoble II)" weight="2" />
+      <edge id="186" source="Open University" target="maastrichtuniversity" weight="1" />
+      <edge id="187" source="Ludwig-Maximilians-Universität München" target="Universität Augsburg" weight="5" />
+      <edge id="188" source="Ludwig-Maximilians-Universität München" target="Carnegie Mellon University" weight="1" />
+      <edge id="189" source="Ludwig-Maximilians-Universität München" target="University of Toronto" weight="1" />
+      <edge id="190" source="Ludwig-Maximilians-Universität München" target="University of Hong Kong" weight="1" />
+      <edge id="191" source="Ludwig-Maximilians-Universität München" target="Technische Universität München" weight="3" />
+      <edge id="192" source="Ludwig-Maximilians-Universität München" target="University Politehnica of Bucharest" weight="2" />
+      <edge id="193" source="Ludwig-Maximilians-Universität München" target="Simon Fraser University" weight="1" />
+      <edge id="194" source="Ludwig-Maximilians-Universität München" target="University of Oulu" weight="1" />
+      <edge id="195" source="Ludwig-Maximilians-Universität München" target="Pohang University of Science and Technology" weight="2" />
+      <edge id="196" source="Ludwig-Maximilians-Universität München" target="University of Helsinki" weight="1" />
+      <edge id="197" source="Ludwig-Maximilians-Universität München" target="com" weight="1" />
+      <edge id="198" source="Ludwig-Maximilians-Universität München" target="Technische Universität Darmstadt" weight="1" />
+      <edge id="199" source="Ludwig-Maximilians-Universität München" target="tudarmstadt" weight="1" />
+      <edge id="200" source="Ludwig-Maximilians-Universität München" target="North Carolina State University" weight="1" />
+      <edge id="201" source="Ludwig-Maximilians-Universität München" target="Ecole Normale Supérieure de Lyon" weight="1" />
+      <edge id="202" source="Ludwig-Maximilians-Universität München" target="unibw" weight="2" />
+      <edge id="203" source="Ludwig-Maximilians-Universität München" target="gmx" weight="1" />
+      <edge id="204" source="Ludwig-Maximilians-Universität München" target="univ-mrs" weight="1" />
+      <edge id="205" source="Ludwig-Maximilians-Universität München" target="iwm-tuebingen" weight="1" />
+      <edge id="206" source="Universität Augsburg" target="Technische Universität München" weight="1" />
+      <edge id="207" source="Universität Augsburg" target="com" weight="1" />
+      <edge id="208" source="Universität Augsburg" target="Technische Universität Darmstadt" weight="1" />
+      <edge id="209" source="Universität Augsburg" target="tudarmstadt" weight="1" />
+      <edge id="210" source="University of Southern Denmark - SDU" target="Ohio State University, Columbus" weight="1" />
+      <edge id="211" source="Ohio State University, Columbus" target="University of New Mexico" weight="1" />
+      <edge id="212" source="Northwestern University" target="Vanderbilt University" weight="1" />
+      <edge id="213" source="Northwestern University" target="Université de Lausanne" weight="1" />
+      <edge id="214" source="Northwestern University" target="Harvard University" weight="1" />
+      <edge id="215" source="Northwestern University" target="Tufts University" weight="1" />
+      <edge id="216" source="Northwestern University" target="exploratorium" weight="1" />
+      <edge id="217" source="Northwestern University" target="Tallinn University" weight="1" />
+      <edge id="218" source="bluknowledge" target="sri" weight="1" />
+      <edge id="219" source="University of Pennsylvania" target="Vanderbilt University" weight="1" />
+      <edge id="220" source="University of Pennsylvania" target="University of Toronto" weight="1" />
+      <edge id="221" source="University of Pennsylvania" target="Massachusetts Institute of Technology" weight="4" />
+      <edge id="222" source="University of Pennsylvania" target="Utah State University" weight="4" />
+      <edge id="223" source="University of Pennsylvania" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="224" source="University of Pennsylvania" target="University of Washington" weight="1" />
+      <edge id="225" source="University of Pennsylvania" target="govsacademy" weight="4" />
+      <edge id="226" source="University of Pennsylvania" target="New York University" weight="2" />
+      <edge id="227" source="University of Pennsylvania" target="makered" weight="1" />
+      <edge id="228" source="University of Pennsylvania" target="uwb" weight="1" />
+      <edge id="229" source="University of Pennsylvania" target="nwp" weight="1" />
+      <edge id="230" source="Carnegie Mellon University" target="University of Toronto" weight="1" />
+      <edge id="231" source="Carnegie Mellon University" target="Aoyama Gakuin University" weight="1" />
+      <edge id="232" source="Carnegie Mellon University" target="University of Minnesota - Twin Cities" weight="1" />
+      <edge id="233" source="Carnegie Mellon University" target="University of Hong Kong" weight="2" />
+      <edge id="234" source="Carnegie Mellon University" target="Pennsylvania State University" weight="2" />
+      <edge id="235" source="Carnegie Mellon University" target="Open University of the Netherlands" weight="1" />
+      <edge id="236" source="Carnegie Mellon University" target="State University of New York at Albany" weight="1" />
+      <edge id="237" source="Carnegie Mellon University" target="Simon Fraser University" weight="1" />
+      <edge id="238" source="Carnegie Mellon University" target="Shizuoka University" weight="1" />
+      <edge id="239" source="Carnegie Mellon University" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="240" source="Carnegie Mellon University" target="University of Oulu" weight="1" />
+      <edge id="241" source="Carnegie Mellon University" target="New York University" weight="1" />
+      <edge id="242" source="Carnegie Mellon University" target="nier" weight="1" />
+      <edge id="243" source="Carnegie Mellon University" target="Tokyo University" weight="1" />
+      <edge id="244" source="Carnegie Mellon University" target="urawa-h" weight="1" />
+      <edge id="245" source="Carnegie Mellon University" target="University of Helsinki" weight="1" />
+      <edge id="246" source="Carnegie Mellon University" target="University of Pittsburgh" weight="2" />
+      <edge id="247" source="Carnegie Mellon University" target="University of Queensland" weight="1" />
+      <edge id="248" source="Carnegie Mellon University" target="Göteborg University" weight="1" />
+      <edge id="249" source="Carnegie Mellon University" target="exeter" weight="1" />
+      <edge id="250" source="Carnegie Mellon University" target="North Carolina State University" weight="1" />
+      <edge id="251" source="Carnegie Mellon University" target="aeres" weight="1" />
+      <edge id="252" source="Carnegie Mellon University" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="253" source="Vanderbilt University" target="vanderibilt" weight="1" />
+      <edge id="254" source="Vanderbilt University" target="University of Calgary" weight="1" />
+      <edge id="255" source="Vanderbilt University" target="Utah State University" weight="1" />
+      <edge id="256" source="Vanderbilt University" target="University of Washington" weight="1" />
+      <edge id="257" source="Vanderbilt University" target="Tufts University" weight="1" />
+      <edge id="258" source="Vanderbilt University" target="University College London, University of London" weight="1" />
+      <edge id="259" source="Vanderbilt University" target="uwb" weight="1" />
+      <edge id="260" source="Vanderbilt University" target="nwp" weight="1" />
+      <edge id="261" source="University of Toronto" target="Aoyama Gakuin University" weight="2" />
+      <edge id="262" source="University of Toronto" target="University of Minnesota - Twin Cities" weight="4" />
+      <edge id="263" source="University of Toronto" target="Columbia University" weight="1" />
+      <edge id="264" source="University of Toronto" target="Queen's University" weight="1" />
+      <edge id="265" source="University of Toronto" target="University of Hong Kong" weight="1" />
+      <edge id="266" source="University of Toronto" target="Pennsylvania State University" weight="1" />
+      <edge id="267" source="University of Toronto" target="Utah State University" weight="1" />
+      <edge id="268" source="University of Toronto" target="National Institute of Education (NIE), Singapore" weight="2" />
+      <edge id="269" source="University of Toronto" target="163" weight="1" />
+      <edge id="270" source="University of Toronto" target="State University of New York at Albany" weight="2" />
+      <edge id="271" source="University of Toronto" target="Technische Universität München" weight="1" />
+      <edge id="272" source="University of Toronto" target="Dawson College" weight="1" />
+      <edge id="273" source="University of Toronto" target="John Abbott College" weight="1" />
+      <edge id="274" source="University of Toronto" target="Vanier Colleege" weight="1" />
+      <edge id="275" source="University of Toronto" target="Shizuoka University" weight="3" />
+      <edge id="276" source="University of Toronto" target="University of Illinois at Chicago" weight="6" />
+      <edge id="277" source="University of Toronto" target="University of Illinois at Urbana-Champaign" weight="1" />
+      <edge id="278" source="University of Toronto" target="icloud" weight="2" />
+      <edge id="279" source="University of Toronto" target="mrook" weight="1" />
+      <edge id="280" source="University of Toronto" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="281" source="University of Toronto" target="nier" weight="1" />
+      <edge id="282" source="University of Toronto" target="Tokyo University" weight="2" />
+      <edge id="283" source="University of Toronto" target="urawa-h" weight="1" />
+      <edge id="284" source="University of Toronto" target="University of Helsinki" weight="2" />
+      <edge id="285" source="University of Toronto" target="makered" weight="1" />
+      <edge id="286" source="University of Toronto" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="287" source="University of Toronto" target="com" weight="1" />
+      <edge id="288" source="University of Toronto" target="usyd" weight="1" />
+      <edge id="289" source="University of Toronto" target="illnois" weight="1" />
+      <edge id="290" source="University of Toronto" target="durham" weight="1" />
+      <edge id="291" source="University of Toronto" target="Boston College" weight="1" />
+      <edge id="292" source="University of Toronto" target="iwm-tuebingen" weight="1" />
+      <edge id="293" source="University of Toronto" target="Université Laval" weight="1" />
+      <edge id="294" source="University of Toronto" target="stoasvilentum" weight="1" />
+      <edge id="295" source="University of Toronto" target="glm" weight="1" />
+      <edge id="296" source="University of Toronto" target="University of Prince Edward Island" weight="1" />
+      <edge id="297" source="University of Toronto" target="uol" weight="1" />
+      <edge id="298" source="Aoyama Gakuin University" target="University of Minnesota - Twin Cities" weight="3" />
+      <edge id="299" source="Aoyama Gakuin University" target="Queen's University" weight="1" />
+      <edge id="300" source="Aoyama Gakuin University" target="University of Hong Kong" weight="2" />
+      <edge id="301" source="Aoyama Gakuin University" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="302" source="Aoyama Gakuin University" target="163" weight="1" />
+      <edge id="303" source="Aoyama Gakuin University" target="Open University of the Netherlands" weight="1" />
+      <edge id="304" source="Aoyama Gakuin University" target="State University of New York at Albany" weight="2" />
+      <edge id="305" source="Aoyama Gakuin University" target="Shizuoka University" weight="2" />
+      <edge id="306" source="Aoyama Gakuin University" target="New York University" weight="1" />
+      <edge id="307" source="Aoyama Gakuin University" target="icloud" weight="1" />
+      <edge id="308" source="Aoyama Gakuin University" target="Tokyo University" weight="1" />
+      <edge id="309" source="Aoyama Gakuin University" target="University of Helsinki" weight="1" />
+      <edge id="310" source="Aoyama Gakuin University" target="com" weight="1" />
+      <edge id="311" source="Aoyama Gakuin University" target="Université Laval" weight="1" />
+      <edge id="312" source="Aoyama Gakuin University" target="aeres" weight="1" />
+      <edge id="313" source="Aoyama Gakuin University" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="314" source="Aoyama Gakuin University" target="stoasvilentum" weight="1" />
+      <edge id="315" source="Aoyama Gakuin University" target="glm" weight="1" />
+      <edge id="316" source="Aoyama Gakuin University" target="University of Prince Edward Island" weight="1" />
+      <edge id="317" source="Aoyama Gakuin University" target="uol" weight="1" />
+      <edge id="318" source="University of Minnesota - Twin Cities" target="Queen's University" weight="1" />
+      <edge id="319" source="University of Minnesota - Twin Cities" target="University of Hong Kong" weight="2" />
+      <edge id="320" source="University of Minnesota - Twin Cities" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="321" source="University of Minnesota - Twin Cities" target="163" weight="1" />
+      <edge id="322" source="University of Minnesota - Twin Cities" target="Open University of the Netherlands" weight="1" />
+      <edge id="323" source="University of Minnesota - Twin Cities" target="State University of New York at Albany" weight="2" />
+      <edge id="324" source="University of Minnesota - Twin Cities" target="Shizuoka University" weight="4" />
+      <edge id="325" source="University of Minnesota - Twin Cities" target="New York University" weight="1" />
+      <edge id="326" source="University of Minnesota - Twin Cities" target="Minnesota State University, Mankato" weight="1" />
+      <edge id="327" source="University of Minnesota - Twin Cities" target="icloud" weight="1" />
+      <edge id="328" source="University of Minnesota - Twin Cities" target="Tokyo University" weight="1" />
+      <edge id="329" source="University of Minnesota - Twin Cities" target="University of Helsinki" weight="1" />
+      <edge id="330" source="University of Minnesota - Twin Cities" target="com" weight="1" />
+      <edge id="331" source="University of Minnesota - Twin Cities" target="Université Laval" weight="1" />
+      <edge id="332" source="University of Minnesota - Twin Cities" target="aeres" weight="1" />
+      <edge id="333" source="University of Minnesota - Twin Cities" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="334" source="University of Minnesota - Twin Cities" target="stoasvilentum" weight="1" />
+      <edge id="335" source="University of Minnesota - Twin Cities" target="glm" weight="1" />
+      <edge id="336" source="University of Minnesota - Twin Cities" target="University of Prince Edward Island" weight="1" />
+      <edge id="337" source="University of Minnesota - Twin Cities" target="uol" weight="1" />
+      <edge id="338" source="Université de Lausanne" target="acm" weight="1" />
+      <edge id="339" source="Université de Lausanne" target="Norwegian University of Science and Technology" weight="1" />
+      <edge id="340" source="Columbia University" target="University of Central Lancashire" weight="1" />
+      <edge id="341" source="Ben-Gurion University of the Negev" target="Open University of the Netherlands" weight="1" />
+      <edge id="342" source="Ben-Gurion University of the Negev" target="New York University" weight="1" />
+      <edge id="343" source="Ben-Gurion University of the Negev" target="Technion - Israel Institute of Technology" weight="1" />
+      <edge id="344" source="Ben-Gurion University of the Negev" target="ruppin" weight="1" />
+      <edge id="345" source="Ben-Gurion University of the Negev" target="rafaeli" weight="1" />
+      <edge id="346" source="University of New Mexico" target="Queen's University" weight="1" />
+      <edge id="347" source="Queen's University" target="University of Hong Kong" weight="1" />
+      <edge id="348" source="Queen's University" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="349" source="Queen's University" target="163" weight="1" />
+      <edge id="350" source="Queen's University" target="State University of New York at Albany" weight="1" />
+      <edge id="351" source="Queen's University" target="Shizuoka University" weight="1" />
+      <edge id="352" source="Queen's University" target="icloud" weight="1" />
+      <edge id="353" source="Queen's University" target="Tokyo University" weight="1" />
+      <edge id="354" source="Queen's University" target="University of Helsinki" weight="1" />
+      <edge id="355" source="Queen's University" target="com" weight="1" />
+      <edge id="356" source="Queen's University" target="Université Laval" weight="1" />
+      <edge id="357" source="Queen's University" target="stoasvilentum" weight="1" />
+      <edge id="358" source="Queen's University" target="glm" weight="1" />
+      <edge id="359" source="Queen's University" target="University of Prince Edward Island" weight="1" />
+      <edge id="360" source="Queen's University" target="uol" weight="1" />
+      <edge id="361" source="Massachusetts Institute of Technology" target="govsacademy" weight="4" />
+      <edge id="362" source="Massachusetts Institute of Technology" target="University of Nottingham" weight="1" />
+      <edge id="363" source="Massachusetts Institute of Technology" target="Bauhaus Universität Weimar" weight="1" />
+      <edge id="364" source="Massachusetts Institute of Technology" target="University of Southampton" weight="1" />
+      <edge id="365" source="Massachusetts Institute of Technology" target="University of the West of England, Bristol" weight="1" />
+      <edge id="366" source="Massachusetts Institute of Technology" target="mheducation" weight="1" />
+      <edge id="367" source="Massachusetts Institute of Technology" target="google" weight="1" />
+      <edge id="368" source="Harvard University" target="Tallinn University" weight="1" />
+      <edge id="369" source="University of Hong Kong" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="370" source="University of Hong Kong" target="163" weight="1" />
+      <edge id="371" source="University of Hong Kong" target="Open University of the Netherlands" weight="2" />
+      <edge id="372" source="University of Hong Kong" target="University of Nebraska, Lincoln" weight="1" />
+      <edge id="373" source="University of Hong Kong" target="State University of New York at Albany" weight="2" />
+      <edge id="374" source="University of Hong Kong" target="Simon Fraser University" weight="1" />
+      <edge id="375" source="University of Hong Kong" target="Shizuoka University" weight="2" />
+      <edge id="376" source="University of Hong Kong" target="University of Oulu" weight="1" />
+      <edge id="377" source="University of Hong Kong" target="New York University" weight="1" />
+      <edge id="378" source="University of Hong Kong" target="icloud" weight="1" />
+      <edge id="379" source="University of Hong Kong" target="Tokyo University" weight="1" />
+      <edge id="380" source="University of Hong Kong" target="University of Helsinki" weight="1" />
+      <edge id="381" source="University of Hong Kong" target="com" weight="1" />
+      <edge id="382" source="University of Hong Kong" target="North Carolina State University" weight="1" />
+      <edge id="383" source="University of Hong Kong" target="seltas" weight="1" />
+      <edge id="384" source="University of Hong Kong" target="Université Laval" weight="1" />
+      <edge id="385" source="University of Hong Kong" target="aeres" weight="1" />
+      <edge id="386" source="University of Hong Kong" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="387" source="University of Hong Kong" target="stoasvilentum" weight="1" />
+      <edge id="388" source="University of Hong Kong" target="glm" weight="1" />
+      <edge id="389" source="University of Hong Kong" target="University of Prince Edward Island" weight="1" />
+      <edge id="390" source="University of Hong Kong" target="uol" weight="1" />
+      <edge id="391" source="vanderibilt" target="University of Calgary" weight="1" />
+      <edge id="392" source="Pennsylvania State University" target="State University of New York at Albany" weight="1" />
+      <edge id="393" source="Pennsylvania State University" target="Dawson College" weight="1" />
+      <edge id="394" source="Pennsylvania State University" target="John Abbott College" weight="1" />
+      <edge id="395" source="Pennsylvania State University" target="Vanier Colleege" weight="1" />
+      <edge id="396" source="Pennsylvania State University" target="University of Illinois at Chicago" weight="1" />
+      <edge id="397" source="Pennsylvania State University" target="icloud" weight="1" />
+      <edge id="398" source="Pennsylvania State University" target="mrook" weight="1" />
+      <edge id="399" source="Pennsylvania State University" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="400" source="Utah State University" target="National Institute of Education (NIE), Singapore" weight="1" />
+      <edge id="401" source="Utah State University" target="University of Washington" weight="2" />
+      <edge id="402" source="Utah State University" target="University of Texas at Austin" weight="1" />
+      <edge id="403" source="Utah State University" target="University of Maryland, College Park" weight="1" />
+      <edge id="404" source="Utah State University" target="makered" weight="1" />
+      <edge id="405" source="Utah State University" target="uwb" weight="1" />
+      <edge id="406" source="Utah State University" target="nwp" weight="1" />
+      <edge id="407" source="National Institute of Education (NIE), Singapore" target="163" weight="1" />
+      <edge id="408" source="National Institute of Education (NIE), Singapore" target="State University of New York at Albany" weight="1" />
+      <edge id="409" source="National Institute of Education (NIE), Singapore" target="Shizuoka University" weight="1" />
+      <edge id="410" source="National Institute of Education (NIE), Singapore" target="National Chengchi University" weight="2" />
+      <edge id="411" source="National Institute of Education (NIE), Singapore" target="icloud" weight="1" />
+      <edge id="412" source="National Institute of Education (NIE), Singapore" target="Hong Kong Institute of Education" weight="2" />
+      <edge id="413" source="National Institute of Education (NIE), Singapore" target="Tokyo University" weight="1" />
+      <edge id="414" source="National Institute of Education (NIE), Singapore" target="University of Helsinki" weight="2" />
+      <edge id="415" source="National Institute of Education (NIE), Singapore" target="Rhodes University" weight="1" />
+      <edge id="416" source="National Institute of Education (NIE), Singapore" target="wessa" weight="1" />
+      <edge id="417" source="National Institute of Education (NIE), Singapore" target="award" weight="1" />
+      <edge id="418" source="National Institute of Education (NIE), Singapore" target="makered" weight="1" />
+      <edge id="419" source="National Institute of Education (NIE), Singapore" target="com" weight="1" />
+      <edge id="420" source="National Institute of Education (NIE), Singapore" target="Clark University" weight="1" />
+      <edge id="421" source="National Institute of Education (NIE), Singapore" target="hotmail" weight="1" />
+      <edge id="422" source="National Institute of Education (NIE), Singapore" target="schools" weight="1" />
+      <edge id="423" source="National Institute of Education (NIE), Singapore" target="Université Laval" weight="1" />
+      <edge id="424" source="National Institute of Education (NIE), Singapore" target="stoasvilentum" weight="1" />
+      <edge id="425" source="National Institute of Education (NIE), Singapore" target="glm" weight="1" />
+      <edge id="426" source="National Institute of Education (NIE), Singapore" target="University of Prince Edward Island" weight="1" />
+      <edge id="427" source="National Institute of Education (NIE), Singapore" target="uol" weight="1" />
+      <edge id="428" source="University of Sydney" target="acm" weight="2" />
+      <edge id="429" source="University of Sydney" target="Universidad de Valladolid" weight="3" />
+      <edge id="430" source="University of Sydney" target="Université Lumiére (Lyon II)" weight="1" />
+      <edge id="431" source="University of Sydney" target="tophe" weight="1" />
+      <edge id="432" source="University of Sydney" target="Copenhagen Business School" weight="1" />
+      <edge id="433" source="University of Sydney" target="concord" weight="1" />
+      <edge id="434" source="University of Sydney" target="North Carolina State University" weight="1" />
+      <edge id="435" source="University of Sydney" target="usyd" weight="1" />
+      <edge id="436" source="163" target="126" weight="1" />
+      <edge id="437" source="163" target="East China Normal University" weight="1" />
+      <edge id="438" source="163" target="State University of New York at Albany" weight="1" />
+      <edge id="439" source="163" target="Shizuoka University" weight="1" />
+      <edge id="440" source="163" target="icloud" weight="1" />
+      <edge id="441" source="163" target="Tokyo University" weight="1" />
+      <edge id="442" source="163" target="University of Helsinki" weight="1" />
+      <edge id="443" source="163" target="com" weight="1" />
+      <edge id="444" source="163" target="Beijing Normal University" weight="1" />
+      <edge id="445" source="163" target="Université Laval" weight="1" />
+      <edge id="446" source="163" target="stoasvilentum" weight="1" />
+      <edge id="447" source="163" target="glm" weight="1" />
+      <edge id="448" source="163" target="University of Prince Edward Island" weight="1" />
+      <edge id="449" source="163" target="uol" weight="1" />
+      <edge id="450" source="126" target="East China Normal University" weight="1" />
+      <edge id="451" source="East China Normal University" target="State University of New York at Albany" weight="1" />
+      <edge id="452" source="University of North Carolina at Greensboro" target="Michigan State University" weight="1" />
+      <edge id="453" source="Michigan State University" target="Universität des Saarlandes" weight="1" />
+      <edge id="454" source="Michigan State University" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="455" source="Michigan State University" target="levinsky" weight="1" />
+      <edge id="456" source="Michigan State University" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="457" source="Open University of the Netherlands" target="University of Nebraska, Lincoln" weight="1" />
+      <edge id="458" source="Open University of the Netherlands" target="State University of New York at Albany" weight="1" />
+      <edge id="459" source="Open University of the Netherlands" target="Shizuoka University" weight="1" />
+      <edge id="460" source="Open University of the Netherlands" target="New York University" weight="2" />
+      <edge id="461" source="Open University of the Netherlands" target="Technion - Israel Institute of Technology" weight="1" />
+      <edge id="462" source="Open University of the Netherlands" target="ruppin" weight="1" />
+      <edge id="463" source="Open University of the Netherlands" target="rafaeli" weight="1" />
+      <edge id="464" source="Open University of the Netherlands" target="aeres" weight="1" />
+      <edge id="465" source="Open University of the Netherlands" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="466" source="University of Washington" target="Rutgers University, Newark" weight="1" />
+      <edge id="467" source="University of Washington" target="University of Texas at Austin" weight="1" />
+      <edge id="468" source="University of Washington" target="University of Maryland, College Park" weight="3" />
+      <edge id="469" source="University of Washington" target="University of Maryland, Baltimore County" weight="2" />
+      <edge id="470" source="University of Washington" target="uwb" weight="1" />
+      <edge id="471" source="University of Washington" target="nwp" weight="1" />
+      <edge id="472" source="Rutgers University, Newark" target="Worcester Polytechnic Institute" weight="1" />
+      <edge id="473" source="Rutgers University, Newark" target="apprendis" weight="1" />
+      <edge id="474" source="Rutgers University, Newark" target="Virginia Polytechnic Institute and State University" weight="1" />
+      <edge id="475" source="Rutgers University, Newark" target="Colorado State University" weight="1" />
+      <edge id="476" source="State University of New York at Albany" target="Dawson College" weight="1" />
+      <edge id="477" source="State University of New York at Albany" target="John Abbott College" weight="1" />
+      <edge id="478" source="State University of New York at Albany" target="Vanier Colleege" weight="1" />
+      <edge id="479" source="State University of New York at Albany" target="Shizuoka University" weight="2" />
+      <edge id="480" source="State University of New York at Albany" target="New York University" weight="1" />
+      <edge id="481" source="State University of New York at Albany" target="University of Illinois at Chicago" weight="1" />
+      <edge id="482" source="State University of New York at Albany" target="icloud" weight="2" />
+      <edge id="483" source="State University of New York at Albany" target="mrook" weight="1" />
+      <edge id="484" source="State University of New York at Albany" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="485" source="State University of New York at Albany" target="Tokyo University" weight="1" />
+      <edge id="486" source="State University of New York at Albany" target="University of Helsinki" weight="1" />
+      <edge id="487" source="State University of New York at Albany" target="com" weight="1" />
+      <edge id="488" source="State University of New York at Albany" target="Université Laval" weight="1" />
+      <edge id="489" source="State University of New York at Albany" target="aeres" weight="1" />
+      <edge id="490" source="State University of New York at Albany" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="491" source="State University of New York at Albany" target="stoasvilentum" weight="1" />
+      <edge id="492" source="State University of New York at Albany" target="glm" weight="1" />
+      <edge id="493" source="State University of New York at Albany" target="University of Prince Edward Island" weight="1" />
+      <edge id="494" source="State University of New York at Albany" target="uol" weight="1" />
+      <edge id="495" source="State University of New York at Albany" target="University of Massachusetts at Lowell" weight="1" />
+      <edge id="496" source="University of Texas at Austin" target="University of Maryland, College Park" weight="1" />
+      <edge id="497" source="Tufts University" target="griffith" weight="1" />
+      <edge id="498" source="Tufts University" target="Warren Wilson College" weight="1" />
+      <edge id="499" source="University of San Diego" target="Vrije Universiteit Amsterdam" weight="1" />
+      <edge id="500" source="Technische Universität München" target="University of Helsinki" weight="1" />
+      <edge id="501" source="Technische Universität München" target="iwm-tuebingen" weight="1" />
+      <edge id="502" source="uni" target="University of Bergen" weight="2" />
+      <edge id="503" source="hum" target="sof" weight="1" />
+      <edge id="504" source="University Politehnica of Bucharest" target="Université Pierre Mendes-France (Grenoble II)" weight="2" />
+      <edge id="505" source="University Politehnica of Bucharest" target="unibw" weight="1" />
+      <edge id="506" source="University Politehnica of Bucharest" target="gmx" weight="1" />
+      <edge id="507" source="University Politehnica of Bucharest" target="Georgia State University" weight="1" />
+      <edge id="508" source="Universität des Saarlandes" target="Hebrew University of Jerusalem" weight="1" />
+      <edge id="509" source="Universität des Saarlandes" target="baddesigner" weight="2" />
+      <edge id="510" source="Universität des Saarlandes" target="kopp-sb" weight="2" />
+      <edge id="511" source="Universität des Saarlandes" target="levinsky" weight="1" />
+      <edge id="512" source="Universität des Saarlandes" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="513" source="Dawson College" target="John Abbott College" weight="5" />
+      <edge id="514" source="Dawson College" target="Vanier Colleege" weight="3" />
+      <edge id="515" source="Dawson College" target="University of Illinois at Chicago" weight="1" />
+      <edge id="516" source="Dawson College" target="icloud" weight="1" />
+      <edge id="517" source="Dawson College" target="mrook" weight="1" />
+      <edge id="518" source="Dawson College" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="519" source="John Abbott College" target="Vanier Colleege" weight="3" />
+      <edge id="520" source="John Abbott College" target="University of Illinois at Chicago" weight="1" />
+      <edge id="521" source="John Abbott College" target="icloud" weight="1" />
+      <edge id="522" source="John Abbott College" target="mrook" weight="1" />
+      <edge id="523" source="John Abbott College" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="524" source="Vanier Colleege" target="University of Illinois at Chicago" weight="1" />
+      <edge id="525" source="Vanier Colleege" target="icloud" weight="1" />
+      <edge id="526" source="Vanier Colleege" target="mrook" weight="1" />
+      <edge id="527" source="Vanier Colleege" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="528" source="Simon Fraser University" target="University of Oulu" weight="1" />
+      <edge id="529" source="Simon Fraser University" target="New York University" weight="1" />
+      <edge id="530" source="Simon Fraser University" target="North Carolina State University" weight="1" />
+      <edge id="531" source="Middle East Technical University" target="Drexel University" weight="2" />
+      <edge id="532" source="Middle East Technical University" target="Ankara University" weight="2" />
+      <edge id="533" source="Drexel University" target="gerrystahl" weight="2" />
+      <edge id="534" source="Shizuoka University" target="New York University" weight="1" />
+      <edge id="535" source="Shizuoka University" target="icloud" weight="1" />
+      <edge id="536" source="Shizuoka University" target="Tokyo University" weight="1" />
+      <edge id="537" source="Shizuoka University" target="University of Helsinki" weight="1" />
+      <edge id="538" source="Shizuoka University" target="com" weight="1" />
+      <edge id="539" source="Shizuoka University" target="aiit" weight="1" />
+      <edge id="540" source="Shizuoka University" target="Université Laval" weight="1" />
+      <edge id="541" source="Shizuoka University" target="aeres" weight="1" />
+      <edge id="542" source="Shizuoka University" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="543" source="Shizuoka University" target="stoasvilentum" weight="1" />
+      <edge id="544" source="Shizuoka University" target="glm" weight="1" />
+      <edge id="545" source="Shizuoka University" target="University of Prince Edward Island" weight="1" />
+      <edge id="546" source="Shizuoka University" target="uol" weight="1" />
+      <edge id="547" source="acm" target="Universidad de Valladolid" weight="2" />
+      <edge id="548" source="acm" target="Norwegian University of Science and Technology" weight="1" />
+      <edge id="549" source="Universidad de Valladolid" target="North Carolina State University" weight="1" />
+      <edge id="550" source="Universidad de Valladolid" target="usyd" weight="1" />
+      <edge id="551" source="National Chengchi University" target="National Taiwan University of Science and Technology" weight="1" />
+      <edge id="552" source="National Chengchi University" target="National Central University" weight="1" />
+      <edge id="553" source="Hebrew University of Jerusalem" target="kent" weight="1" />
+      <edge id="554" source="Hebrew University of Jerusalem" target="getdown" weight="1" />
+      <edge id="555" source="Hebrew University of Jerusalem" target="University of Helsinki" weight="1" />
+      <edge id="556" source="Hebrew University of Jerusalem" target="University of Pittsburgh" weight="1" />
+      <edge id="557" source="Hebrew University of Jerusalem" target="University of Queensland" weight="1" />
+      <edge id="558" source="Hebrew University of Jerusalem" target="Göteborg University" weight="1" />
+      <edge id="559" source="Hebrew University of Jerusalem" target="exeter" weight="1" />
+      <edge id="560" source="Hebrew University of Jerusalem" target="levinsky" weight="1" />
+      <edge id="561" source="Hebrew University of Jerusalem" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="562" source="University of Oulu" target="North Carolina State University" weight="1" />
+      <edge id="563" source="baddesigner" target="kopp-sb" weight="2" />
+      <edge id="564" source="University of Maryland, College Park" target="University of Maryland, Baltimore County" weight="2" />
+      <edge id="565" source="New York University" target="University of Illinois at Chicago" weight="1" />
+      <edge id="566" source="New York University" target="Technion - Israel Institute of Technology" weight="1" />
+      <edge id="567" source="New York University" target="ruppin" weight="1" />
+      <edge id="568" source="New York University" target="rafaeli" weight="1" />
+      <edge id="569" source="New York University" target="kpu" weight="1" />
+      <edge id="570" source="New York University" target="aeres" weight="1" />
+      <edge id="571" source="New York University" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="572" source="University of Illinois at Chicago" target="University of Illinois at Urbana-Champaign" weight="1" />
+      <edge id="573" source="University of Illinois at Chicago" target="icloud" weight="1" />
+      <edge id="574" source="University of Illinois at Chicago" target="mrook" weight="1" />
+      <edge id="575" source="University of Illinois at Chicago" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="576" source="University of Illinois at Chicago" target="University of Nottingham" weight="1" />
+      <edge id="577" source="University of Illinois at Chicago" target="Deakin University" weight="1" />
+      <edge id="578" source="University of Illinois at Chicago" target="La Trobe University" weight="1" />
+      <edge id="579" source="University of Illinois at Chicago" target="University of Michigan - Ann Arbor" weight="2" />
+      <edge id="580" source="University of Illinois at Chicago" target="usyd" weight="1" />
+      <edge id="581" source="University of Illinois at Chicago" target="illnois" weight="1" />
+      <edge id="582" source="University of Illinois at Chicago" target="durham" weight="1" />
+      <edge id="583" source="University of Illinois at Chicago" target="fossati" weight="1" />
+      <edge id="584" source="University of Illinois at Chicago" target="Boston College" weight="1" />
+      <edge id="585" source="National Taiwan University of Science and Technology" target="National Central University" weight="1" />
+      <edge id="586" source="Université Lumiére (Lyon II)" target="tophe" weight="1" />
+      <edge id="587" source="Université Lumiére (Lyon II)" target="Copenhagen Business School" weight="1" />
+      <edge id="588" source="Université Lumiére (Lyon II)" target="concord" weight="1" />
+      <edge id="589" source="tophe" target="Copenhagen Business School" weight="1" />
+      <edge id="590" source="tophe" target="concord" weight="1" />
+      <edge id="591" source="Copenhagen Business School" target="concord" weight="1" />
+      <edge id="592" source="concord" target="University of Illinois at Urbana-Champaign" weight="1" />
+      <edge id="593" source="Worcester Polytechnic Institute" target="apprendis" weight="1" />
+      <edge id="594" source="kent" target="getdown" weight="1" />
+      <edge id="595" source="University of Illinois at Urbana-Champaign" target="usyd" weight="1" />
+      <edge id="596" source="University of Illinois at Urbana-Champaign" target="illnois" weight="1" />
+      <edge id="597" source="University of Illinois at Urbana-Champaign" target="durham" weight="1" />
+      <edge id="598" source="University of Illinois at Urbana-Champaign" target="umontana" weight="1" />
+      <edge id="599" source="University of Illinois at Urbana-Champaign" target="University of Montana" weight="1" />
+      <edge id="600" source="icloud" target="mrook" weight="1" />
+      <edge id="601" source="icloud" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="602" source="icloud" target="Tokyo University" weight="1" />
+      <edge id="603" source="icloud" target="University of Helsinki" weight="1" />
+      <edge id="604" source="icloud" target="com" weight="1" />
+      <edge id="605" source="icloud" target="Université Laval" weight="1" />
+      <edge id="606" source="icloud" target="stoasvilentum" weight="1" />
+      <edge id="607" source="icloud" target="glm" weight="1" />
+      <edge id="608" source="icloud" target="University of Prince Edward Island" weight="1" />
+      <edge id="609" source="icloud" target="uol" weight="1" />
+      <edge id="610" source="mrook" target="Hong Kong Institute of Education" weight="1" />
+      <edge id="611" source="Hong Kong Institute of Education" target="Clark University" weight="1" />
+      <edge id="612" source="nier" target="Tokyo University" weight="1" />
+      <edge id="613" source="nier" target="urawa-h" weight="1" />
+      <edge id="614" source="Tokyo University" target="urawa-h" weight="1" />
+      <edge id="615" source="Tokyo University" target="University of Helsinki" weight="1" />
+      <edge id="616" source="Tokyo University" target="com" weight="1" />
+      <edge id="617" source="Tokyo University" target="mochi-lab" weight="1" />
+      <edge id="618" source="Tokyo University" target="senshu-u" weight="1" />
+      <edge id="619" source="Tokyo University" target="Kobe University" weight="1" />
+      <edge id="620" source="Tokyo University" target="kubota-lab" weight="1" />
+      <edge id="621" source="Tokyo University" target="suzuki-lab" weight="1" />
+      <edge id="622" source="Tokyo University" target="Université Laval" weight="1" />
+      <edge id="623" source="Tokyo University" target="stoasvilentum" weight="1" />
+      <edge id="624" source="Tokyo University" target="glm" weight="1" />
+      <edge id="625" source="Tokyo University" target="University of Prince Edward Island" weight="1" />
+      <edge id="626" source="Tokyo University" target="uol" weight="1" />
+      <edge id="627" source="University of Helsinki" target="University of Pittsburgh" weight="1" />
+      <edge id="628" source="University of Helsinki" target="University of Queensland" weight="1" />
+      <edge id="629" source="University of Helsinki" target="Göteborg University" weight="1" />
+      <edge id="630" source="University of Helsinki" target="exeter" weight="1" />
+      <edge id="631" source="University of Helsinki" target="Technion - Israel Institute of Technology" weight="1" />
+      <edge id="632" source="University of Helsinki" target="University of Bologna" weight="1" />
+      <edge id="633" source="University of Helsinki" target="Rhodes University" weight="1" />
+      <edge id="634" source="University of Helsinki" target="wessa" weight="1" />
+      <edge id="635" source="University of Helsinki" target="award" weight="1" />
+      <edge id="636" source="University of Helsinki" target="com" weight="1" />
+      <edge id="637" source="University of Helsinki" target="iwm-tuebingen" weight="1" />
+      <edge id="638" source="University of Helsinki" target="Université Laval" weight="1" />
+      <edge id="639" source="University of Helsinki" target="stoasvilentum" weight="1" />
+      <edge id="640" source="University of Helsinki" target="glm" weight="1" />
+      <edge id="641" source="University of Helsinki" target="University of Prince Edward Island" weight="1" />
+      <edge id="642" source="University of Helsinki" target="uol" weight="1" />
+      <edge id="643" source="University of Pittsburgh" target="University of Queensland" weight="1" />
+      <edge id="644" source="University of Pittsburgh" target="Göteborg University" weight="1" />
+      <edge id="645" source="University of Pittsburgh" target="exeter" weight="1" />
+      <edge id="646" source="University of Pittsburgh" target="terc" weight="1" />
+      <edge id="647" source="University of Queensland" target="Göteborg University" weight="1" />
+      <edge id="648" source="University of Queensland" target="exeter" weight="1" />
+      <edge id="649" source="Göteborg University" target="exeter" weight="1" />
+      <edge id="650" source="Göteborg University" target="University of Turku" weight="1" />
+      <edge id="651" source="Göteborg University" target="hotmail" weight="1" />
+      <edge id="652" source="Technion - Israel Institute of Technology" target="University of Bologna" weight="1" />
+      <edge id="653" source="Technion - Israel Institute of Technology" target="ruppin" weight="1" />
+      <edge id="654" source="Technion - Israel Institute of Technology" target="rafaeli" weight="1" />
+      <edge id="655" source="Rhodes University" target="wessa" weight="1" />
+      <edge id="656" source="Rhodes University" target="award" weight="1" />
+      <edge id="657" source="wessa" target="award" weight="1" />
+      <edge id="658" source="University of Nottingham" target="Deakin University" weight="1" />
+      <edge id="659" source="University of Nottingham" target="La Trobe University" weight="1" />
+      <edge id="660" source="University of Nottingham" target="Bauhaus Universität Weimar" weight="1" />
+      <edge id="661" source="University of Nottingham" target="University of Southampton" weight="1" />
+      <edge id="662" source="University of Nottingham" target="University of the West of England, Bristol" weight="1" />
+      <edge id="663" source="University of Nottingham" target="mheducation" weight="1" />
+      <edge id="664" source="University of Nottingham" target="google" weight="1" />
+      <edge id="665" source="ETHZ - ETH Zurich" target="Pädagogische Hochschule Freiburg" weight="1" />
+      <edge id="666" source="griffith" target="Warren Wilson College" weight="1" />
+      <edge id="667" source="griffith" target="Queensland University of Technology" weight="1" />
+      <edge id="668" source="griffith" target="James Cook University of North Queensland" weight="1" />
+      <edge id="669" source="Deakin University" target="La Trobe University" weight="1" />
+      <edge id="670" source="levinsky" target="University of Michigan - Ann Arbor" weight="1" />
+      <edge id="671" source="University of Michigan - Ann Arbor" target="Boston College" weight="1" />
+      <edge id="672" source="University of Michigan - Ann Arbor" target="George Mason University" weight="1" />
+      <edge id="673" source="com" target="Technische Universität Darmstadt" weight="1" />
+      <edge id="674" source="com" target="tudarmstadt" weight="1" />
+      <edge id="675" source="com" target="Université Laval" weight="1" />
+      <edge id="676" source="com" target="stoasvilentum" weight="1" />
+      <edge id="677" source="com" target="glm" weight="1" />
+      <edge id="678" source="com" target="University of Prince Edward Island" weight="1" />
+      <edge id="679" source="com" target="uol" weight="1" />
+      <edge id="680" source="Technische Universität Darmstadt" target="tudarmstadt" weight="1" />
+      <edge id="681" source="mochi-lab" target="senshu-u" weight="2" />
+      <edge id="682" source="mochi-lab" target="Kobe University" weight="2" />
+      <edge id="683" source="mochi-lab" target="kubota-lab" weight="2" />
+      <edge id="684" source="mochi-lab" target="suzuki-lab" weight="2" />
+      <edge id="685" source="mochi-lab" target="Yokohama National University" weight="1" />
+      <edge id="686" source="mochi-lab" target="umegumi" weight="1" />
+      <edge id="687" source="mochi-lab" target="ouj" weight="1" />
+      <edge id="688" source="senshu-u" target="Kobe University" weight="2" />
+      <edge id="689" source="senshu-u" target="kubota-lab" weight="2" />
+      <edge id="690" source="senshu-u" target="suzuki-lab" weight="2" />
+      <edge id="691" source="senshu-u" target="Yokohama National University" weight="1" />
+      <edge id="692" source="senshu-u" target="umegumi" weight="1" />
+      <edge id="693" source="senshu-u" target="ouj" weight="1" />
+      <edge id="694" source="Kobe University" target="kubota-lab" weight="2" />
+      <edge id="695" source="Kobe University" target="suzuki-lab" weight="2" />
+      <edge id="696" source="Kobe University" target="Yokohama National University" weight="1" />
+      <edge id="697" source="Kobe University" target="umegumi" weight="1" />
+      <edge id="698" source="Kobe University" target="ouj" weight="1" />
+      <edge id="699" source="kubota-lab" target="suzuki-lab" weight="2" />
+      <edge id="700" source="kubota-lab" target="Yokohama National University" weight="1" />
+      <edge id="701" source="kubota-lab" target="umegumi" weight="1" />
+      <edge id="702" source="kubota-lab" target="ouj" weight="1" />
+      <edge id="703" source="suzuki-lab" target="Yokohama National University" weight="1" />
+      <edge id="704" source="suzuki-lab" target="umegumi" weight="1" />
+      <edge id="705" source="suzuki-lab" target="ouj" weight="1" />
+      <edge id="706" source="University of Turku" target="hotmail" weight="1" />
+      <edge id="707" source="North Carolina State University" target="usyd" weight="1" />
+      <edge id="708" source="iwm-kmrc" target="hochbegabung-stuttgart" weight="1" />
+      <edge id="709" source="iwm-kmrc" target="Eberhard-Karls-Universität Tübingen" weight="1" />
+      <edge id="710" source="iwm-kmrc" target="Universität Konstanz" weight="1" />
+      <edge id="711" source="Eberhard-Karls-Universität Tübingen" target="Universität Konstanz" weight="1" />
+      <edge id="712" source="ruppin" target="rafaeli" weight="1" />
+      <edge id="713" source="usyd" target="illnois" weight="1" />
+      <edge id="714" source="usyd" target="durham" weight="1" />
+      <edge id="715" source="imag" target="Ecole Normale Supérieure de Lyon" weight="1" />
+      <edge id="716" source="Ecole Normale Supérieure de Lyon" target="univ-mrs" weight="1" />
+      <edge id="717" source="University of Dublin, Trinity College" target="mada" weight="1" />
+      <edge id="718" source="ets" target="act" weight="1" />
+      <edge id="719" source="ets" target="Universidade de São Paulo" weight="1" />
+      <edge id="720" source="illnois" target="durham" weight="1" />
+      <edge id="721" source="unibw" target="gmx" weight="1" />
+      <edge id="722" source="University of Georgia" target="West Virginia University" weight="1" />
+      <edge id="723" source="Queensland University of Technology" target="James Cook University of North Queensland" weight="1" />
+      <edge id="724" source="act" target="Universidade de São Paulo" weight="1" />
+      <edge id="725" source="Yokohama National University" target="umegumi" weight="1" />
+      <edge id="726" source="Yokohama National University" target="ouj" weight="1" />
+      <edge id="727" source="umegumi" target="ouj" weight="1" />
+      <edge id="728" source="umontana" target="University of Montana" weight="1" />
+      <edge id="729" source="University College London, University of London" target="Malmö University College" weight="2" />
+      <edge id="730" source="University College London, University of London" target="santannapisa" weight="1" />
+      <edge id="731" source="University College London, University of London" target="staff" weight="1" />
+      <edge id="732" source="McGill University" target="Université Laval" weight="1" />
+      <edge id="733" source="DePaul University" target="digitalyouthnetwork" weight="1" />
+      <edge id="734" source="DePaul University" target="mac" weight="1" />
+      <edge id="735" source="digitalyouthnetwork" target="mac" weight="1" />
+      <edge id="736" source="uwb" target="nwp" weight="1" />
+      <edge id="737" source="Université Laval" target="stoasvilentum" weight="1" />
+      <edge id="738" source="Université Laval" target="glm" weight="1" />
+      <edge id="739" source="Université Laval" target="University of Prince Edward Island" weight="1" />
+      <edge id="740" source="Université Laval" target="uol" weight="1" />
+      <edge id="741" source="Virginia Polytechnic Institute and State University" target="Colorado State University" weight="1" />
+      <edge id="742" source="Malmö University College" target="santannapisa" weight="1" />
+      <edge id="743" source="Malmö University College" target="staff" weight="1" />
+      <edge id="744" source="Bauhaus Universität Weimar" target="University of Southampton" weight="1" />
+      <edge id="745" source="Bauhaus Universität Weimar" target="University of the West of England, Bristol" weight="1" />
+      <edge id="746" source="Bauhaus Universität Weimar" target="mheducation" weight="1" />
+      <edge id="747" source="Bauhaus Universität Weimar" target="google" weight="1" />
+      <edge id="748" source="University of Southampton" target="University of the West of England, Bristol" weight="1" />
+      <edge id="749" source="University of Southampton" target="mheducation" weight="1" />
+      <edge id="750" source="University of Southampton" target="google" weight="1" />
+      <edge id="751" source="University of the West of England, Bristol" target="mheducation" weight="1" />
+      <edge id="752" source="University of the West of England, Bristol" target="google" weight="1" />
+      <edge id="753" source="mheducation" target="google" weight="1" />
+      <edge id="754" source="ugent" target="iuffp" weight="1" />
+      <edge id="755" source="wur" target="Tarbiat Modares University" weight="1" />
+      <edge id="756" source="aeres" target="École de technologie supérieure, Université du Québec" weight="1" />
+      <edge id="757" source="stoasvilentum" target="glm" weight="1" />
+      <edge id="758" source="stoasvilentum" target="University of Prince Edward Island" weight="1" />
+      <edge id="759" source="stoasvilentum" target="uol" weight="1" />
+      <edge id="760" source="glm" target="University of Prince Edward Island" weight="1" />
+      <edge id="761" source="glm" target="uol" weight="1" />
+      <edge id="762" source="University of Prince Edward Island" target="uol" weight="1" />
+    </edges>
+  </graph>
+</gexf>

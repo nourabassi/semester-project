@@ -6,6 +6,7 @@ import sys
 import matplotlib.pyplot as plt
 import json
 import argparse
+import regex as reg
 
 parser = argparse.ArgumentParser()
 
@@ -14,6 +15,18 @@ parser.add_argument('-o', type=str, dest='output', default='../data/',  help='sp
 
 rootdir = parser.parse_args().path
 output = parser.parse_args().output
+
+def author_title(x):
+    """Gets author and tite part of reference string"""
+    ref = str(x['ref'])
+    authors = str(x['ref_parsed'])
+    search = len(authors)+1
+    end = re.search('\.|\?', ref[search:])
+    if end:
+        end = end.start()
+    else:
+        end = 0
+    return ref[: (search+end)]
 
 
 def ref_extraction(text, extract=False):
@@ -103,20 +116,20 @@ def match_author(authors):
     return not re.search(USA, authors) and re.match(regex, authors)
 
 
+
 def get_authors_month(sentence, debug = False):
-    """Get author and year from reference string"""
-    regex = r'[\S\s]*\([\,\ \w\d\-]*(18|19|20)\d{2}[\,\ \w\d\-]*\)'
+    regex = r'[ééüş\xad\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
     match_bad_year = r'[\S\s]*\((18|19|20)\d{2}\/(18|19|20)\d{2}\)'
 
-    match_press = r'[\S\s]*\((i|I)n press\)'
+    match_press = r'[\S\s]*\((i|I)n (P|p)ress|manuscript under review\)'
     match_forth = r'[\S\s]*\((f|F)orthcoming\)'
     match_accepted = r'[\S\s]*\((a|A)ccepted\)'
     match_submitted = r'[\S\s]*\((s|S)ubmitted\)'
-    match_underreview = r'[\S\s]*\((u|U)nder review\)'
+    match_underreview = r'[\S\s]*\((u|U)nder (R|r)eview\)'
 
     #sentence = sentence.lower()
-    if re.match(regex, sentence):
-        s = re.search(regex, sentence).group(0)
+    if reg.match(regex, sentence):
+        s = reg.search(regex, sentence).group(0)
         if len(s) > 9:
             return s
     elif re.match(match_bad_year, sentence):
@@ -199,6 +212,7 @@ print('\tNumber of unparsed references: ', references_df[references_df.ref_parse
 print('\tNumber of properly parsed references: ', references_df.ref_parsed.shape[0])
 
 references_df.loc[~references_df.ref_parsed.isna(),'year'] = references_df[~references_df.ref_parsed.isna()].ref_parsed.map(extract_year)
+references_df['identifier'] = references_df.apply(author_title , axis=1)
 
 print('\tSaved reference list to: {} as References.csv'.format(output))
 os.path.join(output, 'References.csv')
