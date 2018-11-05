@@ -1,0 +1,848 @@
+,Label,Id
+0,"Kimball, Nathan",0
+1,"van der Schaaf, Marieke F.",1
+2,"Caballero, Daniela",2
+3,"Kawasaki, Jarod",3
+4,"Warrick, Elizabeth",4
+5,"Khosronejad, Maryam",5
+6,"Walker, Justice T.",6
+7,"Knutsson, Ola",7
+8,"Arvaja, Maarit",8
+9,"Raicu, Daniela",9
+10,"Smyth, Cliff",10
+11,"Hämäläinen, Raija",11
+12,"Blikstein, Paulo",12
+13,"Boston, Carol",13
+14,"Shaffer, David",14
+15,"Panagiotopoulos, Dimitrios",15
+16,"Rose, Carolyn",16
+17,"Downton, Michael P.",17
+18,"Lyons, Leila",18
+19,"Wendel, Daniel",19
+20,"Hickey, Daniel",20
+21,"Seitamaa-Hakkarainen, Pirita",21
+22,"Lin, Karina",22
+23,"Graesser, Art",23
+24,"Lee, Teo Chew",24
+25,"Christmann, Nina",25
+26,"Brami, Uzi",26
+27,"Hajny, Nik",27
+28,"Dawes, Les",28
+29,"Asterhan, Christa",29
+30,"Matsuzawa, Yoshiaki",30
+31,"Levy, Keren S.",31
+32,"Tal, Tali",32
+33,"Chai, Boon Yen",33
+34,"Georgen, Chris",34
+35,"Serafin, Yvonne",35
+36,"Fricke, Kyle W.",36
+37,"Lawrence, LuEttaMae",37
+38,"Spikol, Daniel",38
+39,"Van Alstyne, Ryan",39
+40,"Anderson, Emma",40
+41,"Sandoval, William A.",41
+42,"Stucker, Michael",42
+43,"Lyons, Leilah",43
+44,"Danish, Joshua",44
+45,"Cohen, Jonathan",45
+46,"Schunn, Christian",46
+47,"Leenaars, Frank",47
+48,"Li, Taihua",48
+49,"Chandrasekharan, Sanjay",49
+50,"Wu, Sally",50
+51,"Murthy, Sahana",51
+52,"Quick, Joshua",52
+53,"Hoppe, H. Ulrich",53
+54,"Flekova, Lucie",54
+55,"Shaban, Yara",55
+56,"Martinez-Maldonado, Roberto",56
+57,"Chang, Stephanie",57
+58,"Lin, Chiu Pin",58
+59,"Kim, Nam Ju",59
+60,"Laherto, Antti",60
+61,"AlQahtani, Mona",61
+62,"Wardak, Dewa",62
+63,"Bonsignore, Elizabeth",63
+64,"Abdu, Rotem",64
+65,"Ritella, Giuseppe",65
+66,"Drayton, Brian",66
+67,"Weiser, Gary",67
+68,"Goldberg, Tsafrir",68
+69,"Quintana, Chris",69
+70,"Huang, Lixiao",70
+71,"Ford, Cecilia E.",71
+72,"Borge, Marcela",72
+73,"Kopp, Daniel",73
+74,"Ahonen, Arto K.",74
+75,"Forssell, Karin S.",75
+76,"Kittinger, Liza",76
+77,"Lee, Yew Jin",77
+78,"Järvelä, Sanna",78
+79,"Gleasman, Cory",79
+80,"Sayre, Eleanor C.",80
+81,"Jeong, Heisawn",81
+82,"Gonzalez, Carmen",82
+83,"Danish, Joshua A.",83
+84,"Ruhl, Elisa",84
+85,"Malmberg, Jonna",85
+86,"Pedro, Michael Sao",86
+87,"Charles, Elizabeth S.",87
+88,"Resendes, Monica",88
+89,"Hakkarainen, Kai",89
+90,"Ng, Meixi",90
+91,"Echevarria, Ruben",91
+92,"Hori, Naoto",92
+93,"Applebaum, Lauren",93
+94,"Baram-Tsabari, Ayelet",94
+95,"Halverson, Erica R.",95
+96,"Chan, Carol K.K.",96
+97,"Barron, Brigid",97
+98,"Picinatto, Antonio Carlos",98
+99,"Chagab, Noha",99
+100,"Vedder-Weiss, Dana",100
+101,"Maes, Pattie",101
+102,"Xie, Wenting",102
+103,"Matuk, Camillia",103
+104,"Zheng, Tainian",104
+105,"Kaatz, Anna",105
+106,"Fields, Deborah A.",106
+107,"Awwal, Nafisa",107
+108,"Daxenberger, Johannes",108
+109,"Chai, Shaoming",109
+110,"Rosé, Carolyn P.",110
+111,"Minshew, Lana",111
+112,"Cavera, Veronica L.",112
+113,"Brand, Charleen",113
+114,"Beheshti, Elham",114
+115,"Littleton, Karen",115
+116,"Levrini, Olivia",116
+117,"Tzou, Carrie",117
+118,"Rajala, Antti",118
+119,"Shin, Myunghwan",119
+120,"Tammi, Tuure",120
+121,"Smith, Blaine Elizabeth",121
+122,"Hung, Guo-Tsai",122
+123,"Gobert, Janice",123
+124,"Dong, Yi",124
+125,"Angersbach, Jennifer",125
+126,"Montané, Mireia",126
+127,"Rodela, Katherine",127
+128,"Russell, Sam",128
+129,"Brandes, Ofra",129
+130,"Dorph, Rena",130
+131,"Uttamchandani, Suraj",131
+132,"Allen, Laura",132
+133,"Widman, Sari A.",133
+134,"Dziallas, Sebastian",134
+135,"Shen, Ji",135
+136,"Laina, Vasiliki",136
+137,"Hong, Helen",137
+138,"Xiao, Sihan",138
+139,"Collin, Jonas",139
+140,"Steinkuehler, Constance",140
+141,"Xia, Lei",141
+142,"Madhok, Jacquie",142
+143,"Koehler-Yom, Jessica",143
+144,"Stahl, Gerry",144
+145,"Parisio, Martin",145
+146,"Cress, Ulrike",146
+147,"von Davier, Alina",147
+148,"Chan, Carol",148
+149,"Bresser, Nicolas",149
+150,"McAuley, Alexander",150
+151,"Mercier, Emma",151
+152,"Cocco, Felipe",152
+153,"Van Steenis, Erica",153
+154,"Hall, Rogers",154
+155,"Yang, Diyi",155
+156,"Bereiter, Carl",156
+157,"Slotta, James D.",157
+158,"Rosé, Carolyn Penstein",158
+159,"Bell, Philip",159
+160,"Elby, Andrew",160
+161,"Shaffer, David Williamson",161
+162,"Agrawal, Harshit",162
+163,"Pauw, Daniel",163
+164,"Amzalag, Meital",164
+165,"Kang, Seokmin",165
+166,"Nacu, Denise C.",166
+167,"Dimitriadis, Yannis",167
+168,"Sandoval, William",168
+169,"Gao, Dandan",169
+170,"Zhang, Jiayuan",170
+171,"Dascalu, Mihai",171
+172,"Yip, Jason C.",172
+173,"Preece, Jennifer",173
+174,"Dalsen, Jennifer",174
+175,"Rosson, Mary Beth",175
+176,"Chen, Bodong",176
+177,"Sengupta, Pratim",177
+178,"Fields, Gabriel",178
+179,"Allert, Heidrun",179
+180,"Arastoopour, Golnaz",180
+181,"Lee, Jin Ha",181
+182,"Evans, Michael A.",182
+183,"Piland, Jacob",183
+184,"Tytler, Russell",184
+185,"Lee, Christine",185
+186,"Ricarte, Thales",186
+187,"Wang, Xu",187
+188,"Sun, Zhiru",188
+189,"Guzdial, Mark",189
+190,"Tan, Samuel",190
+191,"Judson, Darlene",191
+192,"Peebles, Ben",192
+193,"Gouveia, Christine",193
+194,"Whiteman, Jennifer",194
+195,"Keune, Anna",195
+196,"Joyce, Jeanette",196
+197,"Anderson, Janice",197
+198,"May, Aaron",198
+199,"Van Horne, Katie",199
+200,"Brown, David E.",200
+201,"Chu, Shien",201
+202,"Tan, Seng Chee",202
+203,"Cunningham, Jahneille",203
+204,"Emmanuel, Navo",204
+205,"Rogers, Bradley",205
+206,"Hesse, Friedrich W.",206
+207,"Liu, Shiyu",207
+208,"Martin, Seth A.",208
+209,"Ghanem, Christian",209
+210,"Villanosa, Krystal",210
+211,"Hmelo-Silver, Cindy",211
+212,"Snyder, Anne",212
+213,"Newman, Greg",213
+214,"Pryputniewicz, Sarah",214
+215,"Nachankar, Mrunal",215
+216,"Carafano, Peter",216
+217,"Bouton, Edith",217
+218,"Dragomir, Mihaela",218
+219,"McKenney, Susan",219
+220,"Visintainer, Tammie",220
+221,"Karlström, Petter",221
+222,"Mierwald, Marcel",222
+223,"Goh, Wendy",223
+224,"Tempelaar, Dirk",224
+225,"Fossati, Davide",225
+226,"Kirschner, Paul A.",226
+227,"Lee, Jiyeon",227
+228,"Verma, Himanshu",228
+229,"Plane, Angelisa C.",229
+230,"Derry, Sharon",230
+231,"Wiedmann, Michael",231
+232,"Hecking, Tobias",232
+233,"Mu, Jin",233
+234,"Kerr, Deirdre",234
+235,"Reichersdorfer, Elisabeth",235
+236,"Steele, K-Fai",236
+237,"Yoon, Susan",237
+238,"Lee, Yeung",238
+239,"Farnsworth, Jesse",239
+240,"Andrade, Alejandro",240
+241,"Tan, Edna",241
+242,"Cain, Ryan",242
+243,"Ong, Yann Shiou",243
+244,"DeSchryver, Michael",244
+245,"Kulik, Alexander",245
+246,"Cobb, Sue",246
+247,"Trausan-Matu, Stefan",247
+248,"Frensley, Troy",248
+249,"Shareff, Becca",249
+250,"Stegmann, Karsten",250
+251,"Lai, Polly K.",251
+252,"Gaydos, Matthew",252
+253,"Kwok, Amy",253
+254,"Lehtinen, Erno",254
+255,"K.Martin, Caitlin",255
+256,"Vitale, Jonathan M.",256
+257,"Chounta, Irene-Angelica",257
+258,"Dascălu, Mihai",258
+259,"Collier, Wesley",259
+260,"Odemwingie, O. Carlette",260
+261,"Säljö, Roger",261
+262,"Holmes, Wayne",262
+263,"Spaulding, Scott",263
+264,"Davis, Katie",264
+265,"Heijnes, Dewi",265
+266,"Hao, Jiangang",266
+267,"van Leeuwen, Anouschka",267
+268,"Laferrière, Thérèse",268
+269,"Eisenhart, Margaret",269
+270,"Sankaranarayanan, Sreecharan",270
+271,"Nunes, Cesar",271
+272,"Kubota, Yoshihiko",272
+273,"Kluge, Anders",273
+274,"Wen, Miaomiao",274
+275,"So, Hyo-Jeong",275
+276,"Saleh, Asmalina",276
+277,"Jin, Yinglian",277
+278,"Swiecki, Zachari",278
+279,"Gray, Steven",279
+280,"Häkkinen, Päivi",280
+281,"Rau, Martina",281
+282,"Santo, Rafi",282
+283,"Sheldon, Josh",283
+284,"Bakker, Arthur",284
+285,"Albrecht, Julia",285
+286,"Wylie, Ruth",286
+287,"Schlottbom, Patrick",287
+288,"Stieff, Mike",288
+289,"Payne, Scott",289
+290,"Bang, Megan",290
+291,"Shapiro, R. Benjamin",291
+292,"Reiss, Kristina",292
+293,"Hoadley, Christopher",293
+294,"Oliver, Mary",294
+295,"Rädle, Roman",295
+296,"Liuzzi, Richard",296
+297,"Phillips, Abigail",297
+298,"Franklin, Scott V.",298
+299,"Johri, Aditya",299
+300,"Hirayama, Ryoya",300
+301,"Ramey, Kay E.",301
+302,"Walker, Susan",302
+303,"Prieto, Luis P.",303
+304,"Johnson, Raymond",304
+305,"Hickey, Daniel T.",305
+306,"Stevens, Reed",306
+307,"Ufer, Stefan",307
+308,"Shibani, Antonette",308
+309,"Tietjen, Phil",309
+310,"Sedik, Zahira Mohd",310
+311,"Nathan, Mitchell J.",311
+312,"Wallon, Robert C.",312
+313,"Kustusch, Mary Bridget",313
+314,"van Aalst, Jan",314
+315,"Nutchey, David",315
+316,"Tissenbaum, Mike",316
+317,"Jan, Mingfong",317
+318,"Murray, Julia",318
+319,"Çakır, Murat Perit",319
+320,"Saucerman, Jenny",320
+321,"Huang, Yue",321
+322,"Kim, So Mi",322
+323,"Quintana, Rebecca M.",323
+324,"Gerritsen, David",324
+325,"Cabo, Candido",325
+326,"Puntambekar, Sadhana",326
+327,"Price, Nancy",327
+328,"Bhatnagar, Sameer",328
+329,"Moher, Tom",329
+330,"Severance, Sam",330
+331,"Meyerhoff, Peter",331
+332,"Chase, Catherine C.",332
+333,"Elson, Malte",333
+334,"Kahn, Jennifer",334
+335,"Ben-Zvi, Dani",335
+336,"Dyke, Gregory",336
+337,"Hansen, Jennifer",337
+338,"Pallant, Amy",338
+339,"Lyu, Xiaoxin",339
+340,"Segal, Aliza",340
+341,"Green, Nick",341
+342,"Funaoi, Hideo",342
+343,"C.Linn, Marcia",343
+344,"Calandra, Brendan",344
+345,"Cheng, Kenneth",345
+346,"Wan, Haipeng",346
+347,"Guribye, Frode",347
+348,"Perritano, Anthony",348
+349,"Eimler, Sabrina",349
+350,"Di Eugenio, Barbara",350
+351,"Lotz-Sisitka, Heila",351
+352,"Froehlich, Jon E.",352
+353,"Guo, Yu",353
+354,"Ashley, Robert W.",354
+355,"Ruis, Andrew",355
+356,"Buessing, Shawn",356
+357,"Ligorio, Beatrice",357
+358,"Bronet, Murray",358
+359,"Millet, Chris",359
+360,"Dillenbourg, Pierre",360
+361,"Barcellos, Marcília E.",361
+362,"Shehab, Saadeddine",362
+363,"Lindgren, Robb",363
+364,"Graville-Smith, Cynthia",364
+365,"Chee, Joon Kit Kelvin",365
+366,"Lundin, Mona",366
+367,"Lee, Victor R.",367
+368,"Varma, Keisha",368
+369,"Slotta, James",369
+370,"Pinkard, Nichole",370
+371,"Stromholt, Shelley",371
+372,"Schwendimann, Beat",372
+373,"Jona, Kemi",373
+374,"Rodriguez, James",374
+375,"McElhaney, Kevin W.",375
+376,"Ohsaki, Ayano",376
+377,"Weible, Jennifer",377
+378,"Mahoney, Charlie",378
+379,"Tchounikine, Pierre",379
+380,"Mommandi, Wagma",380
+381,"Newbutt, Nigel",381
+382,"Khamis, Nur Azarina",382
+383,"Fujita, Wataru",383
+384,"Baltes, Jennifer",384
+385,"Chiu, Thomas K.F.",385
+386,"Nickels, Katherine",386
+387,"Parikh, Tapan S.",387
+388,"Csanadi, Andras",388
+389,"McNamara, Danielle S.",389
+390,"Wobbrock, Jacob O.",390
+391,"Harrer, Benedikt W.",391
+392,"Horn, Ilana Seidel",392
+393,"Baruch, Alona Forkosh",393
+394,"Kim, Beaumie",394
+395,"Hillman, Thomas",395
+396,"Kuhn, Alex",396
+397,"Brennan, Karen",397
+398,"Gnesdilow, Dana",398
+399,"Kang, Seokbin",399
+400,"Looi, Chee-Kit",400
+401,"White, Tobin",401
+402,"Dornfeld, Catherine",402
+403,"Anjewierden, Anjo",403
+404,"Penuel, William",404
+405,"Fathema, Nafsaniath",405
+406,"Bielaczyc, Katerine",406
+407,"Doyle, Tanya",407
+408,"Olsen, Jennifer K.",408
+409,"Chen, Feng",409
+410,"Giri, Sagun",410
+411,"Maggiore, Chrystal",411
+412,"Clarke, Sherice",412
+413,"Finkelstein, Samantha",413
+414,"Jackson, Julia",414
+415,"Kapur, Manu",415
+416,"Lefstein, Adam",416
+417,"Boyer, Kristy Elizabeth",417
+418,"Arnseth, Hans Christian",418
+419,"Shirouzu, Hajime",419
+420,"Gu, Xiaoqing",420
+421,"Chakravarthi, Rohit",421
+422,"Ayer, Tugba",422
+423,"Wan, Jarrad",423
+424,"Lesama, Manoel Flores",424
+425,"Trăușan-Matu, Ștefan",425
+426,"Rojas-Perilla, Diego",426
+427,"Clegg, Tamara L.",427
+428,"Dieckmeyer, Emily",428
+429,"Cober, Rebecca",429
+430,"Renshaw, Peter",430
+431,"Kato, Hiroshi",431
+432,"Khanlari, Ahmad",432
+433,"Acosta, Alisa",433
+434,"Messina, Richard",434
+435,"Fan, Min",435
+436,"Lenton, Kevin",436
+437,"Mazziotti, Claudia",437
+438,"Gomoll, Andrea S.",438
+439,"Jornet, Alfredo",439
+440,"Buis, Stan C. A.",440
+441,"Fuqua, Aeslya",441
+442,"Hickey, Timothy J.",442
+443,"Levy, Sharona T",443
+444,"Thompson, Kate",444
+445,"Silvis, Deborah",445
+446,"Ruffaldi, Emanuele",446
+447,"Shin, Minyoung",447
+448,"Kirschner, Paul",448
+449,"Teo, Chew Lee",449
+450,"Penney, Lauren",450
+451,"Prain, Vaughan",451
+452,"Godinez, Erick Velazquez",452
+453,"Shim, Jooeun",453
+454,"Taub, Michelle",454
+455,"Wichmann, Astrid",455
+456,"Quick, Joshua D.",456
+457,"Kumar, Vishesh",457
+458,"Tabak, Iris",458
+459,"Häkkinen, Päivi",459
+460,"Erdmann, Julia",460
+461,"Sannino, Annalisa",461
+462,"Feng, Mingyu",462
+463,"Oztok, Murat",463
+464,"Harrell, Maralee",464
+465,"Low, Michelle",465
+466,"Law, Nancy",466
+467,"Wise, Alyssa",467
+468,"Biemans, Harm",468
+469,"Vogel, Freydis",469
+470,"Keifert, Danielle T.",470
+471,"Hernwall, Patrik",471
+472,"Shayan, Shakila",472
+473,"Weintrop, David",473
+474,"Flake, Sabrina",474
+475,"Wilkerson, Michelle",475
+476,"Morphew, Jason",476
+477,"Cuendet, Sebastien",477
+478,"Funk, Alexandra L.",478
+479,"Gurevych, Iryna",479
+480,"Sun, Yanqing",480
+481,"Trăușan-Matu, Ștefan",481
+482,"Cutshall, Jessica",482
+483,"Antle, Alissa Nicole",483
+484,"Chan, Carol K. K.",484
+485,"Kolodner, Janet L.",485
+486,"Gergle, Darren",486
+487,"Puhl, Thomas",487
+488,"Rodriguez, Lilia",488
+489,"Wang, Qi",489
+490,"Sasaki, Hiroshi",490
+491,"Stroud, Brandon",491
+492,"Kunert, André",492
+493,"Klopfer, Eric",493
+494,"Holland, Jennifer",494
+495,"Pea, Roy D.",495
+496,"Yang, Christine",496
+497,"Swanson, Hillary",497
+498,"Jacobson, Michael J.",498
+499,"Weinberger, Armin",499
+500,"Lahav, Orly",500
+501,"Berland, Matthew",501
+502,"Mavrikis, Manolis",502
+503,"Prinsen, Fleur R.",503
+504,"Peppler, Kylie",504
+505,"Dessus, Philippe",505
+506,"Vinha, Telma",506
+507,"Lord, Trudi",507
+508,"Chen, Mei-Hwa",508
+509,"Schwarz, Christina V.",509
+510,"Oshima, Jun",510
+511,"Noor, Jama",511
+512,"Jermann, Patrick",512
+513,"Kafai, Yasmin B.",513
+514,"Ruis, Andrew R.",514
+515,"Quigley, David",515
+516,"Strijbos, Jan-Willem",516
+517,"Vatrapu, Ravi",517
+518,"Cheng, Teng-Yao",518
+519,"Schmitt, Lara",519
+520,"Andrews, Jessica J.",520
+521,"Rosé, Carolyn",521
+522,"Barzilai, Sarit",522
+523,"Wiggins, Joseph B.",523
+524,"DiGiacomo, Daniela",524
+525,"Warren, Jillian",525
+526,"Rebedea, Traian",526
+527,"D’Angelo, Sarah",527
+528,"DeSutter, Dane",528
+529,"Telhan, Orkan",529
+530,"Herrmann, Thomas",530
+531,"Azevedo, Roger",531
+532,"Raclaw, Joshua",532
+533,"Carnes, Molly",533
+534,"Tomar, Gaurav",534
+535,"Yuan, Jiangmei",535
+536,"Davis, Richard",536
+537,"Fröhlich, Bernd",537
+538,"Damșa, Crina",538
+539,"Scardamalia, Marlene",539
+540,"Schoenfeld, Ilana",540
+541,"Cuendet, Sébastien",541
+542,"Tan, Michael",542
+543,"Zhu, Mengxiao",543
+544,"Barrat, Alain",544
+545,"Kyewski, Elias",545
+546,"Yamada, Yuki",546
+547,"Cattaneo, Alberto A. P.",547
+548,"Forbes, Cory",548
+549,"Chai, Ching Sing",549
+550,"Deiglmayr, Anne",550
+551,"Anderson, Richard C.",551
+552,"Yoon, Susan A.",552
+553,"de Souza, Elisabeth G.",553
+554,"Querol, Marco Pereira",554
+555,"Lee, Hee-Sun",555
+556,"Cook, Lucas",556
+557,"Järvenoja, Hanna",557
+558,"Land, Susan M.",558
+559,"Enyedy, Noel",559
+560,"Corning, Wiley",560
+561,"Pei, Xinning",561
+562,"van Joolingen, Wouter",562
+563,"McGowan, Veronica C.",563
+564,"Toprani, Dhvani",564
+565,"Tscholl, Michael",565
+566,"Burns, Mary",566
+567,"Lasry, Nathaniel",567
+568,"Traut, Hilary",568
+569,"Kafai, Yasmin",569
+570,"Pekrun, Reinhard",570
+571,"Chikunda, Charles",571
+572,"Ogan, Amy",572
+573,"Saito, Moegi",573
+574,"Van Wart, Sarah",574
+575,"Gomez, Kimberley",575
+576,"van Heijst, Hennie",576
+577,"Solli, Anne",577
+578,"Engelmann, Tanja",578
+579,"D'Angelo, Sarah",579
+580,"Israel, Maya",580
+581,"Kali, Yael",581
+582,"Ling, Lee Yu",582
+583,"Mislevy, Robert J.",583
+584,"Dutta, Nikita",584
+585,"Yu, Sheng-Quan",585
+586,"Seah, Lay Hoon",586
+587,"Goodyear, Peter",587
+588,"Hmelo-Silver, Cindy E.",588
+589,"Ching, Cynthia Carter",589
+590,"Giannakos, Michail",590
+591,"Weiss, David M.",591
+592,"Rummel, Nikol",592
+593,"Wilensky, Uri",593
+594,"Jordan, Rebecca",594
+595,"Zimmerman, Heather Toomey",595
+596,"McLaren, Bruce M.",596
+597,"Regalla, Lisa",597
+598,"Gouvea, Julia Svoboda",598
+599,"Wasson, Barbara",599
+600,"Kabayadondo, Zaza",600
+601,"Yuan, Guangji",601
+602,"Tarnai, Christian",602
+603,"Faulkner, Roosevelt",603
+604,"Kyllonen, Patrick",604
+605,"Lajoie, Susanne P.",605
+606,"del Castillo, Fernando Diaz",606
+607,"Recker, Mimi",607
+608,"G, Nagarjuna",608
+609,"Liu, Lei",609
+610,"Linn, Marcia C.",610
+611,"Easterday, Matthew W.",611
+612,"Hill, Roger B.",612
+613,"Zhu, Gaoxia",613
+614,"Kyza, Eleni A.",614
+615,"Neff, Michael",615
+616,"Vitale, Jonathan",616
+617,"Jordan-Douglass, Anna",617
+618,"Pratt, Wanda",618
+619,"Lin, Feng",619
+620,"Silva, Alexandra",620
+621,"Talis, Vadim",621
+622,"Ma, Leanne",622
+623,"Curnow, Joe",623
+624,"Garner, Brette",624
+625,"Evans, Chad",625
+626,"MacArthur, Chris",626
+627,"Dyer, Elizabeth B.",627
+628,"Zhao, Naxin",628
+629,"Cannady, Matthew A.",629
+630,"Spells, Monet",630
+631,"Ainsworth, Shaaron",631
+632,"Kaul, Chittaranjan",632
+633,"Dugdale, Michael",633
+634,"Binzak, John V.",634
+635,"Pöysä-Tarhonen, Johanna",635
+636,"Wang, Li-Jen",636
+637,"Carvalho, Lucila",637
+638,"Humburg, Megan",638
+639,"Cassell, Justine",639
+640,"Gerard, Libby",640
+641,"Elming, Anna Lindenhoff",641
+642,"Werneburg, Sören",642
+643,"Kunicki, Suzanne",643
+644,"Huang, Jun Song",644
+645,"Horn, Michael",645
+646,"Schneider, Bertrand",646
+647,"Weiss, Patrice L.",647
+648,"Gebre, Engida",648
+649,"Cournoyer, Nathan",649
+650,"Krist, Christina",650
+651,"von Davier, Alina A.",651
+652,"Windleharth, Travis",652
+653,"Gravel, Brian",653
+654,"van den Ende, Joan",654
+655,"Leftheriotis, Ioannis",655
+656,"Friend, Michelle",656
+657,"Lakhani, Heena",657
+658,"Bodemer, Daniel",658
+659,"Grainger, Rebecca",659
+660,"Gemmell, Jonathan",660
+661,"Aditomo, Anindito",661
+662,"Lui, Debora A.",662
+663,"Gnoli, Alessandro",663
+664,"Price, Kimberly Michelle",664
+665,"Reeve, Richard",665
+666,"Sharma, Kshitij",666
+667,"Krämer, Nicole C.",667
+668,"Martin, Fred",668
+669,"Oshima, Ritsuko",669
+670,"Serlin, Ronald",670
+671,"Beck, Stephan",671
+672,"Law, Victor",672
+673,"Krämer, Nicole",673
+674,"Mäkitalo, Åsa",674
+675,"Biswas, Gautam",675
+676,"Aleven, Vincent",676
+677,"Duek, Oshra",677
+678,"Bannan, Brenda",678
+679,"Kollar, Ingo",679
+680,"Wegerif, Rupert",680
+681,"Irgens, Golnaz Arastoopour",681
+682,"Arnedillo-Sanchez, Inmaculada",682
+683,"Najafi, Hedieh",683
+684,"Lund, Kristine",684
+685,"Elias, Nelly",685
+686,"Slater, Stefan",686
+687,"Gutiérrez, José Francisco",687
+688,"Lui, Michelle",688
+689,"Fauville, Géraldine",689
+690,"Olsen, Al",690
+691,"Polman, Joseph",691
+692,"Hansen, Alice",692
+693,"Breuleux, Alain",693
+694,"Abrahamson, Dor",694
+695,"Ahn, June",695
+696,"Duncan, Sean C.",696
+697,"Mathayas, Nitasha",697
+698,"Boroujeni, Mina Shirvani",698
+699,"Kuhn, Deanna",699
+700,", ",700
+701,"Markauskaite, Lina",701
+702,"Moses, George",702
+703,"McCracken, W. Michael",703
+704,"Leak, Anne",704
+705,"Bumbacher, Engin",705
+706,"Fynes-Clinton, Elizabeth",706
+707,"Collins, Jamie M.",707
+708,"Liang, Leming",708
+709,"Clegg, Tamara",709
+710,"Wen, Yun",710
+711,"Lee, Alison",711
+712,"Xing, Chenmu",712
+713,"Whittaker, Chris",713
+714,"Barton, Angela Calabrese",714
+715,"Hinojosa, Leighanna",715
+716,"Kolikant, Yifat Ben-David",716
+717,"Krange, Ingeborg",717
+718,"Lee, Victoria",718
+719,"Scheintaub, Hal",719
+720,"Mudrick, Nicholas",720
+721,"Barber-Lester, Kelly",721
+722,"Pesanayi, Tichaona",722
+723,"Cook, Claire",723
+724,"Bal, Aydin",724
+725,"Mann, Michele J.",725
+726,"Levy, Sharona",726
+727,"Zhang, Jianwei",727
+728,"de Jong, Frank",728
+729,"Baker, Ryan",729
+730,"Champion, Dionne N.",730
+731,"Loibl, Katharina",731
+732,"Wu, Ying-Tien",732
+733,"Håklev, Stian",733
+734,"Linn, Marcia",734
+735,"Lantz-Andersson, Annika",735
+736,"Hershkovitz, Arnon",736
+737,"Cukurova, Mutlu",737
+738,"Brady, Corey",738
+739,"Minor, Rachelle",739
+740,"Wittmann, Michael C.",740
+741,"Tsovaltzi, Dimitra",741
+742,"Wise, Alyssa Friend",742
+743,"Bell, Adam",743
+744,"Oguamanam, Vanessa",744
+745,"Squire, Kurt",745
+746,"Gijlers, Hannie",746
+747,"Quignard, Matthieu",747
+748,"Meier, Elisabeth",748
+749,"Pardos, Zach",749
+750,"de Jong, Ton",750
+751,"Lam, Rachel",751
+752,"Ryberg, Thomas",752
+753,"Sumner, Tamara",753
+754,"Hatami, Javad",754
+755,"Blum-Smith, Sarah",755
+756,"Madhok, Jacqueline",756
+757,"Zahid, Aejaz",757
+758,"Dickes, Amanda Catherine",758
+759,"Kanasa, Harry",759
+760,"Silva, Brenda López",760
+761,"Iikubo, Shinya",761
+762,"Hollett, Ty",762
+763,"Hilppö, Jaakko",763
+764,"McDonald, Scott P.",764
+765,"Weidler-Lewis, Joanna",765
+766,"Goggins, Sean",766
+767,"Mäkitalo, Åsa",767
+768,"Macaranas, Anna",768
+769,"Parsons, Sarah",769
+770,"Penuel, William R.",770
+771,"Katz, Vikki",771
+772,"Ratté, Sylvie",772
+773,"Howley, Iris",773
+774,"Illum, Randy",774
+775,"Chen, Shu",775
+776,"Ouyang, Xueying",776
+777,"Eagan, Brendan",777
+778,"Quek, Choon Lang",778
+779,"Suzuki, Hideyuki",779
+780,"Dahn, Maggie",780
+781,"McMullen, Kyla",781
+782,"Sánchez–García, Raúl",782
+783,"Rienties, Bart",783
+784,"Rafaeli, Sheizaf",784
+785,"Joyce-Gibbons, Andrew",785
+786,"Grawemeyer, Beate",786
+787,"Wakimoto, Takehiro",787
+788,"Vanderbeke, Marie",788
+789,"Tsai, Chin-Chung",789
+790,"Adleberg, Barrie",790
+791,"Gomez, Kimberly",791
+792,"Kamsan, Muhamad Ansar B.",792
+793,"Turker, Aybuke",793
+794,"Wong, Lung-Hsiang",794
+795,"Guillemette, Jonathan",795
+796,"Neubaum, German",796
+797,"Sagy, Ornit",797
+798,"Tao, Dan",798
+799,"Vanlehn, Kurt",799
+800,"Dasgupta, Chandan",800
+801,"Pea, Roy",801
+802,"Searle, Kristin A.",802
+803,"Bogouslavsky, Maria",803
+804,"Kent, Carmel",804
+805,"Lu, Lin",805
+806,"Viswanathan, Anandhi",806
+807,"Yan, Shulong",807
+808,"Sarenius, Vesa-Matti",808
+809,"Ogawa, Sonoko",809
+810,"Xie, Kui",810
+811,"Sevian, Hannah",811
+812,"Buder, Jürgen",812
+813,"Fischer, Frank",813
+814,"Care, Esther",814
+815,"Hamid, Taha",815
+816,"Hartley, Kylie",816
+817,"Weiss, Patrice L. Tamar",817
+818,"Reimann, Peter",818
+819,"Li, Yi",819
+820,"Rook, Michael M.",820
+821,"Liu, Yu",821
+822,"Chan, Jody R.",822
+823,"Mulder, Martin",823
+824,"Kidron, Adi",824
+825,"Severance, Samuel",825
+826,"Grimes, Sara M.",826
+827,"Gomez, Louis M.",827
+828,"Strachota, Susanne M.",828
+829,"Laslo, Esther",829
+830,"Fong, Cresencia",830
+831,"DiSalvo, Betsy",831
+832,"Choi, Koun",832
+833,"Gerber, Elizabeth M.",833
+834,"Bennett, Cynthia L.",834
+835,"Gil, Alfredo Jornet",835
+836,"Uchidiuno, Judith",836
+837,"De Wever, Bram",837
+838,"Zufferey, Guillaume",838
+839,"Wigmore, Peter",839
+840,"Plass, Jan L.",840
+841,"Habron, Geoffrey",841
+842,"Champion, Dionne",842
+843,"Catrambone, Richard",843
+844,"Askari, Emilia",844
+845,"Morrison, Briana B.",845
+846,"Hung, David",846
