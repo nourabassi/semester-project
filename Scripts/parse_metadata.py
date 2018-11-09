@@ -83,9 +83,9 @@ df_data['accessioned'] = df_data['accessioned'].apply(lambda x : convert(x))
 
 
 cleaning = df_data.reset_index().melt(id_vars=['index','subject', 'iso', 'uri','type','publisher','title', 'issued', 'accessioned', 'citation', 'available', 'abstract'])
-cleaning.dropna(inplace=True)
+cleaning = cleaning[cleaning.value.notna()]
+cleaning = cleaning[cleaning.variable.notna()]
 cleaning = cleaning[cleaning.value.map(lambda x: len(x) > 2)]
-cleaning['author_name_length'] = cleaning.value.map(lambda x: len(x))
 cleaning['author_order'] = cleaning.variable.map(lambda x: 0 if len(re.search('\d*$', x).group(0)) == 0 else int(re.search('\d*$', x).group(0)))
 del cleaning['variable']
 
@@ -94,7 +94,8 @@ get_names = r'([\w\-\&]*[\,] [\p{L}\.\ ]+[\&\,]?)'
 cleaning.reset_index(drop=True, inplace=True)
 cleaning['shortend_names'] = cleaning.citation.map(lambda x: re.match(r'[\S\s]*\(\d{4}\)', x, re.U).group(0)).map(lambda x: [x.replace(',', '').replace('&', '').rstrip() for x in regex.findall(get_names, x)])
 cleaning['shortend_names'] = cleaning.apply(lambda x: x['shortend_names'][x['author_order']], axis=1)
-cleaning.rename(columns={'index': 'file'}, inplace=True)
+cleaning.rename(columns={'index': 'file', 'value':'long_name'}, inplace=True)
+del cleaning['author_order']
 
 cleaning['file'] = cleaning.file.map(lambda x: x.replace('/', '_')[:-len('/dublin_core')])
 
