@@ -10,7 +10,7 @@ import regex as reg
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--input', type=str, dest='path', default='../papers-import/',  help='specifies the path to input dir')
+parser.add_argument('--input', type=str, dest='path', default='../data/papers/',  help='specifies the path to input dir')
 parser.add_argument('-o', type=str, dest='output', default='../data/',  help='specifies the path to output dir')
 
 rootdir = parser.parse_args().path
@@ -176,7 +176,7 @@ for subdir, dirs, files in os.walk(rootdir):
                 try:
                     text = file.read()
                     contents.append(text)
-                    source.append(subdir[len(rootdir):])
+                    source.append(path[len(rootdir):-4])
                 except:
                     name, message, content = sys.exc_info()
                     print(message)

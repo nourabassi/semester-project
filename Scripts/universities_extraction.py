@@ -7,7 +7,7 @@ import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input', type=str, dest='path', default='../papers-import/',  help='specifies the path to input dir')
+parser.add_argument('--input', type=str, dest='path', default='../data/papers/',  help='specifies the path to input dir')
 
 rootdir = parser.parse_args().path
 
@@ -45,7 +45,7 @@ for subdir, dirs, files in os.walk(rootdir):
                 try:
                     text = file.read()
                     contents.append(text)
-                    source.append(subdir[len(rootdir):])
+                    source.append(path[len(rootdir):-4])
                 except:
                     name, message, content = sys.exc_info()
                     print(message)
@@ -95,4 +95,6 @@ parsed_countries['.uk']= "United Kingdom"
 parsed_countries['.us']  = "United States"
 
 inst.loc[inst.country.isna(), 'country'] = inst[inst.country.isna()].domain.map(lambda x: re.findall("(\.[a-zA-Z0-9]*$)",x)[0]).map(parsed_countries)
+
+print('[Info] Saved data to ../data/Universities.csv')
 inst.to_csv('../data/Universities.csv')
