@@ -8,8 +8,8 @@ import re
 import regex
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input', type=str, dest='path', default='../papers-import/',  help='specifies the path to input dir')
-parser.add_argument('-o', type=str, dest='output', default='../data/',  help='specifies the path to output dir')
+parser.add_argument('--input', type=str, dest='path', default='papers-import/',  help='specifies the path to input dir')
+parser.add_argument('-o', type=str, dest='output', default='data/',  help='specifies the path to output dir')
 
 rootdir = parser.parse_args().path
 output = parser.parse_args().output

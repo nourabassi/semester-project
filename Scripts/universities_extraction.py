@@ -7,7 +7,7 @@ import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input', type=str, dest='path', default='../data/papers/',  help='specifies the path to input dir')
+parser.add_argument('--input', type=str, dest='path', default='data/papers/',  help='specifies the path to input dir')
 
 rootdir = parser.parse_args().path
 
@@ -50,7 +50,7 @@ for subdir, dirs, files in os.walk(rootdir):
                     name, message, content = sys.exc_info()
                     print(message)
 
-schools = open('../data/world_universities_and_domains.json').read()
+schools = open('data/world_universities_and_domains.json').read()
 parsed_json = json.loads(schools)
 
 
@@ -87,7 +87,7 @@ inst = pd.DataFrame([(i[0][0],i[0][1], i[1],i[2], source[index]) for index, uni 
 inst.loc[inst['name'].isna(),'name'] = inst[inst['name'].isna()].domain.map(lambda x: get_org_name(x))
 inst['country'] = inst.domain.map(country_uni)
 
-countries = open('../data/country-by-domain-tld.json').read()
+countries = open('data/country-by-domain-tld.json').read()
 parsed_countries = json.loads(countries)
 parsed_countries = { parsed['tld']: parsed['country'] for parsed in parsed_countries}
 
@@ -97,4 +97,4 @@ parsed_countries['.us']  = "United States"
 inst.loc[inst.country.isna(), 'country'] = inst[inst.country.isna()].domain.map(lambda x: re.findall("(\.[a-zA-Z0-9]*$)",x)[0]).map(parsed_countries)
 
 print('[Info] Saved data to ../data/Universities.csv')
-inst.to_csv('../data/Universities.csv')
+inst.to_csv('data/Universities.csv')
