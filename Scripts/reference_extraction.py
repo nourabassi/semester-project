@@ -222,11 +222,18 @@ references_df.to_csv(os.path.join(output, 'References.csv'))
 
 #extract authors and clean strings a bit
 regex = r'([\w\-]*[\,] [A-Z\.\ ]+[\&\,]?)'
-authors = references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: re.findall(regex, x) ).tolist()
-authors = [ [a.replace(',', '').replace('&', '').rstrip() for a in l] for l in authors ]
-proto_frame = list(zip(authors, references_df[~references_df.ref_parsed.isna()].file.tolist()))
-#extract authors!
-authors_frame = pd.DataFrame([(i, index) for (l, index ) in proto_frame for i in l], columns=['author', 'file'])
+references_df['authors'] =  references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: [a.replace(',', '').replace('&', '').rstrip() for a in re.findall(regex, x)] )
+
+tags = references_df.authors.apply(pd.Series)
+tags = tags.rename(columns = lambda x : 'tag_' + str(x))
+
+df = pd.concat([references_df, tags], axis=1)
+tag_cols = [c for c in df.columns if 'tag' not in c]
+df = df.melt(id_vars=tag_cols)
+
+df['author'] = df['value']
+df = df[df.value.notna()].reset_index(drop=True)
+del df['variable'], df['authors'], df['value']
 
 print('\tSaved to individual authors list: {} as Reference_authors.csv'.format(output))
-authors_frame.to_csv(os.path.join(output, 'Reference_authors.csv'))
+df.to_csv(os.path.join(output, 'Reference_authors.csv'))

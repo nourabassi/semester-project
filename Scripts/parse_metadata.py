@@ -95,7 +95,7 @@ cleaning.reset_index(drop=True, inplace=True)
 cleaning['shortend_names'] = cleaning.citation.map(lambda x: re.match(r'[\S\s]*\(\d{4}\)', x, re.U).group(0)).map(lambda x: [x.replace(',', '').replace('&', '').rstrip() for x in regex.findall(get_names, x)])
 cleaning['shortend_names'] = cleaning.apply(lambda x: x['shortend_names'][x['author_order']], axis=1)
 cleaning.rename(columns={'index': 'file', 'value':'long_name'}, inplace=True)
-del cleaning['author_order']
+#del cleaning['author_order']
 
 cleaning['file'] = cleaning.file.map(lambda x: x.replace('/', '_')[:-len('/dublin_core')])
 
