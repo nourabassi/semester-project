@@ -60,6 +60,36 @@ def convert(arg):
         arg = arg
     return arg
 
+def extract_author(text):
+    #author_split = r'([\p{L}\-]*[\,] [\p{Lu}\.\ \-]+[\&\,\.]?)'
+    #author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    author_split = r'([\p{L}\-]*[\,] [\p{L}\.\ \-]*[\&\,\.]?)'
+    author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    if regex.match('^([\p{L}\ \-]*\p{Lu}\.\,)', text):
+        split = [a.replace(',', '').replace('&', '').rstrip() for a in regex.findall(
+            author_split_2, text[:text.find('(')])]
+        return split
+    else:
+        split = [a.replace(',', '').replace('&', '').rstrip() for a in regex.findall(author_split, text[:text.find('(')])]
+        tmp = []
+        if len(split) == 1:
+            return split
+
+        for f, s in zip(split[1:], split[:-1]):
+            if len(s) == 1:
+                tmp.append(f + s )
+            else:
+                tmp.append(s)
+                tmp.append(f)
+
+        if len(split) == 0:
+            return [a.replace(',', '').replace('&', '').rstrip() for a in regex.findall(
+            author_split_2, text[:text.find('(')])]
+
+        if len(tmp) == 0:
+            return split
+        return tmp
+
 ###MAIN CODE ####
 
 all_data = {}
@@ -89,10 +119,8 @@ cleaning = cleaning[cleaning.value.map(lambda x: len(x) > 2)]
 cleaning['author_order'] = cleaning.variable.map(lambda x: 0 if len(re.search('\d*$', x).group(0)) == 0 else int(re.search('\d*$', x).group(0)))
 del cleaning['variable']
 
-get_names = r'([\p{L}\-\&]*[\,] [\p{Lu}\.\ ]+[\&\,]?)'
-
 cleaning.reset_index(drop=True, inplace=True)
-cleaning['shortend_names'] = cleaning.citation.map(lambda x: re.match(r'[\S\s]*\(\d{4}\)', x, re.U).group(0)).map(lambda x: [x.replace(',', '').replace('&', '').rstrip() for x in regex.findall(get_names, x)])
+cleaning['shortend_names'] = cleaning.citation.map(lambda x: re.match(r'[\S\s]*\(\d{4}\)', x, re.U).group(0)).map(lambda x: extract_author(x))
 cleaning['shortend_names'] = cleaning.apply(lambda x: x['shortend_names'][x['author_order']], axis=1)
 cleaning.rename(columns={'index': 'file', 'value':'long_name'}, inplace=True)
 #del cleaning['author_order']

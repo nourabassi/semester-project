@@ -162,6 +162,35 @@ def extract_year(x):
     else:
         return np.nan
 
+def extract_author(text):
+    #author_split = r'([\p{L}\-]*[\,] [\p{Lu}\.\ \-]+[\&\,\.]?)'
+    #author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    author_split = r'([\p{L}\-]*[\,] [\p{L}\.\ \-]*[\&\,\.]?)'
+    author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    if reg.match('^([\p{L}\ \-]*\p{Lu}\.\,)', text):
+        split = [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(
+            author_split_2, text[:text.find('(')])]
+        return split
+    else:
+        split = [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(author_split, text[:text.find('(')])]
+        tmp = []
+        if len(split) == 1:
+            return split
+
+        for f, s in zip(split[1:], split[:-1]):
+            if len(s) == 1:
+                tmp.append(f + s )
+            else:
+                tmp.append(s)
+                tmp.append(f)
+
+        if len(split) == 0:
+            return [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(
+            author_split_2, text[:text.find('(')])]
+
+        if len(tmp) == 0:
+            return split
+        return tmp
 
 #### Main Code
 contents = []
@@ -221,8 +250,7 @@ references_df.to_csv(os.path.join(output, 'References.csv'))
 
 
 #extract authors and clean strings a bit
-regex = r'([\p{L}\-]*[\,] [\p{Lu}\.\ ]+[\&\,]?)'
-references_df['authors'] =  references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(regex, x)] )
+references_df['authors'] =  references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: extract_author(x))
 
 tags = references_df.authors.apply(pd.Series)
 tags = tags.rename(columns = lambda x : 'tag_' + str(x))
