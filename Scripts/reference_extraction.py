@@ -111,9 +111,9 @@ def moving_down(issues, condition=lambda x: re.match('^[\d\(\.]', x)):
 def match_author(authors):
     """Identifies string starting with authors (APA) format"""
 
-    regex = r'(([\w\-]*[\,\&] [A-Z\.\ ]+[\&\,]?)*$)'
+    regex = r'(([\p{L}\-]*[\,\&] [\p{Lu}\.\ ]+[\&\,]?)*$)'
     USA = r'([A-Z]{2,})'
-    return not re.search(USA, authors) and re.match(regex, authors)
+    return not reg.search(USA, authors) and reg.match(regex, authors)
 
 
 
@@ -194,14 +194,14 @@ ref_1 = [moving_up(r) for r in references]
 #iteration 2: move up string starting with "Proceedings"
 ref_2 = [moving_up(r, lambda x: re.match('^Proceedings', x)) for r in ref_1]
 
-cutoff_name = r'^[A-Z]+\.\ ?'
-ref_3 = [moving_up(r, lambda x: re.match(cutoff_name, x)) for r in ref_2]
+cutoff_name = r'^[\p{Lu}]+\.\ ?'
+ref_3 = [moving_up(r, lambda x: reg.match(cutoff_name, x)) for r in ref_2]
 ref_4 = [moving_down(r, lambda x: match_author(x)) for r in ref_3]
 #pivoting up around strings containing citation
 ref_5 = [moving_up(r, lambda x: not contains_citation_beginning(x)) for r in ref_4]
 #if ends in word
-words_at_end = r'\ [a-zA-Z]*$'
-ref_6 = [moving_down(r, lambda x: re.search(words_at_end, x)) for r in ref_5]
+words_at_end = r'\ [\p{L}]*$'
+ref_6 = [moving_down(r, lambda x: reg.search(words_at_end, x)) for r in ref_5]
 
 #build dataframe
 references_df = pd.DataFrame([(f, source[i]) for i, flat in enumerate(ref_6) for f in flat], columns=['ref', 'file'])
@@ -221,8 +221,8 @@ references_df.to_csv(os.path.join(output, 'References.csv'))
 
 
 #extract authors and clean strings a bit
-regex = r'([\w\-]*[\,] [A-Z\.\ ]+[\&\,]?)'
-references_df['authors'] =  references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: [a.replace(',', '').replace('&', '').rstrip() for a in re.findall(regex, x)] )
+regex = r'([\p{L}\-]*[\,] [\p{Lu}\.\ ]+[\&\,]?)'
+references_df['authors'] =  references_df[~references_df.ref_parsed.isna()].ref_parsed.map(lambda x: [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(regex, x)] )
 
 tags = references_df.authors.apply(pd.Series)
 tags = tags.rename(columns = lambda x : 'tag_' + str(x))

@@ -89,7 +89,7 @@ cleaning = cleaning[cleaning.value.map(lambda x: len(x) > 2)]
 cleaning['author_order'] = cleaning.variable.map(lambda x: 0 if len(re.search('\d*$', x).group(0)) == 0 else int(re.search('\d*$', x).group(0)))
 del cleaning['variable']
 
-get_names = r'([\w\-\&]*[\,] [\p{L}\.\ ]+[\&\,]?)'
+get_names = r'([\p{L}\-\&]*[\,] [\p{Lu}\.\ ]+[\&\,]?)'
 
 cleaning.reset_index(drop=True, inplace=True)
 cleaning['shortend_names'] = cleaning.citation.map(lambda x: re.match(r'[\S\s]*\(\d{4}\)', x, re.U).group(0)).map(lambda x: [x.replace(',', '').replace('&', '').rstrip() for x in regex.findall(get_names, x)])
