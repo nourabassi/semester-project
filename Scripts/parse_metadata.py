@@ -6,6 +6,7 @@ import dateutil.parser
 import argparse
 import re
 import regex
+import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', type=str, dest='path', default='papers-import/',  help='specifies the path to input dir')
@@ -16,6 +17,7 @@ output = parser.parse_args().output
 
 
 ##Functions for parsing
+
 def parse(file_path):
     i = 0
     tmp = ''
@@ -90,6 +92,55 @@ def extract_author(text):
             return split
         return tmp
 
+
+
+def get_authors_month(sentence, debug = False):
+    general = r'[ééüş\xad\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
+    match_bad_year = r'[\S\s]*\((18|19|20)\d{2}\/(18|19|20)\d{2}\)'
+
+    match_press = r'[\S\s]*\((i|I)n (P|p)ress|manuscript under review\)'
+    match_forth = r'[\S\s]*\((f|F)orthcoming\)'
+    match_accepted = r'[\S\s]*\((a|A)ccepted\)'
+    match_submitted = r'[\S\s]*\((s|S)ubmitted\)'
+    match_underreview = r'[\S\s]*\((u|U)nder (R|r)eview\)'
+
+    #sentence = sentence.lower()
+    if regex.match(general, sentence):
+        s = regex.search(general, sentence).group(0)
+        if len(s) > 9:
+            return s
+    elif re.match(match_bad_year, sentence):
+        return re.search(match_bad_year, sentence).group(0)
+    elif re.match(match_press, sentence):
+        return re.search(match_press, sentence).group(0)
+    elif re.match(match_forth, sentence):
+        return re.search(match_forth, sentence).group(0)
+    elif re.match(match_accepted, sentence):
+        return re.search(match_accepted, sentence).group(0)
+    elif re.match(match_submitted, sentence):
+        return re.search(match_submitted, sentence).group(0)
+    elif re.match(match_underreview, sentence):
+        return re.search(match_underreview, sentence).group(0)
+
+    return np.nan
+
+
+def author_title(x):
+    """Gets author and tite part of reference string"""
+    ref = x
+    authors = get_authors_month(x)
+    if isinstance(authors, float):
+        return None
+
+    search = len(authors)+1
+
+    end = re.search('\.|\?|In Looi', ref[search:])
+    if end:
+        end = end.start()
+    else:
+        end = 0
+    return ref[: (search+end)]
+
 ###MAIN CODE ####
 
 all_data = {}
@@ -126,6 +177,7 @@ cleaning.rename(columns={'index': 'file', 'value':'long_name'}, inplace=True)
 #del cleaning['author_order']
 
 cleaning['file'] = cleaning.file.map(lambda x: x.replace('/', '_')[:-len('/dublin_core')])
+cleaning['identifier'] = cleaning.citation.map(lambda x: author_title(x))
 
 print('[INFO] Saved to individual authors list: {} as Parsed_metadata.csv'.format(output))
 cleaning.to_csv(os.path.join(output, 'Parsed_metadata.csv'))

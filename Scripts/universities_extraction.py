@@ -96,5 +96,5 @@ parsed_countries['.us']  = "United States"
 
 inst.loc[inst.country.isna(), 'country'] = inst[inst.country.isna()].domain.map(lambda x: re.findall("(\.[a-zA-Z0-9]*$)",x)[0]).map(parsed_countries)
 
-print('[Info] Saved data to ../data/Universities.csv')
+print('[Info] Saved universities data to ../data/Universities.csv')
 inst.to_csv('data/Universities.csv')
