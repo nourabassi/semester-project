@@ -25,225 +25,217 @@
 23,University of Jyväskylä,62.2362500°N 25.7326667°E
 24,University of Wisconsin - Madison,43.075000°N 89.417222°W
 25,Arizona State University,33.421°N 111.933°W
-26,kent,51.19°N 0.73°E
-27,Hebrew University of Jerusalem,31.77583°N 35.20000°E
-28,University of Texas at Austin,30.285°N 97.735°W
-29,"University of Maryland, College Park",38.98750°N 76.94000°W
-30,"University of California, Berkeley",37.802168°N 122.271281°W
-31,Utah State University,41.745°N 111.809°W
-32,University of Washington,47.655°N 122.308°W
-33,Aarhus University,56.167°N 10.200°E
-34,University of Nottingham,52.939°N 1.197°W
-35,Universität Köln,50.92806°N 6.92861°E
-36,Rochester Institute of Technology,43.084412°N 77.674949°W
-37,Shizuoka University,34.96417°N 138.43194°E
-38,State University of New York at Albany,42.686193°N 73.823884°W
-39,Universität Duisburg-Essen,51.46389°N 7.00611°E
-40,"University of California, Los Angeles",37.802168°N 122.271281°W
-41,University of Pennsylvania,39.95°N 75.19°W
-42,Massachusetts Institute of Technology,42.360°N 71.092°W
-43,"Ohio State University, Columbus",40.0000°N 83.0145°W
-44,University of Technology Sydney,33.88361°S 151.20083°E
-45,University of Helsinki,60.16944°N 24.95000°E
-46,Carnegie Mellon University,40.443322°N 79.943583°W
-47,University of Pittsburgh,40.444565°N 79.953274°W
-48,University of Queensland,27.49722°S 153.01306°E
-49,Göteborg University,57.69833°N 11.97167°E
-50,University of Haifa,32.76250°N 35.01806°E
-51,exeter,50.717°N 3.533°W
-52,Dawson College,45.489374°N 73.588298°W
-53,John Abbott College,45.4057444°N 73.9418222°W
-54,Hong Kong Institute of Education,22.4689°N 114.194°E
-55,Tufts University,42.406°N 71.120°W
-56,Ben-Gurion University of the Negev,31.2621917°N 34.8015111°E
-57,Brandeis University,42.365664°N 71.259742°W
-58,George Mason University,38.831°N 77.308°W
-59,Ruhr-University Bochum,51.44389°N 7.26167°E
-60,University of Georgia,33.9558°N 83.3745°W
-61,University of Miami,25.721644°N 80.279267°W
-62,Drexel University,39.954°N 75.188°W
-63,University of Massachusetts at Amherst,42.38889°N 72.52778°W
-64,North Carolina State University,35.78722°N 78.67056°W
-65,Tokyo Institute of Technology,35.51389°N 139.48333°E
-66,tokyo,35.683°N 139.683°E
-67,University of San Diego,32.77111°N 117.18750°W
-68,Utrecht University,52.09000°N 5.12028°E
-69,Vrije Universiteit Amsterdam,52.33389°N 4.86500°E
-70,University of North Carolina at Chapel Hill,35.90833°N 79.05000°W
-71,East China Normal University,31.22806°N 121.40000°E
-72,Stanford University,37.4282293°N 122.1688576°W
-73,Northwestern University,42.054853°N 87.673945°W
-74,"National Institute of Education (NIE), Singapore",1.3492301°N 103.678124°E
-75,University of Bergen,60.3880861°N 5.3228722°E
-76,Clark University,42.250977°N 71.823169°W
-77,Rhodes University,33.31361°S 26.51972°E
-78,Florida State University,30.442°N 84.298°W
-79,University of Hong Kong,22.28417°N 114.13778°E
-80,University of Sydney,33.88778°S 151.18722°E
-81,University of Montana,46.86000°N 113.98528°W
-82,University of Illinois at Urbana-Champaign,40.11056°N 88.22833°W
-83,Deakin University,37.8479°S 145.1143°E
-84,La Trobe University,37.72179°S 145.047909°E
-85,Universität des Saarlandes,49.25556°N 7.04167°E
-86,West Chester University of Pennsylvania,39.95219°N 75.60010°W
-87,University of Oslo,59.9399361°N 10.7220639°E
-88,University of Missouri - Columbia,38.9453°N 92.3288°W
-89,Oklahoma State University,36.13222°N 97.08083°W
-90,Miami University of Ohio,39.511905°N 84.734674°W
-91,Harding University,35.24785°N 91.72711°W
-92,Saint Louis University,38.636497°N 90.233903°W
-93,University of New Mexico,35.08389°N 106.61861°W
-94,Queen's University,44.224997°N 76.495099°W
-95,University of Oulu,65.05917°N 25.46611°E
-96,Tarbiat Modares University,35.72139°N 51.38194°E
-97,Stockholm University,59.36528°N 18.05833°E
-98,Hallym University,37.46000°N 126.95000°E
-99,"University of California, Davis",37.802168°N 122.271281°W
-100,National Chengchi University,24.9869917°N 121.5752222°E
-101,University of Tartu,58.38111°N 26.72028°E
-102,Eberhard-Karls-Universität Tübingen,48.52500°N 9.05889°E
-103,Boston University,42.3496°N 71.0997°W
-104,Hanyang University,37.55639°N 127.04444°E
-105,University Politehnica of Bucharest,44.43833°N 26.05139°E
-106,gmx,48.1881°N 11.5868°E
-107,Columbia University,40.80750°N 73.96194°W
-108,University of Michigan - Ann Arbor,42.283°N 83.735°W
-109,Mount Holyoke College,42.255586°N 72.574503°W
-110,Technical University of Cluj-Napoca,46.767°N 23.583°E
-111,Aoyama Gakuin University,35.66111°N 139.71056°E
-112,University of Minnesota - Twin Cities,44.974747°N 93.235353°W
-113,National Tsinghua University,24.79361°N 120.99278°E
-114,University of Calgary,51.07750°N 114.13306°W
-115,University of North Carolina at Greensboro,36.0695000°N 79.8114000°W
-116,Michigan State University,42.723°N 84.481°W
-117,University of Utah,40.76500°N 111.85000°W
-118,University of Arizona,32.23167°N 110.95194°W
-119,Georgia Institute of Technology,33.77583°N 84.39472°W
-120,Texas Tech University,33.584°N 101.878°W
-121,exploratorium,37.8014°N 122.3976°W
-122,Tel Aviv University,32.111767°N 34.801361°E
-123,State University of New York at Binghamton,42.0888°N 75.9670°W
-124,Universidade de São Paulo,23.55972°S 46.72917°W
-125,"University of Maryland, Baltimore County",38.98750°N 76.94000°W
-126,Boston College,42.33500°N 71.17028°W
-127,National Central University,24.9682806°N 121.1928889°E
-128,Open University of the Netherlands,50.87905°N 5.95931°E
-129,"University of Nebraska, Lincoln",40.81750°N 96.70139°W
-130,DePaul University,41.924°N 87.656°W
-131,College of William and Mary,37.271059°N 76.707485°W
-132,nyu,40.73000°N 73.99500°W
-133,Open University,52.02500°N 0.70556°W
-134,"Minnesota State University, Mankato",44.146617°N 93.998117°W
-135,University of Turin,45.06944°N 7.68889°E
-136,Southern Methodist University,32.841°N 96.784°W
-137,Norwegian University of Science and Technology,63.41944°N 10.40250°E
-138,University of Malta,35.90194°N 14.48250°E
-139,Technion - Israel Institute of Technology,32.77750°N 35.02167°E
-140,kuleuven,50.878°N 4.700°E
-141,Shandong University,36.67361°N 117.05389°E
-142,Purdue University,40.424°N 86.929°W
-143,"Rutgers University, Newark",40.50167°N 74.44806°W
-144,University of British Columbia,49.26111°N 123.25306°W
-145,Nanyang Technological University,1.34472°N 103.68139°E
-146,University of Massachusetts at Dartmouth,41.630°N 71.002°W
-147,University of Twente,52.2427361°N 6.8532639°E
-148,Arcadia College,37.58389°N 90.62917°W
-149,University of Wollongong,34.40667°S 150.87944°E
-150,"University of Nevada, Reno",39.54583°N 119.81667°W
-151,"University of California, San Diego",37.802168°N 122.271281°W
-152,George Washington University,38.9007°N 77.0508°W
-153,glasgow,55.858000°N 4.259000°W
-154,Brigham Young University,40.24972°N 111.64917°W
-155,Middle Tennessee State University,35.849°N 86.365°W
-156,University of Groningen,53.21917°N 6.56278°E
-157,Fudan University,31.29889°N 121.49917°E
-158,Tokyo Gakugei University,35.7065°N 139.4902°E
-159,University of Bologna,44.49389°N 11.34278°E
-160,National Taiwan University of Science and Technology,25.013686°N 121.540535°E
-161,University of Tampere,61.49417°N 23.77806°E
-162,Weizmann Institute of Science,31.90750°N 34.80917°E
-163,"University of Virginia, Charlottesville",38.035°N 78.505°W
-164,National University of Singapore,1.29556°N 103.77667°E
-165,Korea Advanced Institute of Science & Technology,36.372°N 127.363°E
-166,Worcester Polytechnic Institute,42.27444°N 71.80750°W
-167,University of Warwick,52.3800806°N 1.5619306°W
-168,University of Melbourne,37.7963°S 144.9614°E
-169,"University of Nebraska, Omaha",40.81750°N 96.70139°W
-170,Ecole Normale Supérieure de Lyon,45.729734°N 4.826875°E
-171,University of Rochester,43.128333°N 77.628333°W
-172,Boğaziçi University,41.083556°N 29.050598°E
-173,Westfälische Wilhelms-Universität Münster,51.96361°N 7.61361°E
-174,"University of California, Irvine",37.802168°N 122.271281°W
-175,University of Chicago,41.78972°N 87.59972°W
-176,Warren Wilson College,35.610972°N 82.441861°W
-177,University of Central Lancashire,53.763021°N 2.7074°W
-178,Williams College,42.713°N 73.203°W
-179,Universidad de Valladolid,41.65222°N 4.72139°W
-180,Illinois State University,40.51076°N 88.99346°W
-181,Wake Forest University,36.131282°N 80.282333°W
-182,Missouri State University,37.19971°N 93.28079°W
-183,University of Connecticut,41.80717°N 72.25250°W
-184,University of Massachusetts Boston,42.313432°N 71.038445°W
-185,Ankara University,39.9367°N 32.8303°E
-186,Middle East Technical University,39.89139°N 32.78472°E
-187,Korea National University of Education,36.60835°N 127.3582°E
-188,West Virginia University,39.63582°N 79.95453°W
-189,University of Massachusetts at Lowell,42.642716°N 71.334530°W
-190,University of Cambridge,52.20528°N 0.11722°E
-191,University of Iowa,41.66167°N 91.53639°W
-192,Ewha Women's University,37.5618667°N 126.9468333°E
-193,Malmö University College,55.60778°N 12.99639°E
-194,"University of Dublin, Trinity College",53.3444°N 6.2577°W
-195,"Institute of Education, University of London",51.52301°N 0.12802°W
-196,Université de Lausanne,46.52250°N 6.57944°E
-197,Ruhr-Universität Bochum,51.44389°N 7.26167°E
-198,State University of New York at Buffalo,43.00000°N 78.78917°W
-199,Université Laval,46.78000°N 71.27472°W
-200,Université de Montréal,45.50472°N 73.61278°W
-201,Boise State University,43.604°N 116.204°W
-202,Flinders University of South Australia,35.020819°S 138.57275°E
-203,Ohio University,39.324°N 82.102°W
-204,Kent State University,41.1464111°N 81.3417444°W
-205,Macquarie University,33.775259°S 151.112915°E
-206,University of Florida,29.64833°N 82.34944°W
-207,Central Michigan University,43.589802°N 84.77749°W
-208,Grinnell College,41.749057°N 92.72013°W
-209,Cyprus University of Technology,34.67667°N 33.04417°E
-210,Northeastern University,42.338889°N 71.090278°W
-211,Wellesley College,42.29528°N 71.30667°W
-212,McGill University,13.167°N 59.583°W
-213,cuhk,22.41972°N 114.2067917°E
-214,University of Macau,22.13004°N 113.54579°E
-215,Pohang University of Science and Technology,36.0108833°N 129.3226694°E
-216,St. Mary's College of Maryland,38.18666°N 76.43094°W
-217,Cardiff University,51.4877°N 3.1790°W
-218,Lund University,55.70583°N 13.19333°E
-219,"University of New Hampshire, Durham",43.13556°N 70.93333°W
-220,University of Northern Colorado,40.404853°N 104.696741°W
-221,"École de technologie supérieure, Université du Québec",45.4953000°N 73.5629000°W
-222,University of Southampton,50.93463°N 1.39595°W
-223,"University of the West of England, Bristol",51.50021°N 2.54749°W
-224,Montclair State University,40.8591056°N 74.1986861°W
-225,ruppin,52.93306°N 12.80000°E
-226,"University of Nottingham, Malaysia Campus",52.939°N 1.197°W
-227,Northern Illinois University,41.93389°N 88.77778°W
-228,Tallinn University,59.43861°N 24.77139°E
-229,Virginia Polytechnic Institute and State University,37.2250°N 80.4250°W
-230,Colorado State University,40.5748361°N 105.0809778°W
-231,Beijing Normal University,39.95722°N 116.36250°E
-232,City University of New York,40.7300°N 73.9970°W
-233,University of Alberta,53.52444°N 113.52444°W
-234,usyd,33.88778°S 151.18722°E
-235,Queensland University of Technology,27.47694°S 153.02806°E
-236,Technische Universität Darmstadt,49.874995°N 8.656517°E
-237,University of Prince Edward Island,46.259°N 63.138°W
-238,Copenhagen Business School,55.6816250°N 12.5297333°E
-239,Yokohama National University,35.474°N 139.59°E
-240,ouj,34.911062°N 36.407998°E
-241,Idaho State University,42.861°N 112.434°W
-242,Indiana University/Purdue University at Indianapolis,39.167°N 86.500°W
-243,"University of California, Riverside",37.802168°N 122.271281°W
-244,Kansas State University,39.19167°N 96.58083°W
-245,Universität Konstanz,47.690°N 9.188°E
-246,University of Turku,60.45417°N 22.28472°E
-247,San Diego State University,32.77528°N 117.07222°W
+26,Hebrew University of Jerusalem,31.77583°N 35.20000°E
+27,University of Texas at Austin,30.285°N 97.735°W
+28,"University of Maryland, College Park",38.98750°N 76.94000°W
+29,"University of California, Berkeley",37.802168°N 122.271281°W
+30,Utah State University,41.745°N 111.809°W
+31,University of Washington,47.655°N 122.308°W
+32,Aarhus University,56.167°N 10.200°E
+33,University of Nottingham,52.939°N 1.197°W
+34,Universität Köln,50.92806°N 6.92861°E
+35,Rochester Institute of Technology,43.084412°N 77.674949°W
+36,Shizuoka University,34.96417°N 138.43194°E
+37,State University of New York at Albany,42.686193°N 73.823884°W
+38,Universität Duisburg-Essen,51.46389°N 7.00611°E
+39,"University of California, Los Angeles",37.802168°N 122.271281°W
+40,University of Pennsylvania,39.95°N 75.19°W
+41,Massachusetts Institute of Technology,42.360°N 71.092°W
+42,"Ohio State University, Columbus",40.0000°N 83.0145°W
+43,University of Technology Sydney,33.88361°S 151.20083°E
+44,University of Helsinki,60.16944°N 24.95000°E
+45,Carnegie Mellon University,40.443322°N 79.943583°W
+46,University of Pittsburgh,40.444565°N 79.953274°W
+47,University of Queensland,27.49722°S 153.01306°E
+48,Göteborg University,57.69833°N 11.97167°E
+49,University of Haifa,32.76250°N 35.01806°E
+50,Dawson College,45.489374°N 73.588298°W
+51,John Abbott College,45.4057444°N 73.9418222°W
+52,Hong Kong Institute of Education,22.4689°N 114.194°E
+53,Tufts University,42.406°N 71.120°W
+54,Ben-Gurion University of the Negev,31.2621917°N 34.8015111°E
+55,Brandeis University,42.365664°N 71.259742°W
+56,George Mason University,38.831°N 77.308°W
+57,Ruhr-University Bochum,51.44389°N 7.26167°E
+58,University of Georgia,33.9558°N 83.3745°W
+59,University of Miami,25.721644°N 80.279267°W
+60,Drexel University,39.954°N 75.188°W
+61,University of Massachusetts at Amherst,42.38889°N 72.52778°W
+62,North Carolina State University,35.78722°N 78.67056°W
+63,Tokyo Institute of Technology,35.51389°N 139.48333°E
+64,University of San Diego,32.77111°N 117.18750°W
+65,Utrecht University,52.09000°N 5.12028°E
+66,Vrije Universiteit Amsterdam,52.33389°N 4.86500°E
+67,University of North Carolina at Chapel Hill,35.90833°N 79.05000°W
+68,East China Normal University,31.22806°N 121.40000°E
+69,Stanford University,37.4282293°N 122.1688576°W
+70,Northwestern University,42.054853°N 87.673945°W
+71,"National Institute of Education (NIE), Singapore",1.3492301°N 103.678124°E
+72,University of Bergen,60.3880861°N 5.3228722°E
+73,Clark University,42.250977°N 71.823169°W
+74,Rhodes University,33.31361°S 26.51972°E
+75,Florida State University,30.442°N 84.298°W
+76,University of Hong Kong,22.28417°N 114.13778°E
+77,University of Sydney,33.88778°S 151.18722°E
+78,University of Montana,46.86000°N 113.98528°W
+79,University of Illinois at Urbana-Champaign,40.11056°N 88.22833°W
+80,Deakin University,37.8479°S 145.1143°E
+81,La Trobe University,37.72179°S 145.047909°E
+82,Universität des Saarlandes,49.25556°N 7.04167°E
+83,West Chester University of Pennsylvania,39.95219°N 75.60010°W
+84,University of Oslo,59.9399361°N 10.7220639°E
+85,University of Missouri - Columbia,38.9453°N 92.3288°W
+86,Oklahoma State University,36.13222°N 97.08083°W
+87,Miami University of Ohio,39.511905°N 84.734674°W
+88,Harding University,35.24785°N 91.72711°W
+89,Saint Louis University,38.636497°N 90.233903°W
+90,University of New Mexico,35.08389°N 106.61861°W
+91,Queen's University,44.224997°N 76.495099°W
+92,University of Oulu,65.05917°N 25.46611°E
+93,EPFL - EPF Lausanne,46.52028°N 6.56556°E
+94,Tarbiat Modares University,35.72139°N 51.38194°E
+95,Stockholm University,59.36528°N 18.05833°E
+96,Hallym University,37.46000°N 126.95000°E
+97,"University of California, Davis",37.802168°N 122.271281°W
+98,National Chengchi University,24.9869917°N 121.5752222°E
+99,University of Tartu,58.38111°N 26.72028°E
+100,Eberhard-Karls-Universität Tübingen,48.52500°N 9.05889°E
+101,Boston University,42.3496°N 71.0997°W
+102,Hanyang University,37.55639°N 127.04444°E
+103,University Politehnica of Bucharest,44.43833°N 26.05139°E
+104,Columbia University,40.80750°N 73.96194°W
+105,University of Michigan - Ann Arbor,42.283°N 83.735°W
+106,Mount Holyoke College,42.255586°N 72.574503°W
+107,Technical University of Cluj-Napoca,46.767°N 23.583°E
+108,Aoyama Gakuin University,35.66111°N 139.71056°E
+109,University of Minnesota - Twin Cities,44.974747°N 93.235353°W
+110,National Tsinghua University,24.79361°N 120.99278°E
+111,University of Calgary,51.07750°N 114.13306°W
+112,University of North Carolina at Greensboro,36.0695000°N 79.8114000°W
+113,Michigan State University,42.723°N 84.481°W
+114,University of Utah,40.76500°N 111.85000°W
+115,University of Arizona,32.23167°N 110.95194°W
+116,Georgia Institute of Technology,33.77583°N 84.39472°W
+117,Texas Tech University,33.584°N 101.878°W
+118,Tel Aviv University,32.111767°N 34.801361°E
+119,State University of New York at Binghamton,42.0888°N 75.9670°W
+120,Universidade de São Paulo,23.55972°S 46.72917°W
+121,"University of Maryland, Baltimore County",38.98750°N 76.94000°W
+122,Boston College,42.33500°N 71.17028°W
+123,National Central University,24.9682806°N 121.1928889°E
+124,Open University of the Netherlands,50.87905°N 5.95931°E
+125,"University of Nebraska, Lincoln",40.81750°N 96.70139°W
+126,DePaul University,41.924°N 87.656°W
+127,College of William and Mary,37.271059°N 76.707485°W
+128,Open University,52.02500°N 0.70556°W
+129,"Minnesota State University, Mankato",44.146617°N 93.998117°W
+130,University of Turin,45.06944°N 7.68889°E
+131,Southern Methodist University,32.841°N 96.784°W
+132,Norwegian University of Science and Technology,63.41944°N 10.40250°E
+133,University of Malta,35.90194°N 14.48250°E
+134,Technion - Israel Institute of Technology,32.77750°N 35.02167°E
+135,Shandong University,36.67361°N 117.05389°E
+136,Purdue University,40.424°N 86.929°W
+137,"Rutgers University, Newark",40.50167°N 74.44806°W
+138,University of British Columbia,49.26111°N 123.25306°W
+139,ETHZ - ETH Zurich,47.37639°N 8.54806°E
+140,Nanyang Technological University,1.34472°N 103.68139°E
+141,University of Massachusetts at Dartmouth,41.630°N 71.002°W
+142,University of Twente,52.2427361°N 6.8532639°E
+143,Arcadia College,37.58389°N 90.62917°W
+144,University of Wollongong,34.40667°S 150.87944°E
+145,"University of Nevada, Reno",39.54583°N 119.81667°W
+146,"University of California, San Diego",37.802168°N 122.271281°W
+147,George Washington University,38.9007°N 77.0508°W
+148,Brigham Young University,40.24972°N 111.64917°W
+149,Middle Tennessee State University,35.849°N 86.365°W
+150,University of Groningen,53.21917°N 6.56278°E
+151,Texas A&M University - College Station,30.61028°N 96.34361°W
+152,Fudan University,31.29889°N 121.49917°E
+153,Tokyo Gakugei University,35.7065°N 139.4902°E
+154,University of Bologna,44.49389°N 11.34278°E
+155,National Taiwan University of Science and Technology,25.013686°N 121.540535°E
+156,University of Tampere,61.49417°N 23.77806°E
+157,Weizmann Institute of Science,31.90750°N 34.80917°E
+158,"University of Virginia, Charlottesville",38.035°N 78.505°W
+159,National University of Singapore,1.29556°N 103.77667°E
+160,Korea Advanced Institute of Science & Technology,36.372°N 127.363°E
+161,Worcester Polytechnic Institute,42.27444°N 71.80750°W
+162,University of Warwick,52.3800806°N 1.5619306°W
+163,University of Melbourne,37.7963°S 144.9614°E
+164,"University of Nebraska, Omaha",40.81750°N 96.70139°W
+165,Ecole Normale Supérieure de Lyon,45.729734°N 4.826875°E
+166,University of Rochester,43.128333°N 77.628333°W
+167,Boğaziçi University,41.083556°N 29.050598°E
+168,Westfälische Wilhelms-Universität Münster,51.96361°N 7.61361°E
+169,"University of California, Irvine",37.802168°N 122.271281°W
+170,University of Chicago,41.78972°N 87.59972°W
+171,Warren Wilson College,35.610972°N 82.441861°W
+172,University of Central Lancashire,53.763021°N 2.7074°W
+173,Williams College,42.713°N 73.203°W
+174,Universidad de Valladolid,41.65222°N 4.72139°W
+175,Illinois State University,40.51076°N 88.99346°W
+176,Wake Forest University,36.131282°N 80.282333°W
+177,Missouri State University,37.19971°N 93.28079°W
+178,University of Connecticut,41.80717°N 72.25250°W
+179,University of Massachusetts Boston,42.313432°N 71.038445°W
+180,Ankara University,39.9367°N 32.8303°E
+181,Middle East Technical University,39.89139°N 32.78472°E
+182,Korea National University of Education,36.60835°N 127.3582°E
+183,University of Southern Denmark - SDU,55.36861°N 10.42806°E
+184,West Virginia University,39.63582°N 79.95453°W
+185,University of Massachusetts at Lowell,42.642716°N 71.334530°W
+186,University of Cambridge,52.20528°N 0.11722°E
+187,University of Iowa,41.66167°N 91.53639°W
+188,Ewha Women's University,37.5618667°N 126.9468333°E
+189,Malmö University College,55.60778°N 12.99639°E
+190,"University of Dublin, Trinity College",53.3444°N 6.2577°W
+191,"Institute of Education, University of London",51.52301°N 0.12802°W
+192,Université de Lausanne,46.52250°N 6.57944°E
+193,Ruhr-Universität Bochum,51.44389°N 7.26167°E
+194,State University of New York at Buffalo,43.00000°N 78.78917°W
+195,Université Laval,46.78000°N 71.27472°W
+196,Université de Montréal,45.50472°N 73.61278°W
+197,Boise State University,43.604°N 116.204°W
+198,Flinders University of South Australia,35.020819°S 138.57275°E
+199,Ohio University,39.324°N 82.102°W
+200,Kent State University,41.1464111°N 81.3417444°W
+201,Macquarie University,33.775259°S 151.112915°E
+202,University of Florida,29.64833°N 82.34944°W
+203,Central Michigan University,43.589802°N 84.77749°W
+204,Grinnell College,41.749057°N 92.72013°W
+205,Cyprus University of Technology,34.67667°N 33.04417°E
+206,Northeastern University,42.338889°N 71.090278°W
+207,Wellesley College,42.29528°N 71.30667°W
+208,McGill University,13.167°N 59.583°W
+209,University of Macau,22.13004°N 113.54579°E
+210,Pohang University of Science and Technology,36.0108833°N 129.3226694°E
+211,St. Mary's College of Maryland,38.18666°N 76.43094°W
+212,Cardiff University,51.4877°N 3.1790°W
+213,Lund University,55.70583°N 13.19333°E
+214,"University of New Hampshire, Durham",43.13556°N 70.93333°W
+215,University of Northern Colorado,40.404853°N 104.696741°W
+216,"École de technologie supérieure, Université du Québec",45.4953000°N 73.5629000°W
+217,University of Southampton,50.93463°N 1.39595°W
+218,"University of the West of England, Bristol",51.50021°N 2.54749°W
+219,Montclair State University,40.8591056°N 74.1986861°W
+220,"University of Nottingham, Malaysia Campus",52.939°N 1.197°W
+221,Northern Illinois University,41.93389°N 88.77778°W
+222,Tallinn University,59.43861°N 24.77139°E
+223,Virginia Polytechnic Institute and State University,37.2250°N 80.4250°W
+224,Colorado State University,40.5748361°N 105.0809778°W
+225,Beijing Normal University,39.95722°N 116.36250°E
+226,City University of New York,40.7300°N 73.9970°W
+227,University of Alberta,53.52444°N 113.52444°W
+228,Queensland University of Technology,27.47694°S 153.02806°E
+229,Technische Universität Darmstadt,49.874995°N 8.656517°E
+230,University of Prince Edward Island,46.259°N 63.138°W
+231,Copenhagen Business School,55.6816250°N 12.5297333°E
+232,Yokohama National University,35.474°N 139.59°E
+233,Idaho State University,42.861°N 112.434°W
+234,Indiana University/Purdue University at Indianapolis,39.167°N 86.500°W
+235,"University of California, Riverside",37.802168°N 122.271281°W
+236,Kansas State University,39.19167°N 96.58083°W
+237,Universität Konstanz,47.690°N 9.188°E
+238,University of Turku,60.45417°N 22.28472°E
+239,San Diego State University,32.77528°N 117.07222°W
