@@ -29,6 +29,9 @@ def get_school_from_mail(mail, mapping):
 
 def get_org_name(x):
     candidates = x.split('.')
+    for c in candidates:
+        if c in ['qq','sina','163']:
+            return c
     lengths = np.array([len(z) for z in candidates])
     return candidates[lengths.argmax()]
 
@@ -95,6 +98,8 @@ parsed_countries['.uk']= "United Kingdom"
 parsed_countries['.us']  = "United States"
 
 inst.loc[inst.country.isna(), 'country'] = inst[inst.country.isna()].domain.map(lambda x: re.findall("(\.[a-zA-Z0-9]*$)",x)[0]).map(parsed_countries)
+inst.loc[(inst.country.isna()) & (inst.name.isin(['qq','sina','163'])), 'country'] = 'China'
+
 
 print('[Info] Saved universities data to ../data/Universities.csv')
 inst.to_csv('data/Universities.csv')
