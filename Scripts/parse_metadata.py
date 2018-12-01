@@ -7,6 +7,7 @@ import argparse
 import re
 import regex
 import numpy as np
+import unicodedata
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', type=str, dest='path', default='papers-import/',  help='specifies the path to input dir')
@@ -178,6 +179,18 @@ cleaning.rename(columns={'index': 'file', 'value':'long_name'}, inplace=True)
 
 cleaning['file'] = cleaning.file.map(lambda x: x.replace('/', '_')[:-len('/dublin_core')])
 cleaning['identifier'] = cleaning.citation.map(lambda x: author_title(x))
+
+names = cleaning.long_name.unique()
+d= {}
+for i, m in enumerate(names):
+    for j, n in enumerate(names):
+        if i < j:
+            y = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 1])
+            name = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 1])
+            if len(name.intersection(y)) > 1 and n!= m and not ('Lee' in n or 'Lee' in m):
+                d[n]= m
+
+cleaning.loc[cleaning['long_name'].isin(d.keys()), 'long_name'] = cleaning.long_name.map(d)
 
 print('[INFO] Saved to individual authors list: {} as Parsed_metadata.csv'.format(output))
 cleaning.to_csv(os.path.join(output, 'Parsed_metadata.csv'))
