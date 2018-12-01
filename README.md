@@ -1,10 +1,14 @@
 # semester-project
 
+to set up environment make sure you have conda installed,
+
+then to create the enviroment using
+
+´conda env create -f environment.yml´
+
 to parse data run
-
 bash init
+and then rerun Parsing University and Country.ipynb
 
-To use the code one should install the following python modules:
-(I think it would be best if we just provide a yaml file)
-pip install regex (enable to deal better with non ascii letters!)
-//also need holoviews, bokeh
+The latter should not be rerun often to avoid unnecessary API calls
+
