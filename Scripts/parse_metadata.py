@@ -181,6 +181,9 @@ cleaning['file'] = cleaning.file.map(lambda x: x.replace('/', '_')[:-len('/dubli
 cleaning['identifier'] = cleaning.citation.map(lambda x: author_title(x))
 
 names = cleaning.long_name.unique()
+pd.Series(names).to_csv(os.path.join(output, 'name_dict.csv'))
+print('[Info] Saved list of all names to name_dict.csv' )
+
 d= {}
 for i, m in enumerate(names):
     for j, n in enumerate(names):
