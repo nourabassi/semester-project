@@ -148,13 +148,13 @@ def get_authors_month(sentence, debug = False):
     return np.nan
 
 
-def extract_year(x):
+def extract_year(x, current_year):
     """Returns year of reference"""
-    match_press = r'\(in press\)'
-    years = r'\([\w\d\,\ \.]*(18|19|20)\d{2}[\,\ \w\d]*\)'
+    match_press = r'\(in press|submitted|under review|accepted|forthcoming'
+    years = r'\([\w\d\,\ \.\-]*(18|19|20)\d{2}[\,\ \w\d\/\-]*\)'
     year = re.search(years, x)
-    if re.search(match_press, x):
-        return 2018
+    if re.search(match_press, x.lower()):
+        return current_year
     if year:
         year = year.group(0)
         year = re.findall('\d{4}', year)
@@ -162,35 +162,14 @@ def extract_year(x):
     else:
         return np.nan
 
-def extract_author(text):
-    #author_split = r'([\p{L}\-]*[\,] [\p{Lu}\.\ \-]+[\&\,\.]?)'
-    #author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
-    author_split = r'([\p{L}\-]*[\,] [\p{L}\.\ \-]*[\&\,\.]?)'
-    author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
-    if reg.match('^([\p{L}\ \-]*\p{Lu}\.\,)', text):
-        split = [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(
-            author_split_2, text[:text.find('(')])]
-        return split
-    else:
-        split = [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(author_split, text[:text.find('(')])]
-        tmp = []
-        if len(split) == 1:
-            return split
-
-        for f, s in zip(split[1:], split[:-1]):
-            if len(s) == 1:
-                tmp.append(f + s )
-            else:
-                tmp.append(s)
-                tmp.append(f)
-
-        if len(split) == 0:
-            return [a.replace(',', '').replace('&', '').rstrip() for a in reg.findall(
-            author_split_2, text[:text.find('(')])]
-
-        if len(tmp) == 0:
-            return split
-        return tmp
+def extract_author(x):
+    author_split = r'\.\,| & | and |;'
+    list_authors = reg.split(author_split, x)
+    list_authors = [name.replace('&', '').replace(',', '').strip() for name in list_authors]
+    #remove end of string that isn't name
+    list_authors = [re.sub(r'\([\s\S]*\)|\.\.\.|…| et al|\.', '', name).strip() for name in list_authors if len(name) > 0]
+    list_authors = [name for name in list_authors if len(name) > 0]
+    return list_authors
 
 #### Main Code
 contents = []
@@ -240,7 +219,9 @@ print('\tPercentage of unparsed references: {:0.3f}'.format(references_df.ref_pa
 print('\tNumber of unparsed references: ', references_df[references_df.ref_parsed.isna()].ref.shape[0])
 print('\tNumber of properly parsed references: ', references_df.ref_parsed.shape[0])
 
-references_df.loc[~references_df.ref_parsed.isna(),'year'] = references_df[~references_df.ref_parsed.isna()].ref_parsed.map(extract_year)
+references_df['pub_year'] = references_df.file.map(lambda x: int(re.search('20[\d]{2}', x).group(0)))
+references_df.loc[~references_df.ref_parsed.isna(),'year'] = references_df[~references_df.ref_parsed.isna()].apply(
+    lambda x: extract_year(x.ref_parsed, x.pub_year), axis=1)
 references_df['identifier'] = references_df.apply(author_title , axis=1)
 
 print('\tSaved reference list to: {} as References.csv'.format(output))
