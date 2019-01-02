@@ -1,7 +1,7 @@
 *ipynb_checkpoints
 papers-import/*.pdf
 *.pdf
-
+.DS_Store
 papers-import/import2015full/105/contents
 ressources/*
 Papers-import/import2018.zip
