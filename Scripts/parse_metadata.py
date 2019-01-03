@@ -193,8 +193,8 @@ d= {}
 for i, m in enumerate(names):
     for j, n in enumerate(names):
         if i < j and not 'de' in m:
-            y = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 1])
-            name = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 1])
+            y = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 2])
+            name = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 2])
             if len(name.intersection(y)) > 1 and n!= m and not ('Lee' in n or 'Lee' in m):
                 d[n]= m
 
