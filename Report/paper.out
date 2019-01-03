@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{TODO write some sentence about general motivation for bibliometric analysis}{}% 1
+\BOOKMARK [1][-]{section.2}{TODO write a few centences about the most central findings}{}% 2
+\BOOKMARK [1][-]{section.3}{Introduction}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Data Processing}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Metadata}{subsection.3.1}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Data Cleaning}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Text preprocessing}{subsection.3.2}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Keywords extraction}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Document Clustering}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Illustrative Example}{}% 10
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 11
+\BOOKMARK [1][-]{section*.5}{References}{}% 12
