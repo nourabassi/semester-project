@@ -54,6 +54,14 @@ def parse(file_path):
                 else:
                     data_dict['subject'] = [text]
 
+        #parse irregular files
+        if 'subject' not in data_dict.keys():
+            f = open(file_path)
+            text = f.read()
+            data_dict['subject'] = regex.findall('&gt;([\w\-\ \;]*)&lt;', text)
+            if len(data_dict['subject']) == 1:
+                data_dict['subject'] = regex.split(';', data_dict['subject'][0])
+
     return data_dict
 
 def convert(arg):
@@ -184,9 +192,9 @@ print('[Info] Saved list of all names to name_dict.csv' )
 d= {}
 for i, m in enumerate(names):
     for j, n in enumerate(names):
-        if i < j:
-            y = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 1])
-            name = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 1])
+        if i < j and not 'de' in m:
+            y = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 1])
+            name = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 1])
             if len(name.intersection(y)) > 1 and n!= m and not ('Lee' in n or 'Lee' in m):
                 d[n]= m
 
