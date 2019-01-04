@@ -8,6 +8,9 @@ import re
 import regex
 import numpy as np
 import unicodedata
+import networkx as nx
+import difflib
+from pprint import pprint
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', type=str, dest='path', default='papers-import/',  help='specifies the path to input dir')
@@ -199,6 +202,31 @@ for i, m in enumerate(names):
                 d[n]= m
 
 cleaning.loc[cleaning['long_name'].isin(d.keys()), 'long_name'] = cleaning.long_name.map(d)
+print('[Info] Unified the following names')
+pprint(d)
+
+build_graph = cleaning[['long_name', 'shortend_names', 'file']]
+build_graph = pd.merge(build_graph, build_graph, on='file')
+build_graph = build_graph[build_graph.long_name_x != build_graph.long_name_y]
+
+G = nx.from_pandas_edgelist(build_graph, source='long_name_x', target='long_name_y')
+
+threshold = 0.8
+d = dict()
+for name in build_graph.long_name_x.unique():
+    members = sorted(list(G.neighbors(name)))
+    for i, member in enumerate(members):
+            for j, member_2 in enumerate(members):
+                if i < j:
+                    difference = difflib.SequenceMatcher(None, member, member_2).ratio()
+                    if difference > threshold:
+                        d[member] = member_2
+
+print('[Info] Unified the following names')
+pprint(d)
+
+cleaning.loc[cleaning['long_name'].isin(d.keys()), 'long_name'] = cleaning.long_name.map(d)
+
 
 print('[INFO] Saved to individual authors list: {} as Parsed_metadata.csv'.format(output))
 cleaning.to_csv(os.path.join(output, 'Parsed_metadata.csv'))
