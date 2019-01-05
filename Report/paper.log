@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  3 JAN 2019 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  5 JAN 2019 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,10 +674,6 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 Package: ulem 2012/05/18
 \ULdepth=\dimen183
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup7
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
@@ -700,8 +696,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/zplm/m/n --> OMX/ztmcm/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/zplm/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup8
-\symitalic=\mathgroup9
+\symbold=\mathgroup7
+\symitalic=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/zplm/b/n --> OT1/ptm/bx/n on input line 34.
@@ -752,80 +748,73 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip54
 \algorithmicindent=\skip55
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 282.
-Package hyperref Info: Option `colorlinks' set `true' on input line 282.
+Package hyperref Info: Option `breaklinks' set `true' on input line 272.
+Package hyperref Info: Option `colorlinks' set `true' on input line 272.
 
-(./paper.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+(./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 289.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 289.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 279.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 279.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 289.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 289.
-LaTeX Font Info:    ... okay on input line 289.
+LaTeX Font Info:    ... okay on input line 279.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 279.
+LaTeX Font Info:    ... okay on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 279.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 289.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 279.
 
 -- Lines per column: 54 (approximate, difference = 2.43001pt).
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -906,7 +895,7 @@ Package caption Info: End \AtBeginDocument code.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 289.
+Package hyperref Info: Link coloring ON on input line 279.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -916,9 +905,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 289.
-LaTeX Info: Redefining \pageref on input line 289.
-LaTeX Info: Redefining \nameref on input line 289.
+LaTeX Info: Redefining \ref on input line 279.
+LaTeX Info: Redefining \pageref on input line 279.
+LaTeX Info: Redefining \nameref on input line 279.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write4
@@ -928,96 +917,107 @@ LaTeX Info: Redefining \nameref on input line 289.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 30
-7.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 32
+3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 30
-7.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 32
+3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 30
-7.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 32
+3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 30
-7.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 32
+3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 307
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 323
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 307.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-
-LaTeX Warning: Citation `article1' on page 1 undefined on input line 338.
-
-
-LaTeX Warning: Citation `book1' on page 1 undefined on input line 348.
-
-
-LaTeX Warning: Citation `booklet1' on page 1 undefined on input line 348.
-
-
-LaTeX Warning: Citation `conference1' on page 1 undefined on input line 348.
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 388.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 408.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 323.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 408.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 323.
+
+<paper_files/paper_8_0.png, id=65, 337.26pt x 239.89626pt>
+File: paper_files/paper_8_0.png Graphic file (type png)
+
+<use paper_files/paper_8_0.png>
+Package pdftex.def Info: paper_files/paper_8_0.png used on input line 333.
+(pdftex.def)             Requested size: 337.25917pt x 239.89566pt.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<paper_files/paper_27_0.png, id=61, 379.4175pt x 264.99pt>
-File: paper_files/paper_27_0.png Graphic file (type png)
+ <./paper_files/paper_8_0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+[]\T1/ptm/m/n/10 The ad-van-tage of pa-pers is that they
+ []
 
-<use paper_files/paper_27_0.png>
-Package pdftex.def Info: paper_files/paper_27_0.png used on input line 511.
-(pdftex.def)             Requested size: 379.41656pt x 264.98935pt.
 
-<paper_files/paper_29_0.png, id=63, 1389.19pt x 678.535pt>
-File: paper_files/paper_29_0.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+\T1/ptm/m/n/10 are struc-tured fairly reg-u-larly. From
+ []
 
-<use paper_files/paper_29_0.png>
-Package pdftex.def Info: paper_files/paper_29_0.png used on input line 524.
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+\T1/ptm/m/n/10 ISLS_Author_Guidelines_Oct2014.pdf we know
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+\T1/ptm/m/n/10 pa-pers the pa-pers in our dataset should be
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 378--386
+\T1/ptm/m/n/10 struc-tured. We use this to our ad-van-tage when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+\T1/ptm/m/n/10 [ISLS_Author_Guidelines_Oct2014] the doc-u-ment
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 420--432
+[]\T1/ptm/m/n/10 Consider that the ref-er-ences strings are struc-
+ []
+
+[2] [3]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 630.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+<paper_files/paper_25_0.png, id=97, 1389.19pt x 678.535pt>
+File: paper_files/paper_25_0.png Graphic file (type png)
+
+<use paper_files/paper_25_0.png>
+Package pdftex.def Info: paper_files/paper_25_0.png used on input line 633.
 (pdftex.def)             Requested size: 1389.18663pt x 678.53334pt.
- [2]
-<paper_files/paper_31_0.png, id=68, 1391.1975pt x 663.47874pt>
-File: paper_files/paper_31_0.png Graphic file (type png)
 
-<use paper_files/paper_31_0.png>
-Package pdftex.def Info: paper_files/paper_31_0.png used on input line 542.
-(pdftex.def)             Requested size: 1391.1941pt x 663.47711pt.
+<paper_files/paper_34_0.png, id=99, 501.875pt x 401.5pt>
+File: paper_files/paper_34_0.png Graphic file (type png)
 
-<paper_files/paper_40_0.png, id=70, 501.875pt x 401.5pt>
-File: paper_files/paper_40_0.png Graphic file (type png)
-
-<use paper_files/paper_40_0.png>
-Package pdftex.def Info: paper_files/paper_40_0.png used on input line 580.
+<use paper_files/paper_34_0.png>
+Package pdftex.def Info: paper_files/paper_34_0.png used on input line 678.
 (pdftex.def)             Requested size: 501.87376pt x 401.49901pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 592.
- [3 <./paper_files/paper_27_0.png> <./paper_files/paper_29_0.png> <./paper_file
-s/paper_31_0.png> <./paper_files/paper_40_0.png>] (./paper.bbl
+put line 690.
+ [4 <./paper_files/paper_25_0.png> <./paper_files/paper_34_0.png>] (./paper.bbl
+
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1029,37 +1029,28 @@ l.3 \end{thebibliography}
                          
 ? 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 622.
- [4
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
+ [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 622.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 622.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 622.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 5D80B9020D1660871A2962DAC713273C;944.
 
 
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: 02DFBA2C379869F5C9903CCFFC97511D;759
-(rerunfilecheck)             After:  59DDD29E4AAA375EF6114CC5F7984ADB;806.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 622.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
  ) 
 Here is how much of TeX's memory you used:
- 12734 strings out of 492995
- 192614 string characters out of 6132704
- 301693 words of memory out of 5000000
- 15986 multiletter control sequences out of 15000+600000
- 132824 words of font info for 177 fonts, out of 8000000 for 9000
+ 12696 strings out of 492995
+ 191790 string characters out of 6132704
+ 301546 words of memory out of 5000000
+ 15944 multiletter control sequences out of 15000+600000
+ 123961 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,77p,378b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1073,10 +1064,10 @@ onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on paper.pdf (4 pages, 587252 bytes).
+Output written on paper.pdf (5 pages, 377959 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -77,6 +77,7 @@ def convert(arg):
 def extract_author(text):
     author_split = r'([\p{L}\-]*[\,] [\p{L}\.\ \-]*[\&\,\.]?)'
     author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    text =  unicodedata.normalize('NFC', text)
     if regex.match('^([\p{L}\ \-]*\p{Lu}\.\,)', text):
         split = [a.replace(',', '').replace('&', '').rstrip() for a in regex.findall(
             author_split_2, text[:text.find('(')])]
@@ -105,7 +106,7 @@ def extract_author(text):
 
 
 def get_authors_month(sentence, debug = False):
-    general = r'[ééüş\xad\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
+    general = r'[\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
     match_bad_year = r'[\S\s]*\((18|19|20)\d{2}\/(18|19|20)\d{2}\)'
 
     match_press = r'[\S\s]*\((i|I)n (P|p)ress|manuscript under review\)'
@@ -114,7 +115,7 @@ def get_authors_month(sentence, debug = False):
     match_submitted = r'[\S\s]*\((s|S)ubmitted\)'
     match_underreview = r'[\S\s]*\((u|U)nder (R|r)eview\)'
 
-    #sentence = sentence.lower()
+    sentence =  unicodedata.normalize('NFC', sentence)
     if regex.match(general, sentence):
         s = regex.search(general, sentence).group(0)
         if len(s) > 9:

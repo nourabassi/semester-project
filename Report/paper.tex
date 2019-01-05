@@ -66,7 +66,6 @@
     \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
     \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
                                 % normalem makes italics be italics, not underlines
-    \usepackage{mathrsfs}
     
 \usepackage{mathptmx}
 \usepackage{algorithm}\usepackage{algorithmic}
@@ -96,8 +95,6 @@
     \definecolor{ansi-cyan-intense}{HTML}{258F8F}
     \definecolor{ansi-white}{HTML}{C5C1B4}
     \definecolor{ansi-white-intense}{HTML}{A1A6B2}
-    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
-    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
 
     % commands and environments needed by pandoc snippets
     % extracted from the output of `pandoc -s`
@@ -144,18 +141,11 @@
     % Define a nice break command that doesn't care if a line doesn't already
     % exist.
     \def\br{\hspace*{\fill} \\* }
-    % Math Jax compatibility definitions
+    % Math Jax compatability definitions
     \def\gt{>}
     \def\lt{<}
-    \let\Oldtex\TeX
-    \let\Oldlatex\LaTeX
-    \renewcommand{\TeX}{\textrm{\Oldtex}}
-    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
-    % Document title
     \title{paper}
-    
-    
     
     
     
@@ -303,28 +293,18 @@
     
 
 \begin{abstract}
-    \begin{itemize}
-\item ~
-  \section{TODO write some sentence about general motivation for
-  bibliometric
-  analysis}\label{todo-write-some-sentence-about-general-motivation-for-bibliometric-analysis}
-\end{itemize}
-
-We explore ways to extract information from ICLS and CSCL papers to gain
-an understanding about the community formed by conference participants
-and what research is being conducted within the community. After
-describing how to extract data from the original dataset in suitable
-format for analysis we perform an exploratory data analysis after which
-we derive insights into the community using social network analysis and
-{[}Nour: NLP etc{]}.
-
-\begin{itemize}
-\item ~
-  \section{TODO write a few centences about the most central
-  findings}\label{todo-write-a-few-centences-about-the-most-central-findings}
-\end{itemize}
+    \#TODO write some sentence about general motivation for bibliometric
+analysis We explore ways to extract information from ICLS and CSCL
+papers to gain an understanding about the community formed by conference
+participants and what research is being conducted within the community.
+After describing how to extract data from the original dataset in
+suitable format for analysis we perform an exploratory data analysis
+after which we derive insights into the community using social network
+analysis and {[}Nour: NLP etc{]}. \#TODO write a few centences about the
+most central findings
 \end{abstract}
-    \section{Introduction}\label{introduction}
+    \hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -334,71 +314,209 @@ velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua \cite{article1}. Ut
-enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-officia deserunt mollit anim id est laborum.
+    \hypertarget{data-processing}{%
+\section{Data Processing}\label{data-processing}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat \cite{book1,booklet1,conference1}. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+    As a starting point we have papers of 4 years spanning 2015 to 2018 of
+the proceedings of ICLS, which is held in even years, respectively CSCL,
+held in odd years. The overall number of papers per year can be observed
+in figure \(\ref{fig1}\). The provided raw dataset consists of papers in
+pdf format as well as associated metadata in xml format. To extract
+information from the dataset we first need to convert the data a format
+that is more adapt to the task of data exploration and handling with a
+variety of external libraries. We store the data we extract from the
+provided dataset in csv format, as this makes it accessible to any
+scientist and is unlikely to become an obsolete any time soon.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
 
-To illustrate how code, equations and figures are included in the
-notebook, I include a simple technical section (section
-\ref{illustrative-example}) below.
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_8_0.png}\end{center}
+        \caption{Distribution of papers published over the years}
+        \label{fig1}
+    \end{figure}
+    
+    \hypertarget{metadata}{%
+\subsection{Metadata}\label{metadata}}
 
-    \subsection{Data Processing}\label{data-processing}
-
-    To extract information from the dataset we first need to convert the
-data into a suitable format. We store the extracted data in csv format,
-as this makes it accessible to any scientist and can be read as is on
-the GitHub. Only the data frame containing emails is stored in pickle
-format, which is done for privacy reasons.
-
-    \subsubsection{Metadata}\label{metadata}
-
-\paragraph{Extraction}\label{extraction}
-
-The provided raw dataset consists of papers in pdf format as well as
-associated metadata in xml format. This associated metadata consists of
-: full-length author names, abstract of the paper, associated keywords,
-document type, publisher, title of the paper, time of issue and the
-citation string for the paper. We extract the xml metadata using the
-lxmltree python library into a csv file containing the above listed
+We extract the xml metadata --using the lxmltree python library-- into a
+csv file containing the information associated to different tags in its
 columns. The provided xml does not exactly follow the xml standard,
-hence we handle errors by iteratively parsing the file.
+hence we handle errors by iteratively parsing the xml tree. We then add
+columns that reference the name of the source file and the order in
+which an author name occurs in the xml file. From the associated
+citation string we add in a shortened version of author names, and the
+``author names (year) title'' string that we later use to identify a
+paper. Having extracted the metadata we then clean it by unifying names
+as slight spelling differences exist within the same author name. This
+is done by splitting up names based on whitespace and commas. If the
+intersection of the set of substrings of two distinct names contains at
+least 2 names of length at least 3 we consider these two names to be
+identical. Using this we reduce the number of authors in the dataset
+from 1951 down to 1879. To unify the names further, we need to make sure
+to not overmerge by labeling to different authors as having the same
+name. We do this by constructing the graph of co-authorship and then
+only considering names of authors that are in the same neighborhood of a
+node on the graph. Then we use the difflib library to check for
+similarity of two names and merge them if they reach a the threshold of
+0.8. This method again reduces the number of authors in the dataset from
+1879 to 1951.
 
+    \hypertarget{handling-of-pdf-data}{%
+\subsection{Handling of pdf data}\label{handling-of-pdf-data}}
 
+To extract information from the papers themselves we need to first
+extract the text from the pdfs. Various parsers performing this task
+exist. However, many parsers {[}pdfminer, PyPDF2{]} that claim to be
+able to extract the text as well as metadata from papers have not been
+kept up to date, which leads to issues with dependencies. We found that
+the most reliable parser is poppler https://poppler.freedesktop.org/.
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Number of papers is : 869
+We note that due to inconsistencies with numbering, some of the pdfs
+were not extracted correctly from the proceedings. We make sure to
+handle these cases.
 
-    \end{Verbatim}
+The advantage of papers is that they are structured fairly regularly.
+From ISLS\_Author\_Guidelines\_Oct2014.pdf we know papers the papers in
+our dataset should be structured. We use this to our advantage when
+extracting information from the paper text. As per
+{[}ISLS\_Author\_Guidelines\_Oct2014{]} the document should be
+structured in the following way: 1. Title 2. Abstract 3. Keywords 4.
+Body of submission (using heading levels 1, 2 and 3 as necessary) 5.
+Endnotes (if needed) 6. References 7. Acknowledgements (if needed)
 
-    Some of the documents are not readable and have some strange format so
-we need to take them out of the analysis. Wwe find ourselves with
-roughly 834 documents
+\hypertarget{extracting-the-papers-cited-by-a-paper}{%
+\subsection{Extracting the papers cited by a
+paper}\label{extracting-the-papers-cited-by-a-paper}}
 
-    \subsection{Data Cleaning}\label{data-cleaning}
+We know that each valid paper should contain a reference section at the
+end listing all the references cited in the paper. While there are tools
+being developed to extract the reference section directly from pdfs,
+notably {[}scholarcy{]}, we found that none of them produced
+satisfactory results as of the time writing this report. Hence we resort
+the using regular expressions and our knowledge about how references
+should be presented within the paper.
 
-    your part for the references universities parsing ...
+To get the reference section we use a regular expression to find the
+`Reference' header and cut of at the end if an Acknowledgement or
+Appendix section is present. Python has two modules that implement
+regular expressions re and regex. We used regex as it allows to better
+handle unicode strings by having unicode expressions, which frequently
+occur.
 
-    \subsubsection{Text preprocessing}\label{text-preprocessing}
+To get the individual reference we tested many ways to split up the
+lines, but ultimately, the most robust way was to split up the section
+at each new line and the glue the references back together if the lines
+satisfy a set of conditions.
+
+The underlying idea is that APA references, the standard referencing
+format, all have the same initial structure: Authors (year) title, other
+identifying information. We thus check that the beginning of each
+reference contains ``Authors (year)''. It is relatively easy to check
+for this using regular expressions as Author names and year have a given
+structure. If a string does not contain such a section, then it must be
+part of an other reference, which is lies before in the list of
+reference substrings.
+
+Consider that the references strings are structured the following way
+{[}\ldots{}., reference\_part\_i, reference\_part\_i+1, \ldots{}.{]}
+Algorithm: 1. Merge names that were cut up. We detect them by checking
+against the regular expression: \_\_ 2. Check ending for invalid
+sentence endings: reference\_part\_i ends in comma, :, whitespace
+uppercase followed by point. If condition holds reference\_part\_i+1 3.
+Check beginning for invalid reference starts: not starting in a letter.
+Merge with reference\_part\_i if condition holds. 4. Check if a invalid
+reference\_part\_i+1 consists only of the authors names. If so Merge
+with reference\_part\_i 5. Move up all sentences that do not contain
+author names / start of a citation at the beginning 6. Move up all
+sentences that do not have a valid citation start
+
+After this we validate the returned split by looking at the overall
+length and the initials, as well as checking that a random sample
+returns satisfactory splitting accuracy. We find that the above method
+of extracting the references produces good results for proper APA
+citations and on APA citations outperforms Scolarcy.
+
+    \hypertarget{extracting-institution-country}{%
+\subsection{Extracting institution \&
+country}\label{extracting-institution-country}}
+
+Now we consider the information present in the section before the
+abstract, which contains the authors names, their email and the
+institution they are affiliated with. Affiliation with institution can
+give us a lot of insight where people are working and gives use a way
+estimate where they are from. To go from this section to an exact
+affiliation with an institution a multifaceted approach was used.
+
+\hypertarget{approach-1}{%
+\subsubsection{Approach 1}\label{approach-1}}
+
+The most robust way to get a persons institution affiliation is to use
+their email. Emails can easily be extracted from the header section
+using a regular expression and given a domain-university mapping {[}{]}
+give us an onto mapping from domain to institution. The additional
+advantage of this method is that using the additional metadata
+associated to each university in the mapping, we also access information
+about the country of the university.
+
+\hypertarget{approach-2}{%
+\subsubsection{Approach 2}\label{approach-2}}
+
+The header section itself contains information on the institution, but
+as different was to list authors are accepted, notably two ways {[}fig
+\_ a and b{]}. Hence, we first detect the structure of the header
+section before extracting the association. We tag the substring present
+in this section using a combination of named entity detection, using the
+implementation provided by spacy, simple matching of the names of
+authors and institutions we extracted from the metadata respectively
+from Approach 1 and tagging sections containing ``emails'' using regex ,
+to detect where in the header the email is. Then, taking the tagged
+section, we detect which subsections correspond to which
+author-affiliation listing type, and extract the author email -
+institution mapping accordingly.
+
+Approach 2 allows to match many more institutions to authors than
+Approach 1 as not every institution is present in the mapping and many
+participants use gmail and similar providers as their official
+correspondence email we are unable to acquire this information for many
+participants. But, Approach 2 may contain differences in spelling in the
+institution name, which need to be merged. Thus we combine both
+approaches, and use the corresponding institutions in Approach 1 to
+unify the institutions obtained in Approach 2.
+
+As institution affiliation does not allow us to automatically associate
+a country to the institution, we need to get this through additional
+means. A first step is to use the top level domains present in the
+emails to associate a country of origin to the participants \& their
+associated institutions.
+
+Alongside this, to plot the community we augment the dataset with
+geolocation information, having this information we can then easily
+associate a country to the institution.
+
+As there are a variety of way in which the name of an institution could
+be written --consider EPFL, EPF Lausanne-- it was found that crawling
+the english, french and german version of Wikipedia (not using the API,
+or the API wrapper, as this does not give access to the desired
+information) and using beautiful soup the get the coordinates present in
+the article was a quick and accurate way to get the location as the
+website directs to the relevant article on the institution even when
+misspellings are present. But not all institutions, even well known ones
+such as Tokyo University, have their coordinates listed on their
+Wikipedia. To get the remaining locations we use the geopy, which is a
+client for geocoding web services. These results however are more error
+prone and will always return a result. Then, to get the country we can
+then again use geopy. The resulting data containing paper identifier,
+the authors email, it's associated domain, order in which the author was
+cited, the institution, country, Longitude and Latitude are saved to
+csv. We use the paper identifier and author order to associate this data
+with the metadata to link information about authors with the papers they
+authored.
+
+    \hypertarget{keywords-extraction}{%
+\subsection{Keywords extraction}\label{keywords-extraction}}
+
+    \hypertarget{text-preprocessing}{%
+\subsubsection{Text preprocessing}\label{text-preprocessing}}
 
     From the pdf parser some of the documents were corrupted with some weird
 caracters such as , white space strings
@@ -425,7 +543,7 @@ caracters such as , white space strings
 \end{itemize}
 
 \textbf{\emph{Lemmatization}} is a word variations to the root of the
-word (e.g. working, works, worked changed to work).
+word (e.g.~working, works, worked changed to work).
 \textbf{\emph{Stemming}} is the process of reducing inflected and
 derived words to their word stem, base or root form---generally a
 written word form As the use of the stop words to reduce the BOW (bag of
@@ -437,8 +555,6 @@ the number of words without taking off any information)
 while doing the Keywords extraction, otherwise we prefered keeping the
 words as they are because we were doing a mapping with a pretrained
 stanford word embedding and we did not wand to loose interpretability.
-
-    \subsection{Keywords extraction}\label{keywords-extraction}
 
     For the Keywords extraction we used three methods. The first one whe is
 a trivial one is to search in the pdf itself for keywords and extract
@@ -506,13 +622,6 @@ the text keywords than the Rake Keywords.
 metadata and put assign to every document a publication year.
 
 
-
-    \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_27_0.png}\end{center}
-        \caption{}
-        \label{}
-    \end{figure}
-    
     Since we don't have the same number of documents for each year we needed
 to scale over the years and use the percentage of appearence of a word.
 So after groupping the words by year and scaling them we found graph
@@ -521,7 +630,7 @@ below
 \texttt{\color{outcolor}Out[{\color{outcolor}33}]:}
     
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_29_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_25_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
@@ -532,37 +641,26 @@ year, so we selected distinct words for each year, it means that we
 selected for each year the words that were present for that year and
 never for the others. We get the graph below. As we can see from the
 graph, the most used word in the papers, more than 10\% of 2015 papers
-uses the word 'peer', more than 6\% of the papers uses the words
-'building', 'embodied' in 2016. In 2017 the most frequent keyword on is
-'reponsive' and in 2018 'tools' is present with more than 6\%.
+uses the word `peer', more than 6\% of the papers uses the words
+`building', `embodied' in 2016. In 2017 the most frequent keyword on is
+`reponsive' and in 2018 `tools' is present with more than 6\%.
 
-\texttt{\color{outcolor}Out[{\color{outcolor}37}]:}
-    
-    \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_31_0.png}\end{center}
-        \caption{}
-        \label{}
-    \end{figure}
-    
+    \hypertarget{methodology}{%
+\section{Methodology}\label{methodology}}
 
-    \subsection{Document Clustering}\label{document-clustering}
+    \hypertarget{document-clustering}{%
+\subsection{Document Clustering}\label{document-clustering}}
 
-
-
-    \section{Illustrative Example}\label{illustrative-example}
+    \hypertarget{illustrative-example}{%
+\section{Illustrative Example}\label{illustrative-example}}
 
 For the purposes of illustration, consider a damped harmonic oscillator
-driven by a sinusoidal signal:
-
-\begin{equation}
+driven by a sinusoidal signal: \begin{equation}
 \frac{\mathrm{d}^2x}{\mathrm{d}t^2} + 2\zeta\omega_0\frac{\mathrm{d}x}{\mathrm{d}t} + \omega_0^2x = A\sin(\omega t), \label{eq:problem}
-\end{equation}
-
-\noindent where \(x(t)\) is the quantity of interest, \(\zeta\) is the
-damping constant, \(\omega_0\) is the undamped resonant frequency, and
-\(A\sin(\omega t)\) is the driving sinusoidal signal. The steady state
-solution to \eqref{eq:problem} is given by:
-
+\end{equation} \noindent where \(x(t)\) is the quantity of interest,
+\(\zeta\) is the damping constant, \(\omega_0\) is the undamped resonant
+frequency, and \(A\sin(\omega t)\) is the driving sinusoidal signal. The
+steady state solution to \eqref{eq:problem} is given by:
 \begin{eqnarray}
 x(t) &=& \frac{A}{Z_m\omega}\sin(\omega t + \phi), \label{eq:soln}\\
 Z_m &=& \sqrt{(2\omega_0\zeta)^2+\frac{(\omega^2-\omega_0^2)^2}{\omega^2}}, \nonumber\\
@@ -577,9 +675,9 @@ Z_m &=& \sqrt{(2\omega_0\zeta)^2+\frac{(\omega^2-\omega_0^2)^2}{\omega^2}}, \non
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_40_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_34_0.png}\end{center}
         \caption{Variation of steady-state oscillation amplitude with driving frequency for an oscillator with undamped frequency of 100 Hz, a driving amplitude $A = 10^6$, and various damping constants.}
-        \label{fig1}
+        \label{figtest}
     \end{figure}
     
     In Figure \ref{fig1} we plot the steady state amplitude of a 100 Hz
@@ -601,7 +699,8 @@ frequency of 100 Hz.
 \ENDIF
 \end{algorithmic}
 \end{algorithm}
-    \section{Conclusions}\label{conclusions}
+    \hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
