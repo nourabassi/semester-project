@@ -1,0 +1,775 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    \documentclass[journal,twocolumn]{IEEEtran}
+\usepackage[noadjust]{cite}
+
+    
+    
+
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+\usepackage{mathptmx}
+\usepackage{algorithm}\usepackage{algorithmic}
+
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{paper}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    
+\renewcommand{\figurename}{Figure}
+\captionsetup{labelformat=simple}\title{Bibliometric Analysis of ICLS and CSCL research}
+\author{\IEEEauthorblockN{Léonore Valentine Guillain, Nour Ghalia Abassi}\par
+    \IEEEauthorblockA{EPFL}
+}
+\maketitle
+
+    
+    
+
+    
+
+\begin{abstract}
+    \#TODO write some sentence about general motivation for bibliometric
+analysis We explore ways to extract information from ICLS and CSCL
+papers to gain an understanding about the community formed by conference
+participants and what research is being conducted within the community.
+After describing how to extract data from the original dataset in
+suitable format for analysis we perform an exploratory data analysis
+after which we derive insights into the community using social network
+analysis and {[}Nour: NLP etc{]}. \#TODO write a few centences about the
+most central findings
+\end{abstract}
+    \hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+    \hypertarget{data-processing}{%
+\section{Data Processing}\label{data-processing}}
+
+    As a starting point we have papers of 4 years spanning 2015 to 2018 of
+the proceedings of ICLS, which is held in even years, respectively CSCL,
+held in odd years. The overall number of papers per year is shown in
+figure \(\ref{fig1}\). The provided raw dataset consists of papers in
+pdf format as well as associated metadata in xml format. To extract
+information from the dataset we first need to convert the data a format
+that is more adapt to the task of data exploration and handling with a
+variety of external libraries. We store the data we extract from the
+provided dataset in csv format, as this makes it accessible to any
+scientist and is unlikely to become an obsolete any time soon.
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_8_0.png}\end{center}
+        \caption{Distribution of papers published over the years}
+        \label{fig1}
+    \end{figure}
+    
+    \hypertarget{processing-the-metadata}{%
+\subsection{Processing the Metadata}\label{processing-the-metadata}}
+
+We extract the xml metadata into a csv file containing the information
+associated to different tags in its columns using the \emph{lxmltree}
+python library. The provided xml does not exactly follow the xml
+standard, hence we handle errors by iteratively parsing the xml tree. We
+then add columns that reference the name of the source file and the
+order in which an author name occurs in the xml file. From the
+associated citation string we add in a shortened version of author
+names, and the ``author names (year) title'' string that we later use to
+identify a paper. Having extracted the metadata we then clean it by
+unifying names as slight spelling differences exist within the same
+author name. This is done by splitting up names based on whitespace and
+commas. If the intersection of the set of substrings of two distinct
+names contains at least 2 names of length at least 3 we consider these
+two names to be identical. Using this we reduce the number of authors in
+the dataset from 1951 down to 1879. To unify the names further, we need
+to make sure to not overmerge by labeling to different authors as having
+the same name. We do this by constructing the graph of co-authorship and
+then only considering names of authors that are in the same neighborhood
+of a node on the graph. Then we use the difflib library to check for
+similarity of two names and merge them if they reach a the threshold of
+0.8. This method again reduces the number of authors in the dataset from
+1879 to 1951.
+
+    \hypertarget{handling-of-pdf-data}{%
+\subsection{Handling of pdf data}\label{handling-of-pdf-data}}
+
+To extract information from the papers themselves we need to first
+extract the text from the pdfs. Various parsers performing this task
+exist. However, many parsers {[}pdfminer, PyPDF2{]} claiming to be able
+to extract the text as well as metadata from papers have not been kept
+up to date, which leads to issues with dependencies. We found that the
+most reliable parser is poppler https://poppler.freedesktop.org/. We
+note that due to inconsistencies with numbering, some of the pdfs were
+not extracted correctly from the proceedings which leads to text files
+that are either empty or do not contain the text of the paper referenced
+in the metadata.
+
+The advantage of papers is that they are structured fairly regularly.
+From ISLS Guildines \ref{ISLS_Author_Guidelines_Oct2014.pdf} we know
+papers the papers in our dataset should be structured. We use this to
+our advantage in the following sections when extracting information from
+the paper text.
+
+\hypertarget{extracting-the-papers-cited-by-a-paper}{%
+\subsection{Extracting the papers cited by a
+paper}\label{extracting-the-papers-cited-by-a-paper}}
+
+We know that each valid paper should contain a reference section at the
+end listing all the references cited in the paper. While there are tools
+being developed to extract the reference section directly from pdfs,
+notably {[}scholarcy{]}, we found that none of them produced
+satisfactory results as of the time writing this report. Hence we resort
+the using regular expressions and our knowledge about how references
+should be presented within the paper.
+
+To get the reference section we use a regular expression to find the
+`Reference' header and cut of at the end if an Acknowledgement or
+Appendix section is present. Python has two modules that implement
+regular expressions \emph{re} and \emph{regex}. We used regex as it
+allows to better handle unicode strings by having unicode expressions.
+This is important as many authors have names that do contain non-ascii
+characters. To get the individual reference we tested many ways to split
+up the lines, but ultimately, the most robust way was to split up the
+section at each new line and the glue the references back together if
+the lines satisfy a set of conditions.\\
+- The underlying idea is that APA references, the standard referencing
+format, all have the same initial structure: Authors (year) title, other
+identifying information. We thus check that the beginning of each
+reference contains ``Authors (year)''. It is relatively easy to check
+for this using regular expressions as Author names and year have a given
+structure. If a string does not contain such a section, then it must be
+part of an other reference, which is lies before in the list of
+reference substrings.
+
+Consider that the references strings are structured the following way
+{[}\ldots{}., reference\_part\_i, reference\_part\_i+1, \ldots{}.{]}
+Algorithm:
+
+\[
+1. Merge names that were cut up. We detect them by checking against the regular expression: __ 
+2. Check ending for invalid sentence endings:  reference_part_i ends in comma, :, whitespace uppercase followed by point. If condition holds reference_part_i+1
+3. Check beginning for invalid reference starts: not starting in a letter. Merge with reference_part_i if condition holds.
+4. Check if a  invalid reference_part_i+1 consists only of the authors names. If so Merge with reference_part_i
+5. Move up all sentences that do not contain author names / start of a citation at the beginning 
+6. Move up all sentences that do not have a valid citation start
+\] After this we validate the returned split by looking at the overall
+length and the initials, as well as checking that a random sample
+returns satisfactory splitting accuracy. We find that the above method
+of extracting the references produces good results for proper APA
+citations and on APA citations outperforms Scolarcy.
+
+    \hypertarget{extracting-institution-and-location}{%
+\subsection{Extracting Institution and
+Location}\label{extracting-institution-and-location}}
+
+Now we consider the information present in the section before the
+abstract, which contains the authors names, their email and the
+institution they are affiliated with. Affiliation with institution can
+give us a lot of insight where people are working and gives use a way
+estimate where they are from. To go from this section to an exact
+affiliation with an institution a multifaceted approach was used.
+
+\hypertarget{approach-1}{%
+\subsubsection{Approach 1}\label{approach-1}}
+
+The most robust way to get a persons institution affiliation is to use
+their email. Emails can easily be extracted from the header section
+using a regular expression and given a domain-university mapping {[}{]}
+give us an onto mapping from domain to institution. The additional
+advantage of this method is that using the additional metadata
+associated to each university in the mapping, we also access information
+about the country of the university.
+
+\hypertarget{approach-2}{%
+\subsubsection{Approach 2}\label{approach-2}}
+
+The header section itself contains information on the institution, but
+as different was to list authors are accepted, notably two ways {[}fig
+\_ a and b{]}. Hence, we first detect the structure of the header
+section before extracting the association. We tag the substring present
+in this section using a combination of named entity detection, using the
+implementation provided by spacy, simple matching of the names of
+authors and institutions we extracted from the metadata respectively
+from Approach 1 and tagging sections containing ``emails'' using regex ,
+to detect where in the header the email is. Then, taking the tagged
+section, we detect which subsections correspond to which
+author-affiliation listing type, and extract the author email -
+institution mapping accordingly.
+
+Approach 2 allows to match many more institutions to authors than
+Approach 1 as not every institution is present in the mapping and many
+participants use gmail and similar providers as their official
+correspondence email we are unable to acquire this information for many
+participants. But, Approach 2 may contain differences in spelling in the
+institution name, which need to be merged. Thus we combine both
+approaches, and use the corresponding institutions in Approach 1 to
+unify the institutions obtained in Approach 2. As institution
+affiliation does not allow us to automatically associate a country to
+the institution, we need to get this through additional means. A first
+step is to use the top level domains present in the emails to associate
+a country of origin to the participants \& their associated
+institutions. Alongside this, to plot the community we augment the
+dataset with geolocation information, having this information we can
+then easily associate a country to the institution.
+
+As there are a variety of way in which the name of an institution could
+be written --consider EPFL, EPF Lausanne-- it was found that crawling
+the english, french and german version of Wikipedia (not using the API,
+or the API wrapper, as this does not give access to the desired
+information) and using \emph{BeautifulSoup} the get the coordinates
+present in the article was a quick and accurate way to get the location
+as the website directs to the relevant article on the institution even
+when misspellings are present. But not all institutions, even well known
+ones such as Tokyo University, have their coordinates listed on their
+Wikipedia. To get the remaining locations we use the geopy, which is a
+client for geocoding web services. These results however are more error
+prone and will always return a result. Then, to get the country we can
+then again use geopy. The resulting data containing paper identifier,
+the authors email, it's associated domain, order in which the author was
+cited, the institution, country, Longitude and Latitude are saved to
+csv. We use the paper identifier and author order to associate this data
+with the metadata to link information about authors with the papers they
+authored.
+
+    \hypertarget{keywords-extraction}{%
+\subsection{Keywords extraction}\label{keywords-extraction}}
+
+    \hypertarget{text-preprocessing}{%
+\subsubsection{Text preprocessing}\label{text-preprocessing}}
+
+    From the pdf parser some of the documents were corrupted with some weird
+caracters such as , white space strings
+
+\begin{itemize}
+\item
+  We used \textbf{\emph{beautiful soup}} and \textbf{\emph{string}}
+  libraries to only keep the text that we needed without any special
+  character.
+\item
+  we applied \textbf{\emph{regular expression}} to remove numbers
+  because we thought that numbers were not that important.
+\item
+  We put all the words to lower cases
+\item
+  We removed the words that were connecting parts of a sentence rather
+  than showing subjects, objects or intent. For us these words were not
+  that important and were only going to increase the bag of words length
+\item
+  In some methods we used \textbf{\emph{Lemmatization}} and
+  \textbf{\emph{stemming}} and in other methods we didn't because we
+  wanted to do a mapping with \textbf{\emph{GloVe}} vocabulary which we
+  will explain later on.
+\end{itemize}
+
+\textbf{\emph{Lemmatization}} is a word variations to the root of the
+word (e.g.~working, works, worked changed to work).
+\textbf{\emph{Stemming}} is the process of reducing inflected and
+derived words to their word stem, base or root form---generally a
+written word form As the use of the stop words to reduce the BOW (bag of
+words size we also used lemmatization and stemming to be able to reduce
+the number of words without taking off any information)
+
+    \textbf{\emph{Lemmatization}} and different form of
+\textbf{\emph{Stemming}} were only used with \textbf{\emph{TF-IDF}}
+while doing the Keywords extraction, otherwise we prefered keeping the
+words as they are because we were doing a mapping with a pretrained
+stanford word embedding and we did not wand to loose interpretability.
+
+    For the Keywords extraction we used three methods. The first one whe is
+a trivial one is to search in the pdf itself for keywords and extract
+them, this method is the most accurate but we found out that for 492
+papers we had no keywords included. So we deciced to use two methods for
+keywords extraction. The first one is \textbf{\emph{TF-IDF}} and the
+second one is \textbf{\emph{Rake}}.
+
+    \begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{TF-IDF}}: Tf--idf is one of the most popular
+  term-weighting schemes today, in information retrieval, tf--idf or
+  TFIDF, short for term frequency--inverse document frequency, is a
+  numerical statistic that is intended to reflect how important a word
+  is to a document in a collection or corpus. It is often used as a
+  weighting factor in searches of information retrieval, text mining,
+  and user modeling. The tf--idf value increases proportionally to the
+  number of times a word appears in the document and is offset by the
+  number of documents in the corpus that contain the word, which helps
+  to adjust for the fact that some words appear more frequently in
+  general.
+\end{itemize}
+
+    With TF-IDF we sorted for each document the words with the highest score
+and then selected the the 7 first words for each document.
+
+    \begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Rake}}: Rake stands for Rapid Automatic Keyword
+  Extraction. It is an existing python implementation that uses the NLTK
+  toolkit for the score calculations.
+\end{itemize}
+
+\textbf{\emph{How it works}} : * It splits the text into sentences and
+generates some words as candidates.\\
+* Various punctuation signs will be treated as sentence boundaries. *
+All words listed in the stopwords file will be treated as phrase
+boundaries. This helps generate candidates that consist of one or more
+non-stopwords. However ,it won't work in cases where the stopword is
+part of the phrase. For example, `new' is listed in RAKE's stopword
+list. This means that neither `New York' nor `New Zealand' can be ever a
+keyword. * For each keyword candidate generated, the algorithm computes
+the score of the pretended keyword, which is the sum of the scores for
+each of its words (if it's a composed word). The words are scored
+according to their frequency and the typical length of a candidate
+phrase in which they appear. * The last step is ranking the scores ansd
+selecting the ones with the highest score
+
+    \textbf{\emph{Keywords in text}}: Select from the text the keywords
+already given by the authors of the paper.
+
+    Once we have all the keywords from the three methods, we tried to select
+the most accurate keywords. So we created a method that selects the
+intersection of TF-IDF keywords and the Rake keywords with the keywords
+of the authors (if there are any keywords in the text), if the
+intersection is empty and we have the keywords in the text we only take
+the keywords of the text. If we don't have any keywords we take the
+intersection of the TF-IDF and the Rake. If again, the intersection is
+empty then we only take the TF-IDF keywords because they were closer to
+the text keywords than the Rake Keywords.
+
+    Once we have our final keywords, we created a method that goes into the
+metadata and put assign to every document a publication year.
+
+
+    Since we don't have the same number of documents for each year we needed
+to scale over the years and use the percentage of appearence of a word.
+So after groupping the words by year and scaling them we found graph
+below
+
+\texttt{\color{outcolor}Out[{\color{outcolor}20}]:}
+    
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_25_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+
+    We wanted then to know what are the trends of words for each specific
+year, so we selected distinct words for each year, it means that we
+selected for each year the words that were present for that year and
+never for the others. We get the graph below. As we can see from the
+graph, the most used word in the papers, more than 10\% of 2015 papers
+uses the word `peer', more than 6\% of the papers uses the words
+`building', `embodied' in 2016. In 2017 the most frequent keyword on is
+`reponsive' and in 2018 `tools' is present with more than 6\%.
+
+    \hypertarget{methodology-find-better-section-head..}{%
+\section{Methodology {[}find better section
+head..{]}}\label{methodology-find-better-section-head..}}
+
+    \hypertarget{document-clustering}{%
+\subsection{Document Clustering}\label{document-clustering}}
+
+    \hypertarget{co-authorship-graphs}{%
+\subsection{Co-authorship graphs}\label{co-authorship-graphs}}
+
+\hypertarget{interactive-map-visualizations}{%
+\subsection{Interactive Map
+visualizations}\label{interactive-map-visualizations}}
+
+    \hypertarget{results}{%
+\section{Results}\label{results}}
+
+    \hypertarget{community-composition-structure}{%
+\subsection{Community Composition \&
+Structure}\label{community-composition-structure}}
+
+We find that participants from 372 institutions participated over the
+last 4 years, with a median of 128 institutions per year. Numbers of
+institutions participating are increasing each year, with a noticeable
+peak in 2018, which participants from 261 institutions. This is a
+considerable up from the last conference ICLS in 2016 which had 135
+participating institutions. Most participants are from the US, with a
+average of 50\% of all participants being from the US. We can also
+observe a trend of increase in US participants with only 35\% of US
+participants in 2015 and 51\% in 2017, followed by 64\% in 2018.
+Overall, participants from 41 nations have participated over the 4
+years, which an average of 28 nations represented each conference. After
+the US, participants of Germany, Canada and Singapore make up the
+biggest proportion of participants \(\ref{figrep}\).
+
+\begin{verbatim}
+1. Collaboration
+2. Movement of participants
+3. Citation
+\end{verbatim}
+
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_33_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    \hypertarget{collaboration}{%
+\subsubsection{Collaboration}\label{collaboration}}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}135}]:}
+    
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_35_0.png}\end{center}
+        \caption{Collaborative papers between countries}
+        \label{figcollab}
+    \end{figure}
+    
+
+    \hypertarget{research-topics-in-the-community}{%
+\subsection{Research topics in the
+Community}\label{research-topics-in-the-community}}
+
+\begin{verbatim}
+1. Keywords
+2. Outside influence: Conferences being sited
+\end{verbatim}
+
+    \hypertarget{illustrative-example}{%
+\section{Illustrative Example}\label{illustrative-example}}
+
+For the purposes of illustration, consider a damped harmonic oscillator
+driven by a sinusoidal signal: \begin{equation}
+\frac{\mathrm{d}^2x}{\mathrm{d}t^2} + 2\zeta\omega_0\frac{\mathrm{d}x}{\mathrm{d}t} + \omega_0^2x = A\sin(\omega t), \label{eq:problem}
+\end{equation} \noindent where \(x(t)\) is the quantity of interest,
+\(\zeta\) is the damping constant, \(\omega_0\) is the undamped resonant
+frequency, and \(A\sin(\omega t)\) is the driving sinusoidal signal. The
+steady state solution to \eqref{eq:problem} is given by:
+\begin{eqnarray}
+x(t) &=& \frac{A}{Z_m\omega}\sin(\omega t + \phi), \label{eq:soln}\\
+Z_m &=& \sqrt{(2\omega_0\zeta)^2+\frac{(\omega^2-\omega_0^2)^2}{\omega^2}}, \nonumber\\
+\phi &=& \arctan\left(\frac{2\omega\omega_0\zeta}{\omega^2-\omega_0^2}\right). \nonumber
+\end{eqnarray}
+
+
+    
+    
+
+
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_42_0.png}\end{center}
+        \caption{Variation of steady-state oscillation amplitude with driving frequency for an oscillator with undamped frequency of 100 Hz, a driving amplitude $A = 10^6$, and various damping constants.}
+        \label{figtest}
+    \end{figure}
+    
+    In Figure \ref{fig1} we plot the steady state amplitude of a 100 Hz
+oscillator as a function of driving frequency. We see that the
+oscillator exhibits a strong resonance for small values of \(\zeta\),
+and that the resonance frequency is slightly lower than the driving
+frequency of 100 Hz.
+
+\begin{algorithm}
+\caption{Calculate $y = x^n + z^m$}
+\begin{algorithmic} 
+\REQUIRE $n \geq 0 \vee x \neq 0 \vee z \geq 0 \vee m \neq 0$
+\ENSURE $y = x^n + z^m$
+\STATE $y \leftarrow 1$
+\IF{$n < 0$}
+  \STATE $N \leftarrow -n$
+\ELSE
+  \STATE $N \leftarrow n$
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+    \hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+    
+    \end{document}

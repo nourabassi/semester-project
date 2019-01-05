@@ -8,6 +8,9 @@ import re
 import regex
 import numpy as np
 import unicodedata
+import networkx as nx
+import difflib
+from pprint import pprint
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', type=str, dest='path', default='papers-import/',  help='specifies the path to input dir')
@@ -54,6 +57,14 @@ def parse(file_path):
                 else:
                     data_dict['subject'] = [text]
 
+        #parse irregular files
+        if 'subject' not in data_dict.keys():
+            f = open(file_path)
+            text = f.read()
+            data_dict['subject'] = regex.findall('&gt;([\w\-\ \;]*)&lt;', text)
+            if len(data_dict['subject']) == 1:
+                data_dict['subject'] = regex.split(';', data_dict['subject'][0])
+
     return data_dict
 
 def convert(arg):
@@ -66,6 +77,7 @@ def convert(arg):
 def extract_author(text):
     author_split = r'([\p{L}\-]*[\,] [\p{L}\.\ \-]*[\&\,\.]?)'
     author_split_2 = r'([\p{L}\-\.\ ]* [\p{L}\. \ \-]*[\,\.]?)'
+    text =  unicodedata.normalize('NFC', text)
     if regex.match('^([\p{L}\ \-]*\p{Lu}\.\,)', text):
         split = [a.replace(',', '').replace('&', '').rstrip() for a in regex.findall(
             author_split_2, text[:text.find('(')])]
@@ -94,7 +106,7 @@ def extract_author(text):
 
 
 def get_authors_month(sentence, debug = False):
-    general = r'[ééüş\xad\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
+    general = r'[\p{L}\,\ \.\:\;\/\&\-\'\`\(\)\’\–\¨\…\‐\*\´\＆\\]*\([\,\ \p{L}\d\-]*(18|19|20)\d{2}[\,\ \p{L}\d\-]*\)'
     match_bad_year = r'[\S\s]*\((18|19|20)\d{2}\/(18|19|20)\d{2}\)'
 
     match_press = r'[\S\s]*\((i|I)n (P|p)ress|manuscript under review\)'
@@ -103,7 +115,7 @@ def get_authors_month(sentence, debug = False):
     match_submitted = r'[\S\s]*\((s|S)ubmitted\)'
     match_underreview = r'[\S\s]*\((u|U)nder (R|r)eview\)'
 
-    #sentence = sentence.lower()
+    sentence =  unicodedata.normalize('NFC', sentence)
     if regex.match(general, sentence):
         s = regex.search(general, sentence).group(0)
         if len(s) > 9:
@@ -184,13 +196,38 @@ print('[Info] Saved list of all names to name_dict.csv' )
 d= {}
 for i, m in enumerate(names):
     for j, n in enumerate(names):
-        if i < j:
-            y = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 1])
-            name = set([i.lower() for i in regex.split(' |\,|\-', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 1])
+        if i < j and not 'de' in m:
+            y = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', m)) if len(regex.sub('\.', '', i)) > 2])
+            name = set([i.lower() for i in regex.split(' |\,', unicodedata.normalize('NFC', n)) if len(regex.sub('\.', '', i)) > 2])
             if len(name.intersection(y)) > 1 and n!= m and not ('Lee' in n or 'Lee' in m):
                 d[n]= m
 
 cleaning.loc[cleaning['long_name'].isin(d.keys()), 'long_name'] = cleaning.long_name.map(d)
+print('[Info] Unified the following names')
+pprint(d)
+
+build_graph = cleaning[['long_name', 'shortend_names', 'file']]
+build_graph = pd.merge(build_graph, build_graph, on='file')
+build_graph = build_graph[build_graph.long_name_x != build_graph.long_name_y]
+
+G = nx.from_pandas_edgelist(build_graph, source='long_name_x', target='long_name_y')
+
+threshold = 0.8
+d = dict()
+for name in build_graph.long_name_x.unique():
+    members = sorted(list(G.neighbors(name)))
+    for i, member in enumerate(members):
+            for j, member_2 in enumerate(members):
+                if i < j:
+                    difference = difflib.SequenceMatcher(None, member, member_2).ratio()
+                    if difference > threshold:
+                        d[member] = member_2
+
+print('[Info] Unified the following names')
+pprint(d)
+
+cleaning.loc[cleaning['long_name'].isin(d.keys()), 'long_name'] = cleaning.long_name.map(d)
+
 
 print('[INFO] Saved to individual authors list: {} as Parsed_metadata.csv'.format(output))
 cleaning.to_csv(os.path.join(output, 'Parsed_metadata.csv'))
