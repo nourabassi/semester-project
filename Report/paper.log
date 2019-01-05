@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  5 JAN 2019 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  5 JAN 2019 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,71 +952,65 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 323.
 
-<paper_files/paper_8_0.png, id=65, 337.26pt x 239.89626pt>
+<paper_files/paper_8_0.png, id=69, 323.2075pt x 227.85126pt>
 File: paper_files/paper_8_0.png Graphic file (type png)
 
 <use paper_files/paper_8_0.png>
 Package pdftex.def Info: paper_files/paper_8_0.png used on input line 333.
-(pdftex.def)             Requested size: 337.25917pt x 239.89566pt.
+(pdftex.def)             Requested size: 323.20671pt x 227.8507pt.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./paper_files/paper_8_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
-[]\T1/ptm/m/n/10 The ad-van-tage of pa-pers is that they
- []
+
+LaTeX Warning: Reference `ISLS_Author_Guidelines_Oct2014.pdf' on page 2 undefin
+ed on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
-\T1/ptm/m/n/10 are struc-tured fairly reg-u-larly. From
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
-\T1/ptm/m/n/10 ISLS_Author_Guidelines_Oct2014.pdf we know
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
-\T1/ptm/m/n/10 pa-pers the pa-pers in our dataset should be
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 378--386
-\T1/ptm/m/n/10 struc-tured. We use this to our ad-van-tage when
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
-\T1/ptm/m/n/10 [ISLS_Author_Guidelines_Oct2014] the doc-u-ment
- []
-
-
-Underfull \hbox (badness 4416) in paragraph at lines 420--432
+Underfull \hbox (badness 4416) in paragraph at lines 415--418
 []\T1/ptm/m/n/10 Consider that the ref-er-ences strings are struc-
  []
 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.420 ...ecking against the regular expression: __
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.426 \]
+         After this we validate the returned split by looking at the overall
+? 
+
+Overfull \hbox (1609.99171pt too wide) detected at line 426
+\OT1/ztmcm/m/n/10 1.\OML/ztmcm/m/it/10 Mergenamesthatwerecutup\OT1/ztmcm/m/n/10
+ .\OML/ztmcm/m/it/10 Wedetectthembycheckingagainsttheregularexpression \OT1/zpl
+m/m/n/10 :[]
+ []
+
 [2] [3]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 630.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 620.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<paper_files/paper_25_0.png, id=97, 1389.19pt x 678.535pt>
+<paper_files/paper_25_0.png, id=103, 1389.19pt x 678.535pt>
 File: paper_files/paper_25_0.png Graphic file (type png)
 
 <use paper_files/paper_25_0.png>
-Package pdftex.def Info: paper_files/paper_25_0.png used on input line 633.
+Package pdftex.def Info: paper_files/paper_25_0.png used on input line 623.
 (pdftex.def)             Requested size: 1389.18663pt x 678.53334pt.
 
-<paper_files/paper_34_0.png, id=99, 501.875pt x 401.5pt>
-File: paper_files/paper_34_0.png Graphic file (type png)
+<paper_files/paper_35_0.png, id=105, 501.875pt x 401.5pt>
+File: paper_files/paper_35_0.png Graphic file (type png)
 
-<use paper_files/paper_34_0.png>
-Package pdftex.def Info: paper_files/paper_34_0.png used on input line 678.
+<use paper_files/paper_35_0.png>
+Package pdftex.def Info: paper_files/paper_35_0.png used on input line 672.
 (pdftex.def)             Requested size: 501.87376pt x 401.49901pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 690.
- [4 <./paper_files/paper_25_0.png> <./paper_files/paper_34_0.png>] (./paper.bbl
+put line 684.
+ [4 <./paper_files/paper_25_0.png> <./paper_files/paper_35_0.png>] (./paper.bbl
 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -1029,28 +1023,28 @@ l.3 \end{thebibliography}
                          
 ? 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 715.
  [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 715.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 715.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 715.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 5D80B9020D1660871A2962DAC713273C;944.
+(rerunfilecheck)             Checksum: 47191D7BCD9580E69BF91B65BD737A65;1031.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 715.
  ) 
 Here is how much of TeX's memory you used:
- 12696 strings out of 492995
- 191790 string characters out of 6132704
- 301546 words of memory out of 5000000
- 15944 multiletter control sequences out of 15000+600000
- 123961 words of font info for 149 fonts, out of 8000000 for 9000
+ 12710 strings out of 492995
+ 192005 string characters out of 6132704
+ 301667 words of memory out of 5000000
+ 15947 multiletter control sequences out of 15000+600000
+ 128749 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,77p,378b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1059,15 +1053,15 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
-s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on paper.pdf (5 pages, 377959 bytes).
+exmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
+mes/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (5 pages, 380658 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Data Processing}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Metadata}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Processing the Metadata}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Handling of pdf data}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Extracting the papers cited by a paper}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Extracting institution \046 country}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Extracting Institution and Location}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Approach 1}{subsection.2.4}% 7
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Approach 2}{subsection.2.4}% 8
 \BOOKMARK [2][-]{subsection.2.5}{Keywords extraction}{section.2}% 9
 \BOOKMARK [3][-]{subsubsection.2.5.1}{Text preprocessing}{subsection.2.5}% 10
-\BOOKMARK [1][-]{section.3}{Methodology}{}% 11
+\BOOKMARK [1][-]{section.3}{Methodology [find better section head..]}{}% 11
 \BOOKMARK [2][-]{subsection.3.1}{Document Clustering}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Illustrative Example}{}% 13
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 14
-\BOOKMARK [1][-]{section*.4}{References}{}% 15
+\BOOKMARK [1][-]{section.4}{Results}{}% 13
+\BOOKMARK [1][-]{section.5}{Illustrative Example}{}% 14
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 15
+\BOOKMARK [1][-]{section*.4}{References}{}% 16
