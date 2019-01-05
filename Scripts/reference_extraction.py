@@ -3,7 +3,6 @@ import pandas as pd
 import os
 import numpy as np
 import sys
-import matplotlib.pyplot as plt
 import json
 import argparse
 import regex as reg
@@ -28,23 +27,27 @@ def author_title(x):
         end = 0
     return ref[: (search+end)]
 
-
 def ref_extraction(text, extract=False):
-    """Extracts refrerence section: works well on well formated documents"""
+    """extracts refrerence section: on well formated documents"""
     mention = text.rfind("\nReferences")
     if mention == -1:
-        mention = text.lower().rfind(" references")
+        mention = text.rfind("\nReference")
+    if mention == -1 and reg.search('\n[\p{L}]*( |)[\p{L}]*( |)(R|r)eferences\n', text):
+        #to keep everything consistent substract
+            mention =  reg.search('\n[\p{L}]*( |)[\p{L}]*( |)(R|r)eferences\n', text).span()[1] - len("references")
     if mention == -1:
-        mention =  text.lower().rfind("reference")
+        return None
     #get reference section, account for different spelling
-    acknowledgements = max(text.lower().find("acknowledgements"), text.lower().find('acknowledgments'))
+    acknowledgements = max(text.find("Acknowledgement"), text.find('Acknowledgment'), text.find('Appendix'))
 
     #handle case that acknowlege ments are before references
     if acknowledgements < mention:
         acknowledgements = -1
     ref = text[mention+len("references"):acknowledgements]
+
     references = re.split(r'\n', ref)
 
+    #extract references while not extracting bottom text
     ref = [r for r in references if r and len(r) > 3 and not re.match(r'(CSCL|ICLS) \d{4} Proceedings|© ISLS', r)]
     if extract:
         print(text[mention+len("references"):acknowledgements])
@@ -52,32 +55,33 @@ def ref_extraction(text, extract=False):
     return ref
 
 def contains_citation_beginning(sentence):
-    """Checks if string begings with an citation (in APA format)"""
+
     ##Check for mention of publication date,
     #do it this way to not allow for ICLS 2015 string to be counted
     months = '(january|february|march|april|may|june|july|august|september|october|november|december)?'
-    publication_year = r'(?<!\d)\('+months+'[\-\ ]*'+months+'[\ \,]*(18|19|20)\d{2}[a-z]?[\,\ ]*'+months+'[\-\ \d]*'+months+'\)'
+    publication_year = r'(?<!\d)\('+months+'[\-\ ]*'+months+'[\ \,]*(18|19|20)\d{2}( |)[a-z]?[\,\ ]*'+months+'[\-\ \d]*'+months+'\)'
 
     #sometimes two years are mentioned, we use this regex to parse them
     match_bad_year = r'\((18|19|20)\d{2}\/(18|19|20)\d{2}\)'
 
+
+    alternative_release = '|'.join(['in press', 'forthcoming', 'accepted', 'submitted', 'under review'])
+    authors = '^[\p{L}\ \. \,\&\(\)\-\'\’\…]*'
     #these regex account for special strings used in the references
-    match_press = r'[\w\ \. \,\&\(\)\-\'\…]*\(in press\)'
-    match_forth = r'[\S\s]*\(forthcoming\)'
-    match_accepted = r'[\S\s]*\(accepted\)'
-    match_submitted = r'[\S\s]*\(submitted\)'
-    match_underreview = r'[\S\s]*\(under review\)'
+    match_press = authors + '('+alternative_release+')'
     sentence = sentence.lower()
 
-    year = re.search(publication_year, sentence) or  re.search(match_bad_year, sentence)
+    year = reg.match(authors + publication_year, sentence) or  reg.match(authors+match_bad_year, sentence)
 
-    return  year or \
-            re.match(match_press, sentence) or re.match(match_forth, sentence) or\
-            re.match(match_accepted, sentence) or re.match(match_submitted, sentence) or\
-            re.match(match_underreview, sentence)
+    return  year or reg.match(match_press, sentence)
 
-def moving_up(issues, condition=lambda x: re.match('^[\d\(\.\&\ ]', x)):
-    """Attaches sentence followed by sentence satisfying condition to that sentence"""
+#moving sentences starting with lowercase letter or number strings "one up"
+def moving_up(issues, condition=lambda x: reg.match('^[^\p{L}\*]|'+ #don't start with number or ., &
+                                                    '(?!((d)[\p{Ll}])|(van))(^\p{Ll}{2,3} )|'+#no overly short non name start
+                                                    '^\p{Ll}{6}[\p{Ll}]*|'+
+                                                    '^([a-z]+[\.] )|'+ #no point
+                                                    '^[\p{L}]*$', #no only word citations
+                                                    x)):
     issues = [i for i in issues if len(i) > 0]
     patchwork = []
     j = 0
@@ -85,6 +89,7 @@ def moving_up(issues, condition=lambda x: re.match('^[\d\(\.\&\ ]', x)):
     for i, sentence in enumerate(issues):
         if i != 0 and condition(sentence):
             patchwork[j-1] += ' ' + sentence
+            #print(sentence)
         else:
             j +=1
             patchwork.append(sentence)
@@ -115,6 +120,12 @@ def match_author(authors):
     USA = r'([A-Z]{2,})'
     return not reg.search(USA, authors) and reg.match(regex, authors)
 
+def contains_author(sentence):
+    regex = r'(^[\p{L}\-\’\'\*]*[\,\&] [A-Z\.\ ]+[\&\,]?)'
+    if reg.search(regex, sentence):
+        return len(reg.search(regex, sentence).group(0)) > 0
+    else:
+        return False
 
 
 def get_authors_month(sentence, debug = False):
@@ -193,26 +204,39 @@ references = []
 for i, content in enumerate(contents):
     references.append((ref_extraction(content)))
 
+#remove pdfs that do not have
+reference_series = pd.DataFrame([references, source]).T.rename(columns={0: 'ref', 1: 'file'})
+references = reference_series[reference_series.ref.notna()].ref.tolist()
+source = reference_series[reference_series.ref.notna()].file.tolist()
+
 print('\tNumber of pdf documents : ', len(contents))
 print('\tNumber of documents for which we have an extracted reference section: ', len(references))
 
 
-#iteration 1: move up strings that start in number or with (
-ref_1 = [moving_up(r) for r in references]
-#iteration 2: move up string starting with "Proceedings"
-ref_2 = [moving_up(r, lambda x: re.match('^Proceedings', x)) for r in ref_1]
+cutoff_name = r'^[A-Z]+\.\ ?'
+ref_1 = [moving_up(r, lambda x: re.match(cutoff_name, x)) for r in references]
+ref_1 = [moving_down(r, lambda x: reg.search('In [\p{Lu}\-\.]*\.$|\:$|\,$', x)) for r in ref_1]
 
-cutoff_name = r'^[\p{Lu}]+\.\ ?'
-ref_3 = [moving_up(r, lambda x: reg.match(cutoff_name, x)) for r in ref_2]
-ref_4 = [moving_down(r, lambda x: match_author(x)) for r in ref_3]
+ref_1 = [moving_up(r) for r in ref_1]
+
+ref_2 = [moving_down(r, match_author) for r in ref_1]
+
+words_at_end = r'( of| and| the| | [\p{Lu}])$'
+ref_2 = [moving_down(r, lambda x: reg.search(words_at_end, x)) for r in ref_2]
+
+ref_3 = [moving_up(r, lambda x: not (contains_author(x) or contains_citation_beginning(x))) for r in ref_2]
 #pivoting up around strings containing citation
-ref_5 = [moving_up(r, lambda x: not contains_citation_beginning(x)) for r in ref_4]
-#if ends in word
-words_at_end = r'\ [\p{L}]*$'
-ref_6 = [moving_down(r, lambda x: reg.search(words_at_end, x)) for r in ref_5]
+ref_4 = [moving_up(r, lambda x: not contains_citation_beginning(x)) for r in ref_3]
 
 #build dataframe
-references_df = pd.DataFrame([(f, source[i]) for i, flat in enumerate(ref_6) for f in flat], columns=['ref', 'file'])
+references_df = pd.DataFrame([(f, source[i]) for i, flat in enumerate(ref_4) for f in flat], columns=['ref', 'file'])
+
+references_df['length'] = references_df.ref.map(lambda x: len(x))
+references_df = references_df[references_df.length > 30]
+references_df = references_df[(references_df.length < 800)]
+
+del references_df['length']
+
 references_df['ref_parsed'] = references_df.apply(lambda x: get_authors_month(x['ref']), axis=1)
 
 print('\tPercentage of unparsed references: {:0.3f}'.format(references_df.ref_parsed.isna().sum()/references_df.ref_parsed.shape[0]))
