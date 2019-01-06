@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  6 JAN 2019 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.2)  6 JAN 2019 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -955,22 +955,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 323.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 323.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 333.
 
-<paper_files/paper_8_0.png, id=89, 323.2075pt x 227.85126pt>
-File: paper_files/paper_8_0.png Graphic file (type png)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 
-<use paper_files/paper_8_0.png>
-Package pdftex.def Info: paper_files/paper_8_0.png used on input line 333.
-(pdftex.def)             Requested size: 323.20671pt x 227.8507pt.
- [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./paper_files/paper_8_0.png>]
-
-LaTeX Warning: Reference `ISLS_Author_Guidelines_Oct2014.pdf' on page 2 undefin
+LaTeX Warning: Reference `ISLS_Author_Guidelines_Oct2014.pdf' on page 1 undefin
 ed on input line 379.
 
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
+
+]
 Underfull \hbox (badness 4416) in paragraph at lines 415--418
 []\T1/ptm/m/n/10 Consider that the ref-er-ences strings are struc-
  []
@@ -994,7 +991,7 @@ Overfull \hbox (1609.99171pt too wide) detected at line 426
 m/m/n/10 :[]
  []
 
-[2] [3] <paper_files/paper_25_0.png, id=123, 1389.19pt x 678.535pt>
+[2] [3] <paper_files/paper_25_0.png, id=121, 1389.19pt x 678.535pt>
 File: paper_files/paper_25_0.png Graphic file (type png)
 
 <use paper_files/paper_25_0.png>
@@ -1004,18 +1001,14 @@ Package pdftex.def Info: paper_files/paper_25_0.png used on input line 622.
 
 LaTeX Warning: Reference `figrep' on page 4 undefined on input line 669.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 671.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-<paper_files/paper_32_0.png, id=124, 413.545pt x 292.09125pt>
+<paper_files/paper_32_0.png, id=123, 413.545pt x 292.09125pt>
 File: paper_files/paper_32_0.png Graphic file (type png)
 
 <use paper_files/paper_32_0.png>
 Package pdftex.def Info: paper_files/paper_32_0.png used on input line 679.
 (pdftex.def)             Requested size: 413.54398pt x 292.09052pt.
 
-<paper_files/paper_34_0.png, id=125, 1084.05pt x 722.7pt>
+<paper_files/paper_34_0.png, id=124, 1084.05pt x 722.7pt>
 File: paper_files/paper_34_0.png Graphic file (type png)
 
 <use paper_files/paper_34_0.png>
@@ -1060,8 +1053,8 @@ Package rerunfilecheck Warning: File `paper.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: 74741CEFDC7168F781591317C0E3D2C6;1422
-(rerunfilecheck)             After:  AC97339725211FE40FE3C5BA22299669;1419.
+(rerunfilecheck)             Before: AC97339725211FE40FE3C5BA22299669;1419
+(rerunfilecheck)             After:  5E9A3764C9F90A1E998530E1C454D7C5;1419.
 
 LaTeX Warning: There were undefined references.
 
@@ -1071,28 +1064,31 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 770.
  ) 
 Here is how much of TeX's memory you used:
- 12748 strings out of 492995
- 192812 string characters out of 6132704
+ 12744 strings out of 492995
+ 192680 string characters out of 6132704
  302091 words of memory out of 5000000
- 15973 multiletter control sequences out of 15000+600000
+ 15969 multiletter control sequences out of 15000+600000
  135429 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,77p,378b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
-mes/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (5 pages, 573752 bytes).
+pdfTeX warning (dest): name{section*.6} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
+s/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (5 pages, 578843 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
+ 219 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams
  61 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
