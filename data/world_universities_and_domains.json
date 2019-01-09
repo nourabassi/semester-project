@@ -56747,6 +56747,18 @@
   },
   {
     "web_pages": [
+      "http://www.jct.ac.il/"
+    ],
+    "name": "JCT Lev Academic Center",
+    "alpha_two_code": "IL",
+    "state-province": null,
+    "domains": [
+      "jct.ac.il"
+    ],
+    "country": "Israel"
+  },
+  {
+    "web_pages": [
       "http://www.ariel.ac.il/"
     ],
     "name": "Ariel University Center of Samaria",
@@ -84376,13 +84388,14 @@
   },
   {
     "web_pages": [
-      "http://www.iscte.pt/"
+      "http://www.iscte-iul.pt/"
     ],
-    "name": "Instituto Superior de Ciências do Trabalho e da Empresa",
+    "name": "ISCTE - Instituto Universitário de Lisboa",
     "alpha_two_code": "PT",
     "state-province": null,
     "domains": [
-      "iscte.pt"
+      "iscte.pt", 
+      "iscte-iul.pt"
     ],
     "country": "Portugal"
   },
@@ -105519,13 +105532,13 @@
   },
   {
     "web_pages": [
-      "http://www.pwscc.edu"
+      "http://pwsc.alaska.edu"
     ],
-    "name": "Prince William Sound Community College",
+    "name": "Prince William Sound College",
     "alpha_two_code": "US",
     "state-province": null,
     "domains": [
-      "pwscc.edu"
+      "pwsc.alaska.edu"
     ],
     "country": "United States"
   },
@@ -116260,5 +116273,103 @@
       "btu.edu.ge"
     ],
     "country": "Georgia"
+  },
+  {
+    "web_pages": [
+        "http://cic-cairo.com/"
+    ],
+    "name": "CIC - Canadian International College",
+    "alpha_two_code": "EG",
+    "state-province": null,
+    "domains": [
+        "cic-cairo.com"
+    ],
+    "country": "Egypt"
+  },
+  {
+    "web_pages": [
+      "http://www.kpc.alaska.edu"
+    ],
+    "name": "Kenai Peninsula College",
+    "alpha_two_code": "US",
+    "state-province": null,
+    "domains": [
+      "kpc.alaska.edu"
+    ],
+    "country": "United States"
+  },
+  {
+    "web_pages": [
+      "http://matsu.alaska.edu"
+    ],
+    "name": "Mat-Su College",
+    "alpha_two_code": "US",
+    "state-province": null,
+    "domains": [
+      "matsu.alaska.edu"
+    ],
+    "country": "United States"
+  },
+  {
+    "web_pages": [
+      "http://koc.alaska.edu"
+    ],
+    "name": "Kodiak College",
+    "alpha_two_code": "US",
+    "state-province": null,
+    "domains": [
+      "koc.alaska.edu"
+    ],
+    "country": "United States"
+  },
+  {
+    "web_pages": [
+      "http://www.alaskapacific.edu"
+    ],
+    "name": "Alaska Pacific University",
+    "alpha_two_code": "US",
+    "state-province": null,
+    "domains": [
+      "alaskapacific.edu"
+    ],
+    "country": "United States"
+  },
+  {
+    "web_pages": [
+      "http://www.wbu.edu"
+    ],
+    "name": "Wayland Baptist University",
+    "alpha_two_code": "US",
+    "state-province": null,
+    "domains": [
+      "wbu.edu"
+    ],
+    "country": "United States"
+  },
+  {
+    "web_pages": [
+      "http://hust.edu.vn"
+    ],
+    "name": "Hanoi University of Science and Technology",
+    "alpha_two_code": "VN",
+    "state-province": null,
+    "domains": [
+      "hust.edu.vn"
+    ],
+    "country": "Vietnam"
+  },
+  {
+    "web_pages": [
+      "http://www.bhtafe.edu.au",
+      "http://www.boxhill.edu.au"
+    ],
+    "name": "Box Hill Institute",
+    "alpha_two_code": "AU",
+    "state-province": null,
+    "domains": [
+      "bhtafe.edu.au",
+      "boxhill.edu.au"
+    ],
+    "country": "Australia"
   }
 ]

@@ -291,6 +291,7 @@
     
 
     
+
 \begin{abstract}
     In this report we explore ways to automatically analyze ICLS and CSCL
 papers to gain an understanding of the community formed by conferences
@@ -353,13 +354,6 @@ external libraries. We store all the resulting data in \emph{csv}
 format, as csv is a human readable format and can easily be processed by
 all the data analysis tools we employ.
 
-
-    \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_7_0.png}\end{center}
-        \caption{Distribution of papers published over the years}
-        \label{fig1}
-    \end{figure}
-    
     \hypertarget{processing-the-metadata}{%
 \subsection{Processing the Metadata}\label{processing-the-metadata}}
 
@@ -462,7 +456,7 @@ line character and glue substrings back together if they satisfy a set
 of conditions. We found this method to be robust as it makes sure that
 all properly formatted references are separated.
 
-\textbf{To glue back substrings} we exploit the fact that that APA
+\textbf{To unify substrings} we exploit the fact that that APA
 references all have the same initial structure: \emph{Lastname F.M.
 (when published) Title which may contain colons and other non-alphabetic
 chars. Where published. Who published} \cite{apaformat}. We thus check
@@ -501,13 +495,13 @@ publishing venue follows.
         \label{figA}
     \end{figure}
     
+
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_10_1.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_11_0.png}\end{center}
         \caption{Different formats used to reference institution}
-        \label{figA}
+        \label{figB}
     \end{figure}
     
-
     \hypertarget{extracting-institution-and-location}{%
 \subsection{Extracting Institution and
 Location}\label{extracting-institution-and-location}}
@@ -535,16 +529,17 @@ information about the country of the university.
 
 The header section itself contains information on the institution, but
 as different was to list authors are accepted, notably two ways as can
-be seen in \ref{figA} \ref{figB}. Hence, we first detect the structure
-of the header section before extracting the association. We tag the
-substring present in this section using a combination of \emph{named
-entity detection}, using the implementation provided by \emph{spacy},
-simple string comparison matching of the names of authors and
-institutions we extracted from the metadata respectively from Approach 1
-and tagging sections containing ``emails'' using regex , to detect where
-in the header the email is. Then, taking the tagged section, we detect
-which subsections correspond to which author-affiliation listing type,
-and extract the author email - institution mapping accordingly.
+be seen in Figure \ref{figA} and Figure \ref{figB}. Hence, we first
+detect the structure of the header section before extracting the
+association. We tag the substring present in this section using a
+combination of \emph{named entity detection}, using the implementation
+provided by \emph{spacy}, simple string comparison matching of the names
+of authors and institutions we extracted from the metadata respectively
+from Approach 1 and tagging sections containing ``emails'' using regex ,
+to detect where in the header the email is. Then, taking the tagged
+section, we detect which subsections correspond to which
+author-affiliation listing type, and extract the author email -
+institution mapping accordingly.
 
 Approach 2 allows to match many more institutions to authors than
 Approach 1 as not every institution is present in the mapping --no
@@ -874,10 +869,6 @@ one other node with 4 same documents referenced.
 
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}9}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
     The resulted graph, is an undirected graph with 805 nodes and 6699
 edges. On this graph we extract two main information : * Strongly
 connected components to be able to detect clusters and related
@@ -903,15 +894,6 @@ be of 5. We obtain a graph of 10845 nodes and 148594 edges.
 
 
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Uploading 7403 kB. This may take a while{\ldots}
-
-    \end{Verbatim}
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}11}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
     We can directly select from the interactive graph the nodes with degree
 higher than 100, these nodes represent the more cited documents, but we
 will construct a subgraph to specificly tackle these important
@@ -946,10 +928,6 @@ we have no out degree for almost every node.
 
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}13}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
     \hypertarget{co-authorship}{%
 \subsection{Co-authorship}\label{co-authorship}}
 
@@ -986,7 +964,21 @@ with fewer than 3 connections to other authors. The resulting graph can
 be seen in figure \ref{author_collab_large}. Details creating such a
 plot can be found in the section dedicated to this below.
 
-Focusing in on the authors is not the only way to interpret the
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_48_0.png}\end{center}
+        \caption{One of the connected components of the co-authorship graph}
+        \label{fig_plot}
+    \end{figure}
+    
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_49_0.png}\end{center}
+        \caption{Largest Component}
+        \label{author_collab_large}
+    \end{figure}
+    
+    Focusing in on the authors is not the only way to interpret the
 co-authorship graph. One should also consider the overall structure of
 the graph. As graph is not connected, and contains one large main
 component with 1141 authors and 208 very small components with less than
@@ -1011,9 +1003,24 @@ normalized cuts in a graph can be done using \emph{sklearns} spectral
 clustering algorithm by passing it the adjacency matrix of the graph.
 With this method we are able to neatly separate the main component graph
 in three large communities. We note that the clusters found using method
-one are contained in the clusters found by method 2. See .
+one are contained in the clusters found by method 2. See Figure \ref{}
+and Figure \ref{}.
 
-To further analyze these subcommunities we look at the distribution of
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_52_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    To further analyze these subcommunities we look at the distribution of
 nationalities and institutions over the years. Additionally, to
 understand differences in the research being conducted, we analyze the
 frequency of keywords used for the papers that were writing within that.
@@ -1029,7 +1036,14 @@ approach on pruning presented, we only consider institutions who
 collaborated in at least two conferences. This the main component of
 this graph is shown in figure \ref{unigraph}.
 
-\textbf{Plotting of co-authorship graphs}: Graphs were visualised with
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_54_0.png}\end{center}
+        \caption{Different formats used to reference institution}
+        \label{unigraph}
+    \end{figure}
+    
+    \textbf{Plotting of co-authorship graphs}: Graphs were visualised with
 the built in plot functions and graph layouts of networkx. The force
 directed layout was used as it clusters together nodes with strong
 connections. Then the size of each node was changed based on the
@@ -1066,6 +1080,13 @@ plot.
     \hypertarget{results}{%
 \section{Results}\label{results}}
 
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_58_0.png}\end{center}
+        \caption{Distribution of papers published over the years}
+        \label{fig1}
+    \end{figure}
+    
     \hypertarget{community-composition-structure}{%
 \subsection{Community Composition \&
 Structure}\label{community-composition-structure}}
@@ -1096,10 +1117,22 @@ biggest proportion of participants \(\ref{figrep}\).
 \end{enumerate}
 
 
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_60_0.png}\end{center}
+        \caption{Different formats used to reference institution}
+        \label{figrep}
+    \end{figure}
+    
     \hypertarget{collaboration}{%
 \subsubsection{Collaboration}\label{collaboration}}
 
 
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_62_0.png}\end{center}
+        \caption{Collaborative papers between countries}
+        \label{figcollab}
+    \end{figure}
+    
     \hypertarget{movement-of-particpants}{%
 \subsubsection{Movement of particpants}\label{movement-of-particpants}}
 
