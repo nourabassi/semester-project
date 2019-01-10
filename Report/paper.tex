@@ -66,6 +66,7 @@
     \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
     \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
                                 % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
     
 \usepackage{mathptmx}
 \usepackage{algorithm}\usepackage{algorithmic}
@@ -95,6 +96,8 @@
     \definecolor{ansi-cyan-intense}{HTML}{258F8F}
     \definecolor{ansi-white}{HTML}{C5C1B4}
     \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
 
     % commands and environments needed by pandoc snippets
     % extracted from the output of `pandoc -s`
@@ -141,11 +144,18 @@
     % Define a nice break command that doesn't care if a line doesn't already
     % exist.
     \def\br{\hspace*{\fill} \\* }
-    % Math Jax compatability definitions
+    % Math Jax compatibility definitions
     \def\gt{>}
     \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
+    % Document title
     \title{paper}
+    
+    
     
     
     
@@ -163,73 +173,73 @@
     \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
 \def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
 
-\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
-\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
-\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
-\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
-\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
-\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
-\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
-\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
-\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
-\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
-\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
-\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
-\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
-\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
-\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
-\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
-\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
-\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
-\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
-\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
-\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
 \expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
-\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
-\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
-\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
-\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
-\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
-\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
 \expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
-\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
-\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
-\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
-\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
 \expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
 \expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
 \expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
-\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
-\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
 \expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
-\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
-\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
-\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
-\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
 \expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
 
 \def\PYZbs{\char`\\}
 \def\PYZus{\char`\_}
@@ -296,14 +306,14 @@
     In this report we explore ways to automatically analyze ICLS and CSCL
 papers to gain an understanding of the community formed by conferences
 participants and of the research being conducted within the community.
-After describing how to extract data from the original dataset we we
-derive insights into the community using social network analysis and
-{[}Nour: NLP etc{]}. We discover patterns of collaboration between
-participants, their migration and the global spread of the community.
-{[}Something about the insights in keywords/NLP/Co-Citation{]}
+After describing how to extract data from the original dataset we derive
+insights into the community using social network analysis, natural
+language processing and text mining. We discover patterns of
+collaboration between participants, their migration and the global
+spread of the community. We also extracted keywords and find clusters of
+referenced papers and documents within the conferences.
 \end{abstract}
-    \hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+    \section{Introduction}\label{introduction}
 
 The starting point of the project are the proceedings of the
 International Conference of the Learning Sciences (ICLS), respectively
@@ -335,7 +345,14 @@ aspects:
 \item
   the migration of participants across institutions
 \item
-  \ldots{} {[}Nour{]}
+  trends of keywords over the years
+\item
+  trends of citations and evolution of the number of documents from 1977
+  until 2018
+\item
+  clusters of the cited documents
+\item
+  clusters of the papers written within the conferences
 \end{itemize}
 
 To this means we first present an extensive pipeline to process the
@@ -343,8 +360,7 @@ textual data and extract features relevant to bibliographic analysis
 from the textual data. After this we perform a first bibliographic
 analysis based on the extracted data.
 
-    \hypertarget{data-processing}{%
-\section{Data Processing}\label{data-processing}}
+    \section{Data Processing}\label{data-processing}
 
     The provided raw dataset consists of papers in \emph{pdf} format, as
 well as associated metadata in \emph{xml} format. To extract information
@@ -354,8 +370,7 @@ external libraries. We store all the resulting data in \emph{csv}
 format, as csv is a human readable format and can easily be processed by
 all the data analysis tools we employ.
 
-    \hypertarget{processing-the-metadata}{%
-\subsection{Processing the Metadata}\label{processing-the-metadata}}
+    \subsection{Processing the Metadata}\label{processing-the-metadata}
 
 We extract the metadata from the xml files using the \emph{lxmltree}
 python library. We associate the contents of each xml tag to a column in
@@ -369,13 +384,13 @@ file. Each author is associated one line in the XML file. From the
 associated citation string we add to the first part of the citation
 containing the author names, year and title. which we use to identify
 references in other papers to that paper. Then we add a shortened
-version of author names (i.e.~West, R.) by considering the author order.
+version of author names (i.e. West, R.) by considering the author order.
 Note that the short name extracted from the citation and the
 corresponding long name (Robert West) in the metadata do at times not
 match up. Thus the author order listed in the citation string does not
 always correspond to the author order listed in the metadata. After
 extraction, we clean the data by unifying names, as slight spelling
-differences exist within the same author name (i.e.~Robert West, Robert
+differences exist within the same author name (i.e. Robert West, Robert
 A. West). When unifying the names we need to make sure to not overmerge
 by labeling to different authors as having the same name. First, we use
 a strict condition to catch small differences in names, such as an extra
@@ -399,8 +414,7 @@ of 0.8. Again names considered to belong to the same person are added to
 the mapping dictionary which is then applied to all names. This method
 again reduces the number of authors in the dataset from 1879 to 1951.
 
-    \hypertarget{handling-of-pdf-data}{%
-\subsection{Handling of pdf data}\label{handling-of-pdf-data}}
+    \subsection{Handling of pdf data}\label{handling-of-pdf-data}
 
 To extract information from the papers themselves we need to first
 extract the text from the pdfs. Various parsers performing this task
@@ -415,7 +429,7 @@ The characters contained in the \emph{txt} files are not all encoded
 uniformly, which means that characters that look the same to humans may
 be encoded in different way . Hence, for many applications we need to
 unify the formating. This is done using the \emph{unicodedata} module
-and setting converting all characters to `Normal Form Composed' form .
+and setting converting all characters to 'Normal Form Composed' form .
 
 A convenient property of papers is that they are structured fairly
 regularly. The ISLS Author Guidelines \cite{guidelines} give us guidance
@@ -425,9 +439,8 @@ vast majority of papers in the dataset follow these guidelines,
 exceptions do exist. We thus make sure to handle deviations from the
 structure.
 
-\hypertarget{extracting-the-papers-cited-by-a-paper}{%
 \subsection{Extracting the papers cited by a
-paper}\label{extracting-the-papers-cited-by-a-paper}}
+paper}\label{extracting-the-papers-cited-by-a-paper}
 
 We know that each valid paper contains a reference section at the end
 listing all the references cited in the paper. While tools are being
@@ -502,9 +515,8 @@ publishing venue follows.
         \label{figB}
     \end{figure}
     
-    \hypertarget{extracting-institution-and-location}{%
-\subsection{Extracting Institution and
-Location}\label{extracting-institution-and-location}}
+    \subsection{Extracting Institution and
+Location}\label{extracting-institution-and-location}
 
 Now we consider the section before the abstract, which contains the
 authors names, their email and the institution they are affiliated with.
@@ -513,8 +525,7 @@ are working and gives use a way estimate where they are from. To go from
 this section to an exact affiliation with an institution a multifaceted
 approach was used.
 
-\hypertarget{approach-1}{%
-\subsubsection{Approach 1}\label{approach-1}}
+\subsubsection{Approach 1}\label{approach-1}
 
 The most robust way to get a persons institution affiliation is to use
 their email. Emails can easily be extracted from the header section
@@ -524,8 +535,7 @@ additional advantage of this method is that using the additional
 metadata associated to each university in the mapping, we also access
 information about the country of the university.
 
-\hypertarget{approach-2}{%
-\subsubsection{Approach 2}\label{approach-2}}
+\subsubsection{Approach 2}\label{approach-2}
 
 The header section itself contains information on the institution, but
 as different was to list authors are accepted, notably two ways as can
@@ -583,11 +593,9 @@ saved to a csv file. We use the paper identifier and author order to
 associate this data with the metadata to link information about authors
 with the papers they authored.
 
-    \hypertarget{keywords-extraction}{%
-\subsection{Keywords extraction}\label{keywords-extraction}}
+    \subsection{Keywords extraction}\label{keywords-extraction}
 
-    \hypertarget{text-preprocessing}{%
-\subsubsection{Text preprocessing}\label{text-preprocessing}}
+    \subsubsection{Text preprocessing}\label{text-preprocessing}
 
     From the pdf parser some of the documents were corrupted with some weird
 caracters such as , white space strings
@@ -614,7 +622,7 @@ caracters such as , white space strings
 \end{itemize}
 
 \textbf{\emph{Lemmatization}} is a word variations to the root of the
-word (e.g.~working, works, worked changed to work).
+word (e.g. working, works, worked changed to work).
 \textbf{\emph{Stemming}} is the process of reducing inflected and
 derived words to their word stem, base or root form---generally a
 written word form As the use of the stop words to reduce the BOW (bag of
@@ -648,7 +656,7 @@ use two methods for keywords extraction. The first one is
   number of times a word appears in the document and is offset by the
   number of documents in the corpus that contain the word, which helps
   to adjust for the fact that some words appear more frequently in
-  general.
+  general \cite{Tf-idf}
 \end{itemize}
 
     With TF-IDF we sorted for each document the words with the highest score
@@ -711,29 +719,32 @@ year, so we select distinct words for each year, it means that we select
 for each year the words that were present for that year and never for
 the others. We get the graph below. As we can see from the graph, the
 most used word in the papers, more than 10\% of 2015 papers uses the
-word `peer', more than 6\% of the papers uses the words `building',
-`embodied' in 2016. In 2017 the most frequent keyword on is `reponsive'
-and in 2018 `tools' is present with more than 6\%.
+word 'peer', more than 6\% of the papers uses the words 'building',
+'embodied' in 2016. In 2017 the most frequent keyword on is 'reponsive'
+and in 2018 'tools' is present with more than 6\%.
 
-    \hypertarget{methodology-find-better-section-head..}{%
-\section{Methodology {[}find better section
-head..{]}}\label{methodology-find-better-section-head..}}
 
-    \hypertarget{document-clustering}{%
-\subsection{Document Clustering}\label{document-clustering}}
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_28_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    \section{Methodology {[}find better section
+head..{]}}\label{methodology-find-better-section-head..}
+
+    \subsection{Document Clustering}\label{document-clustering}
 
 To cluster the documents we decided to use two different approaches. The
 first one is Natural Langage Processing (NLP) and the second one is a
 network analysis. The most accurate one is the network clustering using
 the references graph.
 
-\hypertarget{approach-1-natural-langage-processing-nlp}{%
 \subsubsection{Approach 1 : Natural Langage Processing
-(NLP)}\label{approach-1-natural-langage-processing-nlp}}
+(NLP)}\label{approach-1-natural-langage-processing-nlp}
 
-\hypertarget{baseline-tf-idf-combined-with-k-means}{%
 \paragraph{Baseline : TF-IDF combined with
-K-means}\label{baseline-tf-idf-combined-with-k-means}}
+K-means}\label{baseline-tf-idf-combined-with-k-means}
 
 With the natural langage processing, we start with a naive method which
 consists of clustering the documents using only TF-IDF. Each document
@@ -760,14 +771,13 @@ and properties of TF-IDF.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_30_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_31_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
     
-    \hypertarget{second-method-average-of-glove-vectors-combined-with-k-means}{%
-\paragraph{Second method : Average of GloVe vectors combined with
-K-means}\label{second-method-average-of-glove-vectors-combined-with-k-means}}
+    \paragraph{Second method : Average of GloVe vectors combined with
+K-means}\label{second-method-average-of-glove-vectors-combined-with-k-means}
 
 The second method was to use pre-trained words embeddings. We decided to
 use \textbf{\emph{GloVe}} library pre-trained on Wikipedia dataset.
@@ -778,7 +788,7 @@ algorithm for obtaining vector representations for words. Training is
 performed on aggregated global word-word co-occurrence statistics from a
 corpus (Wikipedia), and the resulting representations showcase
 interesting linear substructures of the word vector space. It is
-developed as an open-source project at Stanford.{[}1{]}
+developed as an open-source project at Stanford.\cite{GloVe}
 
 We construct a dictionnary from the words embeddings mapping each word
 of a document to its vector representation, than we average all the
@@ -793,15 +803,14 @@ separation.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_32_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_33_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
     
-    \hypertarget{third-method-weighted-average-of-tf-idf-glove-combined-with-k-means}{%
-\paragraph{Third method : Weighted average of TF-IDF + GloVe combined
+    \paragraph{Third method : Weighted average of TF-IDF + GloVe combined
 with
-K-means}\label{third-method-weighted-average-of-tf-idf-glove-combined-with-k-means}}
+K-means}\label{third-method-weighted-average-of-tf-idf-glove-combined-with-k-means}
 
 With this method, we did not use the parameter max features of the
 TF-IDF vector, we took all the vocabulary generated by all the documents
@@ -831,7 +840,7 @@ variance possible under the constraint that it is orthogonal to the
 preceding components. The resulting vectors (each being a linear
 combination of the variables and containing n observations) are an
 uncorrelated orthogonal basis set. PCA is sensitive to the relative
-scaling of the original variables.
+scaling of the original variables \cite{PCA}.
 
 Once we get our new vector representation, we apply K-means and we get
 the best separation, with a clear separation of 4 clusters as we can see
@@ -839,29 +848,27 @@ it in the figure below.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_34_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_35_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
     
-    \hypertarget{approach-2-references-network-analysis}{%
-\subsubsection{Approach 2 : References Network
-Analysis}\label{approach-2-references-network-analysis}}
+    \subsubsection{Approach 2 : References Network
+Analysis}\label{approach-2-references-network-analysis}
 
 For the references graph we choose to construct 4 different graphs to be
 able to extract the more information we can. Our first purpose is to be
 able to cluster the documents that are about the same subject.
 
-    \hypertarget{first-reference-graph-intersection-between-referenced-documents}{%
-\paragraph{First reference graph : Intersection between referenced
-documents}\label{first-reference-graph-intersection-between-referenced-documents}}
+    \paragraph{First reference graph : Intersection between referenced
+documents}\label{first-reference-graph-intersection-between-referenced-documents}
 
 Our first graph is constructed using the references of each document. It
 is constructed as follow, for each two documents, if there is an
 intersection between the references of both documents then there is a
 link. The weights of the edges are the length of the intersection set.
 The intuition behind is that the more the weight is high, the more the
-documents are likely to be about the same subjects since they are citing
+documents are likely to be about the same subject since they are citing
 the same documents. From this graph, we create a subgraph of it, we
 filter the edges keeping only those who have a weight strictly higher
 than 3. It means that, each node of the subgraph, is related to at least
@@ -869,6 +876,10 @@ one other node with 4 same documents referenced.
 
 
 
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}212}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
     The resulted graph, is an undirected graph with 805 nodes and 6699
 edges. On this graph we extract two main information : * Strongly
 connected components to be able to detect clusters and related
@@ -877,9 +888,8 @@ are related to a lot of documents and those documents would be more
 general than others, and won't necessarly belong to one specific
 cluster.
 
-    \hypertarget{second-graph-relations-between-references}{%
-\paragraph{Second graph: Relations between
-references}\label{second-graph-relations-between-references}}
+    \paragraph{Second graph: Relations between
+references}\label{second-graph-relations-between-references}
 
 The second graph is more about the referenced documents and not about
 the documents themselves. The aim of this graph is to see if there are
@@ -894,6 +904,17 @@ be of 5. We obtain a graph of 10845 nodes and 148594 edges.
 
 
 
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}103}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_44_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
     We can directly select from the interactive graph the nodes with degree
 higher than 100, these nodes represent the more cited documents, but we
 will construct a subgraph to specificly tackle these important
@@ -902,9 +923,8 @@ documents we also run Strongly connected components algorithm. On top of
 it, we inspected the documents with higher weights, we will explain more
 about what we extracted from this graph in the result section.
 
-    \hypertarget{third-graph-title-to-find}{%
-\paragraph{Third graph: ??? Title to
-find}\label{third-graph-title-to-find}}
+    \paragraph{Third graph: exploratory references
+graph}\label{third-graph-exploratory-references-graph}
 
 With this graph we aim to find what are the most cited documents, what
 are the documents that are the most influencial and how citations evolve
@@ -928,8 +948,11 @@ we have no out degree for almost every node.
 
 
 
-    \hypertarget{co-authorship}{%
-\subsection{Co-authorship}\label{co-authorship}}
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}105}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \subsection{Co-authorship}\label{co-authorship}
 
 To get insight into collaborations within the community we build graphs
 based on co-authorship of papers. To build the graph structure and
@@ -966,14 +989,14 @@ plot can be found in the section dedicated to this below.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_48_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_50_0.png}\end{center}
         \caption{One of the connected components of the co-authorship graph}
         \label{fig_plot}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_49_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
         \caption{Largest Component}
         \label{author_collab_large}
     \end{figure}
@@ -1008,14 +1031,14 @@ one are contained in the clusters found by method 2. See Figure
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_53_0.png}\end{center}
         \caption{Subcommunities by Louvain}
         \label{Louvain}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_52_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_54_0.png}\end{center}
         \caption{Subcommunities via normalized cuts}
         \label{normalized}
     \end{figure}
@@ -1038,7 +1061,7 @@ this graph is shown in figure \ref{unigraph}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_54_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_56_0.png}\end{center}
         \caption{Different formats used to reference institution}
         \label{unigraph}
     \end{figure}
@@ -1060,9 +1083,8 @@ easy to interpret. As by construction betweenness takes into
 consideration the degrees of it neighboring nodes, it better structures
 the nodes large graphs into central and less central nodes.
 
-    \hypertarget{creating-interactive-visualizations}{%
-\subsection{Creating Interactive
-Visualizations}\label{creating-interactive-visualizations}}
+    \subsection{Creating Interactive
+Visualizations}\label{creating-interactive-visualizations}
 
 To better understand and interact with the data we create interactive
 graphs on top of the static graphs. Many libraries exist to allow for
@@ -1077,19 +1099,17 @@ large graphs. To plot figures we create them in networkx to grab the
 positioning of the nodes. Then we pass this positioning to plotly to
 plot.
 
-    \hypertarget{results}{%
-\section{Results}\label{results}}
+    \section{Results}\label{results}
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_58_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_60_0.png}\end{center}
         \caption{Distribution of papers published over the years}
         \label{fig1}
     \end{figure}
     
-    \hypertarget{community-composition-structure}{%
-\subsection{Community Composition \&
-Structure}\label{community-composition-structure}}
+    \subsection{Community Composition \&
+Structure}\label{community-composition-structure}
 
 We find that participants from 372 institutions participated over the
 last 4 years, with a median of 128 institutions per year. Numbers of
@@ -1118,23 +1138,21 @@ biggest proportion of participants \(\ref{figrep}\).
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_60_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_62_0.png}\end{center}
         \caption{Different formats used to reference institution}
         \label{figrep}
     \end{figure}
     
-    \hypertarget{collaboration}{%
-\subsubsection{Collaboration}\label{collaboration}}
+    \subsubsection{Collaboration}\label{collaboration}
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_62_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
         \caption{Collaborative papers between countries}
         \label{figcollab}
     \end{figure}
     
-    \hypertarget{movement-of-particpants}{%
-\subsubsection{Movement of particpants}\label{movement-of-particpants}}
+    \subsubsection{Movement of particpants}\label{movement-of-particpants}
 
 Using the data we have of participants over the years, and knowing their
 affiliation, we can now find members that change institutions over the
@@ -1143,9 +1161,8 @@ changed moved countries and 47 that have moved institutions. We can see
 that most movement occured within the US respectively Europe,
 {[}fig\_move{]}.
 
-    \hypertarget{research-topics-in-the-community}{%
-\subsection{Research topics in the
-Community}\label{research-topics-in-the-community}}
+    \subsection{Research topics in the
+Community}\label{research-topics-in-the-community}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1156,8 +1173,254 @@ Community}\label{research-topics-in-the-community}}
   Outside influence: Conferences being sited
 \end{enumerate}
 
-    \hypertarget{conclusions}{%
-\section{Conclusions}\label{conclusions}}
+    \subsection{Clustering and referecences graphs
+results}\label{clustering-and-referecences-graphs-results}
+
+The distribution of referenced publications years are plotted in the
+graph below. We can see from the graph that there is a kind of a trend,
+each two, three years there is a pick of documents referenced followed
+by a two or three years of stagnancy. We can also notice that
+throughouts the year each pick is higher than the older one, which can
+be explained by the fact that The International Society of the Learning
+Sciences community is investigating more and more tools to facilitate
+learning over the years.
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    Since the number of documents is increasing over the years, we also
+wanted to investigate more if the relevance of all the documents
+published is increasing too. Using Pagerank algorithm and the In-degree
+of each nodes to get the most influancial documents referenced of the
+citation graph that we constructed (graph3) before. We filtered the
+first 100 documents and then contructed a histogram of the counts. We
+obtain the figure below:
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_70_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    We can see that in the top 100 cited documents more than 12\% are from
+2006, 8\% are from 2013, 6\% from 2014... We can not say that we have
+the same trend as before, and the relevance of the documents is
+increasing in the same way than with the number of publications but what
+we can say is that more than 50\% of the most cited documents are from
+2006 until 2016, we is 10 years. The other half is between 1977 until
+2005 which represents more than 25 years. On top of that, 2016 is the
+most important year in term of publications and maybe some documents did
+not have enough time to be cited yet.
+
+    The top 10 of the most influencial and most important referenced papers
+are the following:
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_73_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    We also noticed from the first graph that some documents were more
+likely to cited together. We can say that the more two documents are
+likely to cited together the more it is probable that both documents are
+about the same subject From the table below we can also notice that some
+papers cites like to cite the same authors together, which is logic in a
+sense, because if some authors always treat about the same subjects then
+they are experts in that field and a lot of their publications are
+relevant and can be cited together.
+
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_75_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    Using this graph, we also want to extract if there are some clusters of
+papers cited together. As we explained before, we run strongly connected
+algorithm to check if some cited documents are more likely to cited
+together, and this will give us clusters of cited documents that are
+more likely to be about the same subjects. We can visualise one cluster,
+the most important one.
+
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}176}]:}                                                                                                                                                                                                                                                                                                                           Documents
+          cluster 4 0                                                                                                                                                                                                                                  schommer, m. (1990). effects of beliefs about the nature of knowledge on comprehension
+                    1                                                                                                                                                                          stathopoulou, c., \& vosniadou, s. (2007). exploring the relationship between physics-related epistemological beliefs and physics understanding
+                    2                                                                                                                                                                 hofer, b. k., \& pintrich, p. r. (1997). the development of epistemological theories: beliefs about knowledge and knowing and their relation to learning
+                    3                                                                                                                                                             chinn, c. a., buckland, l. a., \& samarapungavan, a. l. a. (2011). expanding the dimensions of epistemic cognition: arguments from philosophy and psychology
+          cluster 3 0  yoon, s., klopfer, e., wang, j., sheldon, j., wendel, d., schoenfeld, i., scheintaub, h., \& reider, d. (2013). designing to improve biology understanding through complex systems in high school classrooms: no simple matter! in the proceedings of the computer supported collaborative learning, madison, wisconsin
+                    1                                                                                                                                                             ertmer, p.a., ottenbreit-leftwich, a.t., sendurur, e., \& sendurur, p. (2012). teacher beliefs and technology integration practices: a critical relationship
+                    2                                                                                                                                                                                                                                                                                          epstein, j. (2008). 'why model
+                    3                                                                                                                                                                                        national research council. (2012). education for life and work: developing transferable knowledge and skills in the 21st century
+                    4                                                                                                                                                                                                       thompson, j, windschitl, m., \& braaten, m. (2013). developing a theory of ambitious early-career teacher practice
+                    5                                                                                                                                                                                      desimone, l. (2009). improving impact studies of teachers’ professional development: toward better conceptualizations and measures
+                    6                                                                     yoon, s., koehler-yom, j., anderson, e., lin, j., \& klopfer, e. (accepted). using an adaptive expertise lens to understand the quality of teachers’ classroom implementation of computer-supported complex systems curricula in high school science
+                    7                                                                                                                         mueller, j., wood, e., willoughby, t., ross, c., \& specht, j. (2008). identifying discriminating variables between teachers who fully integrate computers and teachers with limited integration
+          cluster 2 0                                                                                                                                                                                                dougiamas, m., \& taylor, p. (2003). moodle: using learning communities to create an open source course management system
+                    1                                                                                                                                                                                                           coopey, e., schneider, l., \& danahy, e. (2013). interlace: interactive learning and collaboration environment
+                    2                                                                                                                                                                           scardamalia, m., \& bereiter, c. (2003). knowledge building environments: extending the limits of the possible in education and knowledge work
+                    3                                                                                                                                                                                                                            scardamalia, m., \& bereiter, c. (1996). student communities for the advancement of knowledge
+          cluster 1 0                                                                                                                                                                                                                          brown, j. s., collins, a., \& duguid, p. (1989). situated cognition and the culture of learning
+                    1                                                                                                                                                                                                                                                                             engeström, y. (1987). learning by expanding
+                    2                                                                                                                                                                                                                lave, j., \& wenger, e. (1991). situated learning: legitimate peripheral participation: cambridge univ pr
+                    3                                                                                                                                                                                                                                                                              vygotsky, l. s. (1978). mind in society (m
+                    4                                                                                                                                                                                                                            cole, m. (1996). cultural psychology: a once and future discipline: harvard university press
+                    5                                                                                                                              shaffer, d. w., hatfield, d., svarovsky, g. n., nash, p., nulty, a., bagley, e., . . . mislevy, r. (2009). epistemic network analysis: a prototype for 21st-century assessment of learning
+\end{Verbatim}
+            
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}185}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_80_0.png}\end{center}
+        \caption{}
+        \label{}
+    \end{figure}
+    
+    The largest strongly connected component is the composed of 8 nodes and
+56 edges. This documents are all cited together more than 4 times. You
+can investingate the edges and the weights in the interactive graph
+constructed above. We wanted all the documents to be linked to each
+others to be more precise, but if we only look to giant connected
+component, we will get a network of 27 referenced paper with 142 egdes.
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}166}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    In the table below are the documents of the giant connected component
+represented in the interactive graph above.
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}184}]:}                                                                                                                                                                                                                         Documents
+          0                                                                                        white, t., \& pea, r. (2011). distributed by design: on the promises and pitfalls of collaborative learning with multiple representations
+          1                                                                                 schneider b., wallace j., pea, r. \& blikstein p. (2013). preparing for future learning with a tangible user interface: the case of neuroscience
+          2                                                                                                                                                         dillenbourg, p., \& evans, m. (2011). interactive tabletops in education
+          3                                                                       speelpenning, t., antle, a. n., doering, t., \& van den hoven, e. (2011). exploring how tangible tools enable collaboration in a multi-touch tabletop game
+          4                                                                                                                                     price, s., rogers, y., stanton, d., \& smith, h. (2003). a new conceptual framework for cscl
+          5                                                                    fan, m., antle, a. n., neustaedter, c. \& wise, a. f. (2014). exploring how a co-dependent tangible tool design supports collaboration in a tabletop activity
+          6                                                                                                                                              jordan, b., \& henderson, a. (1995). interaction analysis: foundations and practice
+          7                                                                                                                                          rogoff, b. (1990). apprenticeship in thinking: cognitive development in social context
+          8   kirschner, p. a., sweller, j., \& clark, r. e. (2006). why minimal guidance during instruction does not work: an analysis of the failure of constructivist, discovery, problem-based, experiential, and inquiry-based teaching
+          9                                                 wise, a. f., saghafian, m. \& padmanabhan, p. (2012). towards more precise design guidance: specifying and testing the functions of assigned student roles in online discussions
+          10                                                                                                                                                  roschelle, j. (1992). learning by collaborating: convergent conceptual change
+          11                                                                                                                                                                      tomasello, m. (1995). joint attention as social cognition
+          12                                                                                            jermann, p., mullins, d., nüssli, m.-a., \& dillenbourg, p. (2011). collaborative gaze footprints: correlates of interaction quality
+          13                                                                 higgins, s. e., mercier, e., burd, e., \& hatch, a. (2011). multi-touch tables and the relationship with collaborative classroom pedagogies: a synthetic review
+          14                                                                                                    schneider, b., \& pea, r. (2013). real-time mutual gaze perception enhances collaborative learning and collaboration quality
+          15                                                                                             meier, a., spada, h., \& rummel, n. (2007). a rating scheme for assessing the quality of computer-supported collaboration processes
+          16                                                                                                                                                                                      barron, b. (2003). when smart groups fail
+          17                                                                                 antle, a.n., tanenbaum, j., macaranas, a. and robinson, j. (2014) games for change: looking at models of persuasion through the lens of design
+          18                                                                                                                                                ullmer, b. \& ishii, h. (2000). emerging frameworks for tangible user interfaces
+          19                                                                                             shaer, o., strait, m., valdes, c., feng, t., lintz, m., \& wang, h. (2011). enhancing genomic learning through tabletop interaction
+          20                                                                                                                                  fernaeus, y. \& tholander, j. (2006). finding design qualities in a tangible programming space
+          21                                                       richardson, d. c., \& dale, r. (2005). looking to understand: the coupling between speakers’ and listeners’ eye movements and its relationship to discourse comprehension
+          22                                                                                                                                           lave, j. \& wenger, e. (1991). situated learning: legitimate peripheral participation
+          23                                                                                schneider, b., jermann, p., zufferey, g., \& dillenbourg, p. (2011). benefits of a tangible interface for collaborative learning and interaction
+          24                       marshall, p., fleck, r., harris, a., rick, j., hornecker, e., rogers, y., \& dalton, n. s. (2009). fighting for control: children's embodied interactions when using physical and digital representations
+          25                                                                                 weinberger, a., \& fischer, f. (2006). a framework to analyze argumentative knowledge construction in computer-supported collaborative learning
+          26                                                                                                                                                             dillenbourg, p. (1999). what do you mean by collaborative learning
+\end{Verbatim}
+            
+    Now we want to apply the same logic with the papers in-conferences. So
+we will focus on the analysis of the first graph that uses the
+intersection between the referenced documents of each two by two papers.
+The length of the intersection set had to be more than 4.
+
+So if more than 4 documents are referenced by two distinct documents
+than the latter are more likely to be about the same subect.
+
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}231}]:}                                                                                                                                                                                                                                                                                                                                                                                                                                 Documents
+          cluster 9 0                                                                                                                                                                                                                                                                     Mazziotti, C., Rummel, N., \& Deiglmayr, A. (2016). Comparing Students’ Solutions When Learning Collaboratively or Individually Within Productive Failure 
+                    1                                                                                                                                                                                                                                                                            Hartmann, C., Angersbach, J., \& Rummel, N. (2015). Social Interaction, Constructivism and their Application within (CS)CL Theories In  Lindwall, O
+                    2                                                                                                                                                                                                                                                             Mazziotti, C., Loibl, K., \& Rummel, N. (2015). Collaborative or Individual Learning within Productive Failure: Does the Social Form of Learning Make a Difference
+                    3                                                                                                                                                                                                                                                                             Hartmann, C., Rummel, N., \& Loibl, K. (2016). Communication Patterns and Their Role for Conceptual Knowledge Acquisition From Productive Failure 
+          cluster 8 0                                                                                                                                                                                                                                                                                                                                                McBride, E., Vitale, J., \& Linn, M. (2018). Learning Design Through Science vs
+                    1                                                                                                                                                                                                                                                                             McBride, E., Vitale, J., Applebaum, L., \& Linn, M. (2017). Examining the Flow of Ideas During Critique Activities in a Design Project In Smith, B
+                    2                                                                                                                                                                                                                                      McBride, E. A., Vitale, J. M., Applebaum, L., \& C.Linn, M. (2016). Use of Interactive Computer Models to Promote Integration of Science Concepts Through the Engineering Design Process 
+                    3                                                                                                                                                                                                                                                                                            McBride, E., Vitale, J., \& Linn, M. (2018). Middle School Student Ideas on the Relative Affordances of Physical and Virtual Models
+                    4                                                                                                                                                                                                                                                                                                                                          Mishra, S. \& Iyer, S. (2018). Promoting Cognitive Processes of Knowledge Integration
+          cluster 7 0                                                                                                                                                                        Greenhow, C., Hershkovitz, A., Baruch, A. F., Askari, E., Tsovaltzi, D., Asterhan, C., Puhl, T., Weinberger, A., Bouton, E., \& Polman, J. (2016). Teachers and Professional Development: New Contexts, Modes, and Concerns in the Age of Social Media 
+                    1                                                                                                                                                                                                                                                              Erkens, M., Schlottbom, P., \& Bodemer, D. (2016). Qualitative and Quantitative Information in Cognitive Group Awareness Tools: Impact on Collaborative Learning 
+                    2                                                                                                                                                                                                                                                                                                                      Schnaubert, L. \& Bodemer, D. (2016). How Socio-Cognitive Information Affects Individual Study Decisions 
+                    3                                                                                                                                                                                                                                                                                             Asterhan, C. \& Bouton, E. (2017). Secondary school peer-to-peer knowledge sharing through social network technologies In Smith, B
+                    4                                                                                                                                                                                                                                                                                                                                                     Erkens, M. \& Bodemer, D. (2017). Which Visualization Guides Learners Best
+                    5                                                                                                                                                                                     Tsovaltzi, D., Dutta, N., Puhl, T., \& Weinberger, A. (2017). Group and Individual Level Effects of Supporting Socio-Cognitive Conflict Awareness and Its Resolution in Large SNS Discussion Groups: A Social Network Analysis In Smith, B
+                    6                                                                                                                                                                                                                                                                                                 Heimbuch, S. \& Bodemer, D. (2016). Effects of Implicit Guidance on Contribution Quality in a Wiki-Based Learning Environment 
+                    7                                                                                                                                                                                                                                           Puhl, T., Tsovaltzi, D., \& Weinberger, A. (2015). A Long-Term View on Learning to Argue in Facebook: The Effects of Group Awareness Tools and Argumentation Scripts In  Lindwall, O
+          cluster 6 0                                                                                                                                                                                                                                                                                                           Dornfeld, C. L. \& Puntambekar, S. (2016). Negotiation Towards Intersubjectivity and Impacts on Conceptual Outcomes 
+                    1                                                                                                                                                                                                                                                           Evenstone, A. L. \& Puntambekar, S. (2015). Internalization of Physics Concepts and Relationships Based on Teacher Modeling of Collaborative Prompts In  Lindwall, O
+                    2                                                                                                                                                                                                                                                           Dornfeld, C., Zhao, N., \& Puntambekar, S. (2017). A Mixed-Methods Approach for Studying Collaborative Learning Processes at Individual and Group Levels In Smith, B
+                    3                                                                                                                                                                                                                                                                       Martin, N. D., Gnesdilow, D., \& Puntambekar, S. (2015). Peer Scaffolding to Learn Science in Symmetrical Groups Collaborating Over Time In  Lindwall, O
+          cluster 5 0                                                                                                                                                                                                                                                                           Khanlari, A., Zhu, G., Costa, S., \& Scardamalia, M. (2018).  Criss Crossing Science Domains in Knowledge Building Communities: An Exploratory Study
+                    1                                                                                                                                                                                                                                                                                                       Hong, H., Chai, C. S., \& Hung, G. (2015). Principle-Based Guidance to Foster Adaptive Teaching Practice In  Lindwall, O
+                    2                                                                                                                                                                                                                                                                                   Oshima, J. \& Tsunakawa, T. (2018). An Analysis of Collective Knowledge Advancement and  Emergent Nature of Ideas in Subject-Matter Learning
+                    3                                                                                                                                                                                                                                                                                                             Hod, Y., Sagy, O., \&  (2016). Learning the Learning Sciences: An Investigation of Newcomers’ Sociocultural Ideas 
+                    4   Scardamalia, M., Bereiter, C., Laferrière, T., Bielaczyc, K., Chai, S., Chan, C. K., Chen, B., Chen, M., de Jong, F., del Castillo, F. D., Hakkarainen, K., Matsuzawa, Y., McAuley, A., Montané, M., Nunes, C., Reeve, R., Seitamaa-Hakkarainen, P., Oshima, J., Shirouzu, H., Tan, S. C., Teo, C. L., van Aalst, J., Vinha, T., \& Zhang, J. (2017). Toward a Multi-Level Knowledge Building Innovation Network In Smith, B
+                    5                                                                                        de Jong, F., van den Ende, J., van Heijst, H., Matsuzawa, Y., Kirschner, P., Zhang, J., Chen, M., Chen, F., Rosé, C., Godinez, E. V., Ratté, S., Chen, B., Chan, C., van Aalst, J., Yang, C., Oshima, J., Hmelo-Silver, C., \& Wise, A. (2017). Making a Difference: Analytics for Quality Knowledge-Building Conversations In Smith, B
+                    6                                                                                                                                                                                                                                                               Tao, D., Zhang, J., \& Gao, D. (2017). Reflective Structuration of Knowledge Building Practices in Grade 5 Science: A Two-Year Design-Based Research In Smith, B
+                    7                                                                                                                                                                                                                                                                                                                 Tao, D. \& Zhang, J. (2017). How Did a Grade 5 Science Community Co-Construct Collective Structures of Inquiry
+                    8                                                                                                                                                                                                                                                           Lee, V. Y., Tan, S. C., \& Chee, J. K. (2016). Idea Identification and Analysis (I2A): A Search for Sustainable Promising Ideas Within Knowledge-Building Discourse 
+          {\ldots}                                                                                                                                                                                                                                                                                                                                                                                                                                   {\ldots}
+          cluster 4 3                                                                                                                                                                                                                                                                                                                                                     Olsen, J. K., Rummel, N., \& Aleven, V. (2017). Learning Alone or Together
+          cluster 3 0                                                                                                                                                                                                                                                                                                                    Keifert, D., Krist, C., Scipio, D. A., \& Phillips, A. M. (2018). Epistemic Agency as a Members’ Experience
+                    1                                                                                                                                                                                                                                                                                                          Munter, C., Haines, C., \& Bruton, R. (2018). Cultivating Formative Intervention Research Partnerships in Mathematics
+                    2                                                                                                                                                                                                                                                                                                       Roque, R., Lin, K., \& Liuzzi, R. (2016). “I’m Not Just a Mom”: Parents Developing Multiple Roles in Creative Computing 
+                    3                                                                                                                                                                     Suárez, E., Tzou, C., Bang, M., *, M., Roque, R., Pinkard, N., McDermott, R., Barron, B., Goldman, S., Luce, M., Vea, T., Conlin, L., Bell, P., \& Martin, C. K. (2018). Designing for Axiological Innovation within Family-Centered Learning Environments
+                    4                                                                                                    Melendez, J. W., Radinsky, J., Vossoughi, S., Marin, A. M., Bang, M., Nolan, C. M., Phillips, N. C., Lund, V. K., Gonzales, W., Allen, S., Bild, D., Bruton, I., Carmichae, J., Martell, E., Schmidt, A., Jurow, A. S., \& Hall, R. (2018). Community-Based Design Partnerships: Examples from a New Generation of CHAT/DBR
+                    5                                                        Tissenbaum, M., Sheldon, J., Sherman, M. A., Abelson, H., Weintrop, D., Jona, K., Horn, M., Wilensky, U., Basu, S., Rutstein, D., Snow, E., Shear, L., Grover, S., Lee, I., Klopfer, E., Jayathirtha, G., Shaw, M., kafai, y., Mustafaraj, E., Temple, W., Shapiro, R. B., Lui, D., \& Sorensen, C. (2018). The State of the Field in Computational Thinking Assessment
+                    6                                                                                                                                                                                                                                                                                               Ko, M. \& Krist, C. (2018). Redistributing Epistemic Agency: How Teachers Open Up Space for Meaningful Participation in Science 
+                    7                                                                                                                                              Bell, P., Severance, S., Penuel, W. R., Sumner, T., Mommandi, W., Quigley, D., Van Horne, K., Johnson, R., Stromholt, S., Lakhani, H., Davis, K., Bell, A., \& Bang, M. (2016). Researchers and Practitioners Co-Designing for Expansive Science Learning and Educational Equity 
+                    8                                                                                                                                                                                                                                                                                     Meléndez, J. W. (2018). Identifying Expansive Learning in Democratic Activity: A CHAT/DBR Approach to Community-Based Design Partnerships
+                    9                                                                                                                                                                                                                                                                                                                            Roque, R. \& Jain, R. (2018). Becoming Facilitators of Creative Computing in Out-of-School Settings
+                    10                                                                                     Lee, V. R., Tzou, C., Bang, M., Bell, P., Stromholt, S., Price, N., Ng, M., Kafai, Y., Telhan, O., Davis, R., Steele, K., Adleberg, B., Kahn, J., Hall, R., Phillips, A., Hansen, J., Recker, M., \& Barron, B. (2017). Libraries as Emerging Spaces for Computer-Supported Collaborative Learning in Schools and Communities In Smith, B
+                    11                                                                                                                                                                                                                                                                                           Krist, C. \& Suárez, E. (2018). Doing Science with Fidelity to Persons: Instantiations of Caring Participation in Science Practices
+                    12                                                                                                                                                                                                                                                                                                                                                      Proctor, C. \& Blikstein, P. (2018). How Broad is Computational Thinking
+                    13                                                                                                                                                                                                                                                 Penuel, W., Van Horne, K., Severance, S., Quigley, D., \& Sumner, T. (2016). Students’ Responses to Curricular Activities as Indicator of Coherence in Project-Based Science 
+                    14                                                                                                                                                                                                                                                                                   Chen, G. \& Shen, J. (2018). Student Learning of Computational Thinking in A Robotics Curriculum: Transferrable Skills and Relevant Factors
+                    15                                                                                                                                                                                                                                                          Swanson, H., Irgens, G. A., Bain, C., Hall, K., Woods, P., Rogge, C., Horn, M., \& Wilensky, U. (2018). Characterizing Computational Thinking in High School Science
+                    16                                                                                                                                                                                                                                                                                        Ramey, K. E., Stevens, R., \& Uttal, D. (2018). STEAM Learning in an In-school Makerspace: The Role of Distributed Spatial Sensemaking
+          cluster 2 0                                                                                                                                                                                                                                                                                                       Hickey, D. T. (2016). Competency-Based Digital Badges and Credentials: Cautions and Potential Solutions From the Field 
+                    1                                                                                                                                                                                                                                                                                                                                                             Hickey, D. T. \& Chartrand, G. (2018). Recognizing Competencies vs
+                    2                                                                                                                                                                                                                          Slotta, J. D., Hickey, D., Rosé, C. P., Dillenbourg, P., Najafi, H., Håklev, S., Uttamchandani, S., \& Quick, J. (2016). The Learning Sciences @ Scale: Current Developments in Open Online Learning 
+                    3                                                                                                                                                                                                                                                                            Hickey, D. T., Uttamchandani, S., \& Quick, J. D. (2016). Scaling Up Productive Disciplinary Engagement With Participatory Learning and Assessment 
+          cluster 1 0                                                                                                                                                                                                                                                                            Furtak, E. M., Binder, T., \& Henson, K. (2018). Designing From Outer Space: Tensions in the Development of a Task to Assess a Crosscutting Concept
+                    1                                                                                                                                                                                                                                                  Basu, S., McElhaney, K. W., Grover, S., Harris, C. J., \& Biswas, G. (2018). A Principled Approach to Designing Assessments That Integrate Science and Computational Thinking
+                    2                                                                                                                                                                                                                                 Zivic, A., Smith, J. F., Reiser, B., Edwards, K., Novak, M., \& McGill, T. (2018). Negotiating Epistemic Agency and Target Learning Goals: Supporting Coherence from the Students’ Perspective
+                    3                                     Pellegrino, J. W., Gane, B. D., Zaidi, S. Z., Harris, C. J., McElhaney, K. W., Alozie, N., Pennock, P. H., Severance, S., Neumann, K., Fortus, D., Krajcik, J., Nordine, J., Furtak, E. M., Briggs, D., Chattergoon, R., Penuel, B., Wingert, K., \& Van Horne, K. (2018). The Challenge of Assessing “Knowledge in Use”: Examples from Three-Dimensional Science Learning and Instruction
+          cluster 0 0                                                                                                                                                                                                                                                                          Peppler, K. A., Thompson, N., Danish, J., \& Moczek, A. (2018). In the Hive: Designing for Emergence When Teaching Complex Systems In Early Childhood
+                    1                                                                                                                                                                                                                                                  Peppler, K. A., Thompson, N., Danish, J., Moczek, A., \& Corrigan, S. (2018). Comparing First- and Third-Person Perspectives in Early Elementary Learning of Honeybee Systems
+                    2                                                                                                                                                                                                                                         Peppler, K. A., Thompson, N., Danish, J., Moczek, A., \& Han, S. (2018). Indoor Positioning Technology \& Enhanced Engagement in Early Elementary Systems Thinking and Science Learning
+                    3                                                                                                                                                                                                                                                      Riedy, R., Van Horne, K., Bell, P., Penuel, B., Neill, T., \& Shaw, S. (2018). Mapping Networks to Help Education Leaders Gain Insights into Complex Educational Systems 
+          
+          [85 rows x 1 columns]
+\end{Verbatim}
+            
+
+    When applying this kind of clustering we find that most of the clusters
+contains almost the same authors with different papers, which is logic
+because if they are specialists in one topic and write several papers on
+it, they might reuse some references in several documents.
+
+    \section{Conclusions}\label{conclusions}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
