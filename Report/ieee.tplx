@@ -7,7 +7,7 @@
 ((*- if nb.metadata["latex_metadata"] and nb.metadata["latex_metadata"]["options"]: -*))
 \documentclass[((( nb.metadata["latex_metadata"]["options"] )))]{IEEEtran}
 ((*- else -*))
-\documentclass[journal,twocolumn]{IEEEtran}
+\documentclass[article,twocolumn]{IEEEtran}
 ((*- endif *))
 \usepackage[noadjust]{cite}
 ((* endblock docclass *))
