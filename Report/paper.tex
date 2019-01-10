@@ -9,7 +9,7 @@
 
 
 
-    \documentclass[journal,onecolumn]{IEEEtran}
+    \documentclass[journal,twocolumn]{IEEEtran}
 \usepackage[noadjust]{cite}
 
     
@@ -705,29 +705,29 @@ metadata and assign to every document a publication year.
     Since we don't have the same number of documents for each year we needed
 to scale over the years and use the percentage of appearence of a word.
 So after groupping the words by year and scaling them we found graph
-below
+below \ref{fig1}
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_26_0.png}\end{center}
-        \caption{}
-        \label{}
+        \caption{Trends of keywords over the years}
+        \label{fig1}
     \end{figure}
     
     We wanted then to know what are the trends of words for each specific
 year, so we select distinct words for each year, it means that we select
 for each year the words that were present for that year and never for
-the others. We get the graph below. As we can see from the graph, the
-most used word in the papers, more than 10\% of 2015 papers uses the
-word `peer', more than 6\% of the papers uses the words `building',
-`embodied' in 2016. In 2017 the most frequent keyword on is `reponsive'
-and in 2018 `tools' is present with more than 6\%.
+the others. We get the figure below. As we can see from the graph
+\ref{fig2}, the most used word in the papers, more than 10\% of 2015
+papers uses the word `peer', more than 6\% of the papers uses the words
+`building', `embodied' in 2016. In 2017 the most frequent keyword on is
+`reponsive' and in 2018 `tools' is present with more than 6\%.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_28_0.png}\end{center}
-        \caption{}
-        \label{}
+        \caption{Distinct keywords over the years}
+        \label{fig2}
     \end{figure}
     
     \hypertarget{methodology-find-better-section-head..}{%
@@ -769,15 +769,15 @@ partitioning of the data into Voronoi cells. It can be considered a
 method of finding out which group a certain object really belongs to.
 
 This method does not give good results as we can see it in the graph
-below all the vectors are together there is no clear separation between
-the documents. So we decide to use other methods using word embeddings
-and properties of TF-IDF.
+below \ref{fig3} all the vectors are together there is no clear
+separation between the documents. So we decide to use other methods
+using word embeddings and properties of TF-IDF.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_31_0.png}\end{center}
-        \caption{}
-        \label{}
+        \caption{Baseline model document clusters}
+        \label{fig3}
     \end{figure}
     
     \hypertarget{second-method-average-of-glove-vectors-combined-with-k-means}{%
@@ -804,13 +804,14 @@ vector representing a document.
 Once we get a document vector representation, we apply to it K-means.
 The results are better, but we have only two clusters. If we increase
 the number of clusters than there is no clear separation anymore
-separation.
+separation. The plot below \ref{fig4} reprensents the documents
+belonging to each cluster.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_33_0.png}\end{center}
-        \caption{}
-        \label{}
+        \caption{Cluster using Average of GloVe vectors combined with K-means }
+        \label{fig4}
     \end{figure}
     
     \hypertarget{third-method-weighted-average-of-tf-idf-glove-combined-with-k-means}{%
@@ -850,13 +851,13 @@ scaling of the original variables \cite{PCA}.
 
 Once we get our new vector representation, we apply K-means and we get
 the best separation, with a clear separation of 4 clusters as we can see
-it in the figure below.
+it in the figure below \ref{fig5}.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_35_0.png}\end{center}
-        \caption{}
-        \label{}
+        \caption{Cluster using Weighted average of TF-IDF + GloVe  combined with K-means }
+        \label{fig}
     \end{figure}
     
     \hypertarget{approach-2-references-network-analysis}{%
@@ -884,18 +885,21 @@ one other node with 4 same documents referenced.
 
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}212}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
-    The resulted graph, is an undirected graph with 805 nodes and 6699
-edges. On this graph we extract two main information : * Strongly
-connected components to be able to detect clusters and related
-documents. * In\_degree in order to check if there are documents that
-are related to a lot of documents and those documents would be more
-general than others, and won't necessarly belong to one specific
-cluster.
+    The resulted graph is plotted in this figure \ref{intersection}, is an
+undirected graph with 805 nodes and 6699 edges. On this graph we extract
+two main information : * Strongly connected components to be able to
+detect clusters and related documents. * In\_degree in order to check if
+there are documents that are related to a lot of documents and those
+documents would be more general than others, and won't necessarly belong
+to one specific cluster.
 
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_41_0.png}\end{center}
+        \caption{Intersection between references graph}
+        \label{intersection}
+    \end{figure}
+    
     \hypertarget{second-graph-relations-between-references}{%
 \paragraph{Second graph: Relations between
 references}\label{second-graph-relations-between-references}}
@@ -909,17 +913,14 @@ link between the references of the document. We create a dictionnary of
 links, if the link is already in the dictionnary then we increase the
 weight of the link. So for instance, if two references are present
 together in the 5 distinct documents, then the weight of the edge would
-be of 5. We obtain a graph of 10845 nodes and 148594 edges.
+be of 5. We obtain a graph of 10845 nodes and 148594 edges represented
+in this figure \ref{fig6}
 
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}103}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_44_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_45_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
@@ -958,10 +959,6 @@ we have no out degree for almost every node.
 
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}105}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
     \hypertarget{co-authorship}{%
 \subsection{Co-authorship}\label{co-authorship}}
 
@@ -996,7 +993,7 @@ component is shown in figure \ref{fig_plot}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_50_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
         \caption{One of the connected components of the co-authorship graph}
         \label{fig_plot}
     \end{figure}
@@ -1015,7 +1012,7 @@ plot can be found in the section dedicated to this below.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_52_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_53_0.png}\end{center}
         \caption{Largest Component}
         \label{author_collab_large}
     \end{figure}
@@ -1050,14 +1047,14 @@ one are contained in the clusters found by method 2. See Figure
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_54_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_55_0.png}\end{center}
         \caption{Subcommunities by Louvain}
         \label{Louvain}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_55_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_56_0.png}\end{center}
         \caption{Subcommunities via normalized cuts}
         \label{normalized}
     \end{figure}
@@ -1080,7 +1077,7 @@ this graph is shown in figure \ref{unigraph}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_57_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_58_0.png}\end{center}
         \caption{Different formats used to reference institution}
         \label{unigraph}
     \end{figure}
@@ -1171,7 +1168,7 @@ biggest proportion of participants \ref{fig_rep}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_65_0.png}\end{center}
         \caption{Different formats used to reference institution}
         \label{figrep}
     \end{figure}
@@ -1191,7 +1188,7 @@ Canada.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_67_0.png}\end{center}
         \caption{Collaborative papers between countries}
         \label{figcollab}
     \end{figure}
@@ -1208,7 +1205,7 @@ that most movement occured within the US respectively Europe,
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_69_0.png}\end{center}
         \caption{Movement of participants across institutions}
         \label{fig_move}
     \end{figure}
@@ -1218,19 +1215,19 @@ that most movement occured within the US respectively Europe,
 results}\label{clustering-and-referecences-graphs-results}}
 
 The distribution of referenced publications years are plotted in the
-graph below. We can see from the graph that there is a kind of a trend,
-each two, three years there is a pick of documents referenced followed
-by a two or three years of stagnancy. We can also notice that
-throughouts the year each pick is higher than the older one, which can
-be explained by the fact that The International Society of the Learning
-Sciences community is investigating more and more tools to facilitate
-learning over the years.
+graph \ref{count_ref_docs}. We can see from the graph that there is a
+kind of a trend, each two, three years there is a pick of documents
+referenced followed by a two or three years of stagnancy. We can also
+notice that throughouts the year each pick is higher than the older one,
+which can be explained by the fact that The International Society of the
+Learning Sciences community is investigating more and more tools to
+facilitate learning over the years.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_70_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_71_0.png}\end{center}
+        \caption{Distribution of the number of referenced documents belonging to each year}
+        \label{count_ref_docs}
     \end{figure}
     
     Since the number of documents is increasing over the years, we also
@@ -1239,13 +1236,13 @@ published is increasing too. Using Pagerank algorithm and the In-degree
 of each nodes to get the most influancial documents referenced of the
 citation graph that we constructed (graph3) before. We filtered the
 first 100 documents and then contructed a histogram of the counts. We
-obtain the figure below:
+obtain the figure \ref{fig7}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_72_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_73_0.png}\end{center}
+        \caption{Distribution of the 100 most referenced documents belonging to each year}
+        \label{fig7}
     \end{figure}
     
     We can see that in the top 100 cited documents more than 12\% are from
@@ -1259,34 +1256,34 @@ most important year in term of publications and maybe some documents did
 not have enough time to be cited yet.
 
     The top 10 of the most influencial and most important referenced papers
-are the following:
+are represented in table \ref{indegree}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_75_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_76_0.png}\end{center}
+        \caption{In-degree count for each document}
+        \label{indegree}
     \end{figure}
     
     We also noticed from the first graph that some documents were more
 likely to cited together. We can say that the more two documents are
 likely to cited together the more it is probable that both documents are
-about the same subject From the table below we can also notice that some
-papers cites like to cite the same authors together, which is logic in a
-sense, because if some authors always treat about the same subjects then
-they are experts in that field and a lot of their publications are
+about the same subject From the table \ref{fig8} we can also notice that
+some papers cites like to cite the same authors together, which is logic
+in a sense, because if some authors always treat about the same subjects
+then they are experts in that field and a lot of their publications are
 relevant and can be cited together.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_77_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_78_0.png}\end{center}
+        \caption{Count of documents cited together}
+        \label{fig8}
     \end{figure}
     
     Using this graph, we also want to extract if there are some clusters of
 papers cited together. As we explained before, we run strongly connected
-algorithm to check if some cited documents are more likely to cited
+algorithm to check if some cited documents are more likely to be cited
 together, and this will give us clusters of cited documents that are
 more likely to be about the same subjects. We can visualise one cluster,
 the most important one.
@@ -1294,19 +1291,15 @@ the most important one.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_80_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_81_0.png}\end{center}
+        \caption{Table of the documents belonging to the same clusters}
+        \label{fig9}
     \end{figure}
     
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}185}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_82_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_83_0.png}\end{center}
         \caption{}
         \label{}
     \end{figure}
@@ -1319,18 +1312,21 @@ others to be more precise, but if we only look to giant connected
 component, we will get a network of 27 referenced paper with 142 egdes.
 
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}236}]:} <IPython.core.display.HTML object>
-\end{Verbatim}
-            
-    In the table below are the documents of the giant connected component
-represented in the interactive graph above.
+    In the table \ref{fig10} below are the documents of the giant connected
+component represented in the interactive graph \ref{fig11}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_86_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_87_0.png}\end{center}
+        \caption{Giant component graph}
+        \label{fig12}
+    \end{figure}
+    
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_88_0.png}\end{center}
+        \caption{Documents belonging to the giant component}
+        \label{fig10}
     \end{figure}
     
     Now we want to apply the same logic with the papers in-conferences. So
@@ -1339,13 +1335,15 @@ intersection between the referenced documents of each two by two papers.
 The length of the intersection set had to be more than 4.
 
 So if more than 4 documents are referenced by two distinct documents
-than the latter are more likely to be about the same subect.
+than the latter are more likely to be about the same subect. In the
+table \ref{fig11} we can find some of the papers that belong to the same
+clusters.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_88_0.png}\end{center}
-        \caption{}
-        \label{}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_90_0.png}\end{center}
+        \caption{Documents in conferences belonging to the same clusters}
+        \label{fig11}
     \end{figure}
     
     When applying this kind of clustering we find that most of the clusters
