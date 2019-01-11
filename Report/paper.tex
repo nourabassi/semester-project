@@ -292,15 +292,15 @@
     
 
 \begin{abstract}
-    In this report we explore ways to automatically analyze ICLS and CSCL
-papers to gain an understanding of the community formed by conference
-participants and of the research being conducted within the community.
-After describing how to extract data from the base dataset we derive
-insights into the community using network analysis, natural language
-processing and text mining. We discover patterns of collaboration
-between participants, their migration and the global spread of the
-community. We extract keywords and find clusters of referenced papers
-and documents within the conferences.
+    In this report we investigate ways to automatically analyze ICLS and
+CSCL papers to gain an understanding of the community formed by
+conference participants and of the research being conducted within the
+community. After describing how to extract data from the base dataset we
+derive insights into the community using network analysis, natural
+language processing and text mining. We discover patterns of
+collaboration between participants, their migration and the global
+spread of the community. We extract keywords and find clusters of
+referenced papers and documents within the conferences.
 \end{abstract}
     \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -336,12 +336,12 @@ explore methods to bring insight into the following aspects:
 \item
   Popularity of keywords over the years
 \item
-  Trends inregards to citated papers and the evolution of their
+  Trends in regards to cited papers and the evolution of their
   prevalence from 1977 until 2018
 \item
-  Discovering clusters of the cited documents
+  Clusters of the cited documents
 \item
-  Discovering clusters of the papers written within the conferences
+  Clusters of the papers written within the conferences
 \end{itemize}
 
 To this means we first present an extensive pipeline to process the
@@ -354,9 +354,9 @@ analysis based on the extracted data.
 
     The provided raw dataset consists of papers in \emph{pdf} format, as
 well as associated metadata in \emph{xml} format. To extract information
-from the dataset we first converted the data to a format that is more
-adapt to the task of data analysis and more compatible with a variety of
-external libraries. We stored all the resulting data in \emph{csv}
+from the dataset we first converted the data to a format that is better
+adapted to the task of data analysis and more compatible with a variety
+of external libraries. We stored all the resulting data in \emph{csv}
 format, as csv is a human readable format and can easily be processed by
 all the data analysis tools we employ.
 
@@ -372,40 +372,40 @@ extracted by the parser. This was remedied using regular expressions to
 match the section containing the keywords. To each file we associated
 the name of the source file and the order in which an author name occurs
 in the xml file. Each author is associated to one line in the xml file.
-From the associated citation string we add to the first part of the
-citation containing the author names, year and title. This is later used
-to identify the paper when it is referenced in an other paper. Then we
-add a shortened version of author names (i.e.~West, R.) by considering
-the author order. Note that it happens that the short name extracted
-from the citation and the corresponding long name (Robert West) in the
-metadata do not match up. Thus the author order listed in the citation
-string does not always correspond to the author order listed in the
-metadata. After extraction, we cleaned the data by unifying names, as
-slight spelling differences exist within the same author name
-(i.e.~Robert West, Robert A. West). When unifying the names we needed to
-make sure not to overmerge by labeling two different authors as having
-the same name. First, we used a strict condition to catch small
-differences in names, such as an extra middle name. This is done by
-splitting up names into substrings based on whitespaces and commas. For
-two names in the dataset we checked whether the intersection of their
-sets of substrings contained at least 2 names of length at least 3. If
-the condition was met we considered these two names to be identical, and
-added the mapping from one name to the other to a dictionary. Once all
-tuples of names (s.t. the first name appears before the second one in
-order) were checked and added to the dictionary we unified the names.
-Using this method we reduced the number of authors in the dataset from
-1951 down to 1879. Further, to merge names with misspellings or people
-who use nicknames (Christian vs Chris) and to avoid overmerging we
-considered only names of authors that have similar collaboration
-patterns. To do this we built a graph based on co-authors relations and
-checked names of authors that were in the same neighborhood of a node on
-the graph (see methodology for further details). Then, we used the
-\emph{difflib} library to check for similarity of two strings and
-considered a name to belong to the same person if the similarity measure
-reached the threshold of 0.8. Again names considered to belong to the
-same person were added to the mapping dictionary which was then applied
-to all names. This method again reduced the number of authors in the
-dataset from 1879 to 1951.
+From the associated citation string we add the first part of the
+citation containing the author names, year, and title. This is later
+used to identify the paper when it is referenced in an other paper. Then
+we add a shortened version of author names (i.e.~West, R.) by
+considering the author order. Note that it happens that the short name
+extracted from the citation and the corresponding long name (Robert
+West) in the metadata do not match up. Thus the author order listed in
+the citation string does not always correspond to the author order
+listed in the metadata. After extraction, we cleaned the data by
+unifying names, as slight spelling differences exist within the same
+author name (i.e.~Robert West, Robert A. West). When unifying the names
+we needed to make sure not to overmerge by labeling two different
+authors as having the same name. First, we used a strict condition to
+catch small differences in names, such as an extra middle name. This is
+done by splitting up names into substrings based on whitespaces and
+commas. For two names in the dataset we checked whether the intersection
+of their sets of substrings contained at least 2 names of length at
+least 3. If the condition was met we considered these two names to be
+identical, and added the mapping from one name to the other to a
+dictionary. Once all tuples of names (s.t. the first name appears before
+the second one in order) were checked and added to the dictionary we
+unified the names. Using this method we reduced the number of authors in
+the dataset from 1951 down to 1879. Further, to merge names with
+misspellings or people who use nicknames (Christian vs Chris) and to
+avoid overmerging we considered only names of authors that have similar
+collaboration patterns. To do this we built a graph based on
+co-authorship relations and checked names of authors that were in the
+same neighborhood of a node on the graph (see methodology for further
+details). Then, we used the \emph{difflib} library to check the
+similarity of two strings and considered a name to belong to the same
+person if the similarity measure reached the threshold of 0.8. Again,
+names considered to belong to the same person were added to the mapping
+dictionary which was then applied to all names. This method again
+reduced the number of authors in the dataset from 1879 to 1851.
 
     \hypertarget{handling-of-pdf-data}{%
 \subsection{Handling of pdf data}\label{handling-of-pdf-data}}
@@ -418,10 +418,10 @@ up to date, which leads to issues with dependencies. We found that the
 most reliable parser is \emph{poppler} \cite{poppler} which can be
 installed and then used via the command line to extract the text
 contained in the pdfs to \emph{txt} format. All methods describing how
-to extract data from the papers worked on the extracted \emph{txt}
-files. The characters contained in the \emph{txt} files were not all
-encoded uniformly, which means that characters that look the same to
-humans may be encoded in different ways. Hence, for many converting all
+to extract data from the papers worked on the extracted txt files. The
+characters contained in the txt files were not all encoded uniformly,
+which means that characters that look the same to humans may be encoded
+in different ways. Hence, for many applications we converted all
 characters to `Normal Form Composed' form.
 
 A convenient property of papers is that they are structured fairly
@@ -451,20 +451,21 @@ methods.
 \textbf{Regular expressions in python:} Python has two modules that
 implement regular expressions, \emph{re} and \emph{regex}. We used regex
 as --unlike the re module-- this module allows to handle strings with
-non-ascii characters by having unicode expressions. As many authors have
-names containing non-ascii characters this is an important capability.
+non-ascii characters by allowing the use of unicode regular expressions.
+As many authors have names containing non-ascii characters this is an
+important capability.
 
 \textbf{To get the reference section for of a paper} we used a regular
-expressions to find the reference header and determine the sections end
-by checking for acknowledgements or appendix sections in the text file
-previously extracted using poppler. Then, to extract individual
-references we split the section into a list of substrings at each new
-line character and concatenated substrings back together if they
-satisfied a set of conditions. We found this method to be robust as it
-makes sure that all properly formatted references are separated.
+expressions to find the reference header and determine the end of the
+section by checking for acknowledgements or appendix sections in the
+text file previously extracted using poppler. Then, to extract
+individual references we split the section into a list of substrings at
+each new line character and concatenated substrings back together if
+they satisfied a set of conditions. We found this method to be robust as
+it makes sure that all properly formatted references are separated.
 
 \textbf{To unify substrings} we exploited the fact that APA references
-all have the same initial structure: \emph{Lastname F.M. (when
+all have the same underlying structure: \emph{Lastname F.M. (when
 published) Title which may contain colons and other non-alphabetic
 chars. Where published. Who published} \cite{apaformat}. We thus checked
 that the beginning of each reference contains ``Lastname F.M. (when
@@ -481,7 +482,7 @@ starting in a sentence. We merged these with the line above. We could
 identify lines by their ending as being split up, such as if they end in
 a comma, colon or only contain author names. We merged these lines with
 the lines below them. Only then could we check whether a line contained
-a valid citation start. If it did not we merged it with the line above
+a valid citation start. If it did not, we merged it with the line above
 it. After this merging process we validated the returned reference split
 by looking at the overall length and the initials, as well as by
 checking that a random sample returned satisfactory splitting accuracy.
@@ -512,11 +513,13 @@ institution two approaches were used.
 
 The most robust way to get a persons institution affiliation is to use
 their email address. Email addresses can easily be extracted from the
-header section using a regular expression. Then we used a
-domain-university mapping \cite{mapping} to map domains to institutions.
-The additional advantage of this method is that using the additional
-metadata associated to each university in the mapping, we also access
-information about the country of the university.
+header section using a regular expression. Then, the part of the email
+containing the university domain can be extracted using an other regular
+expression. After this we used a domain-university mapping
+\cite{mapping} to map domains to institutions. The additional advantage
+of this method is that using the additional metadata associated to each
+university in the mapping, we also access information about the country
+of the university.
 
 
     \begin{figure}
@@ -540,35 +543,35 @@ different ways to list authors are accepted, notably two ways as can be
 seen in Figure \ref{figA} and Figure \ref{figB}. Hence, we first
 detected the structure of the header section before extracting the
 association. We tagged the substring present in this section using a
-combination of \emph{named entity detection}, using the implementation
-provided by \emph{spacy}, simple string comparison matching of the names
-of authors and institutions we extracted from the metadata respectively
-from Approach 1 and tagging sections containing ``emails'' using regex ,
-to detect where in the header the email is. Then, taking the tagged
-section, we detected which subsections corresponded to which
-author-affiliation listing type, and extracted the author email -
-institution mapping accordingly.
+combination of \emph{named entity detection}, which automatically
+classifies strings as belonging to some pre-defined category, using the
+implementation provided by \emph{spacy}\cite{spacy2}, and simple string
+comparison matching of the names of authors and institutions we
+extracted from the metadata respectively from Approach 1 and tagging
+sections containing ``emails'' using regex , to detect where in the
+header the email is. Then, taking the tagged section, we detected which
+subsections corresponded to which author-affiliation listing type, and
+extracted the author email - institution mapping accordingly.
 
 Approach 2 allows to match many more institutions to authors than
-Approach 1 as not every institution is present in the mapping --no
-companies will be in the mapping-- and many participants use gmail and
-similar providers as their official email. However, Approach 2 may
-contain differences in spelling in the institution name, which needed to
-be merged. Thus we combined both approaches, and used the corresponding
-institutions in Approach 1 to unify the institutions obtained in
-Approach 2. Furthermore, we later merged names by considering the
-location of the institutions.
+Approach 1 as not every institution is present in the mapping and many
+participants use gmail and similar providers as their official email.
+However, Approach 2 may contain differences in spelling in the
+institution name, which needed to be unified. Thus we combined both
+approaches, and used the corresponding institutions in Approach 1 to
+unify the institutions obtained in Approach 2. Furthermore, we later
+merged names by considering the location of the institutions.
 
-But first as with Approach 2 institution affiliation did not allow us to
-automatically associate a country to the institution, we needed to get
-this through other means. A first step was to use the top level domains
-present in the emails to associate a country of origin to the
-participants and their associated institutions. Then, to plot the
+But first, as with Approach 2 institution affiliation did not allow us
+to automatically associate a country to the institution, we needed to
+get this information through other means. A first step was to use the
+top level domains present in the emails to associate a country of origin
+to the participants and their associated institutions. Then, to plot the
 community we augmented the dataset with geolocation information. As a
 further benefit, having this information we could then easily associate
-a country to the institution for the emails that do not have a top level
-domain indicating location and further merge the names of institutions
-based on location.
+a country to the institution for the emails that ido not have a top
+level domain indicating location and further merge the names of
+institutions based on location.
 
 As there are a variety of way in which the name of an institution could
 be written --consider EPFL, EPF Lausanne-- crawling the english, french
@@ -576,105 +579,93 @@ and german version of Wikipedia (not using the API, or the API wrapper,
 as this does not give access to the desired information) was a quick and
 accurate way to get the location. The advantage of sending requests over
 using the API is due to the website redirecting to the relevant article
-on the institution even when misspellings are present. Requests were
-sent using \emph{urllib3} and \emph{beautifulsoup} was used to parse
-them get the coordinates present in the article. Regretfully not all
-institutions, even well known ones such as Tokyo University, have their
-coordinates listed on Wikipedia. To get the remaining locations we used
-the geopy, which is a client for geocoding web services. These results
-however are more error prone and will always return a result. It is thus
-recommended to verify the correctness of the results. To get the country
-we then again used geopy. The resulting data containing paper
-identifier, the authors email, its associated domain, order in which the
-author was cited, the institution, country, longitude and latitude were
-saved to a csv file. We used the paper identifier and author order to
-associate this data with the metadata to link information about authors
-with the papers they authored.
+on the institution even when misspellings are present or multiple ways
+to spell the university exist. Requests were sent using \emph{urllib3},
+and \emph{beautifulsoup} was used to parse them get the coordinates
+present in the article. Regretfully not all institutions, even well
+known ones such as Tokyo University, have their coordinates listed on
+Wikipedia. To get the remaining locations we used geopy, which is a
+python client for geocoding web services. These results however are more
+error prone as geopy will always return a result. It is thus recommended
+to verify the correctness of the results. To get the country we then
+again used geopy. The resulting data containing paper identifier, the
+authors email, its associated domain, order in which the author was
+cited, the institution, country, longitude and latitude were saved to a
+csv file. We used the paper identifier and author order to associate
+this data with the metadata to link information about authors with the
+papers they authored.
 
-    \hypertarget{keywords-extraction}{%
-\subsection{Keywords extraction}\label{keywords-extraction}}
+    \hypertarget{keyword-extraction}{%
+\subsection{Keyword extraction}\label{keyword-extraction}}
 
     \hypertarget{text-preprocessing}{%
 \subsubsection{Text preprocessing}\label{text-preprocessing}}
 
-    From the pdf parser some of the documents were corrupted with some weird
-characters such as , white space strings
+    The pdf parser returns txt files that are encoded using a variety of
+conventions, thus when extracting the strings from the text files, we
+were met with non-ascii characters, which had to be dealt with. We
+preprocessed the text by applying the following steps to it:
 
 \begin{itemize}
 \item
-  We used \textbf{\emph{beautiful soup}} and \textbf{\emph{string}}
-  libraries to only keep the text that we needed without any special
-  character.
+  We used \emph{beautiful soup} and \emph{string} libraries to only keep
+  sections of the text that we needed and remove special characters.
 \item
-  we applied \textbf{\emph{regular expression}} to remove numbers
-  because we thought that numbers were not that important.
+  We applied \textbf{\emph{regular expression}} to remove numbers
+  because numbers were not important for our analysis.
 \item
-  We put all the words to lower cases
+  We put all words to lower case
 \item
-  We removed the words that were connecting parts of a sentence rather
-  than showing subjects, objects or intent (\textbf{\emph{stopwords}}).
-  For us these words were not that important and were only going to
-  increase the bag of words length
+  We removed words that were connecting parts of a sentence rather than
+  showing subjects, objects or intent (\textbf{\emph{stopwords}}). For
+  the purpose of this task these words were not important and were only
+  going to increase the bag of words length
 \item
-  In some methods we use \textbf{\emph{Lemmatization}} and
-  \textbf{\emph{stemming}} and in other methods we don't because we
-  wanted to do a mapping with \textbf{\emph{GloVe}} vocabulary which we
-  will explain later on.
+  In some methods we applied \textbf{\emph{lemmatization}} and
+  \textbf{\emph{stemming}} to the words. In other methods we did not
+  because we implement a mapping with \textbf{\emph{GloVe}} vocabulary
+  instead, which we will explain later on.
 \end{itemize}
 
 \textbf{\emph{Lemmatization}} is a word variations to the root of the
 word (e.g.~working, works, worked changed to work).
 \textbf{\emph{Stemming}} is the process of reducing inflected and
 derived words to their word stem, base or root form---generally a
-written word form.
+written word form. As the use of the stop words to reduce the BOW (bag
+of words) size we also used lemmatization and stemming to be able to
+reduce the number of words without taking off any valuable information.
 
-As the use of the stop words to reduce the BOW (bag of words size) we
-also used lemmatization and stemming to be able to reduce the number of
-words without taking off any valuable information.
-
-    \textbf{\emph{Lemmatization}} and different form of
+\textbf{\emph{Lemmatization}} and different forms of
 \textbf{\emph{Stemming}} were only used with \textbf{\emph{TF-IDF}}
 while doing the Keywords extraction, otherwise we prefered keeping the
 words as they were because we were doing a mapping with a pretrained
-stanford word embedding and sometimes root forms were not in the
-dictionnary of words of the pre-trained words-vectors.
+Stanford Word Embedding \cite{GloVe_web} and sometimes root forms were
+not in the dictionnary of words of the pre-trained words-vectors.
 
-    For the Keywords extraction we used three methods :
-
-The first one is a trivial one is to search in the pdf itself for
+For the Keywords extraction we used three methods : The first one is a
+trivial approach that consists of searching in the pdf itself for
 keywords and extract them, this method is the most accurate but we found
 out that for 492 papers we had no keywords included. So we deciced to
-use two methods for keywords extraction. The first one is
-\textbf{\emph{TF-IDF}} and the second one is \textbf{\emph{Rake}}.
+use other two methods for keywords extraction, namely one based on
+\textbf{\emph{TF-IDF}} and a second one based on \textbf{\emph{Rake}}.
+\textbf{\emph{TF-IDF}} is one of the most popular term-weighting schemes
+today, in information retrieval, tf--idf or TFIDF, short for term
+frequency--inverse document frequency, is a numerical statistic that is
+intended to reflect how important a word is to a document in a
+collection or corpus. It is often used as a weighting factor in searches
+of information retrieval, text mining, and user modeling. The tf--idf
+value increases proportionally to the number of times a word appears in
+the document and is offset by the number of documents in the corpus that
+contain the word, which helps to adjust for the fact that some words
+appear more frequently in general \cite{Tf-idf}. With TF-IDF we sorted
+for each document the words with the highest score and then selected the
+7 first words of each document.
 
-    \begin{itemize}
-\tightlist
-\item
-  \textbf{\emph{TF-IDF}}: Tf--idf is one of the most popular
-  term-weighting schemes today, in information retrieval, tf--idf or
-  TFIDF, short for term frequency--inverse document frequency, is a
-  numerical statistic that is intended to reflect how important a word
-  is to a document in a collection or corpus. It is often used as a
-  weighting factor in searches of information retrieval, text mining,
-  and user modeling. The tf--idf value increases proportionally to the
-  number of times a word appears in the document and is offset by the
-  number of documents in the corpus that contain the word, which helps
-  to adjust for the fact that some words appear more frequently in
-  general \cite{Tf-idf}.
-\end{itemize}
+    \textbf{\emph{Rake}}: Rake stands for Rapid Automatic Keyword
+Extraction. It is an existing python implementation that uses the NLTK
+toolkit for the score calculations.
 
-    With TF-IDF we sorted for each document the words with the highest score
-and then selected the the 7 first words of each document.
-
-    \begin{itemize}
-\tightlist
-\item
-  \textbf{\emph{Rake}}: Rake stands for Rapid Automatic Keyword
-  Extraction. It is an existing python implementation that uses the NLTK
-  toolkit for the score calculations.
-\end{itemize}
-
-\textbf{\emph{How it works}} :
+\textbf{\emph{How the method works}} :
 
 \begin{itemize}
 \tightlist
@@ -704,17 +695,17 @@ and then selected the the 7 first words of each document.
     \textbf{\emph{Keywords in text}}: Select from the text the keywords
 already given by the authors of the paper.
 
-    Once we have all the keywords from the three methods, we try to select
-the most accurate keywords. So we created a method that selects the
+Once we have all the keywords from the three methods, we tried to select
+the most accurate keywords. So we created a method that selected the
 intersection of TF-IDF keywords and the Rake keywords with the keywords
 of the authors (if there are any keywords in the text), if the
 intersection is empty and we have the keywords in the text we only take
-the keywords of the text. If the paper does not have keywords, we take
-the intersection of the TF-IDF and the Rake. If again, the intersection
-is empty then we only take the TF-IDF keywords because they were closer
-to the text keywords than the Rake Keywords.
+the keywords of the text. If the paper does not contain any keywords, we
+take the intersection of the TF-IDF and the Rake outputs. If again, the
+intersection is empty then we only take the TF-IDF keywords because they
+were closer to the text keywords than the Rake Keywords.
 
-    Once we have our final keywords, we create a method that goes into the
+Once we have our final keywords, we create a method that goes into the
 metadata and assign to every document a publication year.
 
 
@@ -725,24 +716,24 @@ below \ref{fig1}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_27_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_21_0.png}\end{center}
         \caption{Trends of keywords over the years}
         \label{fig1}
     \end{figure}
     
     We wanted then to know what are the trends of words for each specific
-year, so we select distinct words for each year. On other words it means
-that we select for each year the words that were only present for this
-specific year and never appeared in the others. We get the figure below.
-As we can see from the graph \ref{fig2}, the most used word in the
-papers, more than 10\% of 2015 papers uses the word `peer', more than
-6\% of the papers uses the words `building', `embodied' in 2016. In 2017
-the most frequent keyword on is `reponsive' and in 2018 `tools' is
-present with more than 6\%.
+year, so we selected distinct words for each year. In other words it
+means that we selected for each year the words that were only present
+for this specific year and never appeared in the others. We get the
+figure below. As we can see from the graph \ref{fig2}, the most used
+word in the papers, more than 10\% of 2015 papers used the word `peer',
+more than 6\% of the papers used the words `building', `embodied' in
+2016. In 2017 the most frequent keyword is `reponsive' and in 2018
+`tools' is present with more than 6\%.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_29_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_23_0.png}\end{center}
         \caption{Distinct keywords over the years}
         \label{fig2}
     \end{figure}
@@ -754,20 +745,20 @@ present with more than 6\%.
 \subsection{Document Clustering}\label{document-clustering}}
 
 To cluster the documents we decided to use two different approaches. The
-first one is Natural Langage Processing (NLP) and the second one is a
-network analysis. The most accurate one is the network clustering using
-the references graph.
+first one is based on Natural Langage Processing (NLP) and the second
+one is rooted in network analysis. We fin that network clustering using
+the references graph is most accurate.
 
 \hypertarget{approach-1-natural-langage-processing-nlp}{%
 \subsubsection{Approach 1 : Natural Langage Processing
 (NLP)}\label{approach-1-natural-langage-processing-nlp}}
 
-\hypertarget{baseline-tf-idf-combined-with-k-means}{%
-\paragraph{Baseline : TF-IDF combined with
-K-means}\label{baseline-tf-idf-combined-with-k-means}}
+\hypertarget{baseline---tf-idf-combined-with-k-means}{%
+\paragraph{Baseline - TF-IDF combined with
+K-means}\label{baseline---tf-idf-combined-with-k-means}}
 
 With the natural langage processing, we started with a naive method
-which consists of clustering the documents using only TF-IDF. Each
+which consisted of clustering the documents using only TF-IDF. Each
 document has a vector representation with values for each word present
 in the document depending on the frequency of the word in this document
 regarding its frequency in all the other documents. So if a word is a
@@ -781,17 +772,17 @@ representation we run K-means.
 \textbf{\emph{K-means}} clustering is a method used for clustering
 analysis, especially in data mining and statistics. It aims to partition
 a set of observations into a number of clusters (k), resulting in the
-partitioning of the data into Voronoi cells. It can be considered a
+partitioning of the data into Voronoi cells. It can be considered as a
 method of finding out which group a certain object really belongs to.
 
 This method did not give good results as we can see it in the graph
 below \ref{fig3}. All the vectors are together there is no clear
 separation between the documents. So we decide to use other methods
-using words embeddings and properties of TF-IDF.
+using words embeddings combined with properties of TF-IDF.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_32_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_26_0.png}\end{center}
         \caption{Baseline model document clusters}
         \label{fig3}
     \end{figure}
@@ -801,7 +792,7 @@ using words embeddings and properties of TF-IDF.
 K-means}\label{second-method-average-of-glove-vectors-combined-with-k-means}}
 
 The second method was to use pre-trained words embeddings. We decided to
-use \textbf{\emph{GloVe}} library pre-trained on Wikipedia dataset.
+use \emph{GloVe} library pre-trained on Wikipedia dataset.
 
 \textbf{\emph{GloVe}}, coined from Global Vectors, is a model for
 distributed word representation. The model is an unsupervised learning
@@ -814,20 +805,20 @@ GloVe is to group words with similar meaning together in a new vector
 space.
 
 We constructed a dictionnary from the words embeddings mapping each word
-of a document to its vector representation, than we averaged all the
-vectors of each document. Since each words has its representation in
+of a document to its vector representation, then we averaged all the
+vectors of each document. Since each words has its own representation in
 space, the average of all the words for each document will lead to a
 vector representing a document.
 
-Once we obtained a document vector representation, we applied to it
-K-means. The results were slightly better, but we had only two clear
-separate clusters. If we increase the number of clusters than there is
-no clear separation anymore. The plot below \ref{fig4} reprensents the
-documents belonging to each cluster.
+Once we obtained a document vector representation, we applied K-means to
+it. The results were slightly better, but we had only two clear
+separated clusters. If we increase the number of clusters, then there is
+no clear separation between clusters visible anymore. The plot in figure
+\ref{fig4} reprensents the documents belonging to each cluster.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_34_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_28_0.png}\end{center}
         \caption{Cluster using Average of GloVe vectors combined with K-means }
         \label{fig4}
     \end{figure}
@@ -840,16 +831,16 @@ K-means}\label{third-method-weighted-average-of-tf-idf-glove-combined-with-k-mea
 With this method, we did not use the parameter max features of the
 TF-IDF vector, we took all the vocabulary generated by all the documents
 and we created a method that sorts the document frequency vector. We
-selected the 500 first words and did a weighted average of the words
-embedding vectors with the TF-IDF score.
+selected the 500 first words and computed a weighted average of the
+every word embedding vector with the its respectively TF-IDF score.
 
-Once we get the weighted average vector, and since we were using a words
-embedding of 50 dimentions. We decided to use feature reduction
+Once we get the weighted average vector, since we were using a words
+embedding of 50 dimentions, we decided to use feature reduction
 technique to reduce the number of dimensions and represent our vectors
 in an other vector space where all the features are orthogonal to each
 others.
 
-To apply the feature reduction to our vectors we used
+To apply feature reduction to our vectors we used
 \textbf{\emph{Principal Component Analysis (PCA)}} algorithm.
 
 \textbf{PCA} is a statistical procedure that uses an orthogonal
@@ -869,13 +860,13 @@ uncorrelated orthogonal basis set. \cite{PCA}.
 
 Once we get our new vector representation, we applied K-means and we
 obtained the best separation, with a clear separation of 4 clusters as
-we can see it in the figure below \ref{fig5}.
+we can see it in figure \ref{fig5}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_36_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_30_0.png}\end{center}
         \caption{Cluster using Weighted average of TF-IDF + GloVe  combined with K-means }
-        \label{fig}
+        \label{fig5}
     \end{figure}
     
     \hypertarget{approach-2-references-network-analysis}{%
@@ -883,39 +874,47 @@ we can see it in the figure below \ref{fig5}.
 Analysis}\label{approach-2-references-network-analysis}}
 
 For the references graph we chose to construct 4 different graphs to be
-able to extract the more information we can. Our first purpose is to be
-able to cluster the documents that are about the same subject and to
-gain more insights about the most influencial papers, trends of
-citations\ldots{}
+able to extract as much information as possible. Firstly, to be able to
+cluster the documents that are about the same subject and secondly to
+gain more insights about the most influencial papers and trends of
+citations.
 
     \hypertarget{first-reference-graph-intersection-between-referenced-documents}{%
 \paragraph{First reference graph : Intersection between referenced
 documents}\label{first-reference-graph-intersection-between-referenced-documents}}
 
 Our first graph is constructed using the references of each document. It
-is constructed as follows, for each two documents, if there is an
-intersection between the references of both documents then there is a
-link. The weights of the edges are the length of the intersection set.
-The intuition behind it, is that the more the weight is high, the more
-the documents are likely to be about the same subject since they are
-citing the same documents. From this graph, we create a subgraph of it,
-we filter the edges keeping only those who have a weight strictly higher
-than 3. It means that, each node of the subgraph, is related to at least
-one other node with 4 same documents referenced.
+is constructed as follows: for each two documents, if there is an
+intersection between the references of both documents, then there is a
+link conneting the two documents. The weights of the edges are the
+length of the intersection set. The intuition behind it is that the
+higher the weight, the more the documents are likely to be about the
+same subject, since they are citing the same documents. From this graph,
+we create a subgraph of it. We filter the edges keeping only those who
+have a weight strictly higher than 3. This means that, each node of the
+subgraph, is related to at least one other node with 4 same documents
+referenced.
 
 
 
-    The resulted graph is plotted in this figure \ref{intersection}, is an
-undirected graph with 805 nodes and 6699 edges. On this graph we extract
-two main information : * Strongly connected components to be able to
-detect clusters and related documents. * In\_degree in order to check if
-there are documents that are related to a lot of documents and those
-documents would be more general than others, and won't necessarly belong
-to one specific cluster.
+    The resulting graph, plotted in figure \ref{intersection}, is an
+undirected graph with 805 nodes and 6699 edges. On this graph we
+extracted two main features:
+
+\begin{itemize}
+\tightlist
+\item
+  Strongly connected components to be able to detect clusters and
+  related documents.
+\item
+  The in-degree in order to check if there are documents that are
+  related to a lot of documents and if those documents are more general
+  than others, and will not necessarly belong to one specific cluster.
+\end{itemize}
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_42_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_36_0.png}\end{center}
         \caption{Intersection between references graph}
         \label{intersection}
     \end{figure}
@@ -924,62 +923,60 @@ to one specific cluster.
 \paragraph{Second graph: Relations between
 references}\label{second-graph-relations-between-references}}
 
-The second graph is more about the referenced documents and not about
-the documents themselves. The aim of this graph is to see if there are
-documents that are more likely to cited together. If it is the case,
-then these documents are likely to be about the same subject. It is a
-weighted graph constructed as follow: for each document, we create a
+The second graph relates more to the referenced documents and is not
+about the documents themselves. The aim of this graph is to see if there
+are documents that are more likely to be cited together. If this is the
+case, then these documents are likely to be about the same subject. This
+weighted graph is constructed as follows: for each document, we create a
 link between the references of the document. We create a dictionnary of
-links, for each new document, if two references of this latter have
+links, for each new document, if two references of the latter have
 already a link in the dictionnary then we increase the weight of the
-link.
-
-So for instance, if two references are present together in the 5
-distinct documents, then the weight of the edge would be of 5. We obtain
-a graph of 10845 nodes and 148594 edges but we filtered the edges that
-have a weight higher than 4 and we get the graph below represented in
-this figure \ref{fig6}
+link. For instance, if two references are present together in the 5
+distinct documents, then the weight of the edge would be of 5. We
+obtained a graph of 10845 nodes and 148594 edges but we filtered the
+edges that have a weight higher than 4 and we get the graph below
+represented in this figure \ref{fig6}
 
 
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_46_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_40_0.png}\end{center}
         \caption{Relations between references filtered}
         \label{fig6}
     \end{figure}
     
-    We can directly select from the interactive graph the nodes with degree
-higher than 100, these nodes represent the more cited documents, but we
-will construct a subgraph to specificly tackle these important
+    We can directly select from the interactive graph, which can be found in
+the jupyter notebook corresponding to this report, the nodes with degree
+higher than 100. These nodes represent the most cited documents, but we
+will construct a subgraph to specificly tackle the most important
 referenced documents. On this graph, to be able to detect similar
-documents we also run Strongly connected components algorithm. On top of
-it, we inspected the documents with higher weights, we will explain more
-about what we extracted from this graph in the result section.
+documents we also run the Strongly connected components algorithm. On
+top of this, we inspected the documents with higher weights. We will
+explain more about what we extracted from this graph in the result
+section.
 
     \hypertarget{third-graph-exploratory-references-graph}{%
-\paragraph{Third graph: exploratory references
+\paragraph{Third graph: Exploratory references
 graph}\label{third-graph-exploratory-references-graph}}
 
-With this graph we aim to find what are the most cited documents, what
-are the documents that are the most influencial and how citations evolve
-over time.
-
-This is a directed graph constructed in this way. For each document, if
-the document cites another document than there is a link between the
+With this graph we aimed to find the most cited documents, the documents
+that are the most influencial and how citations evolve over time. This
+is a directed graph constructed in the following way: for each document,
+if the document cites another document, then there is a link between the
 document and the cited one. We get a graph of 11650 nodes and 13243
-egdes. We also construct a subgraph of this graph, which is a
-co-citations in conferences, but because a lack of data, we find only
-three documents that cites other documents.
+egdes. We also constructed a subgraph of this graph, which is a
+co-citations in conferences, but do to a lack of data, we found only
+three documents that were cited by other documents.
 
 On this graph, we run \textbf{\emph{PageRank}} algorithm to be able to
 extract the most influential documents.
 
-\textbf{PageRank (PR)}* is an algorithm used by Google Search to rank
-web pages in their search engine results. In our case, It measure
-PageRank is a way of measuring the importance of referenced papers.
-Compared to the in-degree analysis we get almost the same results since
-we have no out degree for almost every node.
+\textbf{PageRank (PR)}* is an algorithm originally used by Google Search
+to rank web pages in their search engine results. In our case, PageRank
+is a way of measuring the importance of referenced papers. Compared to
+the in-degree analysis we get almost the same results. This is because
+almost all nodes have a zero out degree.
 
 
 
@@ -991,7 +988,9 @@ based on co-authorship of papers. To build the graph structure and
 visualize it the python package \emph{networkx} was used. When
 constructing the graph, we associate qualitative features --such as the
 name and institution of the author that is represented by a node-- to
-the nodes and edges of the graph.
+the nodes and edges of the graph. We also associate the number of
+collaborations between different parties to the graphs as the weight of
+the edge.
 
 \hypertarget{graph-construction}{%
 \subsubsection{Graph Construction}\label{graph-construction}}
@@ -1010,14 +1009,14 @@ collaboration on a paper does not necessarily indicate that two people
 even know each other. A first condition was to link two nodes together
 only if the authors corresponding to each node appeared as co-authors in
 more than one conference. The graph produced by this approach was much
-more sparse and contained much fewer authors. Additionally all connected
-components contained fewer than 35 authors, making it possible to
-consider each author individually. Such a component is shown in figure
-\ref{fig_plot}.
+more sparse and contained much fewer authors. Additionally, all
+connected components contained fewer than 35 authors, making it possible
+to consider each author individually. Such a component is shown in
+figure \ref{fig_plot}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_52_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_46_0.png}\end{center}
         \caption{One of the connected components of the co-authorship graph}
         \label{fig_plot}
     \end{figure}
@@ -1027,16 +1026,16 @@ this graph authors are only linked if they have written at least 2
 papers together. This method yielded a much larger component
 --containing 441 authors-- as this second condition was weaker. To get
 an understanding of author to author relations in this component we
-needed to further prune away parts of the graph that are not insightful.
-When we looked at individual author within the community, we were
-interested in collaborative individuals. Hence we removed nodes that had
-fewer than 3 connections to other nodes. The resulting graph can be seen
-in figure \ref{author_collab_large}. Details creating such a plot can be
-found in the section dedicated to this below.
+needed to further prune away parts of the graph that were not
+insightful. When we looked at individual author within the community, we
+were interested in collaborative individuals. Hence we removed nodes
+that had fewer than 3 connections to other nodes. The resulting graph
+can be seen in figure \ref{author_collab_large}. Details creating such a
+plot can be found in the section dedicated to this below.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_54_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_48_0.png}\end{center}
         \caption{Largest Component}
         \label{author_collab_large}
     \end{figure}
@@ -1085,7 +1084,7 @@ this graph is shown in figure \ref{unigraph}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_57_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
         \caption{Different formats used to reference institution}
         \label{unigraph}
     \end{figure}
@@ -1102,7 +1101,7 @@ following measures:
 \item
   Diameter: longest shortest path in the graph.
 \item
-  Average clustering coefficient: Measure of how much the nodes in a
+  Average clustering coefficient: measure of how much the nodes in a
   graph tend to cluster together. Average over all clustering
   coefficients. The clustering coefficient of a node is the fraction of
   triangles prassing through the node over all possible triangles
@@ -1129,11 +1128,13 @@ centrality for larger graphs. Degree centrality measures the fraction of
 degrees (number of connections) a node has with respect to the total
 number of connections in the graph. Betweenness centrality of a node is
 the sum of the fraction of all-pairs shortest paths that pass through it
-\ref{borgatti2014social}. We found that degree centrality is more
+\cite{borgatti2014social}. We found that degree centrality is more
 appropriate for smaller graphs as their structure is still easy to
 interpret. As by construction betweenness takes into consideration the
 degrees of it neighboring nodes, it better structures the nodes large
-graphs into central and less central nodes.
+graphs into central and less central nodes. The width of the edge is
+based on the weight of the edge, which in turn reflects the number of
+collaboration between two nodes.
 
     \hypertarget{creating-interactive-visualizations}{%
 \subsection{Creating Interactive
@@ -1144,13 +1145,13 @@ graphs on top of the static graphs. Many libraries exist to allow for
 interaction. While working on the project, we worked with \emph{bookeh},
 \emph{holoviews}, \emph{mpld3} and \emph{plotly}. For some time
 implementing a custom visualization using \emph{D3} was also
-contemplated. However, functions provided by plotly is most general and
-allows to easily build interactive figures, while not being as heavy as
-bookeh and holoviews. Additionally, it is the most well maintained. D3
-requires a running server to be viewed and has a hard time dealing with
-large graphs. To plot figures we created them in networkx to grab the
-positioning of the nodes. Then we passed this positioning to plotly to
-plot.
+contemplated. However, functionality provided by plotly is most general
+and allows to easily build interactive figures, while not being as heavy
+as bookeh and holoviews. Additionally, it is the most well maintained.
+D3 requires a running server to be viewed and has a hard time dealing
+with large graphs. To plot figures we created them in networkx to grab
+the positioning of the nodes. Then we passed this positioning to plotly
+to plot.
 
     \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -1159,6 +1160,13 @@ In this section we present first insights gathered during the
 Bibliographic analysis.
 
 
+
+    \begin{figure}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_57_0.png}\end{center}
+        \caption{Global spread of community. Size of dot represent number of participants from each institution}
+        \label{global_com}
+    \end{figure}
+    
     \hypertarget{community-composition-structure}{%
 \subsection{Community Composition \&
 Structure}\label{community-composition-structure}}
@@ -1179,8 +1187,8 @@ participants \ref{figrep}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
-        \caption{Different formats used to reference institution}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_59_0.png}\end{center}
+        \caption{Number of Contributiors by coutry, excluding the US}
         \label{figrep}
     \end{figure}
     
@@ -1201,7 +1209,7 @@ other or Canada.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_61_0.png}\end{center}
         \caption{Collaborative papers between countries excluding US}
         \label{figcollab}
     \end{figure}
@@ -1221,15 +1229,15 @@ some strong links exist, most links are weak.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
-        \caption{Subcommunities via normalized cuts}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_63_0.png}\end{center}
+        \caption{Subcommunities via normalized cuts in largest component of co-authorship graph}
         \label{normalized}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_69_0.png}\end{center}
-        \caption{Subcommunities by paricipation in CSCL. Blue: no participation in main compnents of CSCL. Red and Violate each mark participation in one of the two main components of CSCL}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
+        \caption{Subcommunities by paricipation in CSCL. Blue: no participation in main compnents of CSCL. Red and orange each mark participation in one of the two main components of CSCL}
         \label{CSCL_components}
     \end{figure}
     
@@ -1250,12 +1258,12 @@ components different colors, and authors in neither a third color, we
 find a similar partitioning of the graph, as can be observed in figure
 \ref{CSCL_components}. This is somewhat trivial, as the graph is built
 based on collaboration in these conferences. However, the analysis of
-nationalities present in the graph yielded an interessting results. All
+nationalities present in the graph yielded an interesting results. All
 Asian participants from nations other than Singapore are contained in
-the same cluster. We also note that one of the CSCL clusters ins closer
-to the group of ICLS only participants than the other. Additionaly,
-through normaized splits, we find that the section of the normalized cut
-containing ICLS only authors is overwhelmingmly american.
+the same cluster. We also note that one of the CSCL clusters is closer
+to the group of ICLS-only participants than the other. Additionaly,
+through normalized splits, we find that the section of the normalized
+cut containing ICLS only authors is overwhelmingly american.
 
 Considering the wordclouds in figure \ref{c1}, \ref{c2}, \ref{c3} of the
 most common keywords in each of the large splits, we find a first
@@ -1264,22 +1272,22 @@ research.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_71_0.png}\end{center}
-        \caption{Keywords of the bottom community}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
+        \caption{Keywords of the blue Community}
         \label{c1}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_72_0.png}\end{center}
-        \caption{Keywords of the middle community}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_67_0.png}\end{center}
+        \caption{Keywords of the red community}
         \label{c2}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_73_0.png}\end{center}
-        \caption{Keywords of the top community}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
+        \caption{Keywords of the orange community}
         \label{c3}
     \end{figure}
     
@@ -1304,13 +1312,13 @@ coefficient and average path length.
 Using the data we have of participants over the years, and knowing their
 affiliation, we can now find members that change institutions over the
 years. Over the years of recording we find 14 participants that have
-changed moved countries and 47 that have moved institutions. We can see
-that most movement occured within the US respectively Europe, see figure
+changed countries and 47 that have moved institutions. We can see that
+most movement occured within the US respectively Europe, see figure
 \ref{fig_move}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_76_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_71_0.png}\end{center}
         \caption{Movement of participants across institutions}
         \label{fig_move}
     \end{figure}
@@ -1339,13 +1347,13 @@ graph \ref{count_ref_docs}. We can see from the graph that there is a
 kind of a trend, each two, three years there is a pick of documents
 referenced followed by a two or three years of stagnancy. We can also
 notice that throughouts the year each pick is higher than the older one,
-which can be explained by the fact that The International Society of the
+which can be explained by the fact that the International Society of the
 Learning Sciences community is investigating more and more tools to
 facilitate the learning over the years.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_79_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_74_0.png}\end{center}
         \caption{Distribution of the number of referenced documents belonging to each year}
         \label{count_ref_docs}
     \end{figure}
@@ -1353,14 +1361,14 @@ facilitate the learning over the years.
     Since the number of documents is increasing over the years, we also
 wanted to investigate more if the relevance of all the documents
 published is increasing too. Using Pagerank algorithm and the In-degree
-of each nodes to get the most influancial documents referenced of the
-citation graph that we constructed (graph3) before. We filtered the
+of each nodes to get the most influencial documents referenced of the
+exploratory citations graph that we constructed before. We filtered the
 first 100 documents and then contructed a histogram of the counts by
 year. We obtain the figure \ref{fig7}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_81_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_76_0.png}\end{center}
         \caption{Distribution of the 100 most referenced documents belonging to each year}
         \label{fig7}
     \end{figure}
@@ -1380,23 +1388,23 @@ are represented in table \ref{indegree}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_84_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_79_0.png}\end{center}
         \caption{In-degree count for each document}
         \label{indegree}
     \end{figure}
     
     We also noticed from the first graph that some documents were more
 likely to cited together. We can say that the more two documents are
-likely to cited together the more it is probable that both documents are
-about the same subject From the table \ref{fig8} we can also notice that
-some papers are more likely to cite distinct publications of the same
-author, which is logic in a sense, because if some authors always treat
-about the same subject then they are experts in that field and a lot of
-their publications are relevant and can be cited together.
+likely to be cited together the more it is probable that both documents
+are about the same subject. From the table \ref{fig8} we can also notice
+that some papers are more likely to cite distinct publications of the
+same author, which is logic in a sense, because if some authors always
+treat about the same subject then they are experts in that field and a
+lot of their publications are relevant and can be cited together.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_86_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_81_0.png}\end{center}
         \caption{Count of documents cited together}
         \label{fig8}
     \end{figure}
@@ -1409,9 +1417,8 @@ more likely to be about the same subjects. We can visualise one cluster,
 the most important one in figure \ref{fig12}.
 
 
-
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_89_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_83_0.png}\end{center}
         \caption{Table of the documents belonging to the same clusters}
         \label{fig9}
     \end{figure}
@@ -1419,41 +1426,41 @@ the most important one in figure \ref{fig12}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_91_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_85_0.png}\end{center}
         \caption{Fully connected references graph}
         \label{fig12}
     \end{figure}
     
     The largest fully connected component is the composed of 8 nodes and 56
-edges plotted in figure \ref{fig14}. This documents are all cited
-together more than 4 times. You can investingate the edges and the
+edges plotted in figure \ref{fig12}. These documents are all cited
+together more than 4 times. You can investigate the edges and the
 weights in the interactive graph constructed above. We wanted all the
 documents to be linked to each others to be more precise, but if we only
 look to giant connected component, we will get a network of 27
-referenced paper with 142 egdes.
+referenced paper with 142 egdes represented in this graph \ref{fig15}.
 
 
-    In the table \ref{fig10} below are the documents of the giant connected
-component represented in the interactive graph \ref{fig11}.
+    In the table \ref{fig10} below are the documents contained in the giant
+connected component represented in the interactive graph \ref{fig15}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_95_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_89_0.png}\end{center}
         \caption{Giant component graph}
-        \label{fig12}
+        \label{fig15}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_96_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_90_0.png}\end{center}
         \caption{Documents belonging to the giant component}
         \label{fig10}
     \end{figure}
     
-    Now we want to apply the same logic with the papers in-conferences. So
-we will focus on the analysis of the first graph that uses the
-intersection between the referenced documents of each two by two papers.
-The length of the intersection set had to be more than 4.
+    We wanted to apply the same logic with the papers in-conferences. So we
+focused on the analysis of the first graph that uses the intersection
+between the referenced documents of each two by two papers. The length
+of the intersection set had to be more than 4.
 
 So if more than 4 documents are referenced by two distinct documents
 than the latter are more likely to be about the same subect. In the
@@ -1462,12 +1469,12 @@ clusters.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_98_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_92_0.png}\end{center}
         \caption{Documents in conferences belonging to the same clusters}
         \label{fig11}
     \end{figure}
     
-    When applying this kind of clustering we find that most of the clusters
+    When applying this kind of clustering we found that most of the clusters
 contains almost the same authors with different papers, which is logic
 because if they are specialists in one topic and write several papers on
 it, they might reuse some references in several documents.
