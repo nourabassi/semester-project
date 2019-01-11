@@ -297,9 +297,9 @@ CSCL papers to gain an understanding of the community formed by
 conference participants and of the research being conducted within the
 community. After describing how to extract data from the base dataset we
 derive insights into the community using network analysis, natural
-language processing and text mining. We discover patterns of
+language processing and text mining. We discovered patterns of
 collaboration between participants, their migration and the global
-spread of the community. We extract keywords and find clusters of
+spread of the community. We extracted keywords and found clusters of
 referenced papers and documents within the conferences.
 \end{abstract}
     \hypertarget{introduction}{%
@@ -316,7 +316,7 @@ of the learning sciences, CSCL focuses on learning through collaboration
 with the help of communication technologies \cite{ICLS}. To understand
 the community formed by the participants of the conferences as well as
 to understand the research being conducted within the community, we
-explore methods to bring insight into the following aspects:
+explored methods to bring insight into the following aspects:
 
 \begin{itemize}
 \tightlist
@@ -358,7 +358,7 @@ from the dataset we first converted the data to a format that is better
 adapted to the task of data analysis and more compatible with a variety
 of external libraries. We stored all the resulting data in \emph{csv}
 format, as csv is a human readable format and can easily be processed by
-all the data analysis tools we employ.
+all the data analysis tools we used.
 
     \hypertarget{processing-the-metadata}{%
 \subsection{Processing the Metadata}\label{processing-the-metadata}}
@@ -372,10 +372,10 @@ extracted by the parser. This was remedied using regular expressions to
 match the section containing the keywords. To each file we associated
 the name of the source file and the order in which an author name occurs
 in the xml file. Each author is associated to one line in the xml file.
-From the associated citation string we add the first part of the
+From the associated citation string we added the first part of the
 citation containing the author names, year, and title. This is later
 used to identify the paper when it is referenced in an other paper. Then
-we add a shortened version of author names (i.e.~West, R.) by
+we added a shortened version of author names (i.e.~West, R.) by
 considering the author order. Note that it happens that the short name
 extracted from the citation and the corresponding long name (Robert
 West) in the metadata do not match up. Thus the author order listed in
@@ -505,17 +505,17 @@ Now we consider the section before the abstract, which contains the
 authors names, their email addresses and the institutions they are
 affiliated with. Affiliation with institution can give us a lot of
 insight where people are working and gives use a way estimate where they
-are from. To extract the exact affiliation of an authors with an
+are from. To extract the exact affiliation of an author with an
 institution two approaches were used.
 
 \hypertarget{approach-1}{%
 \subsubsection{Approach 1}\label{approach-1}}
 
-The most robust way to get a persons institution affiliation is to use
+The most robust way to get a person's institution affiliation is to use
 their email address. Email addresses can easily be extracted from the
 header section using a regular expression. Then, the part of the email
-containing the university domain can be extracted using an other regular
-expression. After this we used a domain-university mapping
+address containing the university domain can be extracted using an other
+regular expression. After this we used a domain-university mapping
 \cite{mapping} to map domains to institutions. The additional advantage
 of this method is that using the additional metadata associated to each
 university in the mapping, we also access information about the country
@@ -524,14 +524,14 @@ of the university.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_11_0.png}\end{center}
-        \caption{Different formats used to reference institution}
+        \caption{First format used to refernce institution}
         \label{figA}
     \end{figure}
     
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_12_0.png}\end{center}
-        \caption{Different formats used to reference institution}
+        \caption{Second format used to refernce institution}
         \label{figB}
     \end{figure}
     
@@ -542,16 +542,22 @@ The header section itself contains information on the institution, but
 different ways to list authors are accepted, notably two ways as can be
 seen in Figure \ref{figA} and Figure \ref{figB}. Hence, we first
 detected the structure of the header section before extracting the
-association. We tagged the substring present in this section using a
-combination of \emph{named entity detection}, which automatically
+association.
+
+We tagged the substring present in this section using a combination of
+two methods. Firstly, \emph{named entity detection}, which automatically
 classifies strings as belonging to some pre-defined category, using the
-implementation provided by \emph{spacy}\cite{spacy2}, and simple string
-comparison matching of the names of authors and institutions we
-extracted from the metadata respectively from Approach 1 and tagging
-sections containing ``emails'' using regex , to detect where in the
-header the email is. Then, taking the tagged section, we detected which
-subsections corresponded to which author-affiliation listing type, and
-extracted the author email - institution mapping accordingly.
+implementation provided by \emph{spacy}\cite{spacy2}. This taggs
+categorized strings as organisation or a person. Secondly, we used
+simple string comparison matching of the names of authors and
+institutions to determine if a string is an author name (person) or an
+institution (organization). We extracted the data needed for this from
+the metadata respectively from Approach 1. To detect sections that are
+email adresses, we used regular expression. We assigned these strings
+the caregory ``Email''. Then, taking the tagged section, we detected
+which subsections corresponded to which author-affiliation listing type,
+and extracted the authors email address - institution mapping
+accordingly.
 
 Approach 2 allows to match many more institutions to authors than
 Approach 1 as not every institution is present in the mapping and many
@@ -573,15 +579,15 @@ a country to the institution for the emails that ido not have a top
 level domain indicating location and further merge the names of
 institutions based on location.
 
-As there are a variety of way in which the name of an institution could
-be written --consider EPFL, EPF Lausanne-- crawling the english, french
-and german version of Wikipedia (not using the API, or the API wrapper,
-as this does not give access to the desired information) was a quick and
+As there are a variety of way in which the name of an institution can be
+written --consider EPFL, EPF Lausanne-- crawling the english, french and
+german version of Wikipedia (not using the API, or the API wrapper, as
+this does not give access to the desired information) was a quick and
 accurate way to get the location. The advantage of sending requests over
 using the API is due to the website redirecting to the relevant article
 on the institution even when misspellings are present or multiple ways
 to spell the university exist. Requests were sent using \emph{urllib3},
-and \emph{beautifulsoup} was used to parse them get the coordinates
+and \emph{beautifulsoup} was used to parse them and get the coordinates
 present in the article. Regretfully not all institutions, even well
 known ones such as Tokyo University, have their coordinates listed on
 Wikipedia. To get the remaining locations we used geopy, which is a
@@ -986,9 +992,9 @@ almost all nodes have a zero out degree.
 To get insight into collaborations within the community we built graphs
 based on co-authorship of papers. To build the graph structure and
 visualize it the python package \emph{networkx} was used. When
-constructing the graph, we associate qualitative features --such as the
+constructing the graph, we associated qualitative features --such as the
 name and institution of the author that is represented by a node-- to
-the nodes and edges of the graph. We also associate the number of
+the nodes and edges of the graph. We also associated the number of
 collaborations between different parties to the graphs as the weight of
 the edge.
 
@@ -1017,7 +1023,7 @@ figure \ref{fig_plot}.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_46_0.png}\end{center}
-        \caption{One of the connected components of the co-authorship graph}
+        \caption{One of the connected components of the multi-year co-authorship graph}
         \label{fig_plot}
     \end{figure}
     
@@ -1036,7 +1042,7 @@ plot can be found in the section dedicated to this below.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_48_0.png}\end{center}
-        \caption{Largest Component}
+        \caption{Largest Component of the multiple collaboration co-authorship graph}
         \label{author_collab_large}
     \end{figure}
     
@@ -1062,7 +1068,7 @@ relatively few between-group connections. The advantage of this method
 is that we can choose how many cuts to make, and we are thus able to
 define the size of subcommunities. Finding normalized cuts in a graph
 can be done using \emph{sklearns} spectral clustering algorithm by
-passing it the adjacency matrix of the graph. With this method we are
+passing it the adjacency matrix of the graph. With this method we were
 able to neatly separate the main component graph in three large
 communities, as can be seen in figure \ref{normalized}
 
@@ -1079,8 +1085,8 @@ paper together. The country graph is simple enough that it does not have
 to be pruned. The institution graph on the other hand is again not
 comprehensible without further processing. Thus, similar to the first
 approach on pruning presented, we only considered institutions who
-collaborated in at least two conferences. This the main component of
-this graph is shown in figure \ref{unigraph}.
+collaborated in at least two conferences. The main component of this
+graph is shown in figure \ref{unigraph}.
 
 
     \begin{figure}
@@ -1130,10 +1136,13 @@ number of connections in the graph. Betweenness centrality of a node is
 the sum of the fraction of all-pairs shortest paths that pass through it
 \cite{borgatti2014social}. We found that degree centrality is more
 appropriate for smaller graphs as their structure is still easy to
-interpret. As by construction betweenness takes into consideration the
-degrees of it neighboring nodes, it better structures the nodes large
-graphs into central and less central nodes. The width of the edge is
-based on the weight of the edge, which in turn reflects the number of
+interpret. As by definition betweenness centrality takes into
+consideration the degrees of a nodes neighboring nodes, it better
+structures the nodes large graphs into central and less central nodes.
+To decide which nodes to label, we use the same mesures by selecting the
+nodes with the largest centrality, only plotting nodes who's cenrality
+is in the 90th percentile of the graph. The width of the edge is based
+on the weight of the edge, which in turn reflects the number of
 collaboration between two nodes.
 
     \hypertarget{creating-interactive-visualizations}{%
@@ -1188,7 +1197,7 @@ participants \ref{figrep}.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_59_0.png}\end{center}
-        \caption{Number of Contributiors by coutry, excluding the US}
+        \caption{Number of Contributiors by country, excluding the US}
         \label{figrep}
     \end{figure}
     
@@ -1199,7 +1208,7 @@ participants \ref{figrep}.
 major player, with most collaborations happening between the U.S. and
 other countries. Out of 851 papers, 153 were international
 collaborations. Out of these 153, 108 involved at least one U.S.
-participant. Excluding US participation we find the collaboration graph
+participant. Excluding US participation we found the collaboration graph
 presented in figure \ref{figcollab}. We note that some countries, such
 as Japan, are not present in this graph. This means that all
 international collaboration of these countries, in this case japanese
@@ -1210,7 +1219,7 @@ other or Canada.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_61_0.png}\end{center}
-        \caption{Collaborative papers between countries excluding US}
+        \caption{Collaboration between countries excluding the US}
         \label{figcollab}
     \end{figure}
     
@@ -1237,7 +1246,7 @@ some strong links exist, most links are weak.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
-        \caption{Subcommunities by paricipation in CSCL. Blue: no participation in main compnents of CSCL. Red and orange each mark participation in one of the two main components of CSCL}
+        \caption{Subcommunities by participation in CSCL. Blue: no participation in main components of CSCL. Red and orange each mark participation in one of the two main components of CSCL}
         \label{CSCL_components}
     \end{figure}
     
@@ -1251,29 +1260,30 @@ collaborations with the same authors happen, they yield work submitted
 at the same time.
 
 The fact that normalized graph cuts will split the community into three
-promted further investigation. As will be discussed in the next section,
-the graph of authors that participanted in CSCL yields two large
-connected components. By coloring the authors contained in the two CSCL
-components different colors, and authors in neither a third color, we
-find a similar partitioning of the graph, as can be observed in figure
-\ref{CSCL_components}. This is somewhat trivial, as the graph is built
-based on collaboration in these conferences. However, the analysis of
-nationalities present in the graph yielded an interesting results. All
-Asian participants from nations other than Singapore are contained in
-the same cluster. We also note that one of the CSCL clusters is closer
-to the group of ICLS-only participants than the other. Additionaly,
-through normalized splits, we find that the section of the normalized
-cut containing ICLS only authors is overwhelmingly american.
+prompted further investigation. As will be discussed in the next
+section, the graph of authors that participanted in CSCL yields two
+large connected components. By coloring the authors contained in the two
+CSCL components with different colors, and authors in neither with a
+third color, we found a similar partitioning of the graph, as can be
+observed in figure \ref{CSCL_components}. This is somewhat trivial, as
+the graph is built based on collaboration in these conferences. However,
+the analysis of nationalities present in the graph yielded an
+interesting results. All Asian participants from nations other than
+Singapore are contained in the same cluster. We also observed that one
+of the CSCL clusters is closer to the group of ICLS-only participants
+than the other. Additionaly, through normalized splits, we found that
+the section of the normalized cut containing ICLS only authors is
+overwhelmingly American.
 
 Considering the wordclouds in figure \ref{c1}, \ref{c2}, \ref{c3} of the
-most common keywords in each of the large splits, we find a first
+most common keywords in each of the large splits, we found a first
 indication that the splits also reflect some thematic differences in
 research.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
-        \caption{Keywords of the blue Community}
+        \caption{Keywords of the blue community}
         \label{c1}
     \end{figure}
     
@@ -1298,7 +1308,7 @@ In our analysis, we could find many structural differences between the
 two conferences. Firstly, ICLS is much larger and american dominated
 than CSCL. We also observed differences in the most cited papers and the
 average number of authors of a paper. By constructing the graph based on
-collaboration of authors in each conference, we find that while ICLS
+collaboration of authors in each conference, we found that while ICLS
 contains one giant component, CSCL contains two large main components.
 All these results are however to be taken with a grain of salt, as for
 each conference we only have data for two years, and the year 2018 is a
@@ -1309,11 +1319,11 @@ coefficient and average path length.
     \hypertarget{movement-of-particpants}{%
 \subsubsection{Movement of particpants}\label{movement-of-particpants}}
 
-Using the data we have of participants over the years, and knowing their
-affiliation, we can now find members that change institutions over the
-years. Over the years of recording we find 14 participants that have
-changed countries and 47 that have moved institutions. We can see that
-most movement occured within the US respectively Europe, see figure
+Knowing the affiliation of participants to an institution in a given
+year, we can now find members that change institutions over the years.
+Over the years of recording we found 14 participants that have changed
+countries and 47 that have moved institutions. We can see that most
+movement occured within the US respectively Europe, see figure
 \ref{fig_move}.
 
 
@@ -1326,9 +1336,9 @@ most movement occured within the US respectively Europe, see figure
     \hypertarget{changes-over-the-years}{%
 \subsection{Changes over the years}\label{changes-over-the-years}}
 
-We can observe a growth of the number of participants over the years,
-and by building co-authorship graphs for each year of the conference, we
-observe that the density and clustering coefficient of the graph
+We observe a growth of the number of participants over the years, and by
+building co-authorship graphs for each year of the conference, we
+observed that the density and clustering coefficient of the graph
 indicate a steady decrease, while the diameter and average shortest path
 length tend to increase. This hints that the community is attracting new
 member that do not collaborate with the established group of
@@ -1336,7 +1346,7 @@ participants. But, as the years 2018 shows a massive increase of
 participation, in number of participants and number of institutions
 represented, as well as a large decrease in density of the graph --which
 is reduced by more than half from the previous ICLS conference-- it is
-impossible to draw any statisically significant conclusions.
+impossible to draw any statisically significant conclusion.
 
     \hypertarget{clustering-and-referecences-graphs-results}{%
 \subsection{Clustering and referecences graphs
@@ -1360,11 +1370,11 @@ facilitate the learning over the years.
     
     Since the number of documents is increasing over the years, we also
 wanted to investigate more if the relevance of all the documents
-published is increasing too. Using Pagerank algorithm and the In-degree
-of each nodes to get the most influencial documents referenced of the
-exploratory citations graph that we constructed before. We filtered the
-first 100 documents and then contructed a histogram of the counts by
-year. We obtain the figure \ref{fig7}:
+published is increasing aswell. Using the Pagerank algorithm and the
+In-degree of each nodes to get the most influencial documents referenced
+of the exploratory citations graph that we constructed before. We
+filtered the first 100 documents and then contructed a histogram of the
+counts by year. We obtained the figure \ref{fig7}:
 
 
     \begin{figure}
@@ -1394,7 +1404,7 @@ are represented in table \ref{indegree}:
     \end{figure}
     
     We also noticed from the first graph that some documents were more
-likely to cited together. We can say that the more two documents are
+likely to be cited together. We can say that the more two documents are
 likely to be cited together the more it is probable that both documents
 are about the same subject. From the table \ref{fig8} we can also notice
 that some papers are more likely to cite distinct publications of the
@@ -1409,12 +1419,12 @@ lot of their publications are relevant and can be cited together.
         \label{fig8}
     \end{figure}
     
-    Using this graph, we also want to extract if there are some clusters of
-papers cited together. As we explained before, we run strongly connected
-algorithm to check if some cited documents are more likely to be cited
-together, and this will give us clusters of cited documents that are
-more likely to be about the same subjects. We can visualise one cluster,
-the most important one in figure \ref{fig12}.
+    Using this graph, we also wanted to extract if there are some clusters
+of papers cited together. As we explained before, we run strongly
+connected algorithm to check if some cited documents are more likely to
+be cited together, and this will give us clusters of cited documents
+that are more likely to be about the same subjects. We can visualise one
+cluster, the most important one in figure \ref{fig12}.
 
 
     \begin{figure}
@@ -1482,9 +1492,9 @@ it, they might reuse some references in several documents.
     \hypertarget{conclusions}{%
 \section{Conclusions}\label{conclusions}}
 
-In summary, we were able to extract how the dominant some institutions
-and countries are within the conference. Some initiall collaboration
-patterns between countries, instututions and authors were extracted.
+In summary, we were able to show how the dominant some institutions and
+countries are within the conference. Collaboration patterns between
+countries, instututions and authors were extracted and analyzed.
 Subcommunities found within the network of co-authorship reflect the
 division between conferences and within the conference. Using the
 analysis of the affiliation over the years we followed the migration of
@@ -1492,12 +1502,11 @@ participants accross institutions. Natural language preprocessing and
 metadata parsing enabled the extraction of trends of keywords over the
 years
 
-Overall, due to lack of data, we were often unable find non trivial
-results; This lack of data is exasperated by the fact that the
-conference of 2018 presents as an outlier in the dataset. Additionally,
-taking document clustering for instance as an example, network analysis
-of references were more accurate than(NLP) regarding documents and
-references clustering.
+Overall, due to lack of data, we were often unable to find non trivial
+results; this lack of data is aggravated by the fact that the conference
+of 2018 presents as an outlier in the dataset. Additionally, taking
+document clustering as an example, network analysis of references were
+more accurate than NLP regarding documents and references clustering.
 
 We thus strongly recommend adding additional conferences to the dataset.
 \newpage
