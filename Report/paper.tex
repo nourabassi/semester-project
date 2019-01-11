@@ -598,22 +598,23 @@ with the papers they authored.
 \subsubsection{Text preprocessing}\label{text-preprocessing}}
 
     From the pdf parser some of the documents were corrupted with some weird
-caracters such as , white space strings
+characters such as , white space strings
 
 \begin{itemize}
 \item
-  We use \textbf{\emph{beautiful soup}} and \textbf{\emph{string}}
+  We used \textbf{\emph{beautiful soup}} and \textbf{\emph{string}}
   libraries to only keep the text that we needed without any special
   character.
 \item
-  we apply \textbf{\emph{regular expression}} to remove numbers because
-  we thought that numbers were not that important.
+  we applied \textbf{\emph{regular expression}} to remove numbers
+  because we thought that numbers were not that important.
 \item
   We put all the words to lower cases
 \item
-  We remove the words that were connecting parts of a sentence rather
-  than showing subjects, objects or intent. For us these words were not
-  that important and were only going to increase the bag of words length
+  We removed the words that were connecting parts of a sentence rather
+  than showing subjects, objects or intent (\textbf{\emph{stopwords}}).
+  For us these words were not that important and were only going to
+  increase the bag of words length
 \item
   In some methods we use \textbf{\emph{Lemmatization}} and
   \textbf{\emph{stemming}} and in other methods we don't because we
@@ -625,19 +626,22 @@ caracters such as , white space strings
 word (e.g.~working, works, worked changed to work).
 \textbf{\emph{Stemming}} is the process of reducing inflected and
 derived words to their word stem, base or root form---generally a
-written word form As the use of the stop words to reduce the BOW (bag of
-words size we also used lemmatization and stemming to be able to reduce
-the number of words without taking off any information)
+written word form.
+
+As the use of the stop words to reduce the BOW (bag of words size) we
+also used lemmatization and stemming to be able to reduce the number of
+words without taking off any valuable information.
 
     \textbf{\emph{Lemmatization}} and different form of
 \textbf{\emph{Stemming}} were only used with \textbf{\emph{TF-IDF}}
-while doing the Keywords extraction, otherwise we prefer keeping the
-words as they are because we are doing a mapping with a pretrained
-stanford word embedding and we do not want to loose interpretability.
+while doing the Keywords extraction, otherwise we prefered keeping the
+words as they were because we were doing a mapping with a pretrained
+stanford word embedding and sometimes root forms were not in the
+dictionnary of words of the pre-trained words-vectors.
 
-    For the Keywords extraction we use three methods :
+    For the Keywords extraction we used three methods :
 
-The first one whe is a trivial one is to search in the pdf itself for
+The first one is a trivial one is to search in the pdf itself for
 keywords and extract them, this method is the most accurate but we found
 out that for 492 papers we had no keywords included. So we deciced to
 use two methods for keywords extraction. The first one is
@@ -656,11 +660,11 @@ use two methods for keywords extraction. The first one is
   number of times a word appears in the document and is offset by the
   number of documents in the corpus that contain the word, which helps
   to adjust for the fact that some words appear more frequently in
-  general \cite{Tf-idf}
+  general \cite{Tf-idf}.
 \end{itemize}
 
     With TF-IDF we sorted for each document the words with the highest score
-and then selected the the 7 first words for each document.
+and then selected the the 7 first words of each document.
 
     \begin{itemize}
 \tightlist
@@ -682,7 +686,7 @@ and then selected the the 7 first words for each document.
 \item
   All words listed in the stopwords file will be treated as phrase
   boundaries. This helps generate candidates that consist of one or more
-  non-stopwords. However ,it won't work in cases where the stopword is
+  non-stopwords. However, it won't work in cases where the stopword is
   part of the phrase. For example, `new' is listed in RAKE's stopword
   list. This means that neither `New York' nor `New Zealand' can be ever
   a keyword.
@@ -693,7 +697,7 @@ and then selected the the 7 first words for each document.
   their frequency and the typical length of a candidate phrase in which
   they appear.
 \item
-  The last step is ranking the scores ansd selecting the ones with the
+  The last step is ranking the scores and selecting the ones with the
   highest score
 \end{itemize}
 
@@ -701,14 +705,14 @@ and then selected the the 7 first words for each document.
 already given by the authors of the paper.
 
     Once we have all the keywords from the three methods, we try to select
-the most accurate keywords. So we create a method that selects the
+the most accurate keywords. So we created a method that selects the
 intersection of TF-IDF keywords and the Rake keywords with the keywords
 of the authors (if there are any keywords in the text), if the
 intersection is empty and we have the keywords in the text we only take
-the keywords of the text. If we don't have any keywords we take the
-intersection of the TF-IDF and the Rake. If again, the intersection is
-empty then we only take the TF-IDF keywords because they were closer to
-the text keywords than the Rake Keywords.
+the keywords of the text. If the paper does not have keywords, we take
+the intersection of the TF-IDF and the Rake. If again, the intersection
+is empty then we only take the TF-IDF keywords because they were closer
+to the text keywords than the Rake Keywords.
 
     Once we have our final keywords, we create a method that goes into the
 metadata and assign to every document a publication year.
@@ -716,8 +720,8 @@ metadata and assign to every document a publication year.
 
     Since we don't have the same number of documents for each year we needed
 to scale over the years and use the percentage of appearence of a word.
-So after groupping the words by year and scaling them we found graph
-below \ref{fig1}
+So after groupping the words by year and scaling them we found the graph
+below \ref{fig1}.
 
 
     \begin{figure}
@@ -762,17 +766,17 @@ the references graph.
 \paragraph{Baseline : TF-IDF combined with
 K-means}\label{baseline-tf-idf-combined-with-k-means}}
 
-With the natural langage processing, we start with a naive method which
-consists of clustering the documents using only TF-IDF. Each document
-has a vector representation with values for each word present in the
-document depending on the frequency of the word in this document
+With the natural langage processing, we started with a naive method
+which consists of clustering the documents using only TF-IDF. Each
+document has a vector representation with values for each word present
+in the document depending on the frequency of the word in this document
 regarding its frequency in all the other documents. So if a word is a
 keyword to the document and is not a common word than its value will be
 more important than the other words in the vector of the document. Once
-we have our vector representation, we select the max features parameter
-as 2500, it means that we will only consider the top max\_features
-ordered by term frequency across the corpus. On this word representation
-we run K-means.
+we obtained our vector representation, we selected the max features
+parameter as 2500, it means that we only considered the top
+max\_features ordered by term frequency across the corpus. On this word
+representation we run K-means.
 
 \textbf{\emph{K-means}} clustering is a method used for clustering
 analysis, especially in data mining and statistics. It aims to partition
@@ -780,10 +784,10 @@ a set of observations into a number of clusters (k), resulting in the
 partitioning of the data into Voronoi cells. It can be considered a
 method of finding out which group a certain object really belongs to.
 
-This method does not give good results as we can see it in the graph
-below \ref{fig3} all the vectors are together there is no clear
+This method did not give good results as we can see it in the graph
+below \ref{fig3}. All the vectors are together there is no clear
 separation between the documents. So we decide to use other methods
-using word embeddings and properties of TF-IDF.
+using words embeddings and properties of TF-IDF.
 
 
     \begin{figure}
@@ -805,19 +809,21 @@ algorithm for obtaining vector representations for words. Training is
 performed on aggregated global word-word co-occurrence statistics from a
 corpus (Wikipedia), and the resulting representations showcase
 interesting linear substructures of the word vector space. It is
-developed as an open-source project at Stanford.\cite{GloVe}
+developed as an open-source project at Stanford.\cite{GloVe} The goal of
+GloVe is to group words with similar meaning together in a new vector
+space.
 
-We construct a dictionnary from the words embeddings mapping each word
-of a document to its vector representation, than we average all the
+We constructed a dictionnary from the words embeddings mapping each word
+of a document to its vector representation, than we averaged all the
 vectors of each document. Since each words has its representation in
 space, the average of all the words for each document will lead to a
 vector representing a document.
 
-Once we get a document vector representation, we apply to it K-means.
-The results are better, but we have only two clusters. If we increase
-the number of clusters than there is no clear separation anymore
-separation. The plot below \ref{fig4} reprensents the documents
-belonging to each cluster.
+Once we obtained a document vector representation, we applied to it
+K-means. The results were slightly better, but we had only two clear
+separate clusters. If we increase the number of clusters than there is
+no clear separation anymore. The plot below \ref{fig4} reprensents the
+documents belonging to each cluster.
 
 
     \begin{figure}
@@ -833,14 +839,15 @@ K-means}\label{third-method-weighted-average-of-tf-idf-glove-combined-with-k-mea
 
 With this method, we did not use the parameter max features of the
 TF-IDF vector, we took all the vocabulary generated by all the documents
-and we created a method that sorts the document frequency vector, take
-the 500 first words and do a weighted average of the words embedding
-vectors with the TF-IDF score.
+and we created a method that sorts the document frequency vector. We
+selected the 500 first words and did a weighted average of the words
+embedding vectors with the TF-IDF score.
 
-Once we get the weighted average vector, and since we are using a words
-embedding of 50 dimentions. We decide to use feature reduction technique
-to reduce the number of dimensions and represent our vectors in an other
-vector space where all the features are orthogonal to each others.
+Once we get the weighted average vector, and since we were using a words
+embedding of 50 dimentions. We decided to use feature reduction
+technique to reduce the number of dimensions and represent our vectors
+in an other vector space where all the features are orthogonal to each
+others.
 
 To apply the feature reduction to our vectors we used
 \textbf{\emph{Principal Component Analysis (PCA)}} algorithm.
@@ -849,21 +856,20 @@ To apply the feature reduction to our vectors we used
 transformation to convert a set of observations of possibly correlated
 variables (entities each of which takes on various numerical values)
 into a set of values of linearly uncorrelated variables called principal
-components. If there are \textbf{\emph{n}} observations with ****p****
-variables, then the number of distinct principal components is
-\textbf{\emph{min(n-1,p)}}. This transformation is defined in such a way
-that the first principal component has the largest possible variance
-(that is, accounts for as much of the variability in the data as
-possible), and each succeeding component in turn has the highest
-variance possible under the constraint that it is orthogonal to the
-preceding components. The resulting vectors (each being a linear
+components. If there are \textbf{\emph{n}} observations with
+\textbf{\emph{p}} variables, then the number of distinct principal
+components is \textbf{\emph{min(n-1,p)}}. This transformation is defined
+in such a way that the first principal component has the largest
+possible variance (that is, accounts for as much of the variability in
+the data as possible), and each succeeding component in turn has the
+highest variance possible under the constraint that it is orthogonal to
+the preceding components. The resulting vectors (each being a linear
 combination of the variables and containing n observations) are an
-uncorrelated orthogonal basis set. PCA is sensitive to the relative
-scaling of the original variables \cite{PCA}.
+uncorrelated orthogonal basis set. \cite{PCA}.
 
-Once we get our new vector representation, we apply K-means and we get
-the best separation, with a clear separation of 4 clusters as we can see
-it in the figure below \ref{fig5}.
+Once we get our new vector representation, we applied K-means and we
+obtained the best separation, with a clear separation of 4 clusters as
+we can see it in the figure below \ref{fig5}.
 
 
     \begin{figure}
@@ -876,22 +882,24 @@ it in the figure below \ref{fig5}.
 \subsubsection{Approach 2 : References Network
 Analysis}\label{approach-2-references-network-analysis}}
 
-For the references graph we choose to construct 4 different graphs to be
+For the references graph we chose to construct 4 different graphs to be
 able to extract the more information we can. Our first purpose is to be
-able to cluster the documents that are about the same subject.
+able to cluster the documents that are about the same subject and to
+gain more insights about the most influencial papers, trends of
+citations\ldots{}
 
     \hypertarget{first-reference-graph-intersection-between-referenced-documents}{%
 \paragraph{First reference graph : Intersection between referenced
 documents}\label{first-reference-graph-intersection-between-referenced-documents}}
 
 Our first graph is constructed using the references of each document. It
-is constructed as follow, for each two documents, if there is an
+is constructed as follows, for each two documents, if there is an
 intersection between the references of both documents then there is a
 link. The weights of the edges are the length of the intersection set.
-The intuition behind is that the more the weight is high, the more the
-documents are likely to be about the same subject since they are citing
-the same documents. From this graph, we create a subgraph of it, we
-filter the edges keeping only those who have a weight strictly higher
+The intuition behind it, is that the more the weight is high, the more
+the documents are likely to be about the same subject since they are
+citing the same documents. From this graph, we create a subgraph of it,
+we filter the edges keeping only those who have a weight strictly higher
 than 3. It means that, each node of the subgraph, is related to at least
 one other node with 4 same documents referenced.
 
@@ -922,12 +930,15 @@ documents that are more likely to cited together. If it is the case,
 then these documents are likely to be about the same subject. It is a
 weighted graph constructed as follow: for each document, we create a
 link between the references of the document. We create a dictionnary of
-links, if the link is already in the dictionnary then we increase the
-weight of the link. So for instance, if two references are present
-together in the 5 distinct documents, then the weight of the edge would
-be of 5. We obtain a graph of 10845 nodes and 148594 edges but we
-filtered the edges that have a weight higher than 4 and we get the graph
-below represented in this figure \ref{fig6}
+links, for each new document, if two references of this latter have
+already a link in the dictionnary then we increase the weight of the
+link.
+
+So for instance, if two references are present together in the 5
+distinct documents, then the weight of the edge would be of 5. We obtain
+a graph of 10845 nodes and 148594 edges but we filtered the edges that
+have a weight higher than 4 and we get the graph below represented in
+this figure \ref{fig6}
 
 
 
@@ -1000,7 +1011,7 @@ even know each other. A first condition was to link two nodes together
 only if the authors corresponding to each node appeared as co-authors in
 more than one conference. The graph produced by this approach was much
 more sparse and contained much fewer authors. Additionally all connected
-components contained fewer than 50 authors, making it possible to
+components contained fewer than 35 authors, making it possible to
 consider each author individually. Such a component is shown in figure
 \ref{fig_plot}.
 
@@ -1012,16 +1023,16 @@ consider each author individually. Such a component is shown in figure
     \end{figure}
     
     A second alternative approach was to consider the strength of bounds. In
-the graph authors are only linked if they have written at least 2 papers
-together. This method yielded a much larger component --containing 441
-authors-- as this second condition was weaker. To get an understanding
-of author to author relations in this component we needed to further
-prune away parts of the graph that are not insightful. When we looked at
-individual author within the community, we were interested in
-collaborative individuals. Hence we removed nodes that had fewer than 3
-connections to other nodes. The resulting graph can be seen in figure
-\ref{author_collab_large}. Details creating such a plot can be found in
-the section dedicated to this below.
+this graph authors are only linked if they have written at least 2
+papers together. This method yielded a much larger component
+--containing 441 authors-- as this second condition was weaker. To get
+an understanding of author to author relations in this component we
+needed to further prune away parts of the graph that are not insightful.
+When we looked at individual author within the community, we were
+interested in collaborative individuals. Hence we removed nodes that had
+fewer than 3 connections to other nodes. The resulting graph can be seen
+in figure \ref{author_collab_large}. Details creating such a plot can be
+found in the section dedicated to this below.
 
 
     \begin{figure}
@@ -1032,29 +1043,29 @@ the section dedicated to this below.
     
     Focusing in on the authors is not the only way to interpret the
 co-authorship graph. One should also consider the overall structure of
-the graph. As graph is not connected, and contains one large main
-component with 1141 authors and 208 very small components with less than
-25 authors in them we focused on analyzing the structure of the main
-component of the graph. First we aimed to detect sub-communities within
-the graph. Modularity is one measure used to find such communities. It
-measures the connection strength within a community relative to the
-strength of outgoing connections. Networks with high modularity have
-dense connections between the nodes within modules but sparse
-connections between nodes in different modules. A non-parametric
-algorithm for community detection is the Louvain Method
-\cite{blondel2008fast}. We used the implementation of Thomas Aynaud
-\cite{louvain}. This gives a good partitioning of the graph into 26
-communities of median size 42.84. This is quite a large number of
-communities, so we considered an alternative way to yield bigger
-partitions. An alternate way to find subcommunities is to look at
-normalized cuts, which partition the nodes into groups with many
-within-group connections and relatively few between-group connections.
-The advantage of this method is that we can choose how many cuts to
-make, and we are thus able to define the size of subcommunities. Finding
-normalized cuts in a graph can be done using \emph{sklearns} spectral
-clustering algorithm by passing it the adjacency matrix of the graph.
-With this method we are able to neatly separate the main component graph
-in three large communities. See figure \ref{normalized}
+the graph. As the co-authorship graph is not connected, and contains one
+large main component with 1141 authors and 208 very small components
+with less than 25 authors in them we focused on analyzing the structure
+of the main component of the graph. First we aimed to detect
+sub-communities within the graph. Modularity is one measure used to find
+such communities. It measures the connection strength within a community
+relative to the strength of outgoing connections. Networks with high
+modularity have dense connections between the nodes within the
+subcommunites but sparse connections between nodes in different
+subcommunites. A non-parametric algorithm for community detection is the
+Louvain Method \cite{blondel2008fast}. We used the implementation of
+Thomas Aynaud \cite{louvain}. This gives a good partitioning of the
+graph into 26 communities of median size 42.84. This is quite a large
+number of communities, so we considered an alternative way to yield
+bigger partitions. For this we looked at normalized cuts, which
+partition the nodes into groups with many within-group connections and
+relatively few between-group connections. The advantage of this method
+is that we can choose how many cuts to make, and we are thus able to
+define the size of subcommunities. Finding normalized cuts in a graph
+can be done using \emph{sklearns} spectral clustering algorithm by
+passing it the adjacency matrix of the graph. With this method we are
+able to neatly separate the main component graph in three large
+communities, as can be seen in figure \ref{normalized}
 
     To further analyze these subcommunities we looked at the distribution of
 nationalities and institutions over the years. Additionally, to
@@ -1081,7 +1092,7 @@ this graph is shown in figure \ref{unigraph}.
     
     \hypertarget{numerical-analysis-of-graphs}{%
 \subsubsection{Numerical analysis of
-graphs:}\label{numerical-analysis-of-graphs}}
+graphs}\label{numerical-analysis-of-graphs}}
 
 To analyze the structure of the graphs themselves we calculated the
 following measures:
@@ -1103,11 +1114,13 @@ following measures:
 
     \hypertarget{plotting-of-co-authorship-graphs}{%
 \subsubsection{Plotting of co-authorship
-graphs:}\label{plotting-of-co-authorship-graphs}}
+graphs}\label{plotting-of-co-authorship-graphs}}
 
 Graphs were visualised with the built in plot functions and graph
 layouts of networkx. The force directed layout was used as it clusters
-together nodes with strong connections. Then the size of each node was
+together nodes with strong connections. As this layout is produced by
+iterations and based on random initial conditions, we set a fix random
+seed to be able to reproduce the positioning. The size of each node was
 changed based on the position of the node in the graph. Central nodes
 with a lot of connections should be larger, while nodes with fewer
 connections should be smaller. To achieve this we used the measures of
@@ -1115,11 +1128,12 @@ degree centrality for graphs with few nodes and edges and betweenness
 centrality for larger graphs. Degree centrality measures the fraction of
 degrees (number of connections) a node has with respect to the total
 number of connections in the graph. Betweenness centrality of a node is
-the sum of the fraction of all-pairs shortest paths that pass through
-it. Degree centrality is more appropriate for smaller graphs as their
-structure is still easy to interpret. As by construction betweenness
-takes into consideration the degrees of it neighboring nodes, it better
-structures the nodes large graphs into central and less central nodes.
+the sum of the fraction of all-pairs shortest paths that pass through it
+\ref{borgatti2014social}. We found that degree centrality is more
+appropriate for smaller graphs as their structure is still easy to
+interpret. As by construction betweenness takes into consideration the
+degrees of it neighboring nodes, it better structures the nodes large
+graphs into central and less central nodes.
 
     \hypertarget{creating-interactive-visualizations}{%
 \subsection{Creating Interactive
@@ -1149,19 +1163,19 @@ Bibliographic analysis.
 \subsection{Community Composition \&
 Structure}\label{community-composition-structure}}
 
-We found that participants from 372 institutions participated over the
-last 4 years, with a median of 128 institutions per year. The number of
-institutions participating increased each year, with a noticeable peak
-in 2018, with participants from 261 institutions. This is a considerable
-increase from the last conference ICLS in 2016 which had 135
-participating institutions. Most participants are from the US, with a
-average of 50\% of all participants being from the US. We could also
-observe a trend of increase in US participants with only 35\% of US
-participants in 2015 and 51\% in 2017, followed by 64\% in 2018.
-Overall, participants from 41 nations have participated over the 4
-years, with an average of 28 nations represented at each conference.
-After the US, participants of Germany, Canada and Singapore make up the
-biggest proportion of participants \ref{fig_rep}.
+Participants from 372 institutions participated over the last 4 years,
+with a median of 128 institutions per year. The number of institutions
+participating increased each year, with a noticeable peak in 2018, with
+participants from 261 institutions. This is a considerable increase from
+the last conference ICLS in 2016 which had 135 participating
+institutions. Most participants are from the US, with a average of 50\%
+of all participants being from the US. We could also observe a trend of
+increase in US participants with only 35\% of US participants in 2015
+and 51\% in 2017, followed by 64\% in 2018. Overall, participants from
+41 nations have participated over the 4 years, with an average of 28
+nations represented at each conference. After the US, participants of
+Germany, Canada and Singapore make up the biggest proportion of
+participants \ref{figrep}.
 
 
     \begin{figure}
@@ -1177,17 +1191,18 @@ biggest proportion of participants \ref{fig_rep}.
 major player, with most collaborations happening between the U.S. and
 other countries. Out of 851 papers, 153 were international
 collaborations. Out of these 153, 108 involved at least one U.S.
-participant. Excluding U.S. participation we find figure
-\ref{figcollab}. We note that some countries, such as Japan, are not
-present in this graph. This means that all international collaboration
-of these countries, in this case japanese authors, also involves
-American authors. Additionally we observed that many asian nations seem
-to collaborate almost exclusively with each other or Canada.
+participant. Excluding US participation we find the collaboration graph
+presented in figure \ref{figcollab}. We note that some countries, such
+as Japan, are not present in this graph. This means that all
+international collaboration of these countries, in this case japanese
+authors, also involves American authors. Additionally we observed that
+many Asian nations seem to collaborate almost exclusively with each
+other or Canada.
 
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
-        \caption{Collaborative papers between countries}
+        \caption{Collaborative papers between countries excluding US}
         \label{figcollab}
     \end{figure}
     
@@ -1220,11 +1235,12 @@ some strong links exist, most links are weak.
     
     \textbf{Author collaboration}: As the graph yielded by only considering
 repeat collaboration during different years is sparse, containing
-connected components of size at most 25, we deduce that repeat
+connected components of size at most 31, we deduce that repeat
 collaboration over the years is rather infrequent. As the graph
-conditioned on multiple collaboration is more dense (having a component
-of the size 400), we deduce that when multiple collaborations with the
-same authors happen, they yield work submitted at the same time.
+conditioned on multiple collaboration is more dense (having a connected
+component with more than 400 authors), we deduce that when multiple
+collaborations with the same authors happen, they yield work submitted
+at the same time.
 
 The fact that normalized graph cuts will split the community into three
 promted further investigation. As will be discussed in the next section,
@@ -1234,7 +1250,7 @@ components different colors, and authors in neither a third color, we
 find a similar partitioning of the graph, as can be observed in figure
 \ref{CSCL_components}. This is somewhat trivial, as the graph is built
 based on collaboration in these conferences. However, the analysis of
-nationalities present in the graph yield an interessting results. All
+nationalities present in the graph yielded an interessting results. All
 Asian participants from nations other than Singapore are contained in
 the same cluster. We also note that one of the CSCL clusters ins closer
 to the group of ICLS only participants than the other. Additionaly,
@@ -1289,7 +1305,7 @@ Using the data we have of participants over the years, and knowing their
 affiliation, we can now find members that change institutions over the
 years. Over the years of recording we find 14 participants that have
 changed moved countries and 47 that have moved institutions. We can see
-that most movement occured within the US respectively Europe,
+that most movement occured within the US respectively Europe, see figure
 \ref{fig_move}.
 
 
@@ -1325,7 +1341,7 @@ referenced followed by a two or three years of stagnancy. We can also
 notice that throughouts the year each pick is higher than the older one,
 which can be explained by the fact that The International Society of the
 Learning Sciences community is investigating more and more tools to
-facilitate learning over the years.
+facilitate the learning over the years.
 
 
     \begin{figure}
@@ -1339,8 +1355,8 @@ wanted to investigate more if the relevance of all the documents
 published is increasing too. Using Pagerank algorithm and the In-degree
 of each nodes to get the most influancial documents referenced of the
 citation graph that we constructed (graph3) before. We filtered the
-first 100 documents and then contructed a histogram of the counts. We
-obtain the figure \ref{fig7}:
+first 100 documents and then contructed a histogram of the counts by
+year. We obtain the figure \ref{fig7}:
 
 
     \begin{figure}
@@ -1354,7 +1370,7 @@ obtain the figure \ref{fig7}:
 have the same trend as before, and the relevance of the documents is
 increasing in the same way than with the number of publications but what
 we can say is that more than 50\% of the most cited documents are from
-2006 until 2016, we is 10 years. The other half is between 1977 until
+2006 until 2016, which is 10 years. The other half is between 1977 until
 2005 which represents more than 25 years. On top of that, 2016 is the
 most important year in term of publications and maybe some documents did
 not have enough time to be cited yet.
@@ -1373,10 +1389,10 @@ are represented in table \ref{indegree}:
 likely to cited together. We can say that the more two documents are
 likely to cited together the more it is probable that both documents are
 about the same subject From the table \ref{fig8} we can also notice that
-some papers cites like to cite the same authors together, which is logic
-in a sense, because if some authors always treat about the same subjects
-then they are experts in that field and a lot of their publications are
-relevant and can be cited together.
+some papers are more likely to cite distinct publications of the same
+author, which is logic in a sense, because if some authors always treat
+about the same subject then they are experts in that field and a lot of
+their publications are relevant and can be cited together.
 
 
     \begin{figure}
@@ -1390,7 +1406,7 @@ papers cited together. As we explained before, we run strongly connected
 algorithm to check if some cited documents are more likely to be cited
 together, and this will give us clusters of cited documents that are
 more likely to be about the same subjects. We can visualise one cluster,
-the most important one.
+the most important one in figure \ref{fig12}.
 
 
 
