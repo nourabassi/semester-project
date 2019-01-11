@@ -620,12 +620,12 @@ preprocessed the text by applying the following steps to it:
   We applied \textbf{\emph{regular expression}} to remove numbers
   because numbers were not important for our analysis.
 \item
-  We put all words to lower case
+  We put all words to lower case.
 \item
   We removed words that were connecting parts of a sentence rather than
   showing subjects, objects or intent (\textbf{\emph{stopwords}}). For
   the purpose of this task these words were not important and were only
-  going to increase the bag of words length
+  going to increase the bag of words length.
 \item
   In some methods we applied \textbf{\emph{lemmatization}} and
   \textbf{\emph{stemming}} to the words. In other methods we did not
@@ -651,9 +651,10 @@ not in the dictionnary of words of the pre-trained words-vectors.
 For the Keywords extraction we used three methods : The first one is a
 trivial approach that consists of searching in the pdf itself for
 keywords and extract them, this method is the most accurate but we found
-out that for 492 papers we had no keywords included. So we deciced to
-use other two methods for keywords extraction, namely one based on
+out that 492 papers had no keywords included. So we deciced to use two
+other methods for keywords extraction, namely one based on
 \textbf{\emph{TF-IDF}} and a second one based on \textbf{\emph{Rake}}.
+
 \textbf{\emph{TF-IDF}} is one of the most popular term-weighting schemes
 today, in information retrieval, tf--idf or TFIDF, short for term
 frequency--inverse document frequency, is a numerical statistic that is
@@ -1042,9 +1043,12 @@ plot can be found in the section dedicated to this below.
 
     \begin{figure}
         \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_48_0.png}\end{center}
-        \caption{Largest Component of the multiple collaboration co-authorship graph}
+        \caption{Largest component of the multiple collaboration co-authorship graph}
         \label{author_collab_large}
     \end{figure}
+    
+
+    
     
     Focusing in on the authors is not the only way to interpret the
 co-authorship graph. One should also consider the overall structure of
@@ -1090,8 +1094,8 @@ graph is shown in figure \ref{unigraph}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_51_0.png}\end{center}
-        \caption{Different formats used to reference institution}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_52_0.png}\end{center}
+        \caption{Main component of institution collaboration graph}
         \label{unigraph}
     \end{figure}
     
@@ -1171,8 +1175,8 @@ Bibliographic analysis.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_57_0.png}\end{center}
-        \caption{Global spread of community. Size of dot represent number of participants from each institution}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_58_0.png}\end{center}
+        \caption{Global spread of community. Size of dot represents the number of participants from each institution}
         \label{global_com}
     \end{figure}
     
@@ -1196,8 +1200,8 @@ participants \ref{figrep}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_59_0.png}\end{center}
-        \caption{Number of Contributiors by country, excluding the US}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_60_0.png}\end{center}
+        \caption{Number of participants by country, excluding the US}
         \label{figrep}
     \end{figure}
     
@@ -1218,7 +1222,7 @@ other or Canada.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_61_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_62_0.png}\end{center}
         \caption{Collaboration between countries excluding the US}
         \label{figcollab}
     \end{figure}
@@ -1238,14 +1242,15 @@ some strong links exist, most links are weak.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_63_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
         \caption{Subcommunities via normalized cuts in largest component of co-authorship graph}
         \label{normalized}
     \end{figure}
     
 
+
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_64_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
         \caption{Subcommunities by participation in CSCL. Blue: no participation in main components of CSCL. Red and orange each mark participation in one of the two main components of CSCL}
         \label{CSCL_components}
     \end{figure}
@@ -1270,10 +1275,11 @@ the graph is built based on collaboration in these conferences. However,
 the analysis of nationalities present in the graph yielded an
 interesting results. All Asian participants from nations other than
 Singapore are contained in the same cluster. We also observed that one
-of the CSCL clusters is closer to the group of ICLS-only participants
-than the other. Additionaly, through normalized splits, we found that
-the section of the normalized cut containing ICLS only authors is
-overwhelmingly American.
+of the CSCL clusters (orange in \ref{CSCL_components}) is closer to the
+group of ICLS-only participants than the other (red component).
+Additionaly, through normalized splits, we found that the section of the
+normalized cut containing mostly ICLS only authors (blue in
+\ref{normalized}) is overwhelmingly American.
 
 Considering the wordclouds in figure \ref{c1}, \ref{c2}, \ref{c3} of the
 most common keywords in each of the large splits, we found a first
@@ -1282,22 +1288,22 @@ research.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_66_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
         \caption{Keywords of the blue community}
         \label{c1}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_67_0.png}\end{center}
-        \caption{Keywords of the red community}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_69_0.png}\end{center}
+        \caption{Keywords of the orange community}
         \label{c2}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_68_0.png}\end{center}
-        \caption{Keywords of the orange community}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_70_0.png}\end{center}
+        \caption{Keywords of the red community}
         \label{c3}
     \end{figure}
     
@@ -1328,7 +1334,7 @@ movement occured within the US respectively Europe, see figure
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_71_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_73_0.png}\end{center}
         \caption{Movement of participants across institutions}
         \label{fig_move}
     \end{figure}
@@ -1340,8 +1346,8 @@ We observe a growth of the number of participants over the years, and by
 building co-authorship graphs for each year of the conference, we
 observed that the density and clustering coefficient of the graph
 indicate a steady decrease, while the diameter and average shortest path
-length tend to increase. This hints that the community is attracting new
-member that do not collaborate with the established group of
+length tend to increase. This suggests that the community is attracting
+new members that do not collaborate with the established group of
 participants. But, as the years 2018 shows a massive increase of
 participation, in number of participants and number of institutions
 represented, as well as a large decrease in density of the graph --which
@@ -1363,7 +1369,7 @@ facilitate the learning over the years.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_74_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_76_0.png}\end{center}
         \caption{Distribution of the number of referenced documents belonging to each year}
         \label{count_ref_docs}
     \end{figure}
@@ -1378,7 +1384,7 @@ counts by year. We obtained the figure \ref{fig7}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_76_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_78_0.png}\end{center}
         \caption{Distribution of the 100 most referenced documents belonging to each year}
         \label{fig7}
     \end{figure}
@@ -1398,7 +1404,7 @@ are represented in table \ref{indegree}:
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_79_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_81_0.png}\end{center}
         \caption{In-degree count for each document}
         \label{indegree}
     \end{figure}
@@ -1414,7 +1420,7 @@ lot of their publications are relevant and can be cited together.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_81_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_83_0.png}\end{center}
         \caption{Count of documents cited together}
         \label{fig8}
     \end{figure}
@@ -1428,7 +1434,7 @@ cluster, the most important one in figure \ref{fig12}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_83_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_85_0.png}\end{center}
         \caption{Table of the documents belonging to the same clusters}
         \label{fig9}
     \end{figure}
@@ -1436,7 +1442,7 @@ cluster, the most important one in figure \ref{fig12}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_85_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_87_0.png}\end{center}
         \caption{Fully connected references graph}
         \label{fig12}
     \end{figure}
@@ -1455,14 +1461,14 @@ connected component represented in the interactive graph \ref{fig15}.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_89_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_91_0.png}\end{center}
         \caption{Giant component graph}
         \label{fig15}
     \end{figure}
     
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_90_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_92_0.png}\end{center}
         \caption{Documents belonging to the giant component}
         \label{fig10}
     \end{figure}
@@ -1479,7 +1485,7 @@ clusters.
 
 
     \begin{figure}
-        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_92_0.png}\end{center}
+        \begin{center}\adjustimage{max size={\linewidth}{0.4\paperheight}}{paper_files/paper_94_0.png}\end{center}
         \caption{Documents in conferences belonging to the same clusters}
         \label{fig11}
     \end{figure}
